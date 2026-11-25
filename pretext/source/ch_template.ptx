@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- ================================================================= -->
+<!--  What Does Responsible AI Mean?  -->
+<!-- ================================================================= -->
+<chapter xml:id="ch-CHANGE-ME" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>What Does Responsible AI Mean?</title>
+
+    <introduction xml:id="intro-CHANGE-ME">
+        <p>
+            TODO: a short overview of the chapter. What question does it
+            answer, and what will the reader be able to do by the end?
+        </p>
+    </introduction>
+
+    <!-- 1. A real case study (ideally Kenya-based). Introduces the idea  -->
+    <!--    through a story that needs no prior technical knowledge.      -->
+    <section xml:id="sec-CHANGE-ME-case-study">
+        <title>A Tool Used at Scale</title>
+
+        <introduction>
+            <p>
+                TODO: case study. Idea: a Kenyan example where an automated system affected many people at once, such as mobile lending apps or automated fraud flags on mobile money.
+            </p>
+        </introduction>
+
+        <!-- Add subsections as needed. -->
+        <!--
+        <subsection xml:id="subsec-CHANGE-ME-case-1">
+            <title>...</title>
+            <p>...</p>
+        </subsection>
+        -->
+    </section>
+
+    <!-- 2. A STACK question prompting the reader to think deeply about   -->
+    <!--    the problem. Uncomment and point @source at a question in     -->
+    <!--    pretext/assets/stack/ (e.g. a question-bank submodule).       -->
+    <section xml:id="sec-CHANGE-ME-stack">
+        <title>Practise: Spotting the Risks</title>
+
+        <p>
+            TODO: STACK question(s) to go here.
+        </p>
+
+        <!--
+        <exercise xml:id="ex-CHANGE-ME-stack-1">
+            <title>...</title>
+            <stack source="stack/your-question.xml" label="stk-CHANGE-ME-1"/>
+        </exercise>
+        -->
+    </section>
+
+    <!-- 3. An illustrative worked example using software, introducing    -->
+    <!--    the ideas in a data-first way.                                -->
+    <section xml:id="sec-CHANGE-ME-worked-example">
+        <title>Looking at an AI System Together</title>
+
+        <introduction>
+            <p>
+                TODO: worked example. Move from the case study to a concrete
+                analysis or experiment the reader can run themselves.
+            </p>
+        </introduction>
+
+        <!--
+        <subsection xml:id="subsec-CHANGE-ME-example-1">
+            <title>...</title>
+            <program language="python">
+                <input>
+# code goes here (use &lt; for &lt; and &amp; for &amp;)
+                </input>
+            </program>
+        </subsection>
+        -->
+    </section>
+
+    <!-- 4. Exercises (can also include STACK questions). -->
+    <exercises xml:id="exercises-CHANGE-ME">
+        <title>Exercises</title>
+
+        <exercise xml:id="ex-CHANGE-ME-1">
+            <statement>
+                <p>
+                    TODO: exercise.
+                </p>
+            </statement>
+        </exercise>
+    </exercises>
+</chapter>

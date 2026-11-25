@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- ================================================================= -->
+<!--  Transparency and Explainability  -->
+<!-- ================================================================= -->
+<chapter xml:id="ch-transparency-explainability" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Transparency and Explainability</title>
+
+    <introduction xml:id="intro-transparency-explainability">
+        <p>
+            TODO: a short overview of the chapter. What question does it
+            answer, and what will the reader be able to do by the end?
+        </p>
+    </introduction>
+
+    <!-- 1. A real case study (ideally Kenya-based). Introduces the idea  -->
+    <!--    through a story that needs no prior technical knowledge.      -->
+    <section xml:id="sec-transparency-explainability-case-study">
+        <title>Why Was I Refused?</title>
+
+        <introduction>
+            <p>
+                TODO: case study. Idea: a person who is denied a service by an automated decision and cannot find out why.
+            </p>
+        </introduction>
+
+        <!-- Add subsections as needed. -->
+        <!--
+        <subsection xml:id="subsec-transparency-explainability-case-1">
+            <title>...</title>
+            <p>...</p>
+        </subsection>
+        -->
+    </section>
+
+    <!-- 2. A STACK question prompting the reader to think deeply about   -->
+    <!--    the problem. Uncomment and point @source at a question in     -->
+    <!--    pretext/assets/stack/ (e.g. a question-bank submodule).       -->
+    <section xml:id="sec-transparency-explainability-stack">
+        <title>Practise: Explaining a Decision</title>
+
+        <p>
+            TODO: STACK question(s) to go here.
+        </p>
+
+        <!--
+        <exercise xml:id="ex-transparency-explainability-stack-1">
+            <title>...</title>
+            <stack source="stack/your-question.xml" label="stk-transparency-explainability-1"/>
+        </exercise>
+        -->
+    </section>
+
+    <!-- 3. An illustrative worked example using software, introducing    -->
+    <!--    the ideas in a data-first way.                                -->
+    <section xml:id="sec-transparency-explainability-worked-example">
+        <title>Explaining a Model's Predictions</title>
+
+        <introduction>
+            <p>
+                TODO: worked example. Move from the case study to a concrete
+                analysis or experiment the reader can run themselves.
+            </p>
+        </introduction>
+
+        <!--
+        <subsection xml:id="subsec-transparency-explainability-example-1">
+            <title>...</title>
+            <program language="python">
+                <input>
+# code goes here (use &lt; for &lt; and &amp; for &amp;)
+                </input>
+            </program>
+        </subsection>
+        -->
+    </section>
+
+    <!-- 4. Exercises (can also include STACK questions). -->
+    <exercises xml:id="exercises-transparency-explainability">
+        <title>Exercises</title>
+
+        <exercise xml:id="ex-transparency-explainability-1">
+            <statement>
+                <p>
+                    TODO: exercise.
+                </p>
+            </statement>
+        </exercise>
+    </exercises>
+</chapter>

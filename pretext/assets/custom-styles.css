@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Serif:wght@400;500;600;700&display=swap");
+
+/* Tier 2 overrides loaded via html.css.extra */
+:root {
+  /* Brand palette */
+  --brand-orange: #F37021;
+  --brand-teal: #649BA3;
+  --brand-slate: #44575E;
+  --brand-mint: #C1FDE8;
+
+  /* Variables used by default-modern theme.css */
+  --font-headings: "IBM Plex Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-body: "IBM Plex Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-monospace: "IBM Plex Mono", Consolas, Monaco, monospace;
+  --font-print: "IBM Plex Serif", "Times New Roman", Times, serif;
+
+  /* Direct color overrides used throughout the theme */
+  --primary-color: var(--brand-orange);
+  --secondary-color: var(--brand-teal);
+  --doc-title-color: var(--brand-slate);
+  --link-text-color: var(--brand-orange);
+  --link-active-text-color: var(--brand-slate);
+}
+
+/* Explicit selectors ensure font overrides apply even if vars change upstream */
+body.pretext {
+  font-family: var(--font-body);
+}
+
+.heading,
+.ptx-masthead .title-container {
+  font-family: var(--font-headings);
+}
+
+code,
+pre,
+.program,
+.console,
+.code-display {
+  font-family: var(--font-monospace);
+}
+
+/* Layout for a custom link row injected by custom-footer.js */
+.ptx-page-footer {
+  flex-wrap: wrap;
+  row-gap: 0.25rem;
+}
+
+.custom-site-footer-link-wrap {
+  display: block;
+  flex-basis: 100%;
+  order: 99;
+  margin: 0;
+  padding: 0 0 1.1rem;
+  text-align: center;
+}
+
+.custom-site-footer-link {
+  font-size: 0.9rem;
+  color: var(--brand-orange);
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+.custom-site-footer-link:hover,
+.custom-site-footer-link:focus-visible {
+  color: var(--link-active-text-color);
+}
+
+/* Box background colors for warning, example, definition, note.
+   These blocks are set to always-render inline (not knowled) via
+   publication.ptx, so these fills always show. */
+.warning.remark-like {
+  background-color: hsl(343, 88%, 94%); /* light orange */
+  padding: 0.75rem 1rem 0.75rem 1.5rem;
+  border-radius: 4px;
+}
+
+.example.example-like {
+  background-color: #eaf5e2; /* light green */
+  padding: 0.75rem 1rem 0.75rem 1.5rem;
+  border-radius: 4px;
+}
+
+.definition.definition-like {
+  background-color: #E6F4E8; /* light green */
+  padding: 0.75rem 1rem 0.75rem 1.5rem;
+  border-radius: 4px;
+}
+
+.note.remark-like {
+  background-color: #FDF6DC; /* light yellow */
+  padding: 0.75rem 1rem 0.75rem 1.5rem;
+  border-radius: 4px;
+}
+
+/* Insights */
+.insight.remark-like {
+  background-color: #FFF1E8;
+  padding: 0.75rem 1rem 0.75rem 1.5rem;
+  border-radius: 4px;
+  border-left: 4px solid var(--brand-orange);
+}
+
+/* Tables: shade every other row, so that a cell which wraps onto several
+   lines still reads as part of its own row. The header row is made of th
+   cells, so it is never shaded. */
+table.tabular tr:nth-child(even) > td {
+  background-color: #E8EEF0; /* light slate */
+}
+
+/* Match this theme's dark mode strategy (:root.dark-mode) */
+:root.dark-mode {
+  --page-color: #0a0a0a;
+  --content-background: #111111;
+  --body-text-color: #e0e0e0;
+  --body-title-color: #f0f0f0;
+  --page-border-color: #333333;
+  --link-text-color: #C1FDE8;
+  --link-active-text-color: #7DB1B8;
+}
+
+/* Dark-mode variants: desaturated/darker versions of the same hues */
+:root.dark-mode .warning.remark-like {
+  background-color: #4A3626;
+}
+
+:root.dark-mode .example.example-like {
+  background-color: #2E2E2E;
+}
+
+:root.dark-mode .definition.definition-like {
+  background-color: #23372A;
+}
+
+:root.dark-mode .note.remark-like {
+  background-color: #3E3A22;
+}
+
+:root.dark-mode .insight.remark-like {
+  background-color: #4A3022;
+  border-left-color: var(--brand-orange);
+}
+
+:root.dark-mode table.tabular tr:nth-child(even) > td {
+  background-color: #1E2628;
+}

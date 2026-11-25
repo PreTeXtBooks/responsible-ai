@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- ================================================================= -->
+<!--  Accountability and Governance  -->
+<!-- ================================================================= -->
+<chapter xml:id="ch-accountability-governance" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Accountability and Governance</title>
+
+    <introduction xml:id="intro-accountability-governance">
+        <p>
+            TODO: a short overview of the chapter. What question does it
+            answer, and what will the reader be able to do by the end?
+        </p>
+    </introduction>
+
+    <!-- 1. A real case study (ideally Kenya-based). Introduces the idea  -->
+    <!--    through a story that needs no prior technical knowledge.      -->
+    <section xml:id="sec-accountability-governance-case-study">
+        <title>When Something Goes Wrong</title>
+
+        <introduction>
+            <p>
+                TODO: case study. Idea: an AI-related harm and the question of who is responsible; link to Kenya's national AI policy and strategy (check current status).
+            </p>
+        </introduction>
+
+        <!-- Add subsections as needed. -->
+        <!--
+        <subsection xml:id="subsec-accountability-governance-case-1">
+            <title>...</title>
+            <p>...</p>
+        </subsection>
+        -->
+    </section>
+
+    <!-- 2. A STACK question prompting the reader to think deeply about   -->
+    <!--    the problem. Uncomment and point @source at a question in     -->
+    <!--    pretext/assets/stack/ (e.g. a question-bank submodule).       -->
+    <section xml:id="sec-accountability-governance-stack">
+        <title>Practise: Who Is Accountable?</title>
+
+        <p>
+            TODO: STACK question(s) to go here.
+        </p>
+
+        <!--
+        <exercise xml:id="ex-accountability-governance-stack-1">
+            <title>...</title>
+            <stack source="stack/your-question.xml" label="stk-accountability-governance-1"/>
+        </exercise>
+        -->
+    </section>
+
+    <!-- 3. An illustrative worked example using software, introducing    -->
+    <!--    the ideas in a data-first way.                                -->
+    <section xml:id="sec-accountability-governance-worked-example">
+        <title>Documenting an AI System</title>
+
+        <introduction>
+            <p>
+                TODO: worked example. Move from the case study to a concrete
+                analysis or experiment the reader can run themselves.
+            </p>
+        </introduction>
+
+        <!--
+        <subsection xml:id="subsec-accountability-governance-example-1">
+            <title>...</title>
+            <program language="python">
+                <input>
+# code goes here (use &lt; for &lt; and &amp; for &amp;)
+                </input>
+            </program>
+        </subsection>
+        -->
+    </section>
+
+    <!-- 4. Exercises (can also include STACK questions). -->
+    <exercises xml:id="exercises-accountability-governance">
+        <title>Exercises</title>
+
+        <exercise xml:id="ex-accountability-governance-1">
+            <statement>
+                <p>
+                    TODO: exercise.
+                </p>
+            </statement>
+        </exercise>
+    </exercises>
+</chapter>

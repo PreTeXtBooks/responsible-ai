@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- ================================================================= -->
+<!--  Chapter 2: Demystifying AI                                        -->
+<!-- ================================================================= -->
+<!--
+  PLAN (agreed with Lily):
+  - Hook / case study: the Kenyan workers (employed by Sama, in Nairobi) who
+    labelled harmful text so that ChatGPT could be made safer. Research notes
+    with sources and the disputed points are in notes/ch2-sama-openai-research.md
+  - Then explain how AI learns, using the postcode-sorting example from the
+    podcast (humans in the loop, feedback), the birdsong/toad example (limits),
+    and a short mention that the boundary of what AI can do keeps moving.
+  - Chapter 3 (Illusion of Autonomy) gets the Amazon "Just Walk Out" story and
+    the Meta moderators' court cases as its hidden-labour examples.
+  - The Dutch childcare scandal belongs in the Misuse and Misinterpretation
+    chapter.
+-->
+<chapter xml:id="ch-demystifying-ai" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Demystifying AI</title>
+
+    <introduction xml:id="intro-demystifying-ai">
+        <p>
+            TODO: a hook. Open with the story of the Kenyan workers who made
+            ChatGPT safer, then say what the chapter will do.
+        </p>
+
+        <objectives>
+            <title>By the end of this chapter you should be able to</title>
+            <ol>
+                <li>
+                    <p>TODO: objectives.</p>
+                </li>
+            </ol>
+        </objectives>
+    </introduction>
+
+    <!-- ============================================================= -->
+    <!-- 1. Case study                                                  -->
+    <!-- ============================================================= -->
+    <section xml:id="sec-demystifying-ai-case-study">
+        <title>Case Study: The Workers Behind the Safety Filter</title>
+
+        <p>
+            TODO: write the case study from notes/ch2-sama-openai-research.md.
+            Read the TIME article again before writing, and say clearly which
+            figures are disputed.
+        </p>
+    </section>
+
+    <!-- ============================================================= -->
+    <!-- 2. Podcast                                                     -->
+    <!-- ============================================================= -->
+    <section xml:id="sec-demystifying-ai-podcast">
+        <title>What Is AI Really Doing?</title>
+
+        <introduction>
+            <p>
+                TODO: introduce the ideas from the podcast.
+                The conversation below is between Lily Clements and David
+                Stern, and is about half an hour long.
+                It uses the Post Office to show what makes AI systems
+                powerful, and then some other cases to show where they fall
+                short
+                (<xref ref="biblio-podcast-072" text="custom">Clements and Stern, n.d.</xref>).
+                It's also available at
+                <url href="https://www.idems.international/podcast/072-demystifying-data-science/">idems.international</url>.
+            </p>
+
+            <figure xml:id="fig-demystifying-ai-podcast">
+                <caption>The IDEMS Podcast, episode 72: Demystifying Data Science</caption>
+                <interactive xml:id="int-demystifying-ai-podcast"
+                             iframe="https://www.idems.international/podcast-player/4202/072-demystifying-data-science.mp3"
+                             width="100%"
+                             aspect="8:1"/>
+            </figure>
+        </introduction>
+    </section>
+
+    <!-- ============================================================= -->
+    <!-- 3. STACK question                                              -->
+    <!-- ============================================================= -->
+    <section xml:id="sec-demystifying-ai-stack">
+        <title>Practise</title>
+
+        <p>
+            TODO: STACK question(s) to go here.
+        </p>
+    </section>
+
+    <!-- ============================================================= -->
+    <!-- 4. Illustrative example                                        -->
+    <!-- ============================================================= -->
+    <section xml:id="sec-demystifying-ai-worked-example">
+        <title>Try It</title>
+
+        <p>
+            TODO: a hands-on activity.
+        </p>
+    </section>
+
+    <!-- ============================================================= -->
+    <!-- 5. Exercises                                                   -->
+    <!-- ============================================================= -->
+    <exercises xml:id="exercises-demystifying-ai">
+        <title>Exercises</title>
+
+        <exercise xml:id="ex-demystifying-ai-1">
+            <statement>
+                <p>
+                    TODO: exercise.
+                </p>
+            </statement>
+        </exercise>
+    </exercises>
+
+    <!-- ============================================================= -->
+    <!-- Sources                                                        -->
+    <!-- ============================================================= -->
+    <references xml:id="references-demystifying-ai">
+        <title>Sources</title>
+
+        <biblio type="raw" xml:id="biblio-podcast-072">
+            Clements, L. and Stern, D. The IDEMS Podcast, episode 72:
+            Demystifying Data Science (part of the Responsible AI for Lecturers
+            series). Release date to be confirmed.
+            <url href="https://www.idems.international/podcast/072-demystifying-data-science/"/>.
+        </biblio>
+    </references>
+</chapter>

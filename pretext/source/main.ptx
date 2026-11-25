@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<pretext xml:lang="en-US" xmlns:xi="http://www.w3.org/2001/XInclude">
+
+  <xi:include href="./meta_docinfo.ptx" />
+
+  <book xml:id="principles-of-responsible-ai">
+    <title>Principles of Responsible AI</title>
+    <subtitle>In a Kenyan Context</subtitle>
+
+    <xi:include href="./meta_frontmatter.ptx" />
+
+    <!-- Chapters. Titles and order are placeholders: edit freely.   -->
+    <!-- To add a chapter, copy ch_template.ptx, give it a unique    -->
+    <!-- chapter xml:id, and add an xi:include line here.            -->
+    <xi:include href="./ch1_intro_responsible_ai.ptx" />
+    <xi:include href="./ch2_demystifying_ai.ptx" />
+    <xi:include href="./ch3_data_privacy_consent.ptx" />
+    <xi:include href="./ch4_transparency_explainability.ptx" />
+    <xi:include href="./ch5_accountability_governance.ptx" />
+    <xi:include href="./ch6_safety_human_oversight.ptx" />
+
+    <xi:include href="./meta_backmatter.ptx" />
+  </book>
+</pretext>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- ================================================================= -->
+<!--  Data, Privacy and Consent  -->
+<!-- ================================================================= -->
+<chapter xml:id="ch-data-privacy-consent" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Data, Privacy and Consent</title>
+
+    <!-- ============================================================= -->
+    <!-- NOTE FOR LILY AND CLAUDE (updated while starting Chapter 2)     -->
+    <!-- The Sama / OpenAI story (Kenyan workers who labelled harmful    -->
+    <!-- content for ChatGPT) is now the hook for Chapter 2, Demystifying -->
+    <!-- AI. This chapter (Illusion of Autonomy) should cover other      -->
+    <!-- hidden human work behind "automated" systems: Amazon's "Just    -->
+    <!-- Walk Out" (reported to rely on reviewers in India; Amazon       -->
+    <!-- disputes the figures) and the Kenyan court cases brought by     -->
+    <!-- Facebook moderators against Meta and Sama. Read the rulings     -->
+    <!-- before using them. See notes/ch2-sama-openai-research.md.       -->
+    <!-- This file is still the old placeholder ("Data, Privacy and      -->
+    <!-- Consent"); its title and ids will need updating.                -->
+    <!-- ============================================================= -->
+
+    <introduction xml:id="intro-data-privacy-consent">
+        <p>
+            TODO (see the note above): a short overview of the chapter. What question does it
+            answer, and what will the reader be able to do by the end?
+        </p>
+    </introduction>
+
+    <!-- 1. A real case study (ideally Kenya-based). Introduces the idea  -->
+    <!--    through a story that needs no prior technical knowledge.      -->
+    <section xml:id="sec-data-privacy-consent-case-study">
+        <title>Whose Data Is It?</title>
+
+        <introduction>
+            <p>
+                TODO: case study. Idea: personal data collected through everyday apps and services, linked to the Data Protection Act, 2019 (check current details).
+            </p>
+        </introduction>
+
+        <!-- Add subsections as needed. -->
+        <!--
+        <subsection xml:id="subsec-data-privacy-consent-case-1">
+            <title>...</title>
+            <p>...</p>
+        </subsection>
+        -->
+    </section>
+
+    <!-- 2. A STACK question prompting the reader to think deeply about   -->
+    <!--    the problem. Uncomment and point @source at a question in     -->
+    <!--    pretext/assets/stack/ (e.g. a question-bank submodule).       -->
+    <section xml:id="sec-data-privacy-consent-stack">
+        <title>Practise: Consent in Practice</title>
+
+        <p>
+            TODO: STACK question(s) to go here.
+        </p>
+
+        <!--
+        <exercise xml:id="ex-data-privacy-consent-stack-1">
+            <title>...</title>
+            <stack source="stack/your-question.xml" label="stk-data-privacy-consent-1"/>
+        </exercise>
+        -->
+    </section>
+
+    <!-- 3. An illustrative worked example using software, introducing    -->
+    <!--    the ideas in a data-first way.                                -->
+    <section xml:id="sec-data-privacy-consent-worked-example">
+        <title>Auditing a Dataset for Personal Information</title>
+
+        <introduction>
+            <p>
+                TODO: worked example. Move from the case study to a concrete
+                analysis or experiment the reader can run themselves.
+            </p>
+        </introduction>
+
+        <!--
+        <subsection xml:id="subsec-data-privacy-consent-example-1">
+            <title>...</title>
+            <program language="python">
+                <input>
+# code goes here (use &lt; for &lt; and &amp; for &amp;)
+                </input>
+            </program>
+        </subsection>
+        -->
+    </section>
+
+    <!-- 4. Exercises (can also include STACK questions). -->
+    <exercises xml:id="exercises-data-privacy-consent">
+        <title>Exercises</title>
+
+        <exercise xml:id="ex-data-privacy-consent-1">
+            <statement>
+                <p>
+                    TODO: exercise.
+                </p>
+            </statement>
+        </exercise>
+    </exercises>
+</chapter>

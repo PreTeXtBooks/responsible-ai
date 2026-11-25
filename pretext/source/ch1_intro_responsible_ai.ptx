@@ -1,0 +1,1228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- ================================================================= -->
+<!--  Chapter 1: Introduction                                           -->
+<!-- ================================================================= -->
+<chapter xml:id="ch-intro-responsible-ai" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Introduction: AI in Kenya</title>
+
+    <introduction xml:id="intro-intro-responsible-ai">
+        <p>
+            AI is already being used in Kenya, in clinics, on farms, in banks
+            and in classrooms.
+            Most of what you read about AI comes from the West, and it's easy
+            to forget that people here are using it too, on problems they
+            actually have.
+        </p>
+
+        <p>
+            This book is about using it well.
+            What would it mean to use AI <em>responsibly</em> in Kenya?
+            Who needs to be involved: the people who build it, buy it and
+            regulate it, and the people whose lives it ends up affecting?
+            We start this chapter with a story, about loans.
+            Then we step back and ask what <q>responsible AI</q> actually
+            means, which turns out to be harder to pin down than you'd think.
+        </p>
+
+        <objectives>
+            <title>By the end of this chapter you should be able to</title>
+            <ol>
+                <li>
+                    <p>
+                        Describe how AI is used in Kenya today, using digital
+                        lending as a detailed example.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Explain, with an example, how the same technology can
+                        both help people and put them at risk.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Say why <q>responsible AI</q> is more than a label, and
+                        give a working description of it.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Explain what <q>humans in the loop</q> means and why it
+                        matters.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Tell the difference between the hype around AI and the
+                        advances that will last.
+                    </p>
+                </li>
+            </ol>
+        </objectives>
+    </introduction>
+
+    <!-- ============================================================= -->
+    <!-- 1. Case study                                                  -->
+    <!-- ============================================================= -->
+    <section xml:id="sec-intro-responsible-ai-case-study">
+        <title>Case Study: A Loan Decided by Your Phone</title>
+
+        <subsection xml:id="subsec-intro-responsible-ai-lending-problem">
+            <title>The problem: credit without collateral</title>
+
+            <p>
+                If you want a loan from a bank, they usually want some kind of
+                security first.
+                That might be a title deed, a payslip, or someone to guarantee
+                the loan.
+                Lots of people in Kenya don't have any of those.
+                What many of them do have is a phone, and many of them use
+                M-PESA.
+            </p>
+
+            <p>
+                M-PESA is a mobile money service run by Safaricom, and it
+                launched in 2007.
+                You can send money, receive it, keep it and pay bills using
+                just your phone, with no bank account needed.
+            </p>
+
+            <p>
+                Digital lenders saw the gap.
+                Instead of asking for collateral, they use machine learning to
+                predict whether you'll pay a loan back, based on whatever they
+                can find out about you
+                (<xref ref="biblio-policy-brief-2022" text="custom">AI Utilization in Kenya, 2022</xref>).
+            </p>
+
+            <p>
+                Tala is one of the best-known.
+                It says it began lending to people in Kenya in 2014.
+                Its founder, Shivani Siroya, had spent time interviewing people
+                in emerging markets, and decided that the main thing stopping
+                them getting loans was a lack of data.
+                So Tala built an app that turns what's on your phone into a
+                credit score.
+            </p>
+
+            <p>
+                According to Tala, its loans range from $10 to $500 (about KES
+                1,300 to KES 65,000), they last 21 to 90 days, and you get an
+                offer within minutes.
+                It also says it has lent over $3.4 billion (about KES 442
+                billion) to nearly 8 million customers, across all the
+                countries it works in and not only Kenya
+                (<xref ref="biblio-tala-faq" text="custom">Tala, n.d.</xref>).
+                Those are the company's own figures (and the page they come
+                from looks a few years old, so they may be out of date and the
+                real numbers might be higher), and we've converted the dollar
+                amounts at about KES 130 to the dollar.
+            </p>
+
+            <p>
+                If you have no payslip and no history with a bank, that's a
+                real option.
+                You can pay school fees, or cover an emergency.
+                That's the good part, and it matters.
+            </p>
+        </subsection>
+
+        <subsection xml:id="subsec-intro-responsible-ai-lending-how">
+            <title>How the decision is made</title>
+
+            <p>
+                To decide, the app needs data about you.
+                Tala says its models use machine learning on data you choose
+                to share from your phone, and that they look for patterns that
+                show you're consistent
+                (<xref ref="biblio-tala-faq" text="custom">Tala, n.d.</xref>).
+            </p>
+
+            <p>
+                The examples Tala gives are interesting.
+                If you use lots of apps and lots of data, it takes that as a
+                sign you can afford data charges, so it reads that as a sign
+                you can afford to repay.
+                If you fill in the application thoroughly, it takes that as a
+                sign you're serious about the loan.
+            </p>
+
+            <p>
+                Neither of those directly measures whether you'll repay.
+                They're guesses, based on behaviour that happened to line up
+                with repayment in the data the model learned from.
+                Think about what that means for someone with an old phone and a
+                small data bundle.
+            </p>
+
+            <p>
+                Tala's privacy policy lists the data it can collect once you
+                give permission.
+                That includes identifiers for your phone, your location, your
+                contacts and keywords from your SMS messages.
+                It says an automated system then works out how much you can
+                borrow
+                (<xref ref="biblio-tala-privacy" text="custom">Tala Kenya, n.d.</xref>).
+                Tala also says it uses details of your messages, like the time
+                they were sent and keywords, but doesn't read what they say
+                (<xref ref="biblio-tala-2022" text="custom">Tala Kenya, 2022</xref>).
+            </p>
+
+            <p>
+                Tala isn't the only lender, and other apps may collect more.
+                The 2022 policy brief says lending apps use data such as
+                contacts, SMS messages, what's on the SD card, the gallery and
+                the apps you've downloaded
+                (<xref ref="biblio-policy-brief-2022" text="custom">AI Utilization in Kenya, 2022</xref>).
+            </p>
+
+            <p>
+                In 2021, CIPIT looked at seven popular lending apps in Kenya,
+                Tala and Branch among them, using data collected in late 2020.
+                They found that the apps asked for a lot of permissions.
+                Some had trackers following what borrowers did, and some
+                connected to outside analytics and marketing companies.
+                None had published a data protection impact assessment.
+                CIPIT's conclusion was that the apps' policies and practices
+                didn't comply with the Data Protection Act
+                (<xref ref="biblio-cipit-2021" text="custom">CIPIT, 2021</xref>).
+                That's a small sample from a few years ago, and the report
+                doesn't say that every app did all of this.
+            </p>
+        </subsection>
+
+        <subsection xml:id="subsec-intro-responsible-ai-lending-harm">
+            <title>Where it went wrong</title>
+
+            <p>
+                Let's step back and look at what has happened here.
+                Someone's phone, with their contacts, messages and location on
+                it, has been used to make a decision about their money.
+                That raises some questions.
+            </p>
+
+            <ul>
+                <li>
+                    <p>
+                        <alert>Consent.</alert>
+                        Did they understand what they were agreeing to, and did
+                        they have a real choice?
+                        Tala's privacy policy says that by accepting it, you
+                        confirm that automated processing is needed for the
+                        service and you consent to it
+                        (<xref ref="biblio-tala-privacy" text="custom">Tala Kenya, n.d.</xref>).
+                        But ticking a box on a small screen isn't the same as
+                        understanding.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <alert>People who never agreed.</alert>
+                        Your contacts didn't agree to anything.
+                        Privacy International reports that at least seven
+                        lending apps in Kenya have texted or even called the
+                        contacts of people who had missed repayments, to put
+                        pressure on them
+                        (<xref ref="biblio-pi-fintech" text="custom">Privacy International, 2021</xref>).
+                        Tala says it doesn't do this
+                        (<xref ref="biblio-tala-2022" text="custom">Tala Kenya, 2022</xref>).
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <alert>Explanation and appeal.</alert>
+                        If the app turns you down, or offers a small amount, can
+                        you find out why, or challenge it?
+                        Kenya's Data Protection Act, 2019 says you have a right
+                        not to be subject to a decision based only on automated
+                        processing, if it significantly affects you.
+                        There are exceptions, including where the decision is
+                        needed for a contract or you've consented.
+                        If such a decision is made, you must be told in writing,
+                        and you can ask for it to be reconsidered, or for a new
+                        decision that isn't only automated
+                        (<xref ref="biblio-dpa-2019" text="custom">Data Protection Act, 2019</xref>, section 35).
+                        Tala's policy sets out this right, and also says it
+                        can't guarantee that a reconsidered decision will change
+                        (<xref ref="biblio-tala-privacy" text="custom">Tala Kenya, n.d.</xref>).
+                        Whether the right works in practice for a borrower on a
+                        phone is a different question.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <alert>Fairness.</alert>
+                        Does the model work equally well for everyone?
+                        Or does it get it wrong for people whose phone use looks
+                        different from the people it learned from?
+                    </p>
+                </li>
+            </ul>
+
+            <p>
+                Some of this has already been tested.
+                On 26 September 2023, the Office of the Data Protection
+                Commissioner (ODPC) issued a penalty notice of KES 2.975
+                million (about $20,000 at the time) to Mulla Pride Ltd, which
+                runs the KeCredit and Faircash lending apps.
+                The ODPC found that it had used people's names and contact
+                details, which it got from third parties, to send threatening
+                messages and make threatening phone calls
+                (<xref ref="biblio-odpc-2023" text="custom">ODPC, 2023</xref>).
+                TechCabal also reported that the company wasn't on the
+                Central Bank of Kenya's list of approved lenders, and that the
+                most the law allowed at the time was a fine of KES 5 million
+                (<xref ref="biblio-techcabal-fines" text="custom">Abuya, 2023</xref>).
+            </p>
+        </subsection>
+
+        <subsection xml:id="subsec-intro-responsible-ai-lending-response">
+            <title>What happened next</title>
+
+            <p>
+                The Central Bank of Kenya now licenses digital lenders, and
+                companies like Tala say they're licensed
+                (<xref ref="biblio-tala-licence" text="custom">Tala Kenya, 2023</xref>).
+                The data protection regulator is also holding lenders to the
+                Data Protection Act.
+                TechCabal's view is that online lenders went largely
+                unregulated for years while some loan apps harassed borrowers,
+                so the rules came after the harm
+                (<xref ref="biblio-techcabal-fines" text="custom">Abuya, 2023</xref>).
+            </p>
+        </subsection>
+
+        <subsection xml:id="subsec-intro-responsible-ai-lending-lessons">
+            <title>What the case shows</title>
+
+            <p>
+                Digital lending gave loans to people the banks weren't serving.
+                It also put people's privacy at risk, put pressure on their
+                contacts, and led to decisions they couldn't question.
+                Both of those are true, and one doesn't cancel out the other.
+            </p>
+
+            <insight>
+                <p>
+                    None of this is a bug.
+                    The system did what it was built to do.
+                    What we're asking is whether it was built and used
+                    <em>responsibly</em>, and that's about people, data and
+                    accountability as much as it's about the algorithm.
+                </p>
+            </insight>
+
+            <p>
+                The same questions apply well beyond lending.
+                Who checks what a farming chatbot tells a farmer?
+                Who does a patient go to when a health tool gets it wrong?
+                The exercises at the end of the chapter give you three more
+                cases to think about.
+                AI isn't a silver bullet, and the conversation about using it
+                responsibly needs to happen while it's being adopted, not
+                afterwards.
+            </p>
+        </subsection>
+    </section>
+
+    <!-- ============================================================= -->
+    <!-- 2. STACK question                                              -->
+    <!-- ============================================================= -->
+    <section xml:id="sec-intro-responsible-ai-stack">
+        <title>Practise: Spotting the Risks</title>
+
+        <p>
+            TODO: STACK question(s) to go here.
+        </p>
+
+        <!-- Ideas, based on the case study:
+             - Given a short description of a lending app (what data it uses,
+               what it decides), identify who is affected without having agreed.
+             - Match a set of AI examples to the benefit they offer and the
+               main risk they raise.
+        -->
+
+        <!--
+        <exercise xml:id="ex-intro-responsible-ai-stack-1">
+            <title>...</title>
+            <stack source="stack/your-question.xml" label="stk-intro-responsible-ai-1"/>
+        </exercise>
+        -->
+    </section>
+
+    <!-- ============================================================= -->
+    <!-- 3. What do we mean by responsible AI?                          -->
+    <!-- ============================================================= -->
+    <section xml:id="sec-intro-responsible-ai-meaning">
+        <title>What Do We Mean by Responsible AI?</title>
+
+        <introduction>
+            <p>
+                You've probably already worried about AI.
+                Maybe it's the environment, or what happens to people's data,
+                or whether it's fair.
+                And if you suggest using AI for something, someone will soon
+                ask how you're going to do that ethically, or responsibly.
+            </p>
+
+            <p>
+                This section is about that question.
+                The ideas come from a conversation between David Stern and Kate
+                Fleming, two directors of IDEMS, on the IDEMS Podcast
+                (<xref ref="biblio-podcast-204" text="custom">Stern and Fleming, 2025</xref>).
+                They don't claim to have the answers, and neither do we.
+            </p>
+
+            <p>
+                You can listen to the episode here, and it's about forty
+                minutes long.
+                You don't need to listen to it before reading on, but it's
+                worth a listen at some point.
+                It's also available at
+                <url href="https://www.idems.international/podcast/204-what-does-responsible-ai-really-mean/">idems.international</url>.
+            </p>
+
+            <figure xml:id="fig-intro-responsible-ai-podcast">
+                <caption>The IDEMS Podcast, episode 204: What does responsible AI really mean?</caption>
+                <interactive xml:id="int-intro-responsible-ai-podcast"
+                             iframe="https://www.idems.international/podcast-player/8311/204-what-does-responsible-ai-really-mean.mp3"
+                             width="100%"
+                             aspect="8:1"/>
+            </figure>
+        </introduction>
+
+        <subsection xml:id="subsec-intro-responsible-ai-define">
+            <title>A label isn't an answer</title>
+
+            <p>
+                <q>Responsible AI</q> can sound like a phrase organisations
+                stick on whatever they were already doing.
+                Saying <q>trust me, it's responsible</q> is easy.
+                Explaining what you mean is much harder.
+            </p>
+
+            <p>
+                Part of the difficulty is where the technology came from.
+                The large language models behind most AI tools today were built
+                by a small number of big private companies, with their own
+                goals.
+                Some of how they were built is disputed, for example how they
+                used other people's creative work and data without clear
+                permission.
+                So anyone using these tools inherits questions they didn't
+                create.
+            </p>
+
+            <p>
+                The other part is that the technology is young.
+                One way to put it is that expecting today's AI to be fully
+                responsible is like expecting a toddler to take full
+                responsibility.
+                It can't yet, so the responsibility has to sit with the adults
+                around it.
+                That doesn't mean we should avoid it.
+                Whether AI ends up helping society depends on the choices
+                people make about how it's built, tested and used.
+            </p>
+
+            <definition xml:id="def-intro-responsible-ai-working">
+                <title>Responsible AI (a working description)</title>
+                <statement>
+                    <p>
+                        <term>Responsible AI</term> means developing and using AI
+                        in a way that serves the people it affects, keeps
+                        humans accountable for what it does, and takes seriously
+                        its costs to people, communities and the environment.
+                    </p>
+                </statement>
+            </definition>
+
+            <p>
+                That's a description, not a finished definition.
+                Responsible AI isn't a settled category.
+                It's still being worked out, and that includes communities who
+                will need to help set the standards and decide how their data
+                is used.
+                Each chapter of this book fills in a bit more.
+            </p>
+        </subsection>
+
+        <subsection xml:id="subsec-intro-responsible-ai-hype">
+            <title>Hype, boom and bust</title>
+
+            <p>
+                This isn't the first time people have got excited about AI.
+                David's account is that there have been three or four boom
+                periods before, and each time public attention dropped away
+                when the technology did less than people hoped.
+                The one most people still remember is when a computer beat the
+                world chess champion in 1997.
+            </p>
+
+            <p>
+                Each boom starts with a real advance, and this one does too.
+                This time it's generative AI, and large language models in
+                particular.
+                They can write text that's so close to human writing it can be
+                hard to tell the difference.
+                That's useful, and it's already changing how people write and
+                talk.
+            </p>
+
+            <p>
+                Once a boom gets going, though, most of what follows is noise:
+                money, announcements and competition, built on one idea that
+                hasn't changed much in years.
+                Companies also have a reason to encourage big claims, even
+                scary ones, because a technology that sounds world-changing
+                gets money and attention.
+                We should take real risks seriously without believing every
+                claim.
+            </p>
+
+            <insight>
+                <p>
+                    A good question to ask of any AI claim is: <em>what is the
+                    specific advance underneath this, and what will still be
+                    useful once the excitement has gone?</em>
+                </p>
+            </insight>
+
+            <p>
+                In earlier booms, what survived was substantial and mostly
+                good, but you mostly didn't notice it, because it had become
+                part of ordinary systems.
+                The hope is that the same happens here, and that the lasting
+                value is in specific, well-understood uses and not in one
+                general machine that does everything.
+            </p>
+        </subsection>
+
+        <subsection xml:id="subsec-intro-responsible-ai-costs">
+            <title>The costs behind the screen</title>
+
+            <p>
+                It's easy to think of AI as the chat window on your phone.
+                Behind it there's a lot more: people, energy, water, land and
+                data.
+            </p>
+
+            <ul>
+                <li>
+                    <p>
+                        <alert>Computing power.</alert>
+                        Building the next, slightly better model needs a huge
+                        amount of computing.
+                        David's view is that a single data centre can now use as
+                        much power as a small town, and that demand from data
+                        centres has started to push against the shift to clean
+                        energy.
+                        Large AI data centres are also being planned in Africa,
+                        for example in Zambia.
+                        It's fair to ask what's being taken, who benefits and who
+                        pays.
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        <alert>People and data.</alert>
+                        Models learn from data that people created, and building
+                        them depends on human work that mostly happens out of
+                        sight.
+                        A later chapter returns to this, using the story of
+                        Kenyan workers who labelled harmful content to make
+                        chatbots safer.
+                    </p>
+                </li>
+            </ul>
+
+            <p>
+                Kate points out that governments often feel pressure to rush,
+                because they're told that regulation will hold back progress
+                and leave them behind.
+                Part of that pressure comes from a lack of other ideas, and
+                one of the aims of this book is to show there are
+                alternatives.
+                If a huge amount of money and resource is going into one
+                narrow part of society, it's reasonable to ask for more of it
+                to go into checking the environmental and social
+                consequences.
+            </p>
+        </subsection>
+
+        <subsection xml:id="subsec-intro-responsible-ai-humans">
+            <title>Humans in the loop</title>
+
+            <definition xml:id="def-intro-responsible-ai-hitl">
+                <title>Human in the loop</title>
+                <statement>
+                    <p>
+                        An AI system has a <term>human in the loop</term> when
+                        people are deliberately involved in how it is
+                        developed, tested and used, so that its outputs are
+                        checked, corrected or approved by a person rather than
+                        acted on automatically.
+                    </p>
+                </statement>
+            </definition>
+
+            <p>
+                Lots of principles get suggested for responsible AI, like
+                transparency, fairness and accountability.
+                Keeping humans in the loop stands out because the others
+                depend on it.
+                Even if you can't see inside a model, and have to treat it as a
+                black box, having people in the right places means you can
+                still see what goes in and what comes out, and you can be open
+                about what the system is doing.
+            </p>
+
+            <p>
+                It matters most where the stakes are high.
+                There have been reports of chatbots encouraging self-harm, and
+                there's a risk of systems being used to take advantage of
+                people who are vulnerable.
+                Safeguards need to be designed in, and some people are arguing
+                that they should be written into regulation.
+            </p>
+
+            <p>
+                Think back to the lending apps.
+                Who can a borrower ask when a loan is refused?
+                Who checks what a farming chatbot tells a farmer?
+                Those are questions about where the humans are.
+            </p>
+        </subsection>
+
+        <subsection xml:id="subsec-intro-responsible-ai-slm">
+            <title>Doing more with less</title>
+
+            <p>
+                Large language models do better the more computing power
+                they're given, which is why the race for bigger infrastructure
+                carries on.
+                But most people don't need a model that can do everything.
+            </p>
+
+            <p>
+                Take the idea of putting the equivalent of a good agricultural
+                extension agent in a farmer's pocket: an AI assistant that
+                talks to farmers in their own language and gives sound advice.
+                Digital Green's FarmerChat does this in Kenya and elsewhere,
+                and it went to extension agents first, rather than straight to
+                farmers, so that a person could check its advice
+                (<xref ref="biblio-digitalgreen" text="custom">Digital Green, n.d.</xref>).
+                Right now, building something like this means starting from a
+                large language model.
+                But the task is narrow, and once the system has been built and
+                tested, the farmer gets nothing extra from all that power
+                behind it.
+                So you can ask how much less you'd need to do the same job.
+            </p>
+
+            <p>
+                This is where <term>small language models</term> come in.
+                They're smaller models, built or trimmed for one purpose, that
+                use far less computing power and energy.
+                The narrower the problem, the less computing you need, and the
+                relationship is far from linear.
+                David's estimate is that the research needed to make small
+                models mature is still going and will take at least five
+                years, but choices made now can aim at it.
+                That's his expectation, not a settled fact.
+            </p>
+
+            <p>
+                For Kenya this matters.
+                Cheaper models are easier to run locally, in local languages,
+                on modest hardware, for communities who can't pay for a global
+                cloud.
+                They also make it more realistic for local organisations to
+                control the technology instead of renting it.
+            </p>
+        </subsection>
+
+        <subsection xml:id="subsec-intro-responsible-ai-access">
+            <title>Who is AI for?</title>
+
+            <p>
+                In wealthy places, a lot of AI is used for surveillance and
+                productivity, and as a reason to cut staff.
+                In low-resource settings it can look different, because the
+                scarce thing is often skilled people.
+            </p>
+
+            <p>
+                For a long time, building technology was gate-kept by people
+                with deep technical skills, who could do things others thought
+                of as magic, and who tended to build systems that worked for
+                people like themselves.
+                AI could lower that barrier, so that someone who isn't a
+                programmer can build or adapt something that works in their
+                own local context.
+                That isn't only good news for non-specialists, though.
+                The same tools can do some of what specialists do, and nobody's
+                skills are guaranteed to be safe.
+            </p>
+
+            <p>
+                It also doesn't follow that AI means less work.
+                There's plenty that needs doing, in health care and education
+                for example.
+                What's limited is what we choose to pay for and prioritise.
+                The aim should be to use technology to improve those jobs, not
+                to remove people from them.
+            </p>
+
+            <p>
+                We'll use the word <term>sociotechnical</term> for this way of
+                thinking.
+                A system isn't just the software.
+                It's the software together with the people, communities, rules
+                and incentives around it, and designing AI well means
+                designing all of that together.
+            </p>
+        </subsection>
+
+        <subsection xml:id="subsec-intro-responsible-ai-uncertainty">
+            <title>Working with uncertainty</title>
+
+            <p>
+                Nobody knows exactly how all this will turn out, including the
+                people who know the most about it.
+                That can sound like a reason to avoid the subject.
+                A better response is to get comfortable acting under
+                uncertainty without gambling.
+            </p>
+
+            <p>
+                Big bets, where you win or lose and then move on, are common in
+                technology and in funding.
+                But here it's people's lives and livelihoods at stake, and the
+                aim should be stability.
+                That points to small, constrained, real-world uses, with
+                communities involved, learning from each one and linking them
+                together as understanding grows.
+                Progress comes in small steps, not in one leap to a utopia,
+                which is always somebody else's dystopia.
+            </p>
+
+            <p>
+                That kind of optimistic realism runs through the book, and it's
+                why we started with Kenya's own examples.
+            </p>
+        </subsection>
+
+        <subsection xml:id="subsec-intro-responsible-ai-summary">
+            <title>Summary</title>
+
+            <ul>
+                <li>
+                    <p>
+                        AI is already used in Kenya, often through the phones
+                        and platforms people already use.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        The same systems that help can also expose people to
+                        harm, as the digital lending case study shows.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <q>Responsible AI</q> isn't a settled category.
+                        It's still being worked out, and it involves people,
+                        data, accountability and environmental cost, as well as
+                        algorithms.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Hype comes in cycles.
+                        Look for the real advance underneath, and what will
+                        still be useful after the noise.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Keeping humans in the loop is a practical starting point
+                        for responsibility.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Narrow, specific uses, supported by smaller models,
+                        offer a way to do more with less.
+                    </p>
+                </li>
+            </ul>
+        </subsection>
+    </section>
+
+    <!-- ============================================================= -->
+    <!-- 4. Illustrative example using software                         -->
+    <!-- ============================================================= -->
+    <section xml:id="sec-intro-responsible-ai-worked-example">
+        <title>Try It: Questioning an AI Assistant</title>
+
+        <introduction>
+            <p>
+                You don't need any programming for this one.
+                You do need a free AI chat assistant, and about thirty
+                minutes.
+                We're not trying to work out which assistant is best.
+                We just want you to practise noticing what it does, so you can
+                ask the questions from this chapter about a real system.
+            </p>
+        </introduction>
+
+        <subsection xml:id="subsec-intro-responsible-ai-activity-setup">
+            <title>The task</title>
+
+            <p>
+                Imagine you're a smallholder potato farmer, and you've noticed
+                dark patches on the leaves of your plants.
+                You're going to ask an AI assistant for help.
+            </p>
+
+            <ol>
+                <li>
+                    <p>
+                        Ask in English.
+                        Describe the leaves, and ask what could be wrong and
+                        what you should do.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Ask the same question in Kiswahili, or another language
+                        you speak.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Ask something that depends on where you are, like the
+                        best time to plant potatoes in your county.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Ask a follow-up question that you already know the
+                        answer to, and see whether the assistant gets it right.
+                    </p>
+                </li>
+            </ol>
+        </subsection>
+
+        <subsection xml:id="subsec-intro-responsible-ai-activity-record">
+            <title>What to notice</title>
+
+            <p>
+                Use <xref ref="tbl-intro-responsible-ai-notice"/> to guide what
+                you write down.
+                Put it in your own words, and keep the exact replies so you can
+                compare them with someone else's.
+            </p>
+
+            <table xml:id="tbl-intro-responsible-ai-notice">
+                <title>Observations to record</title>
+                <tabular halign="left">
+                    <row header="yes">
+                        <cell>Question</cell>
+                        <cell>What to look for</cell>
+                    </row>
+
+                    <row>
+                        <cell>Was the advice right for Kenya?</cell>
+                        <cell>Does it mention crops, seasons, products or
+                        conditions that apply here, or is it generic?</cell>
+                    </row>
+
+                    <row>
+                        <cell>Did the language change the answer?</cell>
+                        <cell>Is the Kiswahili reply as detailed, accurate and
+                        natural as the English one?</cell>
+                    </row>
+
+                    <row>
+                        <cell>Did it say what it didn't know?</cell>
+                        <cell>Does it admit it's unsure, or ask where you are?
+                        Or does it sound confident whatever you ask?</cell>
+                    </row>
+
+                    <row>
+                        <cell>Could you check it?</cell>
+                        <cell>Does it say where the advice comes from?
+                        Who could you ask to confirm it?</cell>
+                    </row>
+
+                    <row>
+                        <cell>What if it's wrong?</cell>
+                        <cell>If you acted on it, who would pay for the
+                        mistake, and how much would it cost?</cell>
+                    </row>
+
+                    <row>
+                        <cell>Where's the human?</cell>
+                        <cell>At what point could an extension officer, an
+                        agronomist or a neighbour step in?</cell>
+                    </row>
+                </tabular>
+            </table>
+        </subsection>
+
+        <subsection xml:id="subsec-intro-responsible-ai-activity-reflect">
+            <title>Reflecting</title>
+
+            <p>
+                Now link your notes back to the chapter.
+                Which of your observations are about how good the technology
+                is, and which are about how it's used and checked?
+                A small model, trained for this one task and tested with
+                farmers, might improve some of what you saw.
+                Which parts, and which parts wouldn't it help with?
+                And where would you want a human in the loop before this tool
+                was offered to a thousand farmers?
+            </p>
+
+            <note>
+                <p>
+                    Please don't put anyone's personal or financial details
+                    into an AI assistant for this activity.
+                    Free tools may keep what you type.
+                </p>
+            </note>
+        </subsection>
+    </section>
+
+    <!-- ============================================================= -->
+    <!-- 5. Exercises                                                   -->
+    <!-- ============================================================= -->
+    <exercises xml:id="exercises-intro-responsible-ai">
+        <title>Exercises</title>
+
+        <exercise xml:id="ex-intro-responsible-ai-1">
+            <statement>
+                <p>
+                    Pick an AI application that's used in Kenya, either from
+                    this chapter or one you know about.
+                    Write a short profile of it, answering these questions.
+                    <ol>
+                        <li>Who built it, and who pays for it?</li>
+                        <li>Who uses it, and who else is affected by it?</li>
+                        <li>What data does it use, and where does the data come from?</li>
+                        <li>What decision or advice does it give?</li>
+                        <li>What happens if it's wrong, and who pays for that?</li>
+                        <li>Where is the human in the loop?</li>
+                    </ol>
+                </p>
+            </statement>
+        </exercise>
+
+        <exercise xml:id="ex-intro-responsible-ai-case-prompts">
+            <title>Case: PROMPTS and the nurses</title>
+            <statement>
+                <p>
+                    PROMPTS is run by Jacaranda Health, a Kenyan non-profit.
+                    It began as appointment reminders sent by SMS.
+                    Then mothers started texting back, and it grew into a
+                    service that uses AI to understand their questions and
+                    flag the ones that might be urgent.
+                    About 7% of messages get flagged, and those go straight to
+                    a nurse.
+                    There's a team of 18 nurses who monitor and answer
+                    messages around the clock
+                    (<xref ref="biblio-npr-2026" text="custom">NPR, 2026</xref>).
+                    Think about these questions.
+                    <ol>
+                        <li>
+                            Who is the human in the loop here, and what do they
+                            actually do?
+                        </li>
+                        <li>
+                            The AI sorts messages into urgent and not urgent.
+                            Which is the worse mistake: calling an urgent
+                            message not urgent, or the other way round?
+                            How should that affect how the system is set up?
+                        </li>
+                        <li>
+                            Say the nurses get overwhelmed.
+                            What pressure might there be to let the AI handle
+                            more messages on its own, and what would you want
+                            in place to resist it?
+                        </li>
+                        <li>
+                            The messages are about pregnancy and health.
+                            Who should be able to see them, and how long should
+                            they be kept?
+                        </li>
+                        <li>
+                            How would you test whether it works just as well
+                            for messages written in different languages,
+                            spellings or styles?
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+        </exercise>
+
+        <exercise xml:id="ex-intro-responsible-ai-case-chatcare">
+            <title>Case: Chat Care</title>
+            <statement>
+                <p>
+                    Chat Care is a free AI chatbot from the Kenya Red Cross and
+                    Pathways Technologies.
+                    It offers mental health support at any time of day, in
+                    English and Swahili, and says that all conversations are
+                    kept confidential
+                    (<xref ref="biblio-redcross" text="custom">Kenya Red Cross, n.d.</xref>).
+                    Think about these questions.
+                    <ol>
+                        <li>
+                            It describes itself as confidential.
+                            What would you want to know before you believed
+                            that, and who would you ask?
+                        </li>
+                        <li>
+                            Say a user tells the chatbot they're thinking of
+                            harming themselves.
+                            What should happen next, and who should be
+                            responsible for making sure it does?
+                        </li>
+                        <li>
+                            If a chatbot reaches people who'd otherwise get no
+                            help at all, should it be held to a lower standard
+                            than a human counsellor, a higher one, or the same?
+                            Make the case for your answer.
+                        </li>
+                        <li>
+                            Where could you put a human in the loop, and what
+                            would it cost?
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+        </exercise>
+
+        <exercise xml:id="ex-intro-responsible-ai-case-farmerai">
+            <title>Case: FarmerAI</title>
+            <statement>
+                <p>
+                    Safaricom and Opportunity International launched FarmerAI
+                    in February 2025.
+                    The pilot ran until August 2025, and aimed to reach up to
+                    1,000 potato farmers by SMS and WhatsApp with advice on
+                    weather, fertiliser and pest management.
+                    The plan was to scale it up later
+                    (<xref ref="biblio-safaricom-farmerai" text="custom">Safaricom, 2025</xref>).
+                    We couldn't find any published results from the pilot.
+                    Think about these questions.
+                    <ol>
+                        <li>
+                            What would you need to see published before you
+                            believed the pilot had worked?
+                        </li>
+                        <li>
+                            A farmer follows the advice and the crop fails.
+                            Who pays for that, and is anyone accountable?
+                        </li>
+                        <li>
+                            Who checks what the chatbot tells farmers?
+                            If it gave bad advice, how quickly could that be
+                            corrected for everyone who got it?
+                        </li>
+                        <li>
+                            The service learns where farmers are and what they
+                            grow.
+                            Who benefits from that data, apart from the farmer?
+                        </li>
+                        <li>
+                            What should happen to farmers who've come to rely on
+                            it if the pilot ends?
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+        </exercise>
+
+        <exercise xml:id="ex-intro-responsible-ai-2">
+            <statement>
+                <p>
+                    A digital lending app asks to see your contacts, your SMS
+                    messages and your photo gallery.
+                    For each one, give a reason it could be relevant to whether
+                    you'll repay a loan, and a reason it's an intrusion.
+                    What would you want the app to tell you before you agree?
+                </p>
+            </statement>
+        </exercise>
+
+        <exercise xml:id="ex-intro-responsible-ai-7">
+            <statement>
+                <p>
+                    Tala says it treats the number of apps you use, and how
+                    thoroughly you fill in the application, as signs of whether
+                    you'll repay.
+                    Think of two groups of people who might be treated unfairly
+                    because of this, even though they'd repay just fine.
+                    What would you change?
+                </p>
+            </statement>
+        </exercise>
+
+        <exercise xml:id="ex-intro-responsible-ai-3">
+            <statement>
+                <p>
+                    Find a news story or an advert that makes a big claim about
+                    AI.
+                    What's the specific advance, if any, that the claim depends
+                    on?
+                    What evidence does it give, and who gains if people believe
+                    it?
+                </p>
+            </statement>
+        </exercise>
+
+        <exercise xml:id="ex-intro-responsible-ai-4">
+            <statement>
+                <p>
+                    A chatbot gives farmers advice on fertiliser and pest
+                    control.
+                    Design a simple process that keeps humans in the loop.
+                    Say who reviews what, how often, and what happens when the
+                    reviewer disagrees with the chatbot.
+                </p>
+            </statement>
+        </exercise>
+
+        <exercise xml:id="ex-intro-responsible-ai-5">
+            <statement>
+                <p>
+                    In your own words, why does a narrower task usually need
+                    less computing power?
+                    Give an example from your own work or studies of a task
+                    where a small model might be enough, and one where it
+                    might not.
+                </p>
+            </statement>
+        </exercise>
+
+        <exercise xml:id="ex-intro-responsible-ai-6">
+            <statement>
+                <p>
+                    We compared today's AI to a toddler.
+                    What does that help you understand, and where does the
+                    comparison stop working?
+                </p>
+            </statement>
+        </exercise>
+    </exercises>
+
+    <!-- ============================================================= -->
+    <!-- Sources                                                        -->
+    <!-- ============================================================= -->
+    <references xml:id="references-intro-responsible-ai">
+        <title>Sources</title>
+
+        <biblio type="raw" xml:id="biblio-policy-brief-2022">
+            <q>Artificial Intelligence in Kenya</q>, <q>AI Utilization in
+            Kenya</q> (2022). Policy brief. Author and publisher to be
+            confirmed. Its figures draw on CIPIT's 2021 mapping of AI
+            applications in Africa.
+        </biblio>
+
+
+        <biblio type="raw" xml:id="biblio-redcross">
+            Kenya Red Cross Society (n.d.). Chat Care: AI-Powered Mental Health
+            Support.
+            <url href="https://www.redcross.or.ke/chat-care"/>.
+        </biblio>
+
+        <biblio type="raw" xml:id="biblio-npr-2026">
+            NPR (2026). To prevent deaths in childbirth, Kenyan moms turn to an
+            AI-powered chatbot.
+            <url href="https://www.npr.org/2026/09/17/nx-s1-5962840/artificial-intelligence-ai-chatbot-pregnancy-maternal-health"/>.
+        </biblio>
+
+
+        <biblio type="raw" xml:id="biblio-safaricom-farmerai">
+            Safaricom (2025). Opportunity International and Safaricom launch
+            new AI chatbot for smallholder farmers.
+            <url href="https://safaricom.co.ke/media-center-landing/press-releases/opportunity-international-safaricom-launch-new-ai-chatbot-for-smallholder-farmers"/>.
+        </biblio>
+
+
+
+
+
+
+
+
+        <biblio type="raw" xml:id="biblio-cipit-2021">
+            Centre for Intellectual Property and Information Technology Law
+            (CIPIT), Strathmore University (2021). Privacy and Data Protection
+            Practices of Digital Lending Apps in Kenya.
+            <url href="https://cipit.strathmore.edu/wp-content/uploads/2021/02/FINTEC-Final.pdf"/>.
+        </biblio>
+
+        <biblio type="raw" xml:id="biblio-pi-fintech">
+            Privacy International (2021). Perspectives on the harms of
+            unregulated fintech. 9 September 2021.
+            <url href="https://privacyinternational.org/long-read/4619/perspectives-harms-unregulated-fintech"/>.
+        </biblio>
+
+        <biblio type="raw" xml:id="biblio-digitalgreen">
+            Digital Green. FarmerChat: AI Assistant.
+            <url href="https://digitalgreen.org/farmer.chat/"/>.
+        </biblio>
+
+        <biblio type="raw" xml:id="biblio-tala-faq">
+            Tala. Frequently asked questions.
+            <url href="https://tala.co/faq/"/>.
+        </biblio>
+
+        <biblio type="raw" xml:id="biblio-tala-privacy">
+            Tala Kenya. Privacy policy.
+            <url href="https://tala.co.ke/privacy-policy-ke/"/>.
+        </biblio>
+
+        <biblio type="raw" xml:id="biblio-tala-2022">
+            Tala Kenya (2022). Tala is now registered with the Data
+            Commissioner as a data controller in Kenya.
+            <url href="https://tala.co.ke/2022/09/07/tala-is-now-registered-with-the-data-commissioner-as-a-data-controller-in-kenya/"/>.
+        </biblio>
+
+        <biblio type="raw" xml:id="biblio-tala-licence">
+            Tala Kenya (2023). Tala is proud to be one of the 22 licensed
+            digital credit providers in Kenya.
+            <url href="https://tala.co.ke/2023/02/06/tala-is-proud-to-be-one-of-the-22-licensed-digital-credit-providers-in-kenya/"/>.
+        </biblio>
+
+        <biblio type="raw" xml:id="biblio-odpc-2023">
+            Office of the Data Protection Commissioner (2023). Press release:
+            Office of the Data Protection Commissioner issues three (3) penalty
+            notices totalling to Kenya shillings 9,375,000. Nairobi, 26
+            September 2023.
+        </biblio>
+
+        <biblio type="raw" xml:id="biblio-techcabal-fines">
+            Abuya, K. (2023). Kenya fines two digital lenders $20,000 for
+            abusing user data. TechCabal, 26 September 2023.
+            <url href="https://techcabal.com/2023/09/26/digital-lenders-fined-in-kenya/"/>.
+        </biblio>
+
+        <biblio type="raw" xml:id="biblio-dpa-2019">
+            Republic of Kenya (2019). The Data Protection Act, No. 24 of 2019.
+            Kenya Gazette Supplement.
+        </biblio>
+
+        <biblio type="raw" xml:id="biblio-podcast-204">
+            Stern, D. and Fleming, K. (2025). 204 – What does responsible AI
+            really mean? The IDEMS Podcast, 24 October 2025.
+            <url href="https://www.idems.international/podcast/204-what-does-responsible-ai-really-mean/"/>.
+        </biblio>
+    </references>
+</chapter>
