@@ -845,9 +845,147 @@
         <title>Exercises</title>
 
         <exercise xml:id="ex-demystifying-ai-1">
+            <title>Who is responsible?</title>
             <statement>
                 <p>
-                    TODO: exercise.
+                    OpenAI says that Sama was responsible for the workers' pay
+                    and for their mental health support.
+                    Sama says it offered counselling and followed the law.
+                    The workers say they were badly paid and left to cope on
+                    their own.
+                    Think about these questions.
+                    <ol>
+                        <li>
+                            Who do you think was responsible for looking after
+                            the workers, and why?
+                        </li>
+                        <li>
+                            Why does it get harder to say who's responsible when
+                            the work is outsourced?
+                        </li>
+                        <li>
+                            What could OpenAI have asked for in its contract, to
+                            make sure the workers were looked after?
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+        </exercise>
+
+        <exercise xml:id="ex-demystifying-ai-2">
+            <title>Whose figures do you believe?</title>
+            <statement>
+                <p>
+                    TIME, Sama and the workers disagree about how many passages
+                    people had to read in a shift: 150 to 250, 70, and up to 700.
+                    Suppose you wanted to find out which is right.
+                    What evidence would you ask for, and who would have it?
+                    What would you do if you couldn't get it?
+                </p>
+            </statement>
+        </exercise>
+
+        <exercise xml:id="ex-demystifying-ai-3">
+            <title>Data labelling</title>
+            <statement>
+                <p>
+                    Explain data labelling to a friend who has never heard of
+                    it, in a few sentences.
+                    Then give an example of something you use that probably
+                    depends on it, and say what you'd want to know about the
+                    people who did the labelling.
+                </p>
+            </statement>
+        </exercise>
+
+        <exercise xml:id="ex-demystifying-ai-4">
+            <title>Learning from mistakes</title>
+            <statement>
+                <p>
+                    The Post Office system got better because its mistakes were
+                    caught and fed back.
+                    Think about these questions.
+                    <ol>
+                        <li>
+                            What had to be true for that to work?
+                        </li>
+                        <li>
+                            Think of another system where mistakes would be
+                            caught and fed back in the same way, and one where
+                            they wouldn't.
+                            Explain the difference.
+                        </li>
+                        <li>
+                            Where in your own life do you rely on something
+                            automatic, like a map, a translation tool or a spam
+                            filter?
+                            How would a mistake get noticed?
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+        </exercise>
+
+        <exercise xml:id="ex-demystifying-ai-5">
+            <title>The toad</title>
+            <statement>
+                <p>
+                    Imagine you're counting a rare bird at a lake in Kenya, and
+                    you're using an app that identifies birds by their song.
+                    Think about these questions.
+                    <ol>
+                        <li>
+                            How could you build a check into the way you use the
+                            app?
+                        </li>
+                        <li>
+                            What would that check cost, in time and in money?
+                        </li>
+                        <li>
+                            If you couldn't afford the check, what would you
+                            say about the count when you reported it?
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+        </exercise>
+
+        <exercise xml:id="ex-demystifying-ai-6">
+            <title>Style and substance</title>
+            <statement>
+                <p>
+                    Pick a topic you know really well.
+                    Ask an AI assistant a few questions about it, and write
+                    down what it got right, what it got wrong, and how sure it
+                    sounded each time.
+                    Then ask yourself whether someone who didn't know the topic
+                    could have told the difference.
+                    Please don't put anyone's personal details into the
+                    assistant.
+                </p>
+            </statement>
+        </exercise>
+
+        <exercise xml:id="ex-demystifying-ai-7">
+            <title>The Turing test</title>
+            <statement>
+                <p>
+                    In your own words, what does it tell us if an AI passes the
+                    Turing test, and what doesn't it tell us?
+                    Why isn't passing the test the same as being right?
+                </p>
+            </statement>
+        </exercise>
+
+        <exercise xml:id="ex-demystifying-ai-8">
+            <title>A moving line</title>
+            <statement>
+                <p>
+                    Pick something that people say AI can't do yet.
+                    What would need to change for it to be possible?
+                    How would you tell if it had become possible, or if it only
+                    looked like it had?
+                    Who might be doing some of the work behind the scenes?
                 </p>
             </statement>
         </exercise>
