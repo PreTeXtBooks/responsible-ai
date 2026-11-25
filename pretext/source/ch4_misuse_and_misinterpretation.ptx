@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- ================================================================= -->
+<!--  Chapter 4: Misuse and Misinterpretation  -->
+<!-- ================================================================= -->
+<!--
+  NOTES (see also notes/case-study-plan.md):
+  Case study ideas: the Dutch childcare benefits scandal, COMPAS,
+  hallucinated citations. Or a Kenyan application such as Amenya,
+  Chat Care, Angaza Elimu or FarmerAI (Chat Care and FarmerAI have
+  exercises in Chapter 1 that could be built up).
+-->
+<chapter xml:id="ch-misuse-and-misinterpretation" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Misuse and Misinterpretation</title>
+
+    <introduction xml:id="intro-misuse-and-misinterpretation">
+        <p>
+            TODO: a hook and a short overview of the chapter.
+        </p>
+    </introduction>
+
+    <!-- 1. A real case study (ideally Kenya-based). -->
+    <section xml:id="sec-misuse-and-misinterpretation-case-study">
+        <title>Case Study</title>
+
+        <p>
+            TODO: case study.
+        </p>
+    </section>
+
+    <!-- 2. A STACK question prompting the reader to think deeply. -->
+    <section xml:id="sec-misuse-and-misinterpretation-stack">
+        <title>Practise</title>
+
+        <p>
+            TODO: STACK question(s) to go here.
+        </p>
+    </section>
+
+    <!-- 3. An illustrative worked example using software. -->
+    <section xml:id="sec-misuse-and-misinterpretation-worked-example">
+        <title>Try It</title>
+
+        <p>
+            TODO: worked example.
+        </p>
+    </section>
+
+    <!-- 4. Exercises. -->
+    <exercises xml:id="exercises-misuse-and-misinterpretation">
+        <title>Exercises</title>
+
+        <exercise xml:id="ex-misuse-and-misinterpretation-1">
+            <statement>
+                <p>
+                    TODO: exercise.
+                </p>
+            </statement>
+        </exercise>
+    </exercises>
+</chapter>

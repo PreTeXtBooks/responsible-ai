@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- ================================================================= -->
+<!--  Chapter 8: Who is Responsible?  -->
+<!-- ================================================================= -->
+<!--
+  NOTES (see also notes/case-study-plan.md):
+  Case study ideas: generative AI's environmental impact, or the
+  ChatGPT story again. Ideally a new Kenyan case.
+-->
+<chapter xml:id="ch-who-is-responsible" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Who is Responsible?</title>
+
+    <introduction xml:id="intro-who-is-responsible">
+        <p>
+            TODO: a hook and a short overview of the chapter.
+        </p>
+    </introduction>
+
+    <!-- 1. A real case study (ideally Kenya-based). -->
+    <section xml:id="sec-who-is-responsible-case-study">
+        <title>Case Study</title>
+
+        <p>
+            TODO: case study.
+        </p>
+    </section>
+
+    <!-- 2. A STACK question prompting the reader to think deeply. -->
+    <section xml:id="sec-who-is-responsible-stack">
+        <title>Practise</title>
+
+        <p>
+            TODO: STACK question(s) to go here.
+        </p>
+    </section>
+
+    <!-- 3. An illustrative worked example using software. -->
+    <section xml:id="sec-who-is-responsible-worked-example">
+        <title>Try It</title>
+
+        <p>
+            TODO: worked example.
+        </p>
+    </section>
+
+    <!-- 4. Exercises. -->
+    <exercises xml:id="exercises-who-is-responsible">
+        <title>Exercises</title>
+
+        <exercise xml:id="ex-who-is-responsible-1">
+            <statement>
+                <p>
+                    TODO: exercise.
+                </p>
+            </statement>
+        </exercise>
+    </exercises>
+</chapter>

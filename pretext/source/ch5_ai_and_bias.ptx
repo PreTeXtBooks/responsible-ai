@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- ================================================================= -->
+<!--  Chapter 5: AI and Bias  -->
+<!-- ================================================================= -->
+<!--
+  NOTES (see also notes/case-study-plan.md):
+  No case study chosen yet. A lead to check: ChatGPT's safety filtering
+  was reported (WSJ, 2023) to be done mainly in English, so Swahili may
+  be less safe. That is one reporter's claim and is unverified.
+-->
+<chapter xml:id="ch-ai-and-bias" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>AI and Bias</title>
+
+    <introduction xml:id="intro-ai-and-bias">
+        <p>
+            TODO: a hook and a short overview of the chapter.
+        </p>
+    </introduction>
+
+    <!-- 1. A real case study (ideally Kenya-based). -->
+    <section xml:id="sec-ai-and-bias-case-study">
+        <title>Case Study</title>
+
+        <p>
+            TODO: case study.
+        </p>
+    </section>
+
+    <!-- 2. A STACK question prompting the reader to think deeply. -->
+    <section xml:id="sec-ai-and-bias-stack">
+        <title>Practise</title>
+
+        <p>
+            TODO: STACK question(s) to go here.
+        </p>
+    </section>
+
+    <!-- 3. An illustrative worked example using software. -->
+    <section xml:id="sec-ai-and-bias-worked-example">
+        <title>Try It</title>
+
+        <p>
+            TODO: worked example.
+        </p>
+    </section>
+
+    <!-- 4. Exercises. -->
+    <exercises xml:id="exercises-ai-and-bias">
+        <title>Exercises</title>
+
+        <exercise xml:id="ex-ai-and-bias-1">
+            <statement>
+                <p>
+                    TODO: exercise.
+                </p>
+            </statement>
+        </exercise>
+    </exercises>
+</chapter>

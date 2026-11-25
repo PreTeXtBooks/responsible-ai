@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- ================================================================= -->
+<!--  Chapter 9: Looking to the Future  -->
+<!-- ================================================================= -->
+<!--
+  NOTES (see also notes/case-study-plan.md):
+  This chapter covers different categories: what will never be
+  possible, what will be possible, what is now possible, and so on
+  (The Nevers, The Whens, The Ifs, The Unknowns). It may not need a
+  single case study.
+-->
+<chapter xml:id="ch-looking-to-the-future" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Looking to the Future</title>
+
+    <introduction xml:id="intro-looking-to-the-future">
+        <p>
+            TODO: a hook and a short overview of the chapter.
+        </p>
+    </introduction>
+
+    <!-- 1. A real case study (ideally Kenya-based). -->
+    <section xml:id="sec-looking-to-the-future-case-study">
+        <title>Case Study</title>
+
+        <p>
+            TODO: case study.
+        </p>
+    </section>
+
+    <!-- 2. A STACK question prompting the reader to think deeply. -->
+    <section xml:id="sec-looking-to-the-future-stack">
+        <title>Practise</title>
+
+        <p>
+            TODO: STACK question(s) to go here.
+        </p>
+    </section>
+
+    <!-- 3. An illustrative worked example using software. -->
+    <section xml:id="sec-looking-to-the-future-worked-example">
+        <title>Try It</title>
+
+        <p>
+            TODO: worked example.
+        </p>
+    </section>
+
+    <!-- 4. Exercises. -->
+    <exercises xml:id="exercises-looking-to-the-future">
+        <title>Exercises</title>
+
+        <exercise xml:id="ex-looking-to-the-future-1">
+            <statement>
+                <p>
+                    TODO: exercise.
+                </p>
+            </statement>
+        </exercise>
+    </exercises>
+</chapter>

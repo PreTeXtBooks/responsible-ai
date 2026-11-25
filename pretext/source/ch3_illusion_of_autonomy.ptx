@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- ================================================================= -->
+<!--  Chapter 3: AI and the Illusion of Autonomy  -->
+<!-- ================================================================= -->
+<!--
+  NOTES (see also notes/case-study-plan.md):
+  Case study ideas: Amazon "Just Walk Out" for now, or the Kenyan
+  ChatGPT workers again (Chapter 2 has the full story). Also: the Meta
+  moderators' court cases in Kenya (read the rulings first).
+  Chapter 2 deliberately keeps the Sama / OpenAI story, so use a
+  different hidden-labour example here, or return to it briefly.
+-->
+<chapter xml:id="ch-illusion-of-autonomy" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>AI and the Illusion of Autonomy</title>
+
+    <introduction xml:id="intro-illusion-of-autonomy">
+        <p>
+            TODO: a hook and a short overview of the chapter.
+        </p>
+    </introduction>
+
+    <!-- 1. A real case study (ideally Kenya-based). -->
+    <section xml:id="sec-illusion-of-autonomy-case-study">
+        <title>Case Study</title>
+
+        <p>
+            TODO: case study.
+        </p>
+    </section>
+
+    <!-- 2. A STACK question prompting the reader to think deeply. -->
+    <section xml:id="sec-illusion-of-autonomy-stack">
+        <title>Practise</title>
+
+        <p>
+            TODO: STACK question(s) to go here.
+        </p>
+    </section>
+
+    <!-- 3. An illustrative worked example using software. -->
+    <section xml:id="sec-illusion-of-autonomy-worked-example">
+        <title>Try It</title>
+
+        <p>
+            TODO: worked example.
+        </p>
+    </section>
+
+    <!-- 4. Exercises. -->
+    <exercises xml:id="exercises-illusion-of-autonomy">
+        <title>Exercises</title>
+
+        <exercise xml:id="ex-illusion-of-autonomy-1">
+            <statement>
+                <p>
+                    TODO: exercise.
+                </p>
+            </statement>
+        </exercise>
+    </exercises>
+</chapter>

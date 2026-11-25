@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- ================================================================= -->
+<!--  Chapter 7: Core Principles  -->
+<!-- ================================================================= -->
+<!--
+  NOTES (see also notes/case-study-plan.md):
+  Case study ideas: regulation in Kenya, or regulation by a company.
+  Leads to check: the Data Protection Act 2019 (section 35 is already
+  in Chapter 1), Kenya's national AI strategy, Central Bank of Kenya
+  digital credit rules.
+-->
+<chapter xml:id="ch-core-principles" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Core Principles</title>
+
+    <introduction xml:id="intro-core-principles">
+        <p>
+            TODO: a hook and a short overview of the chapter.
+        </p>
+    </introduction>
+
+    <!-- 1. A real case study (ideally Kenya-based). -->
+    <section xml:id="sec-core-principles-case-study">
+        <title>Case Study</title>
+
+        <p>
+            TODO: case study.
+        </p>
+    </section>
+
+    <!-- 2. A STACK question prompting the reader to think deeply. -->
+    <section xml:id="sec-core-principles-stack">
+        <title>Practise</title>
+
+        <p>
+            TODO: STACK question(s) to go here.
+        </p>
+    </section>
+
+    <!-- 3. An illustrative worked example using software. -->
+    <section xml:id="sec-core-principles-worked-example">
+        <title>Try It</title>
+
+        <p>
+            TODO: worked example.
+        </p>
+    </section>
+
+    <!-- 4. Exercises. -->
+    <exercises xml:id="exercises-core-principles">
+        <title>Exercises</title>
+
+        <exercise xml:id="ex-core-principles-1">
+            <statement>
+                <p>
+                    TODO: exercise.
+                </p>
+            </statement>
+        </exercise>
+    </exercises>
+</chapter>

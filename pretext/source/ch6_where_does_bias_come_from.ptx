@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- ================================================================= -->
+<!--  Chapter 6: Where does Bias come from?  -->
+<!-- ================================================================= -->
+<!--
+  NOTES (see also notes/case-study-plan.md):
+  Case study ideas: proxy variables. Could tie in to the Chapter 1
+  lending example (Tala's signals), Weapons of Math Destruction, or
+  COMPAS. Ideally a new Kenyan example.
+-->
+<chapter xml:id="ch-where-does-bias-come-from" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Where does Bias come from?</title>
+
+    <introduction xml:id="intro-where-does-bias-come-from">
+        <p>
+            TODO: a hook and a short overview of the chapter.
+        </p>
+    </introduction>
+
+    <!-- 1. A real case study (ideally Kenya-based). -->
+    <section xml:id="sec-where-does-bias-come-from-case-study">
+        <title>Case Study</title>
+
+        <p>
+            TODO: case study.
+        </p>
+    </section>
+
+    <!-- 2. A STACK question prompting the reader to think deeply. -->
+    <section xml:id="sec-where-does-bias-come-from-stack">
+        <title>Practise</title>
+
+        <p>
+            TODO: STACK question(s) to go here.
+        </p>
+    </section>
+
+    <!-- 3. An illustrative worked example using software. -->
+    <section xml:id="sec-where-does-bias-come-from-worked-example">
+        <title>Try It</title>
+
+        <p>
+            TODO: worked example.
+        </p>
+    </section>
+
+    <!-- 4. Exercises. -->
+    <exercises xml:id="exercises-where-does-bias-come-from">
+        <title>Exercises</title>
+
+        <exercise xml:id="ex-where-does-bias-come-from-1">
+            <statement>
+                <p>
+                    TODO: exercise.
+                </p>
+            </statement>
+        </exercise>
+    </exercises>
+</chapter>
