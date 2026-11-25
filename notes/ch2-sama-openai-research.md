@@ -75,9 +75,8 @@ Read in full on 25 November 2026. The page opens with a content warning.
   end to "draconian" non-disclosure agreements and better benefits. It held a
   large sign-up event in Nairobi in February 2026.
   https://www.404media.co/ai-is-african-intelligence-the-workers-who-train-ai-are-fighting-back/
-- **Court cases:** A search result says litigation over pay, mental health
-  support and union rights has run in Kenyan courts for over three years, with a
-  ruling postponed as late as February 2026. Not read, so unverified.
+- **Court cases:** None found brought by the ChatGPT labellers. The Kenyan cases
+  are about Facebook moderators employed by Sama (see below).
 
 ## Related but different (do not mix up)
 
@@ -89,10 +88,23 @@ April 2026 says the court ruled in favour of 187 former moderators. Only search
 snippets seen. Good material for Chapter 3 (Illusion of Autonomy), but read the
 rulings before using it.
 
+## Verified on 25 November 2026 (pages read)
+
+- TechCrunch, 20 April 2023: 183 moderators sued Meta, Sama and Majorel; the
+  labour court rejected Meta's argument that Kenyan courts lack jurisdiction.
+  That is a ruling on jurisdiction, not on the merits.
+- allAfrica / Capital FM, 27 April 2026: the Employment and Labour Relations
+  Court "ruled in favour of" 187 former moderators; the only specific order
+  reported is that a Meta director must appear for cross-examination. No damages
+  or appeal mentioned. The 2022 Daniel Motaung petition is consolidated with it.
+- Not confirmed: the September 2024 Court of Appeal ruling (the pages would not
+  load), and a claim that Sama is liquidating (no source found). Reports from
+  April 2026 say Sama will lay off over 1,100 Nairobi staff after Meta ended its
+  contract (TechCabal, ITWeb, The Star: search snippets only).
+
 ## Not yet verified
 
-- The Meta case rulings and their dates (above).
-- The status of any court case involving the ChatGPT labellers specifically.
+- The Court of Appeal ruling in the Meta case.
 - Anything about the 2025 and 2026 events beyond the search summaries.
 - The mental-health claims are workers' allegations and Sama disputes parts of
   them. Present them as such.
