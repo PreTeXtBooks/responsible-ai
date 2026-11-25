@@ -21,15 +21,61 @@
 
     <introduction xml:id="intro-demystifying-ai">
         <p>
-            TODO: a hook. Open with the story of the Kenyan workers who made
-            ChatGPT safer, then say what the chapter will do.
+            Ask ChatGPT for something truly vile and it'll politely refuse.
+            That didn't happen by accident, and it isn't magic.
+            Somebody had to teach it what <q>vile</q> looks like.
+            According to a TIME investigation, some of those people were in
+            Nairobi, and they were paid less than $2 an hour to do it.
         </p>
 
+        <p>
+            That's where this chapter starts.
+            It's about what's really going on inside AI.
+            A lot of what's said about AI makes it sound like something that
+            thinks for itself, and a lot of what's said against it makes it
+            sound like something to fear.
+            Neither helps much.
+            If you understand how these systems are made, and how they learn,
+            you can use them more sensibly, and ask better questions about
+            them.
+        </p>
+
+        <note>
+            <title>Content warning</title>
+            <p>
+                The case study mentions sexual abuse, violence and self-harm,
+                in general terms.
+                We don't describe any of the content itself.
+            </p>
+        </note>
+
+        <!-- Draft objectives: revise once the rest of the chapter is written. -->
         <objectives>
             <title>By the end of this chapter you should be able to</title>
             <ol>
                 <li>
-                    <p>TODO: objectives.</p>
+                    <p>
+                        Explain how a system like ChatGPT is made safer, and
+                        the part that people play in it.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Describe how a machine learning system improves when
+                        humans give it feedback.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Explain why an AI can sound confident and still be
+                        wrong.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Say why nobody can say for sure where the line between
+                        what AI can and can't do will end up.
+                    </p>
                 </li>
             </ol>
         </objectives>
@@ -41,11 +87,256 @@
     <section xml:id="sec-demystifying-ai-case-study">
         <title>Case Study: The Workers Behind the Safety Filter</title>
 
-        <p>
-            TODO: write the case study from notes/ch2-sama-openai-research.md.
-            Read the TIME article again before writing, and say clearly which
-            figures are disputed.
-        </p>
+        <subsection xml:id="subsec-demystifying-ai-problem">
+            <title>The problem: a chatbot that said terrible things</title>
+
+            <p>
+                ChatGPT's predecessor, GPT-3, was trained on hundreds of
+                billions of words taken from the internet.
+                It could write fluent sentences, but it was also prone to
+                producing violent, sexist and racist remarks.
+                That's not surprising, because the internet is full of all of
+                those, and there was no easy way to take the toxic parts out
+                of what it had learned from
+                (<xref ref="biblio-time-2023" text="custom">Perrigo, 2023</xref>).
+            </p>
+
+            <p>
+                OpenAI's answer was to build another AI whose only job was to
+                spot toxic text.
+                It could be built into ChatGPT to filter out harmful answers
+                before you saw them, and it could also be used to clean up the
+                data that future models learned from
+                (<xref ref="biblio-time-2023" text="custom">Perrigo, 2023</xref>).
+            </p>
+
+            <p>
+                But how do you teach a machine to recognise violence or hate
+                speech?
+                You show it lots of examples that have already been labelled by
+                a person.
+                This example is violence, this one is hate speech, and so on.
+                That's the step that needs people.
+            </p>
+
+            <definition xml:id="def-demystifying-ai-labelling">
+                <title>Data labelling</title>
+                <statement>
+                    <p>
+                        <term>Data labelling</term>, sometimes called
+                        <term>annotation</term>, is when people mark examples
+                        with the right answer, so that a machine learning
+                        system has something to learn from.
+                    </p>
+                </statement>
+            </definition>
+        </subsection>
+
+        <subsection xml:id="subsec-demystifying-ai-work">
+            <title>The work</title>
+
+            <p>
+                From November 2021, OpenAI sent tens of thousands of snippets
+                of text to a company called Sama.
+                Sama is based in San Francisco, has workers in Kenya, Uganda
+                and India, and describes itself as an <q>ethical AI</q>
+                company.
+                In Nairobi, about three dozen workers were split into three
+                teams, one each for sexual abuse, hate speech and violence.
+                Their job was to read the text and label it
+                (<xref ref="biblio-time-2023" text="custom">Perrigo, 2023</xref>).
+            </p>
+
+            <p>
+                Much of the text was graphic.
+                TIME reports that it included descriptions of child sexual
+                abuse, murder, suicide, torture and self-harm.
+                TIME spoke to four of the workers, who stayed anonymous because
+                they were worried about their jobs.
+                One described having recurring visions after reading a
+                particular passage, and called the work <q>torture</q>.
+            </p>
+
+            <p>
+                Some of the numbers are disputed.
+                <xref ref="tbl-demystifying-ai-disputed"/> puts TIME's reporting
+                next to what Sama said in reply.
+                We've converted the dollar amounts at about KES 130 to the
+                dollar, which is today's rate and not the 2022 one.
+            </p>
+
+            <table xml:id="tbl-demystifying-ai-disputed">
+                <title>What TIME reported, and what Sama said</title>
+                <tabular halign="left">
+                    <row header="yes">
+                        <cell></cell>
+                        <cell>TIME's reporting</cell>
+                        <cell>Sama's reply</cell>
+                    </row>
+
+                    <row>
+                        <cell>Pay per hour, after tax</cell>
+                        <cell>About $1.32 to $2 (about KES 170 to KES 260),
+                        depending on seniority and performance</cell>
+                        <cell>$1.46 to $3.74 (about KES 190 to KES 490)</cell>
+                    </row>
+
+                    <row>
+                        <cell>Passages to read per nine-hour shift</cell>
+                        <cell>150 to 250, according to three workers</cell>
+                        <cell>70, and <q>not up to 250</q></cell>
+                    </row>
+
+                    <row>
+                        <cell>Counselling</cell>
+                        <cell>All four workers said the <q>wellness</q>
+                        sessions were rare and unhelpful</cell>
+                        <cell>Individual and group sessions with licensed
+                        therapists were available at any time</cell>
+                    </row>
+                </tabular>
+            </table>
+
+            <p>
+                Some things aren't in dispute.
+                The contracts said that OpenAI would pay Sama $12.50 an hour
+                (about KES 1,625) for the work.
+                Sama says that covers all its costs, including salaries,
+                benefits and infrastructure.
+                TIME says that was six to nine times what the workers took
+                home.
+                For the most junior labellers, the basic salary was KES 21,000
+                a month, plus a bonus of about $70 (about KES 9,100) for
+                working with explicit content.
+                For comparison, TIME gives the minimum wage for a receptionist
+                in Nairobi at the time as $1.52 an hour
+                (<xref ref="biblio-time-2023" text="custom">Perrigo, 2023</xref>).
+            </p>
+
+            <p>
+                OpenAI's position is that it didn't set productivity targets,
+                and that Sama was responsible for pay and for mental health
+                support.
+                It also says that labelling harmful text and images is
+                <q>a necessary step</q> in making its tools safer
+                (<xref ref="biblio-time-2023" text="custom">Perrigo, 2023</xref>).
+            </p>
+        </subsection>
+
+        <subsection xml:id="subsec-demystifying-ai-ending">
+            <title>How it ended</title>
+
+            <p>
+                In February 2022, Sama began a pilot for a different OpenAI
+                project, collecting sexual and violent images, some of them
+                illegal.
+                Sama sent a sample of 1,400 images, and OpenAI paid $787.50
+                (about KES 102,000) for them.
+                OpenAI says it never meant to collect the most serious category,
+                child sexual abuse material.
+                Sama says that when it saw the instructions, its team raised
+                concerns, and it ended the pilot and cancelled the rest of its
+                OpenAI work
+                (<xref ref="biblio-time-2023" text="custom">Perrigo, 2023</xref>).
+            </p>
+
+            <p>
+                Sama's last batch of labelled text went to OpenAI in March
+                2022, eight months before the contract was due to finish.
+                Sama's reason is that it didn't want to expose its staff to
+                that content again.
+                Some workers say that managers gave them a different reason,
+                which was a TIME story, published in February 2022, about
+                Facebook moderators at Sama.
+                Most of the workers were moved to lower-paid work, without the
+                bonus, and some lost their jobs.
+                In January 2023, Sama announced it was leaving content
+                moderation altogether, including a $3.9 million Facebook
+                contract (about KES 507 million), which cost around 200 jobs
+                in Nairobi
+                (<xref ref="biblio-time-2023" text="custom">Perrigo, 2023</xref>).
+            </p>
+        </subsection>
+
+        <subsection xml:id="subsec-demystifying-ai-after">
+            <title>What happened next</title>
+
+            <p>
+                In July 2023, workers who had helped remove harmful content from
+                ChatGPT petitioned Kenya's Parliament.
+                They asked it to investigate the work and operations of Big
+                Tech firms that outsource through companies like Sama, and to
+                bring in laws to regulate outsourced, dangerous technology work
+                (<xref ref="biblio-techcrunch-2023" text="custom">Njanja, 2023</xref>).
+                The workers say they had no psychosocial support, and that they
+                developed PTSD, paranoia, depression, anxiety and insomnia.
+                Those are the workers' claims, and Sama disputes parts of them.
+                UK non-profit Foxglove backed the petition
+                (<xref ref="biblio-itweb-2023" text="custom">Mungadze, 2023</xref>).
+            </p>
+
+            <p>
+                Sama said it was open to working with the Kenyan government and
+                welcomed third-party audits.
+                OpenAI said the work was challenging, and that it had shared
+                ethical and wellness standards with the people doing it.
+                ITWeb reported that OpenAI didn't respond to the specific
+                mental health claims
+                (<xref ref="biblio-itweb-2023" text="custom">Mungadze, 2023</xref>).
+            </p>
+
+            <p>
+                The story hasn't stopped.
+                In 2026, 404 Media reported on a Data Labelers Association in
+                Kenya, which is signing up workers and asking for better pay,
+                better mental health services, and an end to what it calls
+                draconian non-disclosure agreements
+                (<xref ref="biblio-404media-2026" text="custom">Koebler, 2026</xref>).
+                This isn't the whole of what happened afterwards.
+                There have also been court cases in Kenya, and we haven't
+                covered them here.
+            </p>
+        </subsection>
+
+        <subsection xml:id="subsec-demystifying-ai-lessons">
+            <title>What the case shows</title>
+
+            <p>
+                When you use a chatbot, it's easy to think of it as a machine
+                that just knows how to behave.
+                This story says otherwise.
+                The safety filter works because people read huge amounts of
+                harmful text first, and told the system what it was looking at.
+                That isn't a flaw in the way AI is built.
+                It's how this kind of AI learns.
+            </p>
+
+            <insight>
+                <p>
+                    When you use an AI tool, ask who taught it, and who paid
+                    for that.
+                </p>
+            </insight>
+
+            <p>
+                It also gives the idea of a <q>human in the loop</q> from the
+                last chapter a face.
+                The human in the loop isn't an abstract safeguard.
+                Here, it was a few dozen people in Nairobi reading things most
+                of us would never want to read, for pay that two companies
+                disagree about.
+                If AI is going to be used responsibly, how those people are
+                paid and looked after has to be part of the question, along with
+                what the model does.
+            </p>
+
+            <p>
+                So why does a machine need people at all?
+                To answer that, we need to look at how an AI actually learns,
+                and at what it can and can't do once it has.
+                That's what the rest of this chapter is about.
+            </p>
+        </subsection>
     </section>
 
     <!-- ============================================================= -->
@@ -119,6 +410,31 @@
     <!-- ============================================================= -->
     <references xml:id="references-demystifying-ai">
         <title>Sources</title>
+
+        <biblio type="raw" xml:id="biblio-time-2023">
+            Perrigo, B. (2023). Exclusive: OpenAI used Kenyan workers on less
+            than $2 per hour to make ChatGPT less toxic. TIME, 18 January 2023.
+            <url href="https://time.com/6247678/openai-chatgpt-kenya-workers/"/>.
+        </biblio>
+
+        <biblio type="raw" xml:id="biblio-techcrunch-2023">
+            Njanja, A. (2023). Workers that made ChatGPT less harmful ask
+            lawmakers to stem alleged exploitation by Big Tech. TechCrunch, 14
+            July 2023.
+            <url href="https://techcrunch.com/2023/07/14/workers-that-made-chatgpt-less-harmful-ask-lawmakers-to-stem-alleged-exploitation-by-big-tech"/>.
+        </biblio>
+
+        <biblio type="raw" xml:id="biblio-itweb-2023">
+            Mungadze, S. (2023). Exclusive: OpenAI responds to Kenya's
+            <q>toxic work</q> petition. ITWeb Africa, 18 July 2023.
+            <url href="https://itweb.africa/article/exclusive-openai-responds-to-kenyas-toxic-work-petition/lwrKxq3YNky7mg1o"/>.
+        </biblio>
+
+        <biblio type="raw" xml:id="biblio-404media-2026">
+            Koebler, J. (2026). <q>AI is African intelligence</q>: the workers
+            who train AI are fighting back. 404 Media, 12 March 2026.
+            <url href="https://www.404media.co/ai-is-african-intelligence-the-workers-who-train-ai-are-fighting-back/"/>.
+        </biblio>
 
         <biblio type="raw" xml:id="biblio-podcast-072">
             Clements, L. and Stern, D. The IDEMS Podcast, episode 72:
