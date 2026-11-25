@@ -56,3 +56,21 @@ Read in November 2026:
 - Which Kenyan court made the "true employer" ruling, on what date, and what
   exactly it said. Search snippets say Meta was held to be the principal
   employer and Sama an agent. Read the ruling before using it in Chapter 3 or 8.
+
+## Chapter 3 candidates, checked on 25 November 2026
+
+Source: Lily's blog "The Illusion of Autonomous AI" (23 April 2025), plus the
+Amazon material. Verdict on each:
+
+| Candidate | Verdict | Notes |
+|-----------|---------|-------|
+| Amazon "Just Walk Out" | Real, contested. Recommended for Chapter 3. | Amazon Go opened to the public on 22 January 2018 (Seattle). April 2024: The Information reported that about 1,000 workers in India reviewed transactions, and that in 2022 about 700 of every 1,000 sales were reviewed (those reviews could include someone picking an item up and putting it back). Amazon called the report "misleading and inaccurate" and said the workers were mainly training the AI (KUOW, 10 April 2024, read from Lily's PDF). Wikipedia states the 1,000 figure as fact and does not give Amazon's response: do not copy it. Wikipedia (citing AP and Axios) says Amazon announced on 27 January 2026 it would close all Amazon Go and Amazon Fresh stores, last ones closed by 1 February 2026. Only seen on Wikipedia: check AP or Axios before using. Podcast 054 covers it. |
+| Facebook moderators in Kenya (Meta and Sama) | Real and well documented. Better for Chapter 8 (Who is Responsible?). | Dec 2024 reports (CNN; the Guardian, which we could not open): 144 former moderators were assessed by Dr Ian Kanyanya (head of mental health services at Kenyatta National Hospital), diagnoses filed with the Nairobi employment court on 4 December 2024. The Guardian's account says all 144 had PTSD, generalised anxiety disorder and major depressive disorder, with severe or extremely severe PTSD in 81%. Plaintiffs' claims only; Meta declined to comment, Sama did not respond. No finding of liability. The blog's reference link for this goes to the wrong Guardian article (August 2023): fix. The Chapter 2 case study already uses Sama, so using it again in Chapter 3 would repeat. |
+| PlantVillage crop disease app | Real, but about data not autonomy. Better for the AI and Bias chapters. | Mohanty, Hughes and Salathe (2016): 54,306 leaf images, 38 classes, 99.35% accuracy on held-out data from the same collection, much lower on field photos. We could not confirm an exact field figure. Dataset was not Kenyan. |
+| Chatbots for public service (Translators Without Borders) | Not usable as written. | TWB is real and has had a Kenya centre in Nairobi since 2012 that trains translators for Swahili health information. We found nothing linking TWB to a chatbot, and no source for the "15 to 20 percent speak English" figure. |
+| M-Pesa fraud detection with human analysts | Not usable as written. | The blog's "reality" is not sourced; the cited page is a Kenya AI blog post. Safaricom does say it uses AI for fraud monitoring (see Chapter 1 sources), but we found nothing on how its human analysts work. |
+
+Idea from podcast 054: contrast Amazon (hidden, low-paid reviewers, jobs removed
+from view) with M-Pesa (agents are visible, a whole network of local jobs).
+David's M-Pesa origin story (money sent as phone credit, then formalised into
+agents) is his account, not checked.

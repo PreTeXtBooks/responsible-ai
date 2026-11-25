@@ -5,31 +5,457 @@
 <!-- ================================================================= -->
 <!--
   NOTES (see also notes/case-study-plan.md):
-  Case study ideas: Amazon "Just Walk Out" for now, or the Kenyan
-  ChatGPT workers again (Chapter 2 has the full story). Also: the Meta
-  moderators' court cases in Kenya (read the rulings first).
-  Chapter 2 deliberately keeps the Sama / OpenAI story, so use a
-  different hidden-labour example here, or return to it briefly.
+  - Case study: Amazon "Just Walk Out" (contested reporting, Amazon disputes it).
+  - Podcast: episode 54, which contrasts it with M-Pesa ("phygital").
+  - Not used here, kept for later chapters: the Facebook moderators' case in
+    Kenya (Chapter 8, Who is Responsible?). Chapter 2 already has the Sama /
+    OpenAI story.
+  - The practice question and Try It are still to do.
 -->
 <chapter xml:id="ch-illusion-of-autonomy" xmlns:xi="http://www.w3.org/2001/XInclude">
     <title>AI and the Illusion of Autonomy</title>
 
     <introduction xml:id="intro-illusion-of-autonomy">
         <p>
-            TODO: a hook and a short overview of the chapter.
+            Imagine walking into a shop, picking up what you want, and walking
+            out again.
+            There's no till, no queue and no card to tap.
+            The receipt turns up on your phone.
+            When Amazon opened its first shop like this in Seattle in January
+            2018, the New York Times called it a store of the future.
         </p>
-    </introduction>
-
-    <!-- 1. A real case study (ideally Kenya-based). -->
-    <section xml:id="sec-illusion-of-autonomy-case-study">
-        <title>Case Study</title>
 
         <p>
-            TODO: case study.
+            The idea was that cameras and AI would work out what you'd picked
+            up, and charge your account.
+            No people needed.
+            Then, in 2024, reports said that wasn't the whole story.
         </p>
+
+        <p>
+            This chapter is about the gap between how AI looks and how it
+            works.
+            A lot of systems look as though they run by themselves.
+            Behind many of them there are people, labelling data, checking
+            answers and fixing mistakes, often a long way away, and often
+            where nobody can see them.
+            We saw one version of that in the last chapter.
+            Here we look at another, and ask what it means for a system to be
+            called <q>autonomous</q> at all.
+        </p>
+
+        <!-- Draft objectives: revise once the rest of the chapter is written. -->
+        <objectives>
+            <title>By the end of this chapter you should be able to</title>
+            <ol>
+                <li>
+                    <p>
+                        Explain what <q>autonomy</q> means for an AI system, and
+                        why it's often misunderstood.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Describe how human labour is used to train, monitor and
+                        correct AI tools, and give examples of humans in the
+                        loop.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Reflect on the social, emotional and economic
+                        consequences of hidden human labour.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Weigh up the ethics of AI systems that look autonomous
+                        but rely on unequal, and sometimes exploitative, human
+                        work.
+                    </p>
+                </li>
+            </ol>
+        </objectives>
+    </introduction>
+
+    <!-- ============================================================= -->
+    <!-- 1. Case study                                                  -->
+    <!-- ============================================================= -->
+    <section xml:id="sec-illusion-of-autonomy-case-study">
+        <title>Case Study: Amazon's Just Walk Out</title>
+
+        <subsection xml:id="subsec-illusion-of-autonomy-shop">
+            <title>The shop of the future</title>
+
+            <p>
+                Amazon opened its first Amazon Go shop to the public in Seattle
+                on 22 January 2018
+                (<xref ref="biblio-kuow-2024" text="custom">Denkmann and Cowan, 2024</xref>).
+                The idea was simple.
+                Cameras would register what you picked up, and charge it to
+                your account as you left
+                (<xref ref="biblio-kuow-2024" text="custom">Denkmann and Cowan, 2024</xref>).
+                Wikipedia describes it as a mix of computer vision, deep
+                learning and sensors, with cameras in the ceiling and weight
+                sensors on the shelves
+                (<xref ref="biblio-amazon-go-wikipedia" text="custom">Wikipedia, n.d.</xref>).
+            </p>
+
+            <p>
+                The technology was called Just Walk Out.
+                In 2020, Amazon began offering it to other retailers, and in
+                March 2021 it opened its first shop in London
+                (<xref ref="biblio-amazon-go-wikipedia" text="custom">Wikipedia, n.d.</xref>).
+                For shoppers, the attraction was obvious, because there were no
+                queues.
+                For Amazon, it was a showpiece for AI.
+            </p>
+        </subsection>
+
+        <subsection xml:id="subsec-illusion-of-autonomy-reports">
+            <title>What the reports said</title>
+
+            <p>
+                In April 2024, Theo Wayt, a reporter at The Information,
+                reported that Just Walk Out relied on a lot of human help.
+                According to the reporting, a team of about 1,000 workers in
+                India reviewed camera footage to confirm what people had bought
+                (<xref ref="biblio-kuow-2024" text="custom">Denkmann and Cowan, 2024</xref>).
+            </p>
+
+            <p>
+                He also reported that in 2022, about 700 out of every 1,000
+                sales were reviewed by people.
+                Some of those reviews were only because someone had picked an
+                item up and put it back.
+                Even so, Wayt said there were far more reviews than Amazon
+                would have liked
+                (<xref ref="biblio-kuow-2024" text="custom">Denkmann and Cowan, 2024</xref>).
+            </p>
+
+            <p>
+                There was a clue for customers.
+                Sometimes the receipt arrived hours after you'd left the shop.
+                That delay came from a reviewer double-checking the camera
+                footage
+                (<xref ref="biblio-kuow-2024" text="custom">Denkmann and Cowan, 2024</xref>).
+            </p>
+        </subsection>
+
+        <subsection xml:id="subsec-illusion-of-autonomy-dispute">
+            <title>Amazon's reply</title>
+
+            <p>
+                Amazon disputed this.
+                It called the claims <q>misleading and inaccurate</q>.
+                Its position is that human verification happened after the
+                initial point of sale in the shop, and that the workers were
+                only training the AI so it would become more accurate
+                (<xref ref="biblio-kuow-2024" text="custom">Denkmann and Cowan, 2024</xref>).
+            </p>
+
+            <p>
+                The radio station KUOW, which reported on this, summed it up as
+                somewhere in the middle.
+                Wayt's view was that Just Walk Out was an advanced technology
+                that still needed a lot of people in India to supply the
+                training data, so that it could recognise what you were picking
+                up
+                (<xref ref="biblio-kuow-2024" text="custom">Denkmann and Cowan, 2024</xref>).
+            </p>
+
+            <p>
+                Notice what both sides agree on.
+                People were doing work for this system, and it wasn't
+                <q>no people needed</q>.
+                What they disagree about is how much of that work was happening
+                as you shopped, and how much was training for later.
+                We don't know how much, and we haven't found any account of
+                what these workers were paid, or what their working conditions
+                were like.
+                So we can't say anything about that here.
+            </p>
+        </subsection>
+
+        <subsection xml:id="subsec-illusion-of-autonomy-why">
+            <title>Why hide the people?</title>
+
+            <p>
+                Benjamin Shestakofsky, a sociologist at the University of
+                Pennsylvania who studies how start-ups work, told KUOW that
+                paying people elsewhere to do menial tasks, like training AI
+                or moderating content, is common in the tech industry.
+                It's especially common in start-ups that rely on showy
+                technology to win investors
+                (<xref ref="biblio-kuow-2024" text="custom">Denkmann and Cowan, 2024</xref>).
+            </p>
+
+            <p>
+                His point is that hiding the human labour can make a company
+                look more valuable, because investors think they're getting
+                powerful AI with low costs.
+                It also makes the work cheaper.
+                If nobody knows the workers are there, it's easier to get away
+                with paying them as little as possible
+                (<xref ref="biblio-kuow-2024" text="custom">Denkmann and Cowan, 2024</xref>).
+                He was talking about the industry in general, and not about
+                Amazon in particular.
+            </p>
+        </subsection>
+
+        <subsection xml:id="subsec-illusion-of-autonomy-next">
+            <title>What happened next</title>
+
+            <p>
+                Amazon confirmed that it was laying off US staff who worked on
+                installing Just Walk Out in new shops, and on supporting it
+                (<xref ref="biblio-kuow-2024" text="custom">Denkmann and Cowan, 2024</xref>).
+                It also announced plans to replace it with Dash Carts, which
+                are smart shopping carts, in its Amazon Fresh shops
+                (<xref ref="biblio-amazon-go-wikipedia" text="custom">Wikipedia, n.d.</xref>).
+            </p>
+
+            <p>
+                Then, on 27 January 2026, Amazon announced that it was closing
+                its Amazon Go and Amazon Fresh shops.
+                It said it hadn't yet created a distinctive customer
+                experience with the right economics to grow at scale.
+                Just Walk Out carries on in other companies' premises, like
+                concession stands at sports stadiums
+                (<xref ref="biblio-axios-2026" text="custom">Axios, 2026</xref>).
+                We haven't seen anything that says the closures were because of
+                the human review.
+            </p>
+        </subsection>
+
+        <subsection xml:id="subsec-illusion-of-autonomy-lessons">
+            <title>What the case shows</title>
+
+            <p>
+                Whether it was a thousand people or fewer, the story that no
+                people were needed wasn't quite true.
+                People were part of the system.
+                They checked it, corrected it and trained it.
+                That's the human in the loop from Chapter 1.
+                What changes from system to system is whether you can see them.
+            </p>
+
+            <insight>
+                <p>
+                    <q>Autonomous</q> is a claim, and a claim you can test.
+                    When something is sold as automatic, ask who's checking it,
+                    where they are, and what they're paid.
+                </p>
+            </insight>
+
+            <p>
+                It also connects back to the last chapter.
+                The Kenyan workers who made ChatGPT safer, and the people who
+                reviewed shoppers' footage, were doing very different jobs.
+                But both were work that the finished product didn't mention.
+            </p>
+        </subsection>
     </section>
 
-    <!-- 2. A STACK question prompting the reader to think deeply. -->
+    <!-- ============================================================= -->
+    <!-- 2. Podcast                                                     -->
+    <!-- ============================================================= -->
+    <section xml:id="sec-illusion-of-autonomy-podcast">
+        <title>Hidden Jobs and Visible Jobs</title>
+
+        <introduction>
+            <p>
+                The ideas in this section come from a conversation between me
+                and David Stern, from the IDEMS Podcast
+                (<xref ref="biblio-podcast-054" text="custom">Clements and Stern, episode 54, n.d.</xref>).
+                It's about half an hour long.
+                It starts with Amazon's shops, and ends up somewhere else, which
+                is how most of our conversations go.
+                It's also available at
+                <url href="https://www.idems.international/podcast/054-beyond-the-hype-the-reality-of-ai-powered-shops/">idems.international</url>.
+            </p>
+
+            <figure xml:id="fig-illusion-of-autonomy-podcast">
+                <caption>The IDEMS Podcast, episode 54: Beyond the Hype, The Reality of AI-Powered Shops</caption>
+                <interactive xml:id="int-illusion-of-autonomy-podcast"
+                             iframe="https://www.idems.international/podcast-player/3836/054-beyond-the-hype-the-reality-of-ai-powered-shops.mp3"
+                             width="100%"
+                             aspect="8:1"/>
+            </figure>
+        </introduction>
+
+        <subsection xml:id="subsec-illusion-of-autonomy-indian-shops">
+            <title>Indian-powered shops</title>
+
+            <p>
+                David's first reaction when I mentioned the story was to call
+                them Indian-powered shops.
+                His understanding is that although there was a bit of AI
+                involved, it was mostly about moving the cashiers somewhere
+                else, to a processing unit where people watched videos in
+                India.
+                That has a lot less glitz than <q>AI-powered</q>, and as I
+                said, they weren't going to put it on the poster.
+                (This is his understanding, and as we've seen, Amazon disputes
+                how much of it is true.)
+            </p>
+
+            <p>
+                David's wider point is that almost all AI relies on a huge,
+                hidden human workforce, who write the code, label the data and
+                help the system to learn.
+                That's what we saw with the Kenyan workers in the last
+                chapter.
+            </p>
+        </subsection>
+
+        <subsection xml:id="subsec-illusion-of-autonomy-phygital">
+            <title>Phygital: M-Pesa</title>
+
+            <p>
+                David's example of technology doing it differently is M-Pesa.
+                Remember, M-Pesa is the mobile money service from Kenya.
+                His argument is that in a high-resource environment, people
+                think of technology as a way to remove humans.
+                In low-resource environments, powerful technology tends to
+                create jobs.
+            </p>
+
+            <p>
+                His version of the M-Pesa story goes like this.
+                People in cities sent money home to relatives in rural areas,
+                and many carried it back on buses.
+                That was dangerous, and buses were hijacked because they were
+                carrying so much cash.
+                Some people found a different way.
+                They bought a phone for their family in the village, and sent
+                credit for it.
+                The family could then charge neighbours to use the phone, so the
+                credit became money.
+            </p>
+
+            <p>
+                Someone noticed this and formalised it.
+                You could take your phone to an M-Pesa agent, pay a tiny fee,
+                and put money into your phone, or take it out again.
+                Pesa is the Swahili word for money, and M is for mobile.
+                David says anywhere you go across Africa now, the shops you see
+                most are M-Pesa shops, where people make a living from offering
+                these services.
+                (This is David's account, and we haven't checked it against
+                other sources.)
+            </p>
+
+            <p>
+                David uses the word <term>phygital</term> for this, meaning
+                physical as well as digital.
+                A phygital technology builds people into the system in a way
+                that you can see.
+            </p>
+
+            <insight>
+                <p>
+                    A good test for a technology is whether it creates more
+                    human interaction and visible jobs than it removes, or
+                    whether it moves them out of sight.
+                </p>
+            </insight>
+
+            <p>
+                By that test, M-Pesa is a good example, and a shop where the
+                cashier's job has been moved to a video review team in another
+                country isn't.
+                David gives a smaller example.
+                He had a two-minute chat with a cashier about a lot of
+                anchovies, and it left him feeling happy.
+                He argues that a good phygital idea creates more human
+                interaction than it removes.
+            </p>
+        </subsection>
+
+        <subsection xml:id="subsec-illusion-of-autonomy-ethics">
+            <title>Is it ethical?</title>
+
+            <p>
+                David is clear about his view.
+                He thinks employing people to watch videos in India, because
+                it's cheaper than employing cashiers in San Francisco or
+                London, is unethical.
+                He thinks those cashier jobs should be created where the shops
+                are.
+            </p>
+
+            <p>
+                But he doesn't want to be too hard on Amazon.
+                His reasoning is that they were trying to push the boundaries of
+                technology, found out that the technology wasn't where they
+                thought it was, and then stopped.
+                As he puts it, it's not their fault that AI has made promises it
+                couldn't yet keep.
+            </p>
+
+            <p>
+                I asked David what the incentive is for a company to keep
+                people, when people are expensive and software, once it's
+                built, isn't.
+                His answer is that good business isn't about maximising
+                short-term profit, and that if a company offers good service
+                and is still profitable, it can win out over time.
+                He admits that this isn't how it's playing out at the moment,
+                because short-term profit gets a lot of attention.
+            </p>
+
+            <p>
+                He's also confident that the problem Amazon was trying to solve
+                will be solved, in time.
+                What matters more, he says, is the human question of what kind
+                of society we want to build with the tools that we have.
+            </p>
+        </subsection>
+
+        <subsection xml:id="subsec-illusion-of-autonomy-summary">
+            <title>Summary</title>
+
+            <ul>
+                <li>
+                    <p>
+                        A lot of AI that looks autonomous depends on people who
+                        label data, check answers and fix mistakes.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Amazon's Just Walk Out was reported to rely heavily on
+                        reviewers in India.
+                        Amazon disputes how much.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Hiding human work can make a company look more
+                        valuable, and makes the work easier to underpay.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        A phygital technology, like M-Pesa, builds visible jobs
+                        and human contact into the system.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <q>Autonomous</q> is a claim to test, and the questions
+                        to ask are who's checking, where they are, and what
+                        they're paid.
+                    </p>
+                </li>
+            </ul>
+        </subsection>
+    </section>
+
+    <!-- ============================================================= -->
+    <!-- 3. STACK question                                              -->
+    <!-- ============================================================= -->
     <section xml:id="sec-illusion-of-autonomy-stack">
         <title>Practise</title>
 
@@ -38,25 +464,154 @@
         </p>
     </section>
 
-    <!-- 3. An illustrative worked example using software. -->
+    <!-- ============================================================= -->
+    <!-- 4. Illustrative example                                        -->
+    <!-- ============================================================= -->
     <section xml:id="sec-illusion-of-autonomy-worked-example">
         <title>Try It</title>
 
         <p>
-            TODO: worked example.
+            TODO: a hands-on activity.
         </p>
     </section>
 
-    <!-- 4. Exercises. -->
+    <!-- ============================================================= -->
+    <!-- 5. Exercises                                                   -->
+    <!-- ============================================================= -->
     <exercises xml:id="exercises-illusion-of-autonomy">
         <title>Exercises</title>
 
         <exercise xml:id="ex-illusion-of-autonomy-1">
+            <title>The illusion of autonomy</title>
             <statement>
                 <p>
-                    TODO: exercise.
+                    AI often looks automated and intelligent, but many systems
+                    rely heavily on human labour to label data, review offensive
+                    content or correct errors.
+                    How does that change what you think AI can and can't do?
+                </p>
+            </statement>
+        </exercise>
+
+        <exercise xml:id="ex-illusion-of-autonomy-2">
+            <title>Human in the loop</title>
+            <statement>
+                <p>
+                    In your own words, what is a human in the loop?
+                    Give one example from this chapter, and one from the last
+                    chapter.
+                </p>
+            </statement>
+        </exercise>
+
+        <exercise xml:id="ex-illusion-of-autonomy-3">
+            <title>Human in the loop, at what cost?</title>
+            <statement>
+                <p>
+                    Think about these questions.
+                    <ol>
+                        <li>
+                            Were you aware that AI systems rely on this kind of
+                            human labour?
+                        </li>
+                        <li>
+                            Should companies be more open about it?
+                            Why, or why not?
+                        </li>
+                        <li>
+                            What would you want a company to tell you about the
+                            people behind a product that's called <q>AI</q>?
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+        </exercise>
+
+        <exercise xml:id="ex-illusion-of-autonomy-4">
+            <title>Whose account do you trust?</title>
+            <statement>
+                <p>
+                    The reporting said about a thousand workers in India
+                    reviewed Just Walk Out sales.
+                    Amazon says they were mostly training the AI.
+                    What evidence would you want to see to decide which is
+                    closer to the truth, and who would have it?
+                </p>
+            </statement>
+        </exercise>
+
+        <exercise xml:id="ex-illusion-of-autonomy-5">
+            <title>Power and inequality</title>
+            <statement>
+                <p>
+                    Many of the workers behind AI, in this chapter and the last
+                    one, are in countries with lower incomes than the companies
+                    they work for.
+                    How do power and global inequality show up in the way AI is
+                    built?
+                    What does this say about who benefits from AI, and who pays
+                    the price?
+                </p>
+            </statement>
+        </exercise>
+
+        <exercise xml:id="ex-illusion-of-autonomy-6">
+            <title>Visible and hidden jobs</title>
+            <statement>
+                <p>
+                    Think of a technology where you live that has created jobs
+                    you can see, like M-Pesa agents, and one that has moved work
+                    out of sight.
+                    What's the difference between them, and who decided?
+                </p>
+            </statement>
+        </exercise>
+
+        <exercise xml:id="ex-illusion-of-autonomy-7">
+            <title>An honest label</title>
+            <statement>
+                <p>
+                    Imagine you're writing the label for a product that's
+                    advertised as <q>AI-powered</q>, but which relies on people
+                    checking its work.
+                    Write the label you'd want to see.
+                    What would you include, and what would the company probably
+                    want to leave out?
                 </p>
             </statement>
         </exercise>
     </exercises>
+
+    <!-- ============================================================= -->
+    <!-- Sources                                                        -->
+    <!-- ============================================================= -->
+    <references xml:id="references-illusion-of-autonomy">
+        <title>Sources</title>
+
+        <biblio type="raw" xml:id="biblio-kuow-2024">
+            Denkmann, L. and Cowan, A. (2024). Is Amazon's <q>Just Walk Out</q>
+            technology powered by AI or by hundreds of underpaid workers in
+            India? KUOW, 10 April 2024. Includes comments from Theo Wayt (The
+            Information) and Benjamin Shestakofsky (University of
+            Pennsylvania).
+        </biblio>
+
+        <biblio type="raw" xml:id="biblio-amazon-go-wikipedia">
+            Wikipedia. Amazon Go.
+            <url href="https://en.wikipedia.org/wiki/Amazon_Go"/>.
+        </biblio>
+
+        <biblio type="raw" xml:id="biblio-axios-2026">
+            Axios (2026). Amazon closing Fresh and Go stores as it expands
+            Whole Foods. 27 January 2026.
+            <url href="https://www.axios.com/2026/01/27/amazon-fresh-stores-closing-whole-foods-expansion"/>.
+        </biblio>
+
+        <biblio type="raw" xml:id="biblio-podcast-054">
+            Clements, L. and Stern, D. The IDEMS Podcast, episode 54: Beyond the
+            Hype, The Reality of AI-Powered Shops. Release date to be
+            confirmed.
+            <url href="https://www.idems.international/podcast/054-beyond-the-hype-the-reality-of-ai-powered-shops/"/>.
+        </biblio>
+    </references>
 </chapter>
