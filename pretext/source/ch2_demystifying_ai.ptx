@@ -817,34 +817,6 @@
     </section>
 
     <!-- ============================================================= -->
-    <!-- 3. STACK question                                              -->
-    <!-- ============================================================= -->
-    <section xml:id="sec-demystifying-ai-stack">
-        <title>Practise</title>
-
-        <p>
-            Here are three quick questions.
-            They check that the main ideas from this chapter have stuck.
-            Some of the numbers change each time you try them.
-        </p>
-
-        <exercise xml:id="ex-demystifying-ai-stack-birdsong">
-            <title>The birdsong app</title>
-            <stack source="stack/ch2_birdsong_app.xml" label="stk-demystifying-ai-birdsong"/>
-        </exercise>
-
-        <exercise xml:id="ex-demystifying-ai-stack-turing">
-            <title>The Turing test</title>
-            <stack source="stack/ch2_turing_test.xml" label="stk-demystifying-ai-turing"/>
-        </exercise>
-
-        <exercise xml:id="ex-demystifying-ai-stack-figures">
-            <title>The disputed figures</title>
-            <stack source="stack/ch2_disputed_figures.xml" label="stk-demystifying-ai-figures"/>
-        </exercise>
-    </section>
-
-    <!-- ============================================================= -->
     <!-- 4. Illustrative example                                        -->
     <!-- ============================================================= -->
     <section xml:id="sec-demystifying-ai-worked-example">
