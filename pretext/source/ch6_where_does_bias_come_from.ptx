@@ -4,57 +4,1106 @@
 <!--  Chapter 6: Where does Bias come from?  -->
 <!-- ================================================================= -->
 <!--
-  NOTES (see also notes/case-study-plan.md):
-  Case study ideas: proxy variables. Could tie in to the Chapter 1
-  lending example (Tala's signals), Weapons of Math Destruction, or
-  COMPAS. Ideally a new Kenyan example.
+  NOTES (see also notes/ch6-research.md):
+  - Framework: Cathy O'Neil's three claims, as described in Woodson's review
+    (2018): bad proxy variables, negative feedback loops, unsound statistical
+    techniques. We have the review, not the book itself.
+  - Case study: the SHA means test again (Chapter 4 told the story; this
+    chapter looks at the machinery). All facts are re-used from Chapter 4,
+    plus Lighthouse's electricity result.
+  - Podcasts: 172 (proxy variables), 269 (David and Kate, why better data
+    matters), 17 (how data lies; transcript only read through a summary).
+  - Davies and Douglas is a draft chapter (17 Nov 2020). Only the central idea
+    is used. We read about 40% of it closely.
+  - TODO: Try It needs the village survey data set and the video link.
+  - TODO: "AI world map: whose data is used?" (link needed).
+  - Practise (STACK) section removed on purpose. Questions go in the exercises.
 -->
 <chapter xml:id="ch-where-does-bias-come-from" xmlns:xi="http://www.w3.org/2001/XInclude">
     <title>Where does Bias come from?</title>
 
     <introduction xml:id="intro-where-does-bias-come-from">
         <p>
-            TODO: a hook and a short overview of the chapter.
+            Researchers working with farmers in West Africa want to know how
+            much millet small plots have produced.
+            They struggle to get reliable weights for the grain, so they weigh
+            the seed heads at harvest instead.
+            It turns out that this is a better measure.
+            The grain can be eaten, lost or damaged before it's weighed.
+            David tells the story in the IDEMS Podcast
+            (<xref ref="biblio-podcast-172" text="custom">Clements and Stern, episode 172, 2025</xref>).
         </p>
+
+        <p>
+            Now think about a household in Nairobi that's asked what its roof
+            is made of.
+            The answer helps to decide what the household pays for health
+            insurance.
+        </p>
+
+        <p>
+            Both are <term>proxies</term>.
+            They are something that's easy to measure, standing in for something
+            that's hard to measure.
+            The first one has been checked, and it works.
+            The second one is what we looked at in Chapter 4.
+            This chapter is about telling the difference.
+        </p>
+
+        <p>
+            Bias can't always be removed from an AI system.
+            But it can be recognised, reduced and managed, and that starts
+            with knowing where it comes from.
+            We look at three places.
+        </p>
+
+        <!-- Draft objectives: revise once the rest of the chapter is written. -->
+        <objectives>
+            <title>By the end of this chapter you should be able to</title>
+            <ol>
+                <li>
+                    <p>
+                        Describe Cathy O'Neil's three-part framework for
+                        recognising bias in AI.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Spot proxy variables, feedback loops and unsound
+                        statistics in real cases.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Explain how missing, unbalanced or unrepresentative
+                        data leads to harm.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Use the framework to evaluate a real AI system, and
+                        suggest improvements to its design or process.
+                    </p>
+                </li>
+            </ol>
+        </objectives>
     </introduction>
 
-    <!-- 1. A real case study (ideally Kenya-based). -->
+    <!-- ============================================================= -->
+    <!-- 1. The framework                                               -->
+    <!-- ============================================================= -->
+    <section xml:id="sec-where-does-bias-come-from-framework">
+        <title>Three Ways Bias Gets In</title>
+
+        <p>
+            Cathy O'Neil is a mathematician who built models for finance
+            companies and internet advertising firms before she wrote
+            <em>Weapons of Math Destruction</em>.
+            In the book she argues that harmful models, which she calls
+            weapons of math destruction, tend to go wrong in three ways
+            (<xref ref="biblio-woodson-2018" text="custom">Woodson, 2018</xref>).
+            This is her framework, not ours.
+            We use the description in Thomas Woodson's review of the book.
+        </p>
+
+        <definition xml:id="def-where-does-bias-come-from-proxy">
+            <title>Bad proxy variables</title>
+            <statement>
+                <p>
+                    A proxy is something easy to measure, which stands in for
+                    something hard to measure.
+                    It goes wrong when it isn't a good stand-in.
+                    O'Neil's example is that models often judge a person as
+                    risky or safe from where they live, who they know and
+                    their credit score.
+                    None of those measure whether the person is risky
+                    (<xref ref="biblio-woodson-2018" text="custom">Woodson, 2018</xref>).
+                </p>
+            </statement>
+        </definition>
+
+        <definition xml:id="def-where-does-bias-come-from-loop">
+            <title>Negative feedback loops</title>
+            <statement>
+                <p>
+                    A loop is how a system finds out that it was wrong.
+                    O'Neil's complaint is that analysts rarely update their
+                    models by trial, error and correction
+                    (<xref ref="biblio-woodson-2018" text="custom">Woodson, 2018</xref>).
+                </p>
+            </statement>
+        </definition>
+
+        <definition xml:id="def-where-does-bias-come-from-stats">
+            <title>Unsound statistical techniques</title>
+            <statement>
+                <p>
+                    Conclusions drawn from too little data, or from data that
+                    doesn't represent the people it's used on.
+                    O'Neil's example is that teachers are judged on the test
+                    scores of 25 to 30 students.
+                    Statisticians know you can't conclude much from a sample
+                    that small
+                    (<xref ref="biblio-woodson-2018" text="custom">Woodson, 2018</xref>).
+                </p>
+            </statement>
+        </definition>
+
+        <p>
+            The phrase <q>feedback loop</q> is used for two different things,
+            and it helps to keep them apart.
+        </p>
+
+        <ul>
+            <li>
+                <p>
+                    <em>A loop that corrects.</em>
+                    In Chapter 2, the Post Office system got better because its
+                    mistakes were caught and fed back.
+                    The birdsong app had no such loop, and its mistakes stayed
+                    hidden.
+                </p>
+            </li>
+            <li>
+                <p>
+                    <em>A loop that reinforces.</em>
+                    O'Neil's example is policing.
+                    If police focus on certain crimes in one part of the
+                    city, they find more crime there, which seems to justify
+                    more policing, which finds more crime
+                    (<xref ref="biblio-woodson-2018" text="custom">Woodson, 2018</xref>).
+                </p>
+            </li>
+        </ul>
+
+        <p>
+            In Woodson's account, O'Neil's complaint about models that aren't
+            updated is about the first kind, and her policing example is the
+            second.
+            Woodson asks in his review why some feedback loops improve a model
+            while others trap people.
+            That's a good question to keep in mind.
+        </p>
+    </section>
+
+    <!-- ============================================================= -->
+    <!-- 2. Case study                                                  -->
+    <!-- ============================================================= -->
     <section xml:id="sec-where-does-bias-come-from-case-study">
-        <title>Case Study</title>
+        <title>Case Study: Three Weak Points in One Score</title>
+
+        <subsection xml:id="subsec-where-does-bias-come-from-recap">
+            <title>Back to SHA</title>
+
+            <p>
+                In Chapter 4 we told the story of Kenya's health insurance
+                means test.
+                SHA uses 43 pieces of information about a household, like its
+                roof, toilet and water supply, to estimate what the household
+                spends, and the premium is 2.75% of that
+                (<xref ref="biblio-lighthouse-2026" text="custom">Lighthouse Reports, 2026</xref>).
+                Here we look at how it's built, using O'Neil's three
+                questions.
+                Most of the facts are the same as in Chapter 4.
+            </p>
+        </subsection>
+
+        <subsection xml:id="subsec-where-does-bias-come-from-sha-proxies">
+            <title>The proxies</title>
+
+            <p>
+                SHA doesn't know what a household earns or spends.
+                What it has is the answers to the questions.
+                So everything in the test is a proxy.
+                That's the same idea as in Chapter 1, where the loan apps look at
+                behaviour on your phone.
+                Neither the phone behaviour nor the roof is a direct measure of
+                what the model wants to know.
+                They are guesses from things you can see, which happen to
+                correlate with it in the data the model learned from.
+            </p>
+
+            <p>
+                Lighthouse looked at which households the proxies get wrong.
+                The model has learnt a real link between electricity and
+                wealth, because households with electricity are less often
+                poor.
+                But among households that are poor <em>and</em> have
+                electricity, 56% were predicted not to be poor.
+                Lighthouse found the same pattern for households that are mostly
+                women, and for poor households where the head had finished
+                secondary school.
+                Poor households in richer counties were also misclassified more
+                often than poor households in poorer ones
+                (<xref ref="biblio-lighthouse-2026" text="custom">Lighthouse Reports, 2026</xref>).
+            </p>
+
+            <p>
+                That's what a bad proxy looks like.
+                It works on average.
+                It fails for the people who don't fit the pattern, and those
+                are poor households that happen to have a feature that's
+                usually a sign of being better off.
+            </p>
+        </subsection>
+
+        <subsection xml:id="subsec-where-does-bias-come-from-sha-data">
+            <title>The data</title>
+
+            <p>
+                The weights in the formula were set using the 2021 Kenya
+                Continuous Household Survey.
+                The consultants who checked the model before launch, IDinsight,
+                said that the survey was out of date.
+                According to the reporters, they also said that it had too many
+                middle-income households in it and very few data points from
+                the poorest areas
+                (<xref ref="biblio-au-2026" text="custom">Africa Uncensored, 2026</xref>).
+            </p>
+
+            <p>
+                So the model knew the least about the households it was most
+                likely to get wrong.
+            </p>
+
+            <p>
+                There's a second weak point in the data.
+                Lighthouse tested the model on answers from a household survey.
+                The real form is filled in online, by households themselves.
+                Lighthouse says that could change the results
+                (<xref ref="biblio-lighthouse-2026" text="custom">Lighthouse Reports, 2026</xref>).
+            </p>
+        </subsection>
+
+        <subsection xml:id="subsec-where-does-bias-come-from-sha-loop">
+            <title>The loop</title>
+
+            <p>
+                Is there a way for SHA to find out that it's wrong?
+            </p>
+
+            <p>
+                IDinsight recommended that people should be able to contest
+                the prediction made about them
+                (<xref ref="biblio-au-2026" text="custom">Africa Uncensored, 2026</xref>).
+                When Florence Atieno appealed through an automated line, her
+                appeal was turned down without a reason
+                (<xref ref="biblio-lighthouse-2026" text="custom">Lighthouse Reports, 2026</xref>).
+                In March 2026, the High Court ordered a clear and accessible
+                complaints mechanism
+                (<xref ref="biblio-capital-2026" text="custom">Wakaya, 2026</xref>).
+            </p>
+
+            <p>
+                And the model itself?
+                In November 2025, SHA told Africa Uncensored that it was still
+                using the original model.
+                The reporters say it's unclear whether SHA adopted any of
+                IDinsight's changes
+                (<xref ref="biblio-au-2026" text="custom">Africa Uncensored, 2026</xref>).
+                That's closer to the birdsong app than to the Post Office.
+            </p>
+
+            <p>
+                We haven't found evidence of a reinforcing loop in this case.
+                The one that matters here is the loop that's missing.
+            </p>
+        </subsection>
+
+        <subsection xml:id="subsec-where-does-bias-come-from-sha-table">
+            <title>Putting it together</title>
+
+            <table xml:id="tbl-where-does-bias-come-from-sha">
+                <title>SHA's means test, through O'Neil's three questions</title>
+                <tabular>
+                    <row header="yes">
+                        <cell>Question</cell>
+                        <cell>What we see in SHA's means test</cell>
+                    </row>
+
+                    <row>
+                        <cell>Bad proxies?</cell>
+                        <cell>43 answers about the home and household stand in for
+                        what the household spends.
+                        Poor households that have electricity, or whose head
+                        finished secondary school, are misclassified more
+                        often.</cell>
+                    </row>
+
+                    <row>
+                        <cell>Unsound statistics?</cell>
+                        <cell>The survey behind the model is out of date, and has
+                        few of the poorest households in it.
+                        The model's errors are largest at the extremes.</cell>
+                    </row>
+
+                    <row>
+                        <cell>A loop to correct it?</cell>
+                        <cell>An automated appeal refused without a reason, and
+                        no clear sign that the model has been updated.</cell>
+                    </row>
+                </tabular>
+            </table>
+
+            <p>
+                The three don't sit side by side.
+                They feed each other.
+                A survey with few poor households makes the proxies fit them
+                badly.
+                And because nothing is fed back, the problem stays.
+            </p>
+
+            <insight>
+                <p>
+                    When you look for where bias comes from, don't expect to
+                    find just one place.
+                    The weak points in a system tend to line up.
+                </p>
+            </insight>
+        </subsection>
+    </section>
+
+    <!-- ============================================================= -->
+    <!-- 3. Podcast 172: proxies                                        -->
+    <!-- ============================================================= -->
+    <section xml:id="sec-where-does-bias-come-from-proxies">
+        <title>Proxies Done Right, and Wrong</title>
+
+        <introduction xml:id="intro-where-does-bias-come-from-proxies">
+            <p>
+                This section comes from a conversation between me and David
+                Stern about proxy variables, which I'd been thinking about
+                after reading O'Neil's book
+                (<xref ref="biblio-podcast-172" text="custom">Clements and Stern, episode 172, 2025</xref>).
+                It's about 25 minutes long, and it's available at
+                <url href="https://www.idems.international/podcast/172-proxy-variables/">idems.international</url>.
+            </p>
+
+            <figure xml:id="fig-where-does-bias-come-from-podcast-172">
+                <caption>The IDEMS Podcast, episode 172: Proxy Variables</caption>
+                <interactive xml:id="int-where-does-bias-come-from-podcast-172"
+                             iframe="https://www.idems.international/podcast-player/7940/172-proxy-variables.mp3"
+                             width="100%"
+                             aspect="8:1"/>
+            </figure>
+        </introduction>
+
+        <subsection xml:id="subsec-where-does-bias-come-from-millet">
+            <title>A proxy done right</title>
+
+            <p>
+                My definition of a proxy is that you can't observe something
+                directly, so you use something correlated with it as a stand-in.
+            </p>
+
+            <p>
+                David's favourite example is the millet.
+                In some work in West Africa, researchers were struggling to get
+                reliable weights for the grain from small plots.
+                They found that weighing the seed heads at harvest was more
+                reliable.
+                You could do it on the spot, whereas the grain had to wait
+                until it was taken off the heads, and in the meantime it might
+                be eaten, lost or damaged.
+                They checked it against data they trusted, and the correlation
+                was extremely high.
+                It was also cheaper.
+            </p>
+
+            <p>
+                Even then, David adds a warning.
+                It worked for that millet, in that study.
+                He says that if you were breeding a new variety and you chose
+                it for heavy heads, you could end up with a variety that has
+                lots of head and no grain.
+                What you're using the proxy for matters.
+            </p>
+        </subsection>
+
+        <subsection xml:id="subsec-where-does-bias-come-from-schools">
+            <title>Proxies for school quality</title>
+
+            <p>
+                Then we move on to a proxy that goes wrong.
+                How would you compare schools?
+                You can't measure how good an education is, so you might use
+                grades.
+            </p>
+
+            <p>
+                David points out that if schools are judged and funded on
+                grades, a school has a reason not to take weak students.
+                (He says it's an exaggeration, and we were being extreme.)
+                And a school that takes in students with learning difficulties
+                could be doing excellent work and still look bad on the
+                indicator.
+            </p>
+
+            <p>
+                He also tells a story from Tanzania.
+                An indicator of school quality used in many projects was the
+                ratio of staff to students.
+                His account is that the country did very well at bringing the
+                ratio down, by training more teachers, and that it was cheaper
+                to train arts teachers than science teachers.
+                They ended up with six times as many arts teachers as science
+                teachers.
+                Arts teachers taught about four hours a week, and science
+                teachers about 24.
+                Students saw that the arts looked easier, and there's now a
+                shortage of scientists.
+                That's David's account, and we haven't checked it.
+                His summary is that it was a misinterpretation of an
+                indicator.
+            </p>
+        </subsection>
+
+        <subsection xml:id="subsec-where-does-bias-come-from-rankings">
+            <title>When the proxy becomes the target</title>
+
+            <p>
+                My example from O'Neil's book is the US university rankings.
+                She describes how the rankings choose their measures, and how
+                universities then play the game.
+                Fees weren't one of the measures, for example, so a university
+                can charge what it likes.
+                Admissions staff know what the model wants, and applicants
+                with money can pay for help with their CVs to match.
+            </p>
+
+            <p>
+                David's point is the one to take away.
+                If an indicator is a proxy for quality, and then everybody
+                works towards the indicator, it can stop being a good proxy.
+                People are no longer working hard at quality.
+                They're working hard at the indicator, and the link between the
+                two weakens.
+                (People sometimes call this Goodhart's law.)
+            </p>
+        </subsection>
+
+        <subsection xml:id="subsec-where-does-bias-come-from-proxies-summary">
+            <title>Summary</title>
+
+            <ul>
+                <li>
+                    <p>
+                        A proxy can be better than the thing you wanted to
+                        measure, but only if you've checked it.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        What you're using the proxy for matters.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        When people aim at a proxy, it can stop being a good one.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Always ask <q>so what?</q>.
+                        What is it about this variable that's connected to the
+                        outcome?
+                    </p>
+                </li>
+            </ul>
+        </subsection>
+    </section>
+
+    <!-- ============================================================= -->
+    <!-- 4. Why you cannot just delete the variable                     -->
+    <!-- ============================================================= -->
+    <section xml:id="sec-where-does-bias-come-from-delete">
+        <title>Why You Can't Just Delete the Variable</title>
 
         <p>
-            TODO: case study.
+            In Chapter 4 we saw that COMPAS, the risk score used in US courts,
+            doesn't ask about race
+            (<xref ref="biblio-propublica-2016" text="custom">Angwin et al., 2016</xref>).
+            ProPublica still found that it was wrong in different ways for
+            Black and white defendants.
+            How can that happen?
+        </p>
+
+        <p>
+            Two academics, Benjamin Davies and Thomas Douglas, give an
+            answer in a draft chapter from 2020.
+            They say that you can leave race out of a model, but if race is
+            related to the outcome in the data, a machine learning tool may
+            learn a combination of other factors that does the same job.
+            They call it a perfect proxy for race.
+            If that happens, leaving race out does nothing to weaken the link
+            between a person's race and the risk the tool gives them
+            (<xref ref="biblio-davies-douglas-2020" text="custom">Davies and Douglas, 2020</xref>).
+        </p>
+
+        <p>
+            Their paper is mainly about whether this is as wrong as using race
+            directly, which is a hard question in ethics.
+            They don't give a simple answer, and say that it depends on the
+            reason you think discrimination is wrong.
+            The part we need is the idea.
+            Deleting a sensitive variable isn't enough, because other
+            variables can carry the same information.
+        </p>
+
+        <p>
+            That's why we say bias is managed, and not removed.
+            You have to look at what the model does, as well as what it's given.
         </p>
     </section>
 
-    <!-- 2. A STACK question prompting the reader to think deeply. -->
-    <section xml:id="sec-where-does-bias-come-from-stack">
-        <title>Practise</title>
+    <!-- ============================================================= -->
+    <!-- 5. Podcast 269: feedback and data quality                      -->
+    <!-- ============================================================= -->
+    <section xml:id="sec-where-does-bias-come-from-feedback">
+        <title>One Internet, and No Way Back</title>
 
-        <p>
-            TODO: STACK question(s) to go here.
-        </p>
+        <introduction xml:id="intro-where-does-bias-come-from-feedback">
+            <p>
+                This section comes from a conversation between David and Kate
+                Fleming, another director at IDEMS, about what makes data
+                good
+                (<xref ref="biblio-podcast-269" text="custom">Stern and Fleming, episode 269, 2026</xref>).
+                It's part of a series that responds to Karen Hao's book,
+                <em>Empire of AI</em>.
+                It's about half an hour long, and it's available at
+                <url href="https://www.idems.international/podcast/269-why-better-data-matters/">idems.international</url>.
+            </p>
+
+            <figure xml:id="fig-where-does-bias-come-from-podcast-269">
+                <caption>The IDEMS Podcast, episode 269: Why Better Data Matters</caption>
+                <interactive xml:id="int-where-does-bias-come-from-podcast-269"
+                             iframe="https://www.idems.international/podcast-player/12557/269-why-better-data-matters.mp3"
+                             width="100%"
+                             aspect="8:1"/>
+            </figure>
+        </introduction>
+
+        <subsection xml:id="subsec-where-does-bias-come-from-one-internet">
+            <title>We have but one internet</title>
+
+            <p>
+                Kate starts with a quote from Ilya Sutskever, a co-founder of
+                OpenAI, in late 2024.
+                Computers keep getting more powerful, she reads, but the data
+                isn't growing, because we have but one internet.
+            </p>
+
+            <p>
+                David's response is that the internet isn't high-quality
+                data.
+                To show it, he tells a story about something that happened to
+                me.
+                I was bouldering, and I hurt my ankle, and I wanted to know how
+                high the wall was that I'd fallen from.
+                An AI answer told me that the centre had just built a 25-foot
+                bouldering wall.
+                (Kate remembers it as 25 metres, which is even more absurd.)
+                That sounded much too high.
+                I tracked it down, and the source was a post from the centre
+                that was an April Fool's joke.
+                The AI had picked it up, and couldn't tell it from a real
+                announcement.
+            </p>
+        </subsection>
+
+        <subsection xml:id="subsec-where-does-bias-come-from-one-way">
+            <title>A one-way street</title>
+
+            <p>
+                David's point is that if the centre had been able to go back
+                and say that it was a joke, and to ignore it, that would have
+                fixed it.
+                There was no way to do that.
+                He describes the process as one way: data is pulled out from
+                wherever it's found, and nothing goes back to check it.
+            </p>
+
+            <p>
+                Kate adds that humans are used to clean up some of this
+                data, through what's called reinforcement learning from human
+                feedback.
+                But some data never gets flagged as needing a check, and is just
+                accepted as fact.
+                David says that there's a gap between the people who give
+                feedback and the people who own the data.
+                He says the process is a deliberate choice, built on
+                extraction.
+            </p>
+
+            <p>
+                And he says that once you've extracted data, you've lost the
+                knowledge about its context that you'd have had if it had stayed
+                with the people who own it.
+                He gives Wikipedia as a better example, because it has a
+                process for settling disagreements.
+                It isn't perfect, he says, but it's more reliable than much of
+                the internet.
+            </p>
+        </subsection>
+
+        <subsection xml:id="subsec-where-does-bias-come-from-loop-types">
+            <title>Back to the loops</title>
+
+            <p>
+                This is the first kind of loop from earlier in the chapter.
+                The Post Office had a way for mistakes to come back.
+                The birdsong app didn't.
+                And the AI that told me about the wall didn't either.
+            </p>
+
+            <p>
+                It's why a loop is a design choice.
+                Someone has to decide who can say that something is wrong,
+                and where that goes.
+            </p>
+        </subsection>
     </section>
 
-    <!-- 3. An illustrative worked example using software. -->
+    <!-- ============================================================= -->
+    <!-- 6. Podcast 17: how data lies                                   -->
+    <!-- ============================================================= -->
+    <section xml:id="sec-where-does-bias-come-from-data-lies">
+        <title>How Data Lies</title>
+
+        <introduction xml:id="intro-where-does-bias-come-from-data-lies">
+            <p>
+                The third question is about statistics.
+                This section comes from another conversation between me and
+                David, in our responsible AI series
+                (<xref ref="biblio-podcast-017" text="custom">Clements and Stern, episode 17, n.d.</xref>).
+                It's about 24 minutes long, and it's available at
+                <url href="https://www.idems.international/podcast/017-responsible-ai-how-data-lies/">idems.international</url>.
+            </p>
+
+            <figure xml:id="fig-where-does-bias-come-from-podcast-017">
+                <caption>The IDEMS Podcast, episode 17: Responsible AI, How Data Lies</caption>
+                <interactive xml:id="int-where-does-bias-come-from-podcast-017"
+                             iframe="https://www.idems.international/podcast-player/3086/017-responsible-ai-how-data-lies.mp3"
+                             width="100%"
+                             aspect="8:1"/>
+            </figure>
+        </introduction>
+
+        <subsection xml:id="subsec-where-does-bias-come-from-simpson">
+            <title>The same data, two stories</title>
+
+            <p>
+                David's example is Simpson's paradox, where a trend in the
+                overall data reverses when you split it into groups.
+                His example is digital literacy.
+                Across a whole population, digital skills look like they fall
+                with age.
+                But within each age group, people's skills rise over time.
+                Older people just start from a lower level.
+            </p>
+
+            <p>
+                If you read only the overall trend, you'd conclude that older
+                people are getting worse, and that training them is pointless.
+                David says that would be wrong, and that training them is
+                useful.
+            </p>
+
+            <p>
+                His rule is that you shouldn't make <q>data-driven</q> decisions.
+                You should make intelligent decisions that use data.
+                The data has no answers, so you have to question it.
+            </p>
+        </subsection>
+
+        <subsection xml:id="subsec-where-does-bias-come-from-small-samples">
+            <title>Too little data</title>
+
+            <p>
+                O'Neil's own example is how teachers are judged.
+                A teacher may be assessed on the test scores of 25 or 30
+                students, and a sample that small can't support a firm
+                conclusion
+                (<xref ref="biblio-woodson-2018" text="custom">Woodson, 2018</xref>).
+                A teacher who has a difficult class in one year could look like a
+                bad teacher.
+                It's the same mistake as reading a lot into a small group.
+            </p>
+        </subsection>
+
+        <subsection xml:id="subsec-where-does-bias-come-from-missing">
+            <title>The data that isn't there</title>
+
+            <p>
+                There are two kinds of data that aren't there.
+            </p>
+
+            <definition xml:id="def-where-does-bias-come-from-known-unknowns">
+                <title>Known unknowns</title>
+                <statement>
+                    <p>
+                        Data that you know is missing.
+                        An NA in a cell in a spreadsheet is one.
+                    </p>
+                </statement>
+            </definition>
+
+            <definition xml:id="def-where-does-bias-come-from-unknown-unknowns">
+                <title>Unknown unknowns</title>
+                <statement>
+                    <p>
+                        Data that you don't know is missing.
+                        These are harder, because nothing in the data tells
+                        you that they're not there.
+                    </p>
+                </statement>
+            </definition>
+
+            <p>
+                The second kind is where bias often hides.
+                In Chapter 5, David said that nobody has the image bank to
+                train pest and disease apps on the plants and pests of the
+                Sahel.
+                An app built without that data would look fine to anyone who
+                didn't know what was missing.
+                SHA's survey, with few of the poorest households in it, is
+                another example.
+            </p>
+
+            <!-- TODO: add the "AI world map: whose data is used?" visualisation
+                 once we have the link. -->
+        </subsection>
+
+        <subsection xml:id="subsec-where-does-bias-come-from-data-lies-summary">
+            <title>Summary</title>
+
+            <ul>
+                <li>
+                    <p>
+                        The same data can tell two stories, depending on how you
+                        group it.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Small samples can't support big conclusions.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        The data you know is missing is a problem.
+                        The data you don't know is missing is a bigger one.
+                    </p>
+                </li>
+            </ul>
+        </subsection>
+    </section>
+
+    <!-- ============================================================= -->
+    <!-- 7. Illustrative example                                        -->
+    <!-- ============================================================= -->
     <section xml:id="sec-where-does-bias-come-from-worked-example">
-        <title>Try It</title>
+        <title>Try It: Is It the Village?</title>
 
         <p>
-            TODO: worked example.
+            Here's a small example of finding a proxy.
+            A survey was done in four villages, to find out what affects the
+            yield of rice.
+            For each field, it recorded the village, the size of the field,
+            the amount of fertiliser, and the variety of rice (Old, New or
+            Traditional).
+        </p>
+
+        <p>
+            When you compare the villages, two of them have lower yields than
+            the other two.
+            In an analysis of variance, the village accounts for a lot of the
+            variation in yield.
+            The variation between villages is large compared with what's
+            left over, which is a mean square of about 464 against 111.
+        </p>
+
+        <p>
+            But the first question to ask is <q>so what?</q>.
+            What is it about a village that changes how much rice grows?
+            Rainfall and soil type could be the answer, but they weren't
+            measured.
+            So maybe village is standing in for them.
+        </p>
+
+        <p>
+            Fertiliser and variety were measured.
+            When you put them into the model, the left-over variation drops to
+            about 23, and adding the village makes no difference at all.
+            The villages looked important because the farmers in some of them
+            used higher-yielding varieties and more fertiliser.
+            Village was a proxy.
+        </p>
+
+        <!-- TODO: add the data set and the steps to repeat the analysis in R,
+             once the data and the video link have been supplied. -->
+
+        <p>
+            Think about what you'd have done if you'd stopped at the village.
+            You might have sent help to the wrong place, or decided that the
+            villages with low yields were just worse at farming.
         </p>
     </section>
 
-    <!-- 4. Exercises. -->
+    <!-- ============================================================= -->
+    <!-- 8. Exercises                                                   -->
+    <!-- ============================================================= -->
     <exercises xml:id="exercises-where-does-bias-come-from">
         <title>Exercises</title>
 
         <exercise xml:id="ex-where-does-bias-come-from-1">
+            <title>Which of the three?</title>
             <statement>
                 <p>
-                    TODO: exercise.
+                    Choose a case from the course: SHA, the Tala loan app,
+                    COMPAS, the Dutch childcare scandal, or the AI detectors.
+                    Think about these questions.
+                    <ol>
+                        <li>
+                            Is there a proxy?
+                            What is it standing in for, and who does it get
+                            wrong?
+                        </li>
+                        <li>
+                            Is there a loop?
+                            Is it the kind that corrects, or the kind that
+                            reinforces?
+                            Is it there, or missing?
+                        </li>
+                        <li>
+                            Is there a problem with the data or the statistics?
+                            Is there something missing, too little of it, or
+                            unrepresentative?
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+        </exercise>
+
+        <exercise xml:id="ex-where-does-bias-come-from-2">
+            <title>Spot the proxy</title>
+            <statement>
+                <p>
+                    A government wants to help students from poorer families,
+                    but it doesn't have full income data.
+                    It decides to use the type of school a student goes to as a
+                    stand-in for family income.
+                    Public school students count as poorer.
+                    Think about these questions.
+                    <ol>
+                        <li>
+                            Who would this get right most of the time?
+                        </li>
+                        <li>
+                            Who would it get wrong?
+                            Think of a student at a public school and a student
+                            at a low-cost private school.
+                        </li>
+                        <li>
+                            What could you do to make it fairer?
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+        </exercise>
+
+        <exercise xml:id="ex-where-does-bias-come-from-3">
+            <title>Ask <q>so what?</q></title>
+            <statement>
+                <p>
+                    In the rice survey, the villages seemed to explain yield,
+                    until fertiliser and variety were added.
+                    Think of a pattern you've seen in data, or in the news,
+                    where one thing seems to explain another.
+                    What might it be standing in for?
+                    Who could you ask to find out?
+                </p>
+            </statement>
+        </exercise>
+
+        <exercise xml:id="ex-where-does-bias-come-from-4">
+            <title>When the target becomes the problem</title>
+            <statement>
+                <p>
+                    David's Tanzania story is about aiming for a good
+                    staff-student ratio and ending up with too few science
+                    teachers.
+                    Pick an indicator that's used where you live, for a school, a
+                    clinic, a bank or a business.
+                    Think about these questions.
+                    <ol>
+                        <li>
+                            What is it meant to stand in for?
+                        </li>
+                        <li>
+                            How could someone hit the target without
+                            improving the real thing?
+                        </li>
+                        <li>
+                            How could you set it up so that this is harder?
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+        </exercise>
+
+        <exercise xml:id="ex-where-does-bias-come-from-5">
+            <title>The loan app again</title>
+            <statement>
+                <p>
+                    In Chapter 1, the loan app looked at signals like how many
+                    apps you have on your phone, and how thoroughly you fill in
+                    the form.
+                    Think about these questions.
+                    <ol>
+                        <li>
+                            What are those signals standing in for?
+                        </li>
+                        <li>
+                            Who might they get wrong?
+                        </li>
+                        <li>
+                            What data would the app never see, and what
+                            would that mean for people who were refused a
+                            loan?
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+        </exercise>
+
+        <exercise xml:id="ex-where-does-bias-come-from-6">
+            <title>A way back</title>
+            <statement>
+                <p>
+                    An AI tool says that a climbing centre built a
+                    25-foot wall, because of an April Fool's post.
+                    Think about these questions.
+                    <ol>
+                        <li>
+                            Who is the person who could correct it?
+                        </li>
+                        <li>
+                            How would they get the message to the people
+                            who run the tool?
+                        </li>
+                        <li>
+                            Would they be able to tell if it had worked?
+                        </li>
+                        <li>
+                            What about someone with less power than a business,
+                            whose false information is spreading?
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+        </exercise>
+
+        <exercise xml:id="ex-where-does-bias-come-from-7">
+            <title>Known and unknown unknowns</title>
+            <statement>
+                <p>
+                    Think about data on health, farming or education in your
+                    area.
+                    Give an example of data that you know is missing.
+                    Then give an example of data that might be missing that you
+                    couldn't easily know about.
+                    How would you find out?
+                </p>
+            </statement>
+        </exercise>
+
+        <exercise xml:id="ex-where-does-bias-come-from-8">
+            <title>Too small a sample</title>
+            <statement>
+                <p>
+                    A teacher is judged on the test scores of 25 or 30
+                    students.
+                    Think about these questions.
+                    <ol>
+                        <li>
+                            What could make a good teacher's results look poor
+                            in one year?
+                        </li>
+                        <li>
+                            What would you want to see before making a
+                            decision about a teacher's job?
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+        </exercise>
+
+        <exercise xml:id="ex-where-does-bias-come-from-9">
+            <title>Leaving it out</title>
+            <statement>
+                <p>
+                    COMPAS doesn't ask about race, but its results still differ
+                    by race.
+                    In your own words, why isn't leaving a variable out enough?
+                    Can you think of something in a Kenyan data set, like a
+                    county or a language, that could stand in for something a
+                    model isn't supposed to use?
+                </p>
+            </statement>
+        </exercise>
+
+        <exercise xml:id="ex-where-does-bias-come-from-10">
+            <title>Evaluate a system</title>
+            <statement>
+                <p>
+                    Choose a real AI or data system that you know about.
+                    Use O'Neil's three questions to evaluate it.
+                    Then suggest one change to its design and one change to the
+                    way people use it.
+                    Which of the three problems would each change help with?
                 </p>
             </statement>
         </exercise>
     </exercises>
+
+    <!-- ============================================================= -->
+    <!-- Sources                                                        -->
+    <!-- ============================================================= -->
+    <references xml:id="references-where-does-bias-come-from">
+        <title>Sources</title>
+
+        <biblio type="raw" xml:id="biblio-woodson-2018">
+            Woodson, T. (2018). Weapons of math destruction (book review).
+            Journal of Responsible Innovation, 5(3), 361-363. A review of
+            Cathy O'Neil's <em>Weapons of Math Destruction</em> (Crown, 2016).
+            <url href="https://doi.org/10.1080/23299460.2018.1495027"/>.
+        </biblio>
+
+        <biblio type="raw" xml:id="biblio-davies-douglas-2020">
+            Davies, B. and Douglas, T. (2020). Learning to discriminate: the
+            perfect proxy problem in artificially intelligent criminal
+            sentencing. Draft of 17 November 2020, commissioned for
+            <em>Principled Sentencing and Artificial Intelligence</em>, edited
+            by J. Roberts and J. Ryberg.
+        </biblio>
+
+        <biblio type="raw" xml:id="biblio-podcast-172">
+            Clements, L. and Stern, D. (2025). The IDEMS Podcast, episode 172:
+            Proxy Variables. 4 July 2025.
+            <url href="https://www.idems.international/podcast/172-proxy-variables/"/>.
+        </biblio>
+
+        <biblio type="raw" xml:id="biblio-podcast-269">
+            Stern, D. and Fleming, K. (2026). The IDEMS Podcast, episode 269:
+            Why Better Data Matters. 9 June 2026.
+            <url href="https://www.idems.international/podcast/269-why-better-data-matters/"/>.
+        </biblio>
+
+        <biblio type="raw" xml:id="biblio-podcast-017">
+            Clements, L. and Stern, D. The IDEMS Podcast, episode 17: Responsible
+            AI, How Data Lies. Release date to be confirmed.
+            <url href="https://www.idems.international/podcast/017-responsible-ai-how-data-lies/"/>.
+        </biblio>
+    </references>
 </chapter>
