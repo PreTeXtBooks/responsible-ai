@@ -4,58 +4,1191 @@
 <!--  Chapter 7: Core Principles  -->
 <!-- ================================================================= -->
 <!--
-  NOTES (see also notes/case-study-plan.md):
-  Case study ideas: regulation in Kenya, or regulation by a company.
-  Leads to check: the Data Protection Act 2019 (section 35 is already
-  in Chapter 1), Kenya's national AI strategy, Central Bank of Kenya
-  digital credit rules.
+  NOTES (see also notes/ch7-research.md):
+  - Case study: how Kenya has written down its AI principles, 2025 to 2026.
+    The main source is the July 2026 policy (226 pages, read from the PDF
+    Lily supplied). The af.net "Responsible AI Framework" article was NOT
+    used: we could not find it reported anywhere else.
+  - Podcasts: 16 (regulation, 2023), 6 (Bletchley Park, 2023), 132 (Paris
+    summit, 2025), 37 (Gemini images). Episode 35 is in Chapter 5.
+  - Paris statement facts are from the Elysee page and Wikipedia.
+  - The AI Bill 2026 details come from one secondary source.
+  - Practise (STACK) section removed on purpose. Questions go in the exercises.
 -->
 <chapter xml:id="ch-core-principles" xmlns:xi="http://www.w3.org/2001/XInclude">
     <title>Core Principles</title>
 
     <introduction xml:id="intro-core-principles">
         <p>
-            TODO: a hook and a short overview of the chapter.
+            In August 2025, a news team asked the Social Health Authority how
+            its means test works.
+            SHA ignored the request.
+            The team complained to the Ombudsman, who ordered SHA to answer.
+            In November, SHA sent back the formula and a list of the
+            questions it asks, but not the weights it gives the answers
+            (<xref ref="biblio-lighthouse-2026" text="custom">Lighthouse Reports, 2026</xref>).
         </p>
+
+        <p>
+            Compare that with what Kenya's 2026 AI policy says.
+            People are entitled to know when an AI system is acting on them
+            (<xref ref="biblio-kenya-policy-2026" text="custom">State Department for ICT and the Digital Economy, 2026</xref>).
+        </p>
+
+        <p>
+            Almost everyone agrees with the idea of fair, transparent and
+            accountable AI.
+            Companies say it, governments say it and so do international
+            summits.
+            The hard questions come next.
+            Who decides what <q>fair</q> means?
+            Who makes sure it happens?
+            And who benefits when it does?
+        </p>
+
+        <p>
+            This chapter looks at the core principles of responsible AI, and at
+            how different people and places define and enforce them, with
+            Kenya as our main example.
+        </p>
+
+        <!-- Draft objectives: revise once the rest of the chapter is written. -->
+        <objectives>
+            <title>By the end of this chapter you should be able to</title>
+            <ol>
+                <li>
+                    <p>
+                        Identify and define responsible AI principles like
+                        fairness, accountability and transparency.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Compare how different organisations and countries apply
+                        them.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Explain how context, such as culture, politics and
+                        economics, changes which principles are put first.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Evaluate a real case using these principles.
+                    </p>
+                </li>
+            </ol>
+        </objectives>
     </introduction>
 
-    <!-- 1. A real case study (ideally Kenya-based). -->
+    <!-- ============================================================= -->
+    <!-- 1. Case study                                                  -->
+    <!-- ============================================================= -->
     <section xml:id="sec-core-principles-case-study">
-        <title>Case Study</title>
+        <title>Case Study: Kenya Writes Down Its Principles</title>
 
-        <p>
-            TODO: case study.
-        </p>
+        <subsection xml:id="subsec-core-principles-timeline">
+            <title>Four documents in eighteen months</title>
+
+            <p>
+                Kenya has been working on its approach to AI governance for a
+                while.
+                Here are the main steps.
+            </p>
+
+            <table xml:id="tbl-core-principles-timeline">
+                <title>Kenya's AI governance, 2025 to 2026</title>
+                <tabular>
+                    <row header="yes">
+                        <cell>When</cell>
+                        <cell>What</cell>
+                        <cell>What kind of document</cell>
+                    </row>
+
+                    <row>
+                        <cell>January 2025</cell>
+                        <cell>A workshop in Nairobi on the draft Kenya AI
+                        Statement of Principles, hosted by the Ministry of ICT
+                        with KICTANet and with UK support</cell>
+                        <cell>A statement of five principles, still being
+                        developed</cell>
+                    </row>
+
+                    <row>
+                        <cell>March 2025</cell>
+                        <cell>The Kenya AI Strategy 2025 to 2030</cell>
+                        <cell>A national strategy</cell>
+                    </row>
+
+                    <row>
+                        <cell>February to April 2026</cell>
+                        <cell>The Artificial Intelligence Bill, 2026, introduced in the Senate</cell>
+                        <cell>A proposed law, not in force</cell>
+                    </row>
+
+                    <row>
+                        <cell>July 2026</cell>
+                        <cell>The Kenya AI and Other Emerging Technologies Policy</cell>
+                        <cell>A national policy, which says it will be backed by a
+                        new Act</cell>
+                    </row>
+                </tabular>
+            </table>
+
+            <p>
+                The January 2025 workshop brought together at least 100 people
+                from government, industry, universities and civil society.
+                The five principles in the Statement of Principles were Safe
+                AI, Sustainable AI, Secure AI, Trustworthy AI and Inclusive AI
+                (<xref ref="biblio-kictanet-2025" text="custom">Mujesia, 2025</xref>).
+                The strategy was due to be launched on 27 March 2025
+                (<xref ref="biblio-ict-2025" text="custom">Ministry of ICT, 2025</xref>).
+            </p>
+
+            <p>
+                The Bill is a private member's Bill, published on 19 February
+                2026 and read for the first time in the Senate on 2 April.
+                It proposes an AI Commissioner and a classification of AI
+                systems by risk.
+                In October 2026, the Senate's ICT committee was reported to
+                have recommended that the Senate shouldn't proceed with it until
+                a national AI policy has been finalised.
+                We've only seen those details in a secondary source
+                (<xref ref="biblio-fukazee-2026" text="custom">Maina, 2026</xref>).
+            </p>
+        </subsection>
+
+        <subsection xml:id="subsec-core-principles-fourteen">
+            <title>Fourteen guiding principles</title>
+
+            <p>
+                The July 2026 policy is the longest of the four, at 226 pages.
+                It sets out fourteen guiding principles
+                (<xref ref="biblio-kenya-policy-2026" text="custom">State Department for ICT and the Digital Economy, 2026</xref>).
+                Here they are, in plain words.
+            </p>
+
+            <table xml:id="tbl-core-principles-fourteen">
+                <title>The guiding principles in Kenya's 2026 AI policy</title>
+                <tabular>
+                    <row header="yes">
+                        <cell>Principle</cell>
+                        <cell>In plain words</cell>
+                    </row>
+
+                    <row>
+                        <cell>1. Human rights-based approach</cell>
+                        <cell>Protect constitutional rights, and reduce discrimination,
+                        exclusion and unlawful surveillance.
+                        It lists fairness, transparency, accountability,
+                        contestability and access to redress, with extra
+                        protection for children and vulnerable groups.</cell>
+                    </row>
+
+                    <row>
+                        <cell>2. Human-centredness and meaningful human control</cell>
+                        <cell>People keep real control over systems that affect
+                        their rights, safety or access to essential services,
+                        with human review in higher-risk cases.</cell>
+                    </row>
+
+                    <row>
+                        <cell>3. Protection of human agency</cell>
+                        <cell>Systems shouldn't manipulate or deceive people, or
+                        exploit their weaknesses to keep them hooked.</cell>
+                    </row>
+
+                    <row>
+                        <cell>4. Risk-based and proportionate regulation</cell>
+                        <cell>The higher the risk, the stronger the rules.</cell>
+                    </row>
+
+                    <row>
+                        <cell>5. Safety, security and robustness</cell>
+                        <cell>Safe by design, tested and monitored, with a plan
+                        for when things go wrong.
+                        Safety includes bias, misinformation and labour
+                        exploitation.</cell>
+                    </row>
+
+                    <row>
+                        <cell>6. Transparency, accountability and the right to know</cell>
+                        <cell>Systems that affect people must be explainable and
+                        auditable, and people are entitled to know when an AI is
+                        acting on them.</cell>
+                    </row>
+
+                    <row>
+                        <cell>7. Inclusion and equity</cell>
+                        <cell>Reduce gaps in access across place, gender,
+                        disability, age, language and income.</cell>
+                    </row>
+
+                    <row>
+                        <cell>8. Sustainability</cell>
+                        <cell>Use energy and water efficiently, and deal with
+                        electronic waste responsibly.</cell>
+                    </row>
+
+                    <row>
+                        <cell>9. Innovation enablement and a competitive ecosystem</cell>
+                        <cell>Make the rules clear enough to encourage
+                        responsible experiments and investment.</cell>
+                    </row>
+
+                    <row>
+                        <cell>10. Public value and state capability</cell>
+                        <cell>Government use of AI should improve services, with
+                        accountability, oversight and redress.</cell>
+                    </row>
+
+                    <row>
+                        <cell>11. Public participation and democratic governance</cell>
+                        <cell>Affected communities, workers and others get a say,
+                        and there should be ways to complain.</cell>
+                    </row>
+
+                    <row>
+                        <cell>12. Sovereignty and strategic autonomy</cell>
+                        <cell>Kenya keeps oversight of its own data and
+                        infrastructure, while staying open to partnerships.</cell>
+                    </row>
+
+                    <row>
+                        <cell>13. Local value creation</cell>
+                        <cell>Build Kenyan skills, data, language resources and
+                        businesses, and avoid dependency.</cell>
+                    </row>
+
+                    <row>
+                        <cell>14. Community and mutual responsibility (Harambee)</cell>
+                        <cell>AI should strengthen community well-being and
+                        social trust, and recognise our shared responsibility.</cell>
+                    </row>
+                </tabular>
+            </table>
+
+            <p>
+                The words fairness, accountability and transparency are in
+                there, mostly under principles 1 and 6.
+                But the list is much wider than those three.
+            </p>
+        </subsection>
+
+        <subsection xml:id="subsec-core-principles-context">
+            <title>What's particular to Kenya?</title>
+
+            <p>
+                The policy says that it's informed by the OECD AI Principles
+                of 2019, UNESCO's Recommendation on the Ethics of AI of 2021,
+                the African Union's Continental AI Strategy and the UN's Global
+                Digital Compact
+                (<xref ref="biblio-kenya-policy-2026" text="custom">State Department for ICT and the Digital Economy, 2026</xref>).
+                So a lot of it will look familiar.
+            </p>
+
+            <p>
+                A few things stand out as Kenyan, or as shaped by Kenya's
+                position.
+            </p>
+
+            <ul>
+                <li>
+                    <p>
+                        <em>Sovereignty and local value.</em>
+                        Principles 12 and 13 are about who controls data and
+                        infrastructure, and who benefits from what's built on
+                        them.
+                        That's a very different concern from a country that
+                        hosts the big AI companies.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <em>Harambee.</em>
+                        Principle 14 draws on a Kenyan idea of pulling together,
+                        and puts the community, and not just the individual, at
+                        the centre.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <em>Language.</em>
+                        The policy asks for local languages in systems that
+                        affect public services, and says datasets should respect
+                        Kenya's linguistic diversity.
+                        It also says that people must be told they're dealing
+                        with an AI in a language they understand.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <em>The people behind the data.</em>
+                        It names labour exploitation as a safety risk, and
+                        proposes to recognise Kenya's data annotation and
+                        labelling sector as a national asset.
+                        Think back to the workers in Chapters 2 and 3.
+                    </p>
+                </li>
+            </ul>
+        </subsection>
+
+        <subsection xml:id="subsec-core-principles-who">
+            <title>Who defines it, and who would enforce it?</title>
+
+            <p>
+                The policy was written by the State Department for ICT and the
+                Digital Economy.
+                The annex on how it was developed describes roundtables,
+                multi-stakeholder dialogues, public submissions and interviews
+                with experts.
+                It says the draft was reviewed for legal soundness by ILINA
+                and by the Office of the Attorney General
+                (<xref ref="biblio-kenya-policy-2026" text="custom">State Department for ICT and the Digital Economy, 2026</xref>).
+            </p>
+
+            <p>
+                Enforcement is mostly still to come.
+                The policy proposes the following.
+            </p>
+
+            <ul>
+                <li>
+                    <p>
+                        A National AI and Other Emerging Technologies Council,
+                        to coordinate and oversee.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        A new AI Governance Act.
+                        It would set up a hybrid system, with central
+                        coordination and standards, and sector regulators doing
+                        the day-to-day enforcement.
+                        The policy gives an indicative timeline of drafting the
+                        Act within six months, and enacting it within twelve.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        A Kenya AI Safety Institute for testing, evaluation and
+                        red-teaming.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        A stronger Office of the Data Protection Commissioner,
+                        which already enforces the Data Protection Act.
+                    </p>
+                </li>
+            </ul>
+
+            <p>
+                The policy also says that it doesn't override the Constitution
+                or existing laws such as the Data Protection Act
+                (<xref ref="biblio-kenya-policy-2026" text="custom">State Department for ICT and the Digital Economy, 2026</xref>).
+                Until the new Act exists, it sets a direction, but it isn't a
+                law.
+            </p>
+        </subsection>
+
+        <subsection xml:id="subsec-core-principles-test">
+            <title>Putting the principles to the test</title>
+
+            <p>
+                Here's a thought experiment.
+                SHA's means test started in October 2024, before this policy
+                existed, so nothing was broken.
+                But what would the policy's principles ask of SHA, if they
+                applied?
+                (The policy leaves out simple systems that don't use
+                statistical learning.
+                The means test is a regression built on survey data, which
+                Lighthouse calls a simple form of machine learning, so it
+                probably counts.)
+            </p>
+
+            <table xml:id="tbl-core-principles-sha">
+                <title>What Kenya's 2026 policy asks, and what happened with SHA</title>
+                <tabular>
+                    <row header="yes">
+                        <cell>What the policy says</cell>
+                        <cell>What we know about SHA</cell>
+                    </row>
+
+                    <row>
+                        <cell>People are entitled to know when an AI system is
+                        acting on them (principle 6).</cell>
+                        <cell>SHA ignored a request for how the test works,
+                        until the Ombudsman ordered it to respond, and it didn't
+                        give the weights
+                        (<xref ref="biblio-lighthouse-2026" text="custom">Lighthouse Reports, 2026</xref>).</cell>
+                    </row>
+
+                    <row>
+                        <cell>Public bodies must provide human review, appeal and
+                        redress where a decision significantly affects access to
+                        services (section 3.5.6).</cell>
+                        <cell>Florence's appeal through an automated line was
+                        turned down without a reason
+                        (<xref ref="biblio-lighthouse-2026" text="custom">Lighthouse Reports, 2026</xref>).
+                        The High Court ordered a clear and accessible complaints
+                        mechanism in March 2026
+                        (<xref ref="biblio-capital-2026" text="custom">Wakaya, 2026</xref>).</cell>
+                    </row>
+
+                    <row>
+                        <cell>Public bodies must carry out an impact assessment
+                        before deploying a high-risk system, including one that
+                        affects access to health services (section 3.5.6).</cell>
+                        <cell>IDinsight reviewed the model just before launch and
+                        found it unfair to low-income households
+                        (<xref ref="biblio-au-2026" text="custom">Africa Uncensored, 2026</xref>).
+                        The launch went ahead.</cell>
+                    </row>
+
+                    <row>
+                        <cell>Datasets should be documented, and should be
+                        representative and of good quality (section 3.6.1).</cell>
+                        <cell>The survey behind the model was out of date, and
+                        had few of the poorest households in it
+                        (<xref ref="biblio-au-2026" text="custom">Africa Uncensored, 2026</xref>).</cell>
+                    </row>
+                </tabular>
+            </table>
+
+            <p>
+                Look at what the principles do here.
+                They name the problems we found in Chapters 4 and 6, and they
+                ask for the right things.
+                What they can't do is make anything happen.
+                That depends on an Act, a regulator and people who know their
+                rights.
+            </p>
+        </subsection>
+
+        <subsection xml:id="subsec-core-principles-lessons">
+            <title>What the case shows</title>
+
+            <ul>
+                <li>
+                    <p>
+                        Principles are easy to agree on and hard to enforce.
+                        Kenya has written down a lot, but most of the machinery
+                        is still to come.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Context changes the list.
+                        Sovereignty, local value and Harambee are there
+                        because of where Kenya sits in the world of AI.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Who writes the principles matters.
+                        This policy went through consultation, but the people
+                        most affected by a means test may not have been in the
+                        room.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        A principle you can't use is a promise.
+                        <q>The right to know</q> only helps if you can find out
+                        that a system is being used on you.
+                    </p>
+                </li>
+            </ul>
+        </subsection>
     </section>
 
-    <!-- 2. A STACK question prompting the reader to think deeply. -->
-    <section xml:id="sec-core-principles-stack">
-        <title>Practise</title>
+    <!-- ============================================================= -->
+    <!-- 2. Podcast 16: regulation                                      -->
+    <!-- ============================================================= -->
+    <section xml:id="sec-core-principles-regulation">
+        <title>Does Regulation Help?</title>
 
-        <p>
-            TODO: STACK question(s) to go here.
-        </p>
+        <introduction xml:id="intro-core-principles-regulation">
+            <p>
+                This section comes from a conversation between me and David
+                Stern, in 2023
+                (<xref ref="biblio-podcast-016" text="custom">Clements and Stern, episode 16, 2023</xref>).
+                It's about half an hour long, and it's available at
+                <url href="https://www.idems.international/podcast/016-responsible-ai-regulation/">idems.international</url>.
+            </p>
+
+            <figure xml:id="fig-core-principles-podcast-016">
+                <caption>The IDEMS Podcast, episode 16: Responsible AI, Regulation</caption>
+                <interactive xml:id="int-core-principles-podcast-016"
+                             iframe="https://www.idems.international/podcast-player/3062/016-responsible-ai-regulation.mp3"
+                             width="100%"
+                             aspect="8:1"/>
+            </figure>
+        </introduction>
+
+        <subsection xml:id="subsec-core-principles-amazon">
+            <title>The recruiting tool</title>
+
+            <p>
+                I start with an example.
+                As I tell it, Amazon built a tool to sift through CVs, and it
+                marked women down, because it had learned from the company's
+                past hiring.
+                Removing gender from the data didn't fix it.
+                Other words, like a mention of a women's chess team,
+                still carried the signal.
+                Amazon dropped the project after a large investment.
+                (That's the proxy problem from Chapter 6.)
+            </p>
+
+            <p>
+                David's view is that Amazon dropped it because the reputational
+                risk of being seen as sexist outweighed the benefit.
+                He says a smaller company might not have been able to cut its
+                losses in the same way.
+            </p>
+        </subsection>
+
+        <subsection xml:id="subsec-core-principles-reputation">
+            <title>Why would big companies want rules?</title>
+
+            <p>
+                David's argument is that regulation is neither good nor bad for
+                business on its own.
+                Good regulation helps good businesses.
+                Big companies have a reputation to protect, so they'd mostly
+                build unbiased, transparent systems anyway.
+                The difference is with start-ups, which can get away with
+                <q>fix it later</q>.
+                A regulator who asked for bias tests, documented processes and a
+                level of transparency before release would catch problems like
+                the gender bias early.
+            </p>
+
+            <p>
+                He thinks the EU is furthest ahead, and notes that the EU,
+                Chinese and US approaches look fairly similar to him, which he
+                reads as a growing consensus.
+                Then he points out the irony.
+                Rules designed to restrain big tech could end up favouring it,
+                because it can afford to comply.
+            </p>
+
+            <p>
+                At the start of the episode I mention that the head of OpenAI
+                had said the company would stop operating in places where it
+                couldn't comply with the rules.
+                David reads that as aimed at the EU.
+                (I haven't checked it.)
+            </p>
+        </subsection>
+
+        <subsection xml:id="subsec-core-principles-regulation-unknown">
+            <title>What he doesn't know</title>
+
+            <p>
+                David is honest that he's an optimist, but he has no idea what
+                will happen.
+                He says there's no way of running an experiment to see what
+                would have happened under other rules.
+                He gives two scenarios that worry him: regulation could shut
+                whole regions out of AI tools, or it could drive illegal AI
+                that overtakes the regulated kind.
+                He also thinks that responsible AI will win out over twenty
+                years, with or without regulation.
+            </p>
+        </subsection>
+
+        <subsection xml:id="subsec-core-principles-regulation-summary">
+            <title>Summary</title>
+
+            <ul>
+                <li>
+                    <p>
+                        Regulation changes incentives.
+                        What it requires, and who owns the process, decides
+                        whether it helps.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Reputation protects people from big companies, more than
+                        from small ones.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Removing a sensitive variable doesn't remove a bias.
+                    </p>
+                </li>
+            </ul>
+        </subsection>
     </section>
 
-    <!-- 3. An illustrative worked example using software. -->
+    <!-- ============================================================= -->
+    <!-- 3. Podcast 6: Bletchley                                        -->
+    <!-- ============================================================= -->
+    <section xml:id="sec-core-principles-bletchley">
+        <title>What Are We Afraid Of?</title>
+
+        <introduction xml:id="intro-core-principles-bletchley">
+            <p>
+                The first international AI Safety Summit was held at Bletchley
+                Park in the UK, in November 2023.
+                David and I talked about it afterwards
+                (<xref ref="biblio-podcast-006" text="custom">Clements and Stern, episode 6, 2023</xref>).
+                It's about 25 minutes long, and it's available at
+                <url href="https://www.idems.international/podcast/006-bletchley-park-ai-safety-summit/">idems.international</url>.
+            </p>
+
+            <figure xml:id="fig-core-principles-podcast-006">
+                <caption>The IDEMS Podcast, episode 6: Bletchley Park AI Safety Summit</caption>
+                <interactive xml:id="int-core-principles-podcast-006"
+                             iframe="https://www.idems.international/podcast-player/2937/006-bletchley-park-ai-safety-summit.mp3"
+                             width="100%"
+                             aspect="8:1"/>
+            </figure>
+        </introduction>
+
+        <subsection xml:id="subsec-core-principles-killer-robots">
+            <title>Far-off risks and present ones</title>
+
+            <p>
+                David's main criticism is that the summit spent too much time on
+                <q>killer robots</q>, and not enough on harms that are happening
+                now.
+                He says bias is the real current risk.
+                The real safety issue now, in his view, is governments using AI,
+                and he points to the Dutch childcare system and to a recent
+                announcement about the UK using AI in policing.
+            </p>
+
+            <p>
+                He says the summit framed AI as an existential threat, and that
+                distracted from those present harms.
+                He's less worried about AI taking over, partly because
+                consciousness isn't well defined.
+            </p>
+        </subsection>
+
+        <subsection xml:id="subsec-core-principles-safe-responsible">
+            <title>Safe and responsible</title>
+
+            <p>
+                I pointed out that the summit was about safety, which I'd take
+                to include responsibility.
+                David replied that he'd hope that if you're responsible, you're
+                safe, but that safety goes further.
+            </p>
+
+            <p>
+                When I asked whether the risks sit in the data, the learning
+                or the algorithm, David said those are a starting point, and
+                that the risks are everywhere.
+                Interpretation, management and human factors matter too.
+                Anyone who says they can do this safely, he says, isn't
+                thinking hard enough.
+            </p>
+        </subsection>
+
+        <subsection xml:id="subsec-core-principles-outcome">
+            <title>What came out of it?</title>
+
+            <p>
+                The only outcome David names is an agreement that there would be
+                another summit.
+                He found it disappointing, but not surprising, and compares it
+                to the COP climate summits.
+                He thinks the regulations being proposed were really rather
+                sensible, and that the worry about stifling innovation is real,
+                but not big.
+                He also says big tech in the US accepting that AI needs
+                regulation was unheard of.
+            </p>
+        </subsection>
+    </section>
+
+    <!-- ============================================================= -->
+    <!-- 4. Podcast 132: Paris                                          -->
+    <!-- ============================================================= -->
+    <section xml:id="sec-core-principles-paris">
+        <title>A Statement of Intent</title>
+
+        <introduction xml:id="intro-core-principles-paris">
+            <p>
+                In February 2025, the next summit took place in Paris.
+                We talked about it the day after
+                (<xref ref="biblio-podcast-132" text="custom">Clements and Stern, episode 132, 2025</xref>).
+                It's about 20 minutes long, and it's available at
+                <url href="https://www.idems.international/podcast/132-paris-ai-action-summit/">idems.international</url>.
+            </p>
+
+            <figure xml:id="fig-core-principles-podcast-132">
+                <caption>The IDEMS Podcast, episode 132: Paris AI Action Summit</caption>
+                <interactive xml:id="int-core-principles-podcast-132"
+                             iframe="https://www.idems.international/podcast-player/6473/132-paris-ai-action-summit.mp3"
+                             width="100%"
+                             aspect="8:1"/>
+            </figure>
+        </introduction>
+
+        <subsection xml:id="subsec-core-principles-paris-statement">
+            <title>What was signed</title>
+
+            <p>
+                The summit produced a text called the Statement on Inclusive and
+                Sustainable Artificial Intelligence for People and the Planet.
+                The French government's page lists 63 countries, plus the African
+                Union Commission and the European Union, among the signatories.
+                Kenya is one of them.
+                The US and the UK didn't sign
+                (<xref ref="biblio-elysee-2025" text="custom">Government of France, 2025</xref>).
+                The UK said that it didn't go far enough on global governance and
+                national security
+                (<xref ref="biblio-wikipedia-paris" text="custom">Wikipedia, 2025</xref>).
+            </p>
+
+            <p>
+                Its priorities include making AI accessible to reduce digital
+                divides, making it open, inclusive, transparent, ethical, safe,
+                secure and trustworthy, avoiding the concentration of the
+                market, and making it sustainable.
+                The text doesn't say it's binding, and it doesn't describe any way
+                of enforcing it
+                (<xref ref="biblio-elysee-2025" text="custom">Government of France, 2025</xref>).
+            </p>
+        </subsection>
+
+        <subsection xml:id="subsec-core-principles-paris-david">
+            <title>What David made of it</title>
+
+            <p>
+                David says that the statement matters as a statement of intent,
+                but that documents like this <q>don't actually mean anything</q>
+                unless laws put them into practice.
+            </p>
+
+            <p>
+                He sees it as a big step forward on responsible AI compared with
+                Bletchley.
+                He notes that China signed, and that the EU's influence is
+                strong.
+                And he says that the same words, open, inclusive, transparent,
+                ethical, safe and sustainable, could be built into funding
+                and into what governments buy.
+                That's his expectation, not something that has happened.
+                He compares it with earlier climate documents that had no
+                consequences, but thinks this one is different.
+            </p>
+
+            <p>
+                For Kenya, this is the same pattern as the 2026 policy.
+                The words are agreed.
+                What happens next depends on who turns them into rules, money
+                and checks.
+            </p>
+        </subsection>
+    </section>
+
+    <!-- ============================================================= -->
+    <!-- 5. Podcast 37: Gemini                                          -->
+    <!-- ============================================================= -->
+    <section xml:id="sec-core-principles-gemini">
+        <title>Biased or Absurd?</title>
+
+        <introduction xml:id="intro-core-principles-gemini">
+            <p>
+                In Chapter 5 we looked at AI image tools that left people out.
+                What happens when a company tries to fix that, and it goes
+                wrong?
+                This is the subject of another conversation between me and
+                David
+                (<xref ref="biblio-podcast-037" text="custom">Clements and Stern, episode 37, 2024</xref>).
+                It's about half an hour long, and it's available at
+                <url href="https://www.idems.international/podcast/037-generating-ai-images-between-bias-and-absurdity/">idems.international</url>.
+            </p>
+
+            <figure xml:id="fig-core-principles-podcast-037">
+                <caption>The IDEMS Podcast, episode 37: Generating AI Images, Between Bias and Absurdity</caption>
+                <interactive xml:id="int-core-principles-podcast-037"
+                             iframe="https://www.idems.international/podcast-player/3527/037-generating-ai-images-between-bias-and-absurdity.mp3"
+                             width="100%"
+                             aspect="8:1"/>
+            </figure>
+        </introduction>
+
+        <subsection xml:id="subsec-core-principles-gemini-google">
+            <title>What Google said</title>
+
+            <p>
+                In February 2024, Google switched off its Gemini tool's ability
+                to make images of people.
+                Users had posted images that were historically wrong.
+                Google's senior vice president, Prabhakar Raghavan, explained
+                two failures.
+                First, the tuning that was meant to show a range of people didn't
+                allow for prompts that should clearly <em>not</em> show a range.
+                Second, the model became much more cautious than intended, and
+                refused some prompts it should have answered.
+                He said that Google hadn't wanted either result
+                (<xref ref="biblio-google-2024" text="custom">Raghavan, 2024</xref>).
+            </p>
+        </subsection>
+
+        <subsection xml:id="subsec-core-principles-gemini-david">
+            <title>What we said</title>
+
+            <p>
+                In the episode I give two examples that went round at the time.
+                One was a Black founding father of the US, and the other was
+                people of many races in pictures of German soldiers in the Second
+                World War.
+                David says that the tool overcompensated by adding diversity
+                where it shouldn't.
+                He calls AI <q>a very blunt tool</q>.
+            </p>
+
+            <p>
+                He says that in his opinion, Google's pause was a political
+                decision, and that it was seen as an attempt to do no harm,
+                partly because Google worried about its reputation.
+                And he says that changing history is irresponsible.
+            </p>
+
+            <p>
+                So what should a tool aim for: accuracy, or fairness?
+                The questions at the end of this chapter ask you to decide.
+            </p>
+        </subsection>
+    </section>
+
+    <!-- ============================================================= -->
+    <!-- 6. Illustrative example                                        -->
+    <!-- ============================================================= -->
     <section xml:id="sec-core-principles-worked-example">
-        <title>Try It</title>
+        <title>Try It: Read the Policy</title>
 
         <p>
-            TODO: worked example.
+            Kenya's 2026 policy is on the ICT ministry's website.
+            It's long, but the parts we've used are short.
+        </p>
+
+        <ol>
+            <li>
+                <p>
+                    Find section 1.6, the guiding principles.
+                    Read principle 6.
+                    What are you entitled to know?
+                </p>
+            </li>
+            <li>
+                <p>
+                    Think of a digital service you've used in Kenya, such as a
+                    bank or phone company chatbot, a loan app, or a government
+                    portal.
+                    Did it tell you that you were dealing with an AI, or that a
+                    system had made a decision about you?
+                </p>
+            </li>
+            <li>
+                <p>
+                    Find section 3.5.6.
+                    Pick one of its requirements for public bodies.
+                    How would you check whether a public service that you know
+                    meets it?
+                </p>
+            </li>
+            <li>
+                <p>
+                    Write down one question that you'd ask the service, and who
+                    you'd ask.
+                </p>
+            </li>
+        </ol>
+
+        <p>
+            Please don't give any private details to a chatbot or service while
+            you try this.
         </p>
     </section>
 
-    <!-- 4. Exercises. -->
+    <!-- ============================================================= -->
+    <!-- 7. Exercises                                                   -->
+    <!-- ============================================================= -->
     <exercises xml:id="exercises-core-principles">
         <title>Exercises</title>
 
         <exercise xml:id="ex-core-principles-1">
+            <title>In your own words</title>
             <statement>
                 <p>
-                    TODO: exercise.
+                    Write a sentence each to define fairness, accountability and
+                    transparency.
+                    Then give an example from this course of an AI system that
+                    fell short on each one.
+                </p>
+            </statement>
+        </exercise>
+
+        <exercise xml:id="ex-core-principles-2">
+            <title>Expected and surprising</title>
+            <statement>
+                <p>
+                    Look at the fourteen principles in Kenya's 2026 policy.
+                    Think about these questions.
+                    <ol>
+                        <li>
+                            Which would you expect to find in any country's
+                            policy?
+                        </li>
+                        <li>
+                            Which are particular to Kenya's situation?
+                            Why?
+                        </li>
+                        <li>
+                            Is there one you'd add, or one that you'd put first?
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+        </exercise>
+
+        <exercise xml:id="ex-core-principles-3">
+            <title>Who decides?</title>
+            <statement>
+                <p>
+                    Think about these questions.
+                    <ol>
+                        <li>
+                            Who should decide what counts as <q>fair</q> for an AI
+                            system used on Kenyans?
+                        </li>
+                        <li>
+                            Who should check that it's followed?
+                        </li>
+                        <li>
+                            Who benefits from the answer, and who might lose?
+                        </li>
+                        <li>
+                            Which voices do you think were missing from the
+                            consultation, and how would you include them?
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+        </exercise>
+
+        <exercise xml:id="ex-core-principles-4">
+            <title>Kenya and Paris</title>
+            <statement>
+                <p>
+                    Compare Kenya's 2026 policy with the Paris statement, which
+                    Kenya signed.
+                    What do they have in common?
+                    What's in one but not the other?
+                    How might the position of a country like Kenya, compared with
+                    a country that hosts the big AI companies, explain the
+                    differences?
+                </p>
+            </statement>
+        </exercise>
+
+        <exercise xml:id="ex-core-principles-5">
+            <title>Words on paper</title>
+            <statement>
+                <p>
+                    David says that documents like the Paris statement don't mean
+                    anything unless laws put them into practice.
+                    Pick one of Kenya's principles.
+                    Describe what would have to exist, such as a law, a
+                    regulator, a penalty or a way to complain, for it to mean
+                    something.
+                </p>
+            </statement>
+        </exercise>
+
+        <exercise xml:id="ex-core-principles-6">
+            <title>The right to know</title>
+            <statement>
+                <p>
+                    The policy says that people should be told, in a language they
+                    understand, when an automated system makes or shapes an
+                    important decision about them.
+                    It also says that being told doesn't replace the right to
+                    human review, explanation and redress.
+                    Write the message that you think SHA should show a household
+                    when it assesses its premium.
+                    What should it say, and what should it offer?
+                </p>
+            </statement>
+        </exercise>
+
+        <exercise xml:id="ex-core-principles-7">
+            <title>Test a case</title>
+            <statement>
+                <p>
+                    Choose a case from the course, such as the Tala loan app, the
+                    SHA means test, the AI detectors or the Amazon hiring tool.
+                    Take principles 1 and 6 from the policy.
+                    What would each of them ask of that system?
+                    Which would it already meet, and which not?
+                </p>
+            </statement>
+        </exercise>
+
+        <exercise xml:id="ex-core-principles-8">
+            <title>Reputation as a safeguard</title>
+            <statement>
+                <p>
+                    David's argument is that Amazon dropped its recruiting tool
+                    because of the damage to its reputation, and that a smaller
+                    company might not have done the same.
+                    Think about these questions.
+                    <ol>
+                        <li>
+                            Does reputation protect people from a small
+                            lender or app?
+                        </li>
+                        <li>
+                            What would?
+                        </li>
+                        <li>
+                            Why might rules written to restrain big companies
+                            end up helping them?
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+        </exercise>
+
+        <exercise xml:id="ex-core-principles-9">
+            <title>Accuracy or fairness?</title>
+            <statement>
+                <p>
+                    Gemini was changed to show a range of people, and then it made
+                    historically wrong pictures.
+                    Think about these questions.
+                    <ol>
+                        <li>
+                            Should AI tools aim for accuracy, or for fairness?
+                            Can both be achieved?
+                        </li>
+                        <li>
+                            Who should decide?
+                        </li>
+                        <li>
+                            Is it worse for a tool to be biased, or to be
+                            absurd?
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+        </exercise>
+
+        <exercise xml:id="ex-core-principles-10">
+            <title>Correcting an injustice</title>
+            <statement>
+                <p>
+                    Think about these questions.
+                    <ol>
+                        <li>
+                            When does an attempt to correct an injustice end up
+                            creating misinformation?
+                        </li>
+                        <li>
+                            Where's the balance between doing no harm, and trying to
+                            do good, with an AI tool?
+                        </li>
+                        <li>
+                            Think back to the image tools in Chapter 5, which left
+                            some people out.
+                            Is the fix that went wrong with Gemini a reason not
+                            to try?
+                        </li>
+                    </ol>
                 </p>
             </statement>
         </exercise>
     </exercises>
+
+    <!-- ============================================================= -->
+    <!-- Sources                                                        -->
+    <!-- ============================================================= -->
+    <references xml:id="references-core-principles">
+        <title>Sources</title>
+
+        <biblio type="raw" xml:id="biblio-kenya-policy-2026">
+            State Department for ICT and the Digital Economy (2026). Kenya
+            Artificial Intelligence and Other Emerging Technologies Policy.
+            July 2026. 226 pages. The file on the ministry's website is named as
+            a draft.
+            <url href="https://ict.go.ke/sites/default/files/AI%20Policy%20Doc/draft-kenya-ai-and-emerging-technologies-policy-2026.pdf"/>.
+        </biblio>
+
+        <biblio type="raw" xml:id="biblio-kictanet-2025">
+            Mujesia, N. (2025). Shaping the future of AI in Kenya. KICTANet,
+            28 January 2025.
+            <url href="https://www.kictanet.or.ke/shaping-the-future-of-ai-in-kenya"/>.
+        </biblio>
+
+        <biblio type="raw" xml:id="biblio-ict-2025">
+            Ministry of ICT (2025). ICT Ministry set to launch the National
+            Artificial Intelligence Strategy 2025 to 2030. News notice, 25 March
+            2025.
+            <url href="https://ict.go.ke/ict-ministry-set-launch-national-artificial-intelligence-strategy-2025-2030"/>.
+        </biblio>
+
+        <biblio type="raw" xml:id="biblio-fukazee-2026">
+            Maina, R. (2026). Kenya's Artificial Intelligence Bill 2026 explained:
+            where it stands and what it means for public institutions. FuKazee,
+            29 October 2026. A secondary source, which cites the Senate Bill
+            Digest, The Star and Techweez.
+            <url href="https://www.fukazee.com/clarity-corner/kenya-ai-bill-2026-explained"/>.
+        </biblio>
+
+        <biblio type="raw" xml:id="biblio-elysee-2025">
+            Government of France (2025). Statement on inclusive and sustainable
+            artificial intelligence for people and the planet. 11 February 2025.
+            <url href="https://www.elysee.fr/en/emmanuel-macron/2025/02/11/statement-on-inclusive-and-sustainable-artificial-intelligence-for-people-and-the-planet"/>.
+        </biblio>
+
+        <biblio type="raw" xml:id="biblio-wikipedia-paris">
+            Wikipedia (2025). AI Action Summit.
+            <url href="https://en.wikipedia.org/wiki/AI_Action_Summit"/>.
+        </biblio>
+
+        <biblio type="raw" xml:id="biblio-google-2024">
+            Raghavan, P. (2024). Gemini image generation got it wrong. We'll do
+            better. Google, 23 February 2024.
+            <url href="https://blog.google/products/gemini/gemini-image-generation-issue/"/>.
+        </biblio>
+
+        <biblio type="raw" xml:id="biblio-podcast-016">
+            Clements, L. and Stern, D. (2023). The IDEMS Podcast, episode 16:
+            Responsible AI, Regulation.
+            <url href="https://www.idems.international/podcast/016-responsible-ai-regulation/"/>.
+        </biblio>
+
+        <biblio type="raw" xml:id="biblio-podcast-006">
+            Clements, L. and Stern, D. (2023). The IDEMS Podcast, episode 6:
+            Bletchley Park AI Safety Summit.
+            <url href="https://www.idems.international/podcast/006-bletchley-park-ai-safety-summit/"/>.
+        </biblio>
+
+        <biblio type="raw" xml:id="biblio-podcast-132">
+            Clements, L. and Stern, D. (2025). The IDEMS Podcast, episode 132:
+            Paris AI Action Summit.
+            <url href="https://www.idems.international/podcast/132-paris-ai-action-summit/"/>.
+        </biblio>
+
+        <biblio type="raw" xml:id="biblio-podcast-037">
+            Clements, L. and Stern, D. (2024). The IDEMS Podcast, episode 37:
+            Generating AI Images, Between Bias and Absurdity. 19 March 2024.
+            <url href="https://www.idems.international/podcast/037-generating-ai-images-between-bias-and-absurdity/"/>.
+        </biblio>
+    </references>
 </chapter>
