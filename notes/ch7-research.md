@@ -81,3 +81,38 @@ Left out of 6: the chatbot example for the Parenting for Lifelong Health project
 ## Left over from earlier
 
 Podcasts still unplaced: 104, 266 to 274 (267 and 268 are likely for Chapter 8).
+
+## Verification pass, 26 November 2026
+
+The policy: I re-read the text myself. CORRECTION: it has SIXTEEN guiding principles, not fourteen.
+My first read stopped at principle 14. Principle 15 is "Interoperability and Open Standards" and
+principle 16 is "Do No Harm (Non-Maleficence)": prevent harm to individuals, communities,
+institutions and the environment, and where risks cannot be mitigated, deployment or continued
+use "shall be restricted, suspended, or prohibited". Principle 14 also says "with particular
+attention to rural and traditionally organized communities". Chapter, table and exercises fixed.
+(I also linked principle 16 to your "doing no harm versus trying to do good" question.)
+
+Podcasts (second helper, verbatim transcripts):
+- 16: it is DAVID who names Amazon (Lily says "they"). The point that "a smaller firm might not
+  have cut its losses" is LILY's. David's words are "too much reputation to lose" and "fixing the
+  problems later". He never says "documented processes", only tests and transparency. All fixed.
+- 6: "it's not just those three things" is David's words (I had "a starting point", which was
+  the question's wording). "Only outcome" softened to "the one outcome David mentions".
+- 132: "big, important step forward" is David's. The comparison to Bletchley is implied, so removed.
+- 37: no release date on the page. The date in the bibliography (19 March 2024) is from the
+  site's search listing.
+
+Kenya AI Bill, 2026 (primary sources not reachable; the Senate Bill Digest PDF and Kenya Law's
+page would not read):
+- Supported by The Star (15 October 2026) and Techweez (16 October 2026): sponsor is
+  nominated Senator Karen Nyamu; the Bill proposes an Office of the AI Commissioner; a Senate
+  committee recommended the Senate not proceed and that government first finalise a national
+  AI policy (The Star).
+- NOT confirmed beyond the secondary source (FuKazee): the exact dates (19 February, 2 April),
+  the four-tier risk classification, and "private member's Bill". The chapter now says "April 2026" and
+  drops the risk classification.
+- The AI Strategy launch on 27 March 2025 is confirmed only as a scheduled date (the ministry's
+  notice). I found no report that it took place.
+
+Not re-verified a second time: KICTANet, the Elysee list (63 countries, Kenya number 32),
+Wikipedia's UK reason, and Google's blog post. Each was read once by a helper.

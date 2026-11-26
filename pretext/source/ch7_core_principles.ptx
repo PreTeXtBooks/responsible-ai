@@ -123,7 +123,7 @@
                     </row>
 
                     <row>
-                        <cell>February to April 2026</cell>
+                        <cell>April 2026</cell>
                         <cell>The Artificial Intelligence Bill, 2026, introduced in the Senate</cell>
                         <cell>A proposed law, not in force</cell>
                     </row>
@@ -148,29 +148,29 @@
             </p>
 
             <p>
-                The Bill is a private member's Bill, published on 19 February
-                2026 and read for the first time in the Senate on 2 April.
-                It proposes an AI Commissioner and a classification of AI
-                systems by risk.
-                In October 2026, the Senate's ICT committee was reported to
-                have recommended that the Senate shouldn't proceed with it until
-                a national AI policy has been finalised.
-                We've only seen those details in a secondary source
+                The Bill was sponsored by nominated Senator Karen Nyamu.
+                It proposes an Office of the AI Commissioner.
+                In October 2026, a Senate committee recommended that the Senate
+                shouldn't proceed with it, and that the government should first
+                finalise a national AI policy
+                (<xref ref="biblio-star-2026" text="custom">The Star, 2026</xref>).
+                The other details of the Bill, like its dates, come from a single
+                secondary source
                 (<xref ref="biblio-fukazee-2026" text="custom">Maina, 2026</xref>).
             </p>
         </subsection>
 
-        <subsection xml:id="subsec-core-principles-fourteen">
-            <title>Fourteen guiding principles</title>
+        <subsection xml:id="subsec-core-principles-sixteen">
+            <title>Sixteen guiding principles</title>
 
             <p>
                 The July 2026 policy is the longest of the four, at 226 pages.
-                It sets out fourteen guiding principles
+                It sets out sixteen guiding principles
                 (<xref ref="biblio-kenya-policy-2026" text="custom">State Department for ICT and the Digital Economy, 2026</xref>).
                 Here they are, in plain words.
             </p>
 
-            <table xml:id="tbl-core-principles-fourteen">
+            <table xml:id="tbl-core-principles-sixteen">
                 <title>The guiding principles in Kenya's 2026 AI policy</title>
                 <tabular>
                     <row header="yes">
@@ -264,9 +264,25 @@
 
                     <row>
                         <cell>14. Community and mutual responsibility (Harambee)</cell>
-                        <cell>AI should strengthen community well-being and
-                        social trust, and recognise our shared responsibility.</cell>
-                    </row>
+                        <cell>AI should strengthen community well-being, social
+                        trust and shared prosperity, with particular attention to
+                        rural and traditionally organized communities.</cell>
+                        </row>
+                        
+                        <row>
+                        <cell>15. Interoperability and open standards</cell>
+                        <cell>Where feasible, use designs and standards that let
+                        systems work together, so that people and governments
+                        aren't locked in to one vendor.</cell>
+                        </row>
+                        
+                        <row>
+                        <cell>16. Do no harm</cell>
+                        <cell>Prevent harm to people, communities, institutions and
+                        the environment.
+                        Where risks can't be reduced enough, use of a system shall
+                        be restricted, suspended or prohibited.</cell>
+                        </row>
                 </tabular>
             </table>
 
@@ -534,10 +550,9 @@
             <title>The recruiting tool</title>
 
             <p>
-                I start with an example.
-                As I tell it, Amazon built a tool to sift through CVs, and it
-                marked women down, because it had learned from the company's
-                past hiring.
+                I start with an example, which David names as Amazon's.
+                As I tell it, a company built a tool to sift through CVs, and it
+                marked women down, because it had learned from past hiring.
                 Removing gender from the data didn't fix it.
                 Other words, like a mention of a women's chess team,
                 still carried the signal.
@@ -546,10 +561,11 @@
             </p>
 
             <p>
-                David's view is that Amazon dropped it because the reputational
-                risk of being seen as sexist outweighed the benefit.
-                He says a smaller company might not have been able to cut its
-                losses in the same way.
+                David's view is that Amazon had too much reputation to lose,
+                and dropped it because the risk of being seen as sexist
+                outweighed the benefit.
+                I wondered whether a smaller company would have cut its losses
+                in the same way.
             </p>
         </subsection>
 
@@ -563,10 +579,10 @@
                 Big companies have a reputation to protect, so they'd mostly
                 build unbiased, transparent systems anyway.
                 The difference is with start-ups, which can get away with
-                <q>fix it later</q>.
-                A regulator who asked for bias tests, documented processes and a
-                level of transparency before release would catch problems like
-                the gender bias early.
+                fixing the problems later.
+                A regulator who asked for tests and a level of transparency
+                before release could catch problems like the gender bias
+                early.
             </p>
 
             <p>
@@ -687,8 +703,8 @@
 
             <p>
                 When I asked whether the risks sit in the data, the learning
-                or the algorithm, David said those are a starting point, and
-                that the risks are everywhere.
+                or the algorithm, David said it's not just those three things,
+                and that the risks are everywhere.
                 Interpretation, management and human factors matter too.
                 Anyone who says they can do this safely, he says, isn't
                 thinking hard enough.
@@ -699,7 +715,7 @@
             <title>What came out of it?</title>
 
             <p>
-                The only outcome David names is an agreement that there would be
+                The one outcome David mentions is an agreement that there would be
                 another summit.
                 He found it disappointing, but not surprising, and compares it
                 to the COP climate summits.
@@ -773,8 +789,7 @@
             </p>
 
             <p>
-                He sees it as a big step forward on responsible AI compared with
-                Bletchley.
+                He calls it a big, important step forward on responsible AI.
                 He notes that China signed, and that the EU's influence is
                 strong.
                 And he says that the same words, open, inclusive, transparent,
@@ -938,7 +953,7 @@
             <title>Expected and surprising</title>
             <statement>
                 <p>
-                    Look at the fourteen principles in Kenya's 2026 policy.
+                    Look at the sixteen principles in Kenya's 2026 policy.
                     Think about these questions.
                     <ol>
                         <li>
@@ -1045,8 +1060,8 @@
             <statement>
                 <p>
                     David's argument is that Amazon dropped its recruiting tool
-                    because of the damage to its reputation, and that a smaller
-                    company might not have done the same.
+                    because it had too much reputation to lose.
+                    I wondered whether a smaller company would have done the same.
                     Think about these questions.
                     <ol>
                         <li>
@@ -1093,11 +1108,14 @@
             <title>Correcting an injustice</title>
             <statement>
                 <p>
+                    Kenya's 2026 policy has a do no harm principle (number 16).
+                    It says that where risks can't be reduced enough, a system's use
+                    shall be restricted, suspended or prohibited.
                     Think about these questions.
                     <ol>
-                        <li>
-                            When does an attempt to correct an injustice end up
-                            creating misinformation?
+                    <li>
+                    When does an attempt to correct an injustice end up
+                    creating misinformation?
                         </li>
                         <li>
                             Where's the balance between doing no harm, and trying to
@@ -1142,6 +1160,12 @@
             <url href="https://ict.go.ke/ict-ministry-set-launch-national-artificial-intelligence-strategy-2025-2030"/>.
         </biblio>
 
+        <biblio type="raw" xml:id="biblio-star-2026">
+        The Star (2026). Senate committee shoots down Nyamu's bill on AI.
+        15 October 2026.
+        <url href="https://www.the-star.co.ke/news/2026-10-15-senate-committee-shoots-down-nyamus-bill-on-ai"/>.
+        </biblio>
+        
         <biblio type="raw" xml:id="biblio-fukazee-2026">
             Maina, R. (2026). Kenya's Artificial Intelligence Bill 2026 explained:
             where it stands and what it means for public institutions. FuKazee,
