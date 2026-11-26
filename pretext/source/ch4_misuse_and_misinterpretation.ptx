@@ -4,58 +4,1419 @@
 <!--  Chapter 4: Misuse and Misinterpretation  -->
 <!-- ================================================================= -->
 <!--
-  NOTES (see also notes/case-study-plan.md):
-  Case study ideas: the Dutch childcare benefits scandal, COMPAS,
-  hallucinated citations. Or a Kenyan application such as Amenya,
-  Chat Care, Angaza Elimu or FarmerAI (Chat Care and FarmerAI have
-  exercises in Chapter 1 that could be built up).
+  NOTES (see also notes/ch4-research.md):
+  - Case study: Kenya's SHA means test (Lighthouse Reports, Africa Uncensored
+    and the Guardian, May 2026; Africa Check, 25 November 2026). SHA disputes
+    the findings. Lighthouse's figures come from its own rebuild of the model,
+    and it says the rebuild may not match SHA's real system.
+  - Podcasts: episode 21 (Dutch childcare scandal, COMPAS) and episode 65
+    (Hallucitations). Dutch scandal facts are only from the podcast.
+  - COMPAS facts are from ProPublica (2016), read in full.
+  - Short Kenyan example: Judiciary draft AI directions (Nairobi Law Monthly,
+    May 2026). Not used: the 2025 Lenaola and Magare rulings (only seen in
+    search snippets), and the April 2026 Chigiti ruling (two reports disagree).
+  - Practise (STACK) section removed on purpose. Questions go in the exercises.
 -->
 <chapter xml:id="ch-misuse-and-misinterpretation" xmlns:xi="http://www.w3.org/2001/XInclude">
     <title>Misuse and Misinterpretation</title>
 
     <introduction xml:id="intro-misuse-and-misinterpretation">
         <p>
-            TODO: a hook and a short overview of the chapter.
+            Peris Nduta does other people's washing in Dandora, a
+            neighbourhood in Nairobi.
+            One day she fell and broke her leg.
+            At the hospital, she says, the system told her to pay KES 7,800
+            before she could be treated.
+            Her friends raised less than half of it.
+            She was sent home, and she went back a week later for the operation
+            (<xref ref="biblio-au-2026" text="custom">Africa Uncensored, 2026</xref>).
         </p>
+
+        <p>
+            KES 7,800 is a year of health insurance, at KES 650 a month.
+            It came from a formula.
+            The formula looked at her home and her household, and it
+            estimated what she could afford.
+            Nobody asked her what she earns.
+        </p>
+
+        <p>
+            This chapter is about what happens when an AI tool, or any
+            algorithm that makes predictions, is used without care, or when
+            its answer is read as something it isn't.
+            The tool can work as designed, and still do harm.
+            A score is an estimate, and the trouble starts when people treat it
+            as a fact.
+        </p>
+
+        <!-- Draft objectives: revise once the rest of the chapter is written. -->
+        <objectives>
+            <title>By the end of this chapter you should be able to</title>
+            <ol>
+                <li>
+                    <p>
+                        Describe how the output of an algorithm can be misused
+                        or misread in a real system.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Pick out what led to harm in cases like Kenya's
+                        health insurance means test, COMPAS and the Dutch
+                        childcare benefits scandal.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Explain the part played by human judgment,
+                        accountability and the data behind a system.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Suggest ways to reduce the risk of misuse in your own
+                        sector, community or context.
+                    </p>
+                </li>
+            </ol>
+        </objectives>
     </introduction>
 
-    <!-- 1. A real case study (ideally Kenya-based). -->
+    <!-- ============================================================= -->
+    <!-- 1. Case study                                                  -->
+    <!-- ============================================================= -->
     <section xml:id="sec-misuse-and-misinterpretation-case-study">
-        <title>Case Study</title>
+        <title>Case Study: A Score for Every Household</title>
 
-        <p>
-            TODO: case study.
-        </p>
+        <subsection xml:id="subsec-misuse-and-misinterpretation-problem">
+            <title>How do you price insurance for people with no payslip?</title>
+
+            <p>
+                In October 2024, Kenya started a new public health insurance
+                scheme.
+                It replaced the old National Hospital Insurance Fund (NHIF)
+                with the Social Health Authority, or SHA
+                (<xref ref="biblio-capital-2026" text="custom">Wakaya, 2026</xref>).
+                People with a salary pay 2.75% of it, taken by their employer
+                (<xref ref="biblio-kenyans-2026" text="custom">Amunga, 2026</xref>).
+            </p>
+
+            <p>
+                Everyone else is meant to pay 2.75% of their household income,
+                with a minimum of KES 300 a month
+                (<xref ref="biblio-kenyans-2024" text="custom">Mito, 2024</xref>).
+                That's most people.
+                In 2025, about 18.1 million of the 21.6 million people in
+                recorded employment, or 83.8%, worked in the informal sector,
+                according to the Kenya National Bureau of Statistics
+                (<xref ref="biblio-africacheck-2026" text="custom">Africa Check, 2026</xref>).
+                A market trader or a casual labourer doesn't have a payslip.
+                Their income goes up and down.
+                So how does SHA know what to charge them?
+            </p>
+
+            <p>
+                Its answer is a <term>proxy means test</term>.
+            </p>
+
+            <definition xml:id="def-misuse-and-misinterpretation-pmt">
+                <title>Proxy means test</title>
+                <statement>
+                    <p>
+                        A proxy means test estimates how much a household can
+                        afford without asking about its income.
+                        Instead it asks about things that are easy to see,
+                        like the roof, the toilet and the water supply, and
+                        uses a formula to turn the answers into an estimate of
+                        how well off the household is.
+                    </p>
+                </statement>
+            </definition>
+
+            <p>
+                The idea isn't silly.
+                It was worked out at the World Bank in the mid-1990s, and
+                versions of it are used in countries including Egypt,
+                Indonesia and Rwanda.
+                People who support it say it's an imperfect but practical way
+                of getting help to the people who need it most.
+                Critics say it's only moderately good at telling who's poor.
+                One report for the Australian aid agency found that in four
+                countries, between 44% and 71% of poor households were
+                predicted not to be poor
+                (<xref ref="biblio-lighthouse-2026" text="custom">Lighthouse Reports, 2026</xref>).
+            </p>
+        </subsection>
+
+        <subsection xml:id="subsec-misuse-and-misinterpretation-how">
+            <title>How the score works</title>
+
+            <p>
+                In October 2024, a graphic designer in western Kenya was
+                registering online.
+                The form asked him whether the walls of his house were
+                plywood or mud, where his drinking water came from, whether
+                his toilet flushed and whether he owned a bicycle.
+                He couldn't see why.
+                His answers went into a formula that worked out what he would
+                pay
+                (<xref ref="biblio-lighthouse-2026" text="custom">Lighthouse Reports, 2026</xref>).
+            </p>
+
+            <p>
+                SHA hasn't published how its test works.
+                In August 2025 the news team at Africa Uncensored sent SHA a
+                request for the details.
+                SHA ignored it, so the team complained to the Ombudsman, who
+                ordered a reply.
+                In November 2025 SHA sent back the formula and a list of the
+                questions it uses, but not the weights it gives each answer
+                (<xref ref="biblio-lighthouse-2026" text="custom">Lighthouse Reports, 2026</xref>).
+            </p>
+
+            <p>
+                The model uses 43 pieces of information about a household.
+                They cover the household (its size, the mix of men, women,
+                children and older people, and the county it lives in), the
+                head of the household (their gender, marital status,
+                education and work), and the home.
+                For the home, the form asks about the roof, walls and floor,
+                the toilet and water supply, what you cook and light your
+                home with, the number of rooms, and whether you have
+                electricity or own the place
+                (<xref ref="biblio-lighthouse-2026" text="custom">Lighthouse Reports, 2026</xref>).
+                Urban and rural households are scored with different weights.
+            </p>
+
+            <p>
+                The formula adds it all up into an estimate of how much the
+                household spends per person, and the premium is 2.75% of that.
+                Lighthouse says that spending is easier to measure than
+                income, because people tend to report what they spend more
+                accurately than what they earn.
+                The weights were set using the 2021 Kenya Continuous Household
+                Survey, which has about 17,000 households in it
+                (<xref ref="biblio-lighthouse-2026" text="custom">Lighthouse Reports, 2026</xref>).
+            </p>
+
+            <p>
+                Is that AI?
+                Lighthouse calls it machine learning, but a simple kind.
+                It's a linear regression, which finds the best straight-line
+                link between the answers and the outcome.
+                That's much closer to a line drawn through survey data than to
+                ChatGPT.
+                The reporters and many people in Kenya call it AI.
+                For this chapter that doesn't matter much, because a system that
+                turns data into a score about a person can be misread in the
+                same ways whatever we call it.
+            </p>
+        </subsection>
+
+        <subsection xml:id="subsec-misuse-and-misinterpretation-findings">
+            <title>What the investigation found</title>
+
+            <p>
+                In May 2026, Lighthouse Reports, Africa Uncensored and the
+                Guardian published a joint investigation
+                (<xref ref="biblio-lighthouse-2026" text="custom">Lighthouse Reports, 2026</xref>).
+                Because SHA hadn't given them the weights, Lighthouse rebuilt
+                the model from the formula and the 2021 survey.
+                They used 80% of the households to build it and kept the other
+                20% back to test it.
+            </p>
+
+            <p>
+                The first result is that the model is moderately good.
+                It explains about two thirds of the differences in spending
+                between urban households, and less than half in rural areas.
+                Lighthouse says that's about what proxy means tests achieve
+                in other countries.
+                So the model does pick up something real.
+            </p>
+
+            <p>
+                The second result is where it goes wrong.
+                Lighthouse counted a prediction as correct if it was within
+                about a fifth of the true figure.
+                Among the poorest tenth of households, only 16% were predicted
+                correctly, and 80% were predicted to be spending more than
+                they really do.
+                That means a bigger premium.
+                Of the households in the poorest 40%, 39% were predicted to
+                be above that line.
+                In the rural test set, 400 of the 929 households below the
+                poverty line, about 43%, were predicted to be above it.
+                At the other end, the richest households tended to be
+                predicted as spending less than they do.
+            </p>
+
+            <p>
+                Lighthouse says this pattern is built into the method.
+                Regression predicts towards the centre.
+                The predictions bunch up in the middle, so the poorest end up
+                looking better off and the richest worse off.
+                It points to an academic study that found the same weakness in
+                proxy means tests
+                (<xref ref="biblio-lighthouse-2026" text="custom">Lighthouse Reports, 2026</xref>).
+            </p>
+
+            <p>
+                Lighthouse is open about the limits of its work.
+                Its rebuild may not match SHA's real system, because SHA may
+                have cleaned or adjusted the data in ways it didn't disclose.
+                The survey answers were collected by interviewers, while the
+                real form is filled in online by households themselves, and
+                that could change the results.
+                SHA says it tries to pull some answers from government
+                databases, to avoid people entering them by hand.
+                SHA also didn't respond to the detailed questions that
+                Lighthouse sent before publication.
+            </p>
+        </subsection>
+
+        <subsection xml:id="subsec-misuse-and-misinterpretation-accounts">
+            <title>Households behind the numbers</title>
+
+            <p>
+                The investigation spoke to people who had been given a
+                premium.
+                These are their accounts, as the reporters give them.
+            </p>
+
+            <assemblage>
+                <title>Peris Nduta, Dandora, Nairobi</title>
+                <p>
+                    Peris does washing for a living.
+                    After she broke her leg, the system told her to pay KES
+                    7,800.
+                    Friends raised less than half.
+                    She was sent home, and went back a week later for the
+                    operation.
+                    She says she can't afford to keep paying, or to pay for the
+                    care she needs afterwards
+                    (<xref ref="biblio-au-2026" text="custom">Africa Uncensored, 2026</xref>).
+                </p>
+            </assemblage>
+
+            <assemblage>
+                <title>Florence Atieno, Huruma, Nairobi</title>
+                <p>
+                    Florence found the premium hard to pay while she was
+                    pregnant.
+                    She asked for it to be reviewed.
+                    The request was turned down by an automated reply, with no
+                    reason given
+                    (<xref ref="biblio-lighthouse-2026" text="custom">Lighthouse Reports, 2026</xref>).
+                </p>
+            </assemblage>
+
+            <assemblage>
+                <title>Grace, a community health promoter in Nairobi</title>
+                <p>
+                    Grace is a pseudonym.
+                    She says most of the people she works with have been
+                    assigned KES 650 a month.
+                    For people below the poverty line, she says, that can be a
+                    tenth of their income or more, and for the poorest it is
+                    nearer a fifth.
+                    She also says that people are dying at home because they
+                    can't pay for care.
+                    That's her account, and the reporting doesn't give a hospital
+                    record for it
+                    (<xref ref="biblio-au-2026" text="custom">Africa Uncensored, 2026</xref>).
+                </p>
+            </assemblage>
+
+            <p>
+                Lighthouse also looked at individual households in the survey
+                it used.
+                These aren't SHA bills.
+                They show what the rebuilt model would do.
+            </p>
+
+            <assemblage>
+                <title>An elderly farming couple in Murang'a</title>
+                <p>
+                    They live in a modest home made of brick and iron sheets,
+                    and drink rainwater.
+                    They told the survey team that they sometimes skip meals.
+                    The model puts their income higher, partly because they
+                    have a covered toilet and a radio, and the head of the
+                    household did a year at a vocational school.
+                    They live far below the poverty line, but the model would
+                    charge them more than two and a half times what it should
+                    (<xref ref="biblio-lighthouse-2026" text="custom">Lighthouse Reports, 2026</xref>).
+                </p>
+            </assemblage>
+
+            <assemblage>
+                <title>A young woman in Meru</title>
+                <p>
+                    She lives alone in a rented home and works as a farmhand,
+                    walking about four kilometres to get to her job.
+                    She said she eats less than she would like.
+                    The model puts her income at nearly twice what it is,
+                    partly because her home has wooden walls and electricity,
+                    she finished high school, and she lives in Meru
+                    (<xref ref="biblio-lighthouse-2026" text="custom">Lighthouse Reports, 2026</xref>).
+                </p>
+            </assemblage>
+        </subsection>
+
+        <subsection xml:id="subsec-misuse-and-misinterpretation-warnings">
+            <title>Was anyone warned?</title>
+
+            <p>
+                Before the launch, SHA had the model checked by IDinsight,
+                an international data consultancy.
+                Its report came just before the launch.
+                It said the model was unfair to low-income households, and
+                that the survey behind it was out of date.
+                Unless the model was retrained on new data, it said, the model
+                was highly likely to get contributions wrong, especially for
+                low-income households
+                (<xref ref="biblio-lighthouse-2026" text="custom">Lighthouse Reports, 2026</xref>).
+                According to the reporters, it also said the survey had too
+                many middle-income households and not enough very poor ones,
+                and recommended that SHA manage the risk carefully at first,
+                and that people be able to contest the prediction made about
+                them
+                (<xref ref="biblio-au-2026" text="custom">Africa Uncensored, 2026</xref>).
+            </p>
+
+            <p>
+                It wasn't a simple fix.
+                IDinsight suggested a different design.
+                Lighthouse tested it on the same survey, and found that it
+                placed households in the right income band less often.
+                The original model got 54% right, and the new design got 47%.
+                Under both, nearly half of low-income households were
+                predicted to have more income than they do
+                (<xref ref="biblio-lighthouse-2026" text="custom">Lighthouse Reports, 2026</xref>).
+            </p>
+
+            <p>
+                The reporters also spoke to David Khaoya, a health economist
+                who helped develop the first version of the test.
+                He says that officials chose to focus on getting the better-off
+                households right, accepting that poor households would be
+                overcharged, and that anyone wrongly classed could appeal
+                (<xref ref="biblio-au-2026" text="custom">Africa Uncensored, 2026</xref>).
+            </p>
+
+            <p>
+                This is a decision about who bears the errors.
+                Every model makes mistakes.
+                Someone chooses which mistakes are easier to live with, and
+                in this telling the people who live with them are the poorest.
+            </p>
+        </subsection>
+
+        <subsection xml:id="subsec-misuse-and-misinterpretation-response">
+            <title>SHA's response, and the court</title>
+
+            <p>
+                SHA replied on 6 May 2026, two days after the investigation
+                came out.
+                It said that the model is fair and protects low-income
+                households, that replacing the NHIF was needed, and that it
+                will keep improving the tool as more household data comes in.
+                It also gave figures.
+                For households in the informal sector, it says, 92% are
+                assessed at KES 850 a month or less, and 45% at between KES 300
+                and KES 500
+                (<xref ref="biblio-citizen-2026" text="custom">Nyambura, 2026</xref>).
+            </p>
+
+            <p>
+                Africa Uncensored and Lighthouse say the reply doesn't
+                answer their questions about how fair the model is to
+                low-income households, or about the design choices behind it
+                (<xref ref="biblio-ev-2026" text="custom">Eastleigh Voice, 2026</xref>).
+            </p>
+
+            <table xml:id="tbl-misuse-and-misinterpretation-disputed">
+                <title>Two accounts of the same system</title>
+                <tabular>
+                    <row header="yes">
+                        <cell></cell>
+                        <cell>The investigation</cell>
+                        <cell>SHA</cell>
+                    </row>
+
+                    <row>
+                        <cell>How well the formula sorts households</cell>
+                        <cell>In the rebuilt model, 16% of the poorest tenth of
+                        households were predicted correctly, and 80% were
+                        overcharged</cell>
+                        <cell>The model is fair and protects low-income
+                        households</cell>
+                    </row>
+
+                    <row>
+                        <cell>What households are charged</cell>
+                        <cell>For people below the poverty line, KES 650 a
+                        month can be a tenth of income or more (Grace's
+                        account)</cell>
+                        <cell>92% of informal households are assessed at KES 850
+                        or less a month</cell>
+                    </row>
+
+                    <row>
+                        <cell>The way forward</cell>
+                        <cell>Answer questions about fairness and design
+                        choices</cell>
+                        <cell>Keep refining the tool as more data comes in</cell>
+                    </row>
+                </tabular>
+            </table>
+
+            <p>
+                Look at the second row.
+                Both of those things can be true at the same time.
+                KES 650 is below KES 850, so it fits SHA's figures.
+                SHA's numbers tell us how big the premiums are.
+                They don't tell us whether those amounts are right for the
+                people who pay them, or what they cost a family that earns very
+                little.
+            </p>
+
+            <p>
+                In March 2026, the High Court looked at the way SHIF was
+                rolled out.
+                It found the launch had been premature and unreasonable, and
+                that it had denied patients critical care, including dialysis
+                and cancer treatment.
+                It decided not to cancel the scheme, because millions of
+                people were already signed up.
+                But it ordered fair means-testing for informal workers, a clear
+                and accessible complaints mechanism, and regular progress
+                reports to the court
+                (<xref ref="biblio-capital-2026" text="custom">Wakaya, 2026</xref>).
+            </p>
+        </subsection>
+
+        <subsection xml:id="subsec-misuse-and-misinterpretation-registered">
+            <title>Registered is not the same as covered</title>
+
+            <p>
+                There's a second way that numbers get misread in this story.
+                On 18 November 2026, in his state of the nation address, the
+                President said that 33.7 million Kenyans are now registered
+                with SHA.
+                He told the story of a mother of three, a small-scale farmer,
+                who had a kidney transplant.
+                She paid KES 840 a month, and SHA paid her bill of KES 966,000,
+                not counting dialysis
+                (<xref ref="biblio-africacheck-2026" text="custom">Africa Check, 2026</xref>).
+            </p>
+
+            <p>
+                Africa Check looked at the figure.
+                Being registered isn't the same as paying, and paying isn't the
+                same as being covered.
+                SHA's own report for the period to 31 March 2026 shows 30.13
+                million registered beneficiaries, and about 4.78 million active
+                contributors.
+                That doesn't mean only one in seven people has cover, because
+                one contributor can cover a whole family.
+                But SHA hasn't published how many registered people have active
+                cover, and Africa Check says it asked and hadn't had an
+                answer when it published
+                (<xref ref="biblio-africacheck-2026" text="custom">Africa Check, 2026</xref>).
+            </p>
+
+            <p>
+                A government survey, the 2025 to 2026 Kenya Mini Demographic and
+                Health Survey, gives another view.
+                Of the people registered as contributing members, only 43.9%
+                said their premium had been paid that month.
+                It also found a gap by wealth.
+                In the poorest fifth of households, 24% of people reported
+                having SHA cover, compared with 49.2% in the richest fifth.
+                Among contributing members, 17.9% in the poorest fifth were up
+                to date, compared with 65.9% in the richest
+                (<xref ref="biblio-africacheck-2026" text="custom">Africa Check, 2026</xref>).
+            </p>
+
+            <p>
+                The rules matter too.
+                Unpaid contributions attract a 2% monthly penalty, and arrears
+                must be cleared before someone can use SHIF-funded services
+                again.
+                Emergency stabilisation is available whether or not you've
+                paid, but for up to 24 hours
+                (<xref ref="biblio-africacheck-2026" text="custom">Africa Check, 2026</xref>).
+                So someone who is registered and behind on payments isn't
+                shut out of care completely, but they can be after the first
+                day.
+            </p>
+        </subsection>
+
+        <subsection xml:id="subsec-misuse-and-misinterpretation-lessons">
+            <title>What the case shows</title>
+
+            <p>
+                Nobody in this story needed to be a villain.
+                SHA had a real problem to solve, and a proxy means test is a
+                reasonable idea.
+                The harm came from how the score was used.
+            </p>
+
+            <ul>
+                <li>
+                    <p>
+                        <em>An estimate was treated as a bill.</em>
+                        The formula says what a household is likely to be able to
+                        pay, but it was used to decide what a household
+                        owes.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <em>The data didn't match the people.</em>
+                        The survey behind the model had few very poor
+                        households in it, so the model knew least about the
+                        people it could hurt most.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <em>The errors weren't spread evenly.</em>
+                        They fell on the poorest households, and that was a
+                        choice, even if it wasn't made in public.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <em>A warning arrived and wasn't enough.</em>
+                        Someone checked the model before it went live.
+                        What they found didn't change the launch.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <em>A headline number can hide who's missing.</em>
+                        33.7 million people were registered, but far fewer
+                        were paying, and the poorest were the least likely to
+                        be up to date.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <em>A way to challenge it has to work.</em>
+                        An appeal that gets an automatic refusal isn't an
+                        appeal in any real sense.
+                    </p>
+                </li>
+            </ul>
+
+            <insight>
+                <p>
+                    A tool can be accurate on average and still harm the
+                    people it knows least about.
+                    It's not enough to ask whether the model works.
+                    We also need to ask who it works for, and who pays when it
+                    doesn't.
+                </p>
+            </insight>
+        </subsection>
     </section>
 
-    <!-- 2. A STACK question prompting the reader to think deeply. -->
-    <section xml:id="sec-misuse-and-misinterpretation-stack">
-        <title>Practise</title>
+    <!-- ============================================================= -->
+    <!-- 2. Podcast: risk is not reality                                -->
+    <!-- ============================================================= -->
+    <section xml:id="sec-misuse-and-misinterpretation-risk">
+        <title>Risk Is Not Reality</title>
 
-        <p>
-            TODO: STACK question(s) to go here.
-        </p>
+        <introduction xml:id="intro-misuse-and-misinterpretation-risk">
+            <p>
+                SHA is not the first time this has happened.
+                The ideas in this section come from a conversation between me
+                and David Stern, from the IDEMS Podcast
+                (<xref ref="biblio-podcast-021" text="custom">Clements and Stern, episode 21, n.d.</xref>).
+                It's about twenty-four minutes long.
+                It's also available at
+                <url href="https://www.idems.international/podcast/021-where-things-have-gone-wrong-with-ai/">idems.international</url>.
+            </p>
+
+            <figure xml:id="fig-misuse-and-misinterpretation-podcast-021">
+                <caption>The IDEMS Podcast, episode 21: Where Things Have Gone Wrong with AI</caption>
+                <interactive xml:id="int-misuse-and-misinterpretation-podcast-021"
+                             iframe="https://www.idems.international/podcast-player/3360/021-where-things-have-gone-wrong-with-ai.mp3"
+                             width="100%"
+                             aspect="8:1"/>
+            </figure>
+        </introduction>
+
+        <subsection xml:id="subsec-misuse-and-misinterpretation-dutch">
+            <title>The Dutch childcare scandal</title>
+
+            <p>
+                The episode starts with the Dutch childcare benefits
+                scandal.
+                In the Netherlands, an algorithm was used to decide whether
+                people might be claiming childcare benefits fraudulently.
+                As we say in the episode, the consequences were horrific.
+                Children were taken away and put into care, families had
+                serious money problems, and there were suicides and divorces.
+                David is clear that he doesn't believe anybody meant any harm.
+            </p>
+
+            <p>
+                David's first point is about the word <q>determine</q>.
+                I said the algorithm was used to determine whether someone was
+                committing fraud, and he pointed out that it should only ever
+                have said who was at risk of it.
+                An algorithm can raise a red flag.
+                It can't know what's actually going on in a household.
+                In his view, treating a risk as if it were reality is a
+                <q>cardinal sin</q>.
+            </p>
+
+            <p>
+                He gave an example.
+                A system that predicts who's likely to commit a crime might
+                be a reason to keep an eye on someone.
+                But it could never be a reason to put them in jail, because
+                they haven't done anything, and they could still choose not to.
+            </p>
+        </subsection>
+
+        <subsection xml:id="subsec-misuse-and-misinterpretation-response-design">
+            <title>What do you do with a red flag?</title>
+
+            <p>
+                David's second point is that a risk score doesn't tell you
+                what to do next.
+                A family flagged as being at risk of fraud could be sent an
+                investigator.
+                They could also be sent a care worker, because the risk might
+                come from the difficult situation they're in.
+            </p>
+
+            <p>
+                That matters a lot when the data has biases in it.
+                If you send an investigator, and the system flags some
+                minority groups more often, those groups get over-checked,
+                and that's not acceptable.
+                If you send a care worker, the same bias might mean those
+                groups get more support than they need.
+                David says that's a much smaller cost, and could even help to
+                correct for past under-support.
+                He's careful to say that he doesn't have the answers, and that
+                each case needs deep thought.
+            </p>
+
+            <insight>
+                <p>
+                    The same score can lead to very different outcomes,
+                    depending on what the people using it do next.
+                </p>
+            </insight>
+
+            <p>
+                You can see the same thing in SHA.
+                A household was given a score, and the next step was a bill.
+                If the next step had been a conversation, the same score
+                could have done far less harm.
+            </p>
+        </subsection>
+
+        <subsection xml:id="subsec-misuse-and-misinterpretation-compas">
+            <title>COMPAS</title>
+
+            <p>
+                We also talk about COMPAS, which comes up in the US courts.
+                COMPAS is a risk score, made by a company called Northpointe,
+                that estimates how likely a person is to be arrested again.
+                It's based on a questionnaire of 137 items.
+                Race isn't one of the questions
+                (<xref ref="biblio-propublica-method-2016" text="custom">Angwin et al., 2016</xref>).
+            </p>
+
+            <p>
+                In 2016, the journalists at ProPublica looked at what happened to
+                more than 7,000 people who'd been scored in Broward County,
+                Florida.
+                They compared the scores to who was arrested again over the
+                next two years.
+                They gave two examples.
+                Brisha Borden, who was 18 and Black, and Vernon Prater, who was
+                41 and white, were each arrested in 2014 for a small theft.
+                Hers was a bike and a scooter worth about $80 (about KES 10,400
+                at the 2026 rate).
+                Borden was rated high risk, and Prater low risk.
+                Prater had already been convicted of armed robbery before.
+                Borden had only minor offences as a juvenile.
+                Two years later, Borden hadn't been charged with anything new,
+                and Prater was in prison for a later burglary
+                (<xref ref="biblio-propublica-2016" text="custom">Angwin et al., 2016</xref>).
+            </p>
+
+            <p>
+                ProPublica's main finding was that the score was wrong in
+                different ways for different people.
+                Among Black defendants who didn't go on to be arrested again,
+                45% had been labelled higher risk.
+                Among white defendants it was 23%.
+                White defendants who did go on to reoffend were more likely to
+                have been labelled low risk
+                (<xref ref="biblio-propublica-method-2016" text="custom">Angwin et al., 2016</xref>).
+                Overall the score was right about 61% of the time
+                (<xref ref="biblio-propublica-2016" text="custom">Angwin et al., 2016</xref>).
+                Northpointe disagreed with ProPublica's analysis and said its
+                results didn't reflect how the model works.
+            </p>
+
+            <p>
+                The article is also a story about how scores get used.
+                In Wisconsin, a judge threw out a plea deal and gave a man
+                called Paul Zilly a longer sentence, after seeing a high risk
+                score.
+                The score's own creator, Tim Brennan, then told the court
+                that it shouldn't be the only basis for a decision, and
+                the sentence was cut
+                (<xref ref="biblio-propublica-2016" text="custom">Angwin et al., 2016</xref>).
+                That's the same point David makes about the Dutch case.
+                The score was meant to be one piece of information.
+            </p>
+
+            <p>
+                David points out that COMPAS is a different case.
+                The people being scored have already been arrested, so the
+                question is about how lenient to be.
+                He says that whether it should be used for that at all is a
+                separate question, and one for another episode.
+            </p>
+        </subsection>
+
+        <subsection xml:id="subsec-misuse-and-misinterpretation-layers">
+            <title>Keep the people in</title>
+
+            <p>
+                What should you do instead?
+                In the episode, David goes back to the post office example from
+                our earlier episode on demystifying data science.
+                If getting the post to the right place were a matter of life
+                or death, you wouldn't replace the human sorters with a
+                machine that's right 90% of the time.
+                You'd keep the people, and put the machine on top.
+                It costs more, but it's much safer.
+                It might even make the sorters' job easier, because most of
+                the work has already been done.
+            </p>
+
+            <p>
+                He mentions a study where people seemed to check another
+                person's work more carefully than they checked an AI's.
+                He hasn't looked into it properly, and nor have I, so treat it
+                as something to look up.
+                The point he makes from it is that the way you fit AI into a
+                system changes how people behave in that system.
+            </p>
+
+            <p>
+                The part of the conversation that stays with me is at the end.
+                David says there are two sides to <q>do no harm</q>.
+                One is not harming people on purpose, which is in your
+                control.
+                The other is that even when you're trying to do things right,
+                the consequences of what you build can be out of your hands.
+                He says we need AI literacy at every level, from the people who
+                build these systems to their managers and the people who use
+                them.
+                He's honest that he doesn't think the tools exist yet to
+                stop this happening again.
+            </p>
+        </subsection>
+
+        <subsection xml:id="subsec-misuse-and-misinterpretation-risk-summary">
+            <title>Summary</title>
+
+            <ul>
+                <li>
+                    <p>
+                        A score is an estimate of risk, and it isn't a fact about
+                        a person.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        What matters just as much is what people do next with
+                        the score.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Bias in the data can lead to harm that is spread
+                        unevenly.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Keeping people in the process, as a second layer, is
+                        safer than handing the decision over.
+                    </p>
+                </li>
+            </ul>
+        </subsection>
     </section>
 
-    <!-- 3. An illustrative worked example using software. -->
+    <!-- ============================================================= -->
+    <!-- 3. Podcast: made-up citations                                  -->
+    <!-- ============================================================= -->
+    <section xml:id="sec-misuse-and-misinterpretation-citations">
+        <title>Made-Up Citations</title>
+
+        <introduction xml:id="intro-misuse-and-misinterpretation-citations">
+            <p>
+                Misuse isn't only about scores.
+                It's also about trusting a tool to do something it wasn't built
+                to do.
+                This section comes from another conversation between me and
+                David
+                (<xref ref="biblio-podcast-065" text="custom">Clements and Stern, episode 65, n.d.</xref>).
+                It's about twenty-six minutes long.
+                It's also available at
+                <url href="https://www.idems.international/podcast/065-hallucitations/">idems.international</url>.
+            </p>
+
+            <figure xml:id="fig-misuse-and-misinterpretation-podcast-065">
+                <caption>The IDEMS Podcast, episode 65: Hallucitations</caption>
+                <interactive xml:id="int-misuse-and-misinterpretation-podcast-065"
+                             iframe="https://www.idems.international/podcast-player/3971/065-hallucitations.mp3"
+                             width="100%"
+                             aspect="8:1"/>
+            </figure>
+        </introduction>
+
+        <subsection xml:id="subsec-misuse-and-misinterpretation-hallucitations">
+            <title>Hallucitations</title>
+
+            <p>
+                A hallucitation is what you get when an AI chat tool, such as
+                ChatGPT, is asked for citations and makes them up.
+                It gives you an author's name and the title of a paper, and it
+                all looks right.
+                Then you search for the paper, and it doesn't exist.
+                I've been surprised by how often that happens.
+            </p>
+
+            <p>
+                It has also hurt real people.
+                In the episode I mention a law professor who found that an AI
+                tool had named him in a story about professors who'd abused
+                their students.
+                He'd never been to that school or on that trip.
+                He found it funny at first, and then he realised it was
+                defamation.
+            </p>
+        </subsection>
+
+        <subsection xml:id="subsec-misuse-and-misinterpretation-why-citations">
+            <title>Why does it do this?</title>
+
+            <p>
+                David's explanation is that a tool like ChatGPT is trying to
+                write something that looks like what you want to read.
+                It doesn't understand what it's saying.
+                When you ask for a citation, it puts one together from pieces
+                of text from all over the internet.
+                It isn't searching a list of real cases.
+                Sometimes the pieces make a real citation, and sometimes they
+                don't.
+            </p>
+
+            <p>
+                He thinks the problem can be solved, but not by making the
+                same model bigger.
+                You'd need a design with two layers, where a separate part of
+                the system looks up real sources and doesn't make anything
+                up.
+                He gives another example of two layers working well, where
+                people building an AI maths tutor got better results by
+                first getting the AI to work out the answer, and then using
+                that answer to explain it.
+                David describes it as thinking before you speak.
+            </p>
+
+            <p>
+                So why hasn't it been fixed?
+                David thinks it's about money.
+                Building a more reliable system would be expensive, and the
+                companies don't have a strong reason to do it, unless the
+                cost of the lawsuits gets very large.
+                He says clearly that he isn't arguing for that.
+                He's just describing the incentives.
+            </p>
+        </subsection>
+
+        <subsection xml:id="subsec-misuse-and-misinterpretation-powerless">
+            <title>What about people who can't fight back?</title>
+
+            <p>
+                The people in the stories I mentioned were well known, or
+                had the means to complain.
+                David asks about everyone else.
+                If a made-up statement about you appears, and you don't have
+                a lawyer or a platform, how do you show it's false?
+                And would anyone ever notice?
+                He says he's more worried about this than he is about the
+                robots that people talk about at AI safety summits.
+            </p>
+
+            <p>
+                His answer for now is that people should stay in the role of
+                the critic.
+                You can use the tool, but you should check what comes out, and
+                you're the one who's responsible for it.
+            </p>
+        </subsection>
+
+        <subsection xml:id="subsec-misuse-and-misinterpretation-kenya-courts">
+            <title>Closer to home: Kenya's courts</title>
+
+            <p>
+                Kenya's courts are dealing with the same problem.
+                In 2026, Nairobi Law Monthly reported that several judges had
+                struck out pleadings containing AI-generated text and cases
+                that don't exist.
+                It also reported that the Judiciary is drafting an AI policy
+                and practice directions.
+                The draft, which was out for comment from the Law Society and
+                others, says that advocates who use AI to prepare court
+                documents must say so when they file.
+                They must check every authority they cite, and they mustn't
+                file anything written wholly by an AI tool without proper
+                human review.
+                Judges and other court officers must treat what an AI gives them
+                as information only
+                (<xref ref="biblio-nlm-2026" text="custom">Muthoni, 2026</xref>).
+            </p>
+
+            <p>
+                Read that again and you can hear David's advice from the
+                episode.
+                The tool can help, and the person is still responsible.
+            </p>
+        </subsection>
+
+        <subsection xml:id="subsec-misuse-and-misinterpretation-citations-summary">
+            <title>Summary</title>
+
+            <ul>
+                <li>
+                    <p>
+                        A tool that writes something that looks right isn't
+                        checking that it is right.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Made-up citations have caused real harm, including
+                        defamation, and in Kenya the courts are now writing rules
+                        about them.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Better design is possible, but it costs money, so the
+                        incentives matter.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        For now, the person using the tool is the one who has to
+                        check it.
+                    </p>
+                </li>
+            </ul>
+        </subsection>
+    </section>
+
+    <!-- ============================================================= -->
+    <!-- 4. Illustrative example                                        -->
+    <!-- ============================================================= -->
     <section xml:id="sec-misuse-and-misinterpretation-worked-example">
-        <title>Try It</title>
+        <title>Try It: Checking an AI's Citations</title>
 
         <p>
-            TODO: worked example.
+            Let's try this for ourselves.
+            You'll need an AI assistant, and a way to search for articles,
+            like Google Scholar.
+        </p>
+
+        <ol>
+            <li>
+                <p>
+                    Pick a topic you know a bit about.
+                    Ask the assistant for five sources on it, with authors,
+                    titles and years.
+                </p>
+            </li>
+            <li>
+                <p>
+                    Look up each one.
+                    Does the paper exist?
+                    Is it by those authors, in that year?
+                </p>
+            </li>
+            <li>
+                <p>
+                    If it exists, find out whether it really says what the
+                    assistant said it says.
+                </p>
+            </li>
+            <li>
+                <p>
+                    Write down how many were real, how many were real but
+                    misdescribed, and how many you couldn't find.
+                </p>
+            </li>
+        </ol>
+
+        <p>
+            Please don't put anyone's personal details into the assistant.
+            If you can't find a source, don't assume that's because you
+            searched badly.
+            Try more than one search tool before you decide it doesn't exist.
         </p>
     </section>
 
-    <!-- 4. Exercises. -->
+    <!-- ============================================================= -->
+    <!-- 5. Exercises                                                   -->
+    <!-- ============================================================= -->
     <exercises xml:id="exercises-misuse-and-misinterpretation">
         <title>Exercises</title>
 
         <exercise xml:id="ex-misuse-and-misinterpretation-1">
+            <title>Pick a sector</title>
             <statement>
                 <p>
-                    TODO: exercise.
+                    So far we've looked at systems where AI caused harm.
+                    But AI is also being used in Kenya in ways that could help a
+                    lot.
+                    Here are some sectors.
+                    <ul>
+                        <li>
+                            <p>
+                                Health, where apps and bots can help people
+                                understand their symptoms (for example
+                                Amenya), or offer mental health support (for
+                                example Chat Care from the Kenya Red Cross).
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Education, such as Angaza Elimu, a classroom tool
+                                for teachers and students.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Agriculture, where platforms give farmers advice
+                                on crops, weather, pests and prices (for example
+                                FarmerAI).
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Finance, where AI helps to spot fraud (for
+                                example Safaricom's use of machine learning).
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Conservation, where cameras and drones help to
+                                track endangered animals.
+                            </p>
+                        </li>
+                    </ul>
+                    Choose one, and think about these questions.
+                    <ol>
+                        <li>
+                            How could AI help in this sector, in Kenya?
+                        </li>
+                        <li>
+                            What harm could happen if it isn't used properly?
+                        </li>
+                        <li>
+                            Are there measures in place now to prevent that?
+                            If not in Kenya, what's done elsewhere?
+                        </li>
+                        <li>
+                            Where could things go wrong: in the design of the
+                            algorithm, in the data, or in how people read and
+                            use what it says?
+                        </li>
+                        <li>
+                            What would you suggest to prevent the harm?
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+        </exercise>
+
+        <exercise xml:id="ex-misuse-and-misinterpretation-2">
+            <title>An investigator or a care worker?</title>
+            <statement>
+                <p>
+                    Think about a system that flags households as being at
+                    risk, whether of fraud, of missing school fees or of not
+                    being able to pay a health premium.
+                    Think about these questions.
+                    <ol>
+                        <li>
+                            What would happen to a family if an investigator
+                            arrived?
+                            What if a care worker did?
+                        </li>
+                        <li>
+                            Who decides which of them is sent?
+                            Should that person be the one who built the
+                            system?
+                        </li>
+                        <li>
+                            If the system is wrong about some groups more often
+                            than others, which of the two responses is safer?
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+        </exercise>
+
+        <exercise xml:id="ex-misuse-and-misinterpretation-3">
+            <title>Who carries the errors?</title>
+            <statement>
+                <p>
+                    David Khaoya says that officials chose to get the
+                    better-off households right, even if that meant the poor
+                    were overcharged.
+                    Every model makes mistakes.
+                    Think about these questions.
+                    <ol>
+                        <li>
+                            If a model had to be wrong about someone, who
+                            should it be wrong about, and why?
+                        </li>
+                        <li>
+                            Who should decide, and how would the public know?
+                        </li>
+                        <li>
+                            Would your answer change if the cost of being
+                            wrong was different, say a small bill instead of
+                            being turned away from treatment?
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+        </exercise>
+
+        <exercise xml:id="ex-misuse-and-misinterpretation-4">
+            <title>Is KES 650 a lot?</title>
+            <statement>
+                <p>
+                    SHA says that 92% of informal households are assessed at
+                    KES 850 a month or less.
+                    Grace, the community health promoter, says that KES 650
+                    can be a tenth of income or more for people below the
+                    poverty line.
+                    The premium is 2.75% of the income the formula predicts.
+                    What monthly income does a KES 650 premium assume?
+                    How can both statements be true?
+                    What numbers would you ask for to decide whether the
+                    premiums are fair?
+                    Who would have them?
+                </p>
+            </statement>
+        </exercise>
+
+        <exercise xml:id="ex-misuse-and-misinterpretation-5">
+            <title>What makes an appeal real?</title>
+            <statement>
+                <p>
+                    Florence's request for a review was turned down by an
+                    automated reply, with no reason.
+                    Think about these questions.
+                    <ol>
+                        <li>
+                            What would an appeals process need, for you to
+                            trust it?
+                        </li>
+                        <li>
+                            Think about the person who might use it.
+                            What might stop them?
+                            Think about cost, time, and what they'd need to
+                            know first.
+                        </li>
+                        <li>
+                            Who should read the appeals, a person or a
+                            machine?
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+        </exercise>
+
+        <exercise xml:id="ex-misuse-and-misinterpretation-6">
+            <title>A second layer</title>
+            <statement>
+                <p>
+                    David says that if the post were a matter of life or
+                    death, you'd keep the human sorters and put the machine on
+                    top.
+                    Pick a decision in your own sector that an AI tool could
+                    help with.
+                    Describe the two layers.
+                    What would the people do, what would the tool do, and
+                    what would they do when they disagree?
+                </p>
+            </statement>
+        </exercise>
+
+        <exercise xml:id="ex-misuse-and-misinterpretation-7">
+            <title>What did you find?</title>
+            <statement>
+                <p>
+                    In the Try It, how many of the assistant's sources were real,
+                    and how many said what it claimed?
+                    How did it sound when it was wrong?
+                    Would you have noticed if you hadn't checked?
+                </p>
+            </statement>
+        </exercise>
+
+        <exercise xml:id="ex-misuse-and-misinterpretation-8">
+            <title>A note to SHA</title>
+            <statement>
+                <p>
+                    Imagine you've been asked to advise SHA after the
+                    investigation.
+                    Write a short note, no more than a page, saying what you
+                    would change first, and why.
+                    Say which of these problems your changes would fix: the
+                    data, the way the score was designed, or the way people
+                    read and used it.
+                </p>
+            </statement>
+        </exercise>
+
+        <exercise xml:id="ex-misuse-and-misinterpretation-9">
+            <title>Registered or covered?</title>
+            <statement>
+                <p>
+                    The President said that 33.7 million Kenyans are registered
+                    with SHA.
+                    SHA's own report shows about 4.78 million active
+                    contributors.
+                    Think about these questions.
+                    <ol>
+                        <li>
+                            Why can't we divide one number by the other to find
+                            out how many people have cover?
+                        </li>
+                        <li>
+                            What number would you ask SHA for?
+                        </li>
+                        <li>
+                            Find a headline number from your own work or
+                            community that could be read in more than one way.
+                            What does it count, and what does it leave out?
+                        </li>
+                    </ol>
                 </p>
             </statement>
         </exercise>
     </exercises>
+
+    <!-- ============================================================= -->
+    <!-- Sources                                                        -->
+    <!-- ============================================================= -->
+    <references xml:id="references-misuse-and-misinterpretation">
+        <title>Sources</title>
+
+        <biblio type="raw" xml:id="biblio-lighthouse-2026">
+            Lighthouse Reports (2026). How we investigated Kenya's AI means
+            testing system. 4 May 2026. Methodology for the investigation
+            <q>Hiding behind AI</q>, published with Africa Uncensored and The
+            Guardian.
+            <url href="https://www.lighthousereports.com/methodology/how-we-investigated-kenyas-ai-means-testing-system/"/>.
+        </biblio>
+
+        <biblio type="raw" xml:id="biblio-africacheck-2026">
+            Africa Check (2026). What does it mean to be <q>on SHA</q>? A guide
+            to Kenya's new health system. 25 November 2026.
+            <url href="https://africacheck.org/fact-checks/blog/what-does-it-mean-be-sha-guide-kenyas-new-health-system"/>.
+        </biblio>
+
+        <biblio type="raw" xml:id="biblio-au-2026">
+            Africa Uncensored (2026). Error by design: how SHA's AI system is
+            failing Kenyans. May 2026.
+            <url href="https://africauncensored.online/blog/2026/05/05/sha-failing-kenyans/"/>.
+        </biblio>
+
+        <biblio type="raw" xml:id="biblio-ev-2026">
+            Eastleigh Voice (2026). Africa Uncensored maintains SHA dodged key
+            questions on means-testing model. 7 May 2026.
+            <url href="https://eastleighvoice.co.ke/news/345834/africa-uncensored-maintains-sha-dodged-key-questions-on-meanstesting-model"/>.
+        </biblio>
+
+        <biblio type="raw" xml:id="biblio-citizen-2026">
+            Nyambura, M. (2026). SHA defends means-testing tool amid scrutiny
+            over healthcare premiums. Citizen Digital, 7 May 2026.
+            <url href="https://citizen.digital/article/sha-defends-means-testing-tool-amid-scrutiny-over-healthcare-premiums-n382203"/>.
+        </biblio>
+
+        <biblio type="raw" xml:id="biblio-kenyans-2024">
+            Mito, W. (2024). Factors govt will consider to determine 2.75%
+            health insurance deductions for Kenyans in informal sector.
+            Kenyans.co.ke, 7 March 2024.
+            <url href="https://www.kenyans.co.ke/news/98357-factors-govt-will-consider-determine-275-health-insurance-deductions-kenyans-informal"/>.
+        </biblio>
+
+        <biblio type="raw" xml:id="biblio-kenyans-2026">
+            Amunga, M. (2026). SHA details how Kenyans can get cover despite
+            struggling to pay premiums. Kenyans.co.ke, 26 October 2026.
+            <url href="https://kenyans.co.ke/news/128877-sha-details-how-kenyans-can-get-cover-despite-struggling-pay-premiums"/>.
+        </biblio>
+
+        <biblio type="raw" xml:id="biblio-capital-2026">
+            Wakaya, J. (2026). Court rebukes govt over hurried SHIF rollout,
+            demands quarterly progress reports. Capital FM, March 2026
+            (reprinted by AllAfrica, 25 March 2026).
+            <url href="https://allafrica.com/stories/202603250104.html"/>.
+        </biblio>
+
+        <biblio type="raw" xml:id="biblio-propublica-2016">
+            Angwin, J., Larson, J., Mattu, S. and Kirchner, L. (2016). Machine
+            bias. ProPublica, 23 May 2016.
+            <url href="https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing"/>.
+        </biblio>
+
+        <biblio type="raw" xml:id="biblio-propublica-method-2016">
+            Angwin, J., Larson, J., Mattu, S. and Kirchner, L. (2016). How we
+            analyzed the COMPAS recidivism algorithm. ProPublica, 23 May 2016.
+            <url href="https://www.propublica.org/article/how-we-analyzed-the-compas-recidivism-algorithm"/>.
+        </biblio>
+
+        <biblio type="raw" xml:id="biblio-nlm-2026">
+            Muthoni, D. (2026). Judiciary moves to regulate AI in courts over
+            AI-generated filings. Nairobi Law Monthly, 28 May 2026.
+            <url href="https://nairobilawmonthly.com/judiciary-moves-to-regulate-ai-in-courts-over-ai-generated-filings/"/>.
+        </biblio>
+
+        <biblio type="raw" xml:id="biblio-podcast-021">
+            Clements, L. and Stern, D. The IDEMS Podcast, episode 21: Where
+            Things Have Gone Wrong with AI. Release date to be confirmed.
+            <url href="https://www.idems.international/podcast/021-where-things-have-gone-wrong-with-ai/"/>.
+        </biblio>
+
+        <biblio type="raw" xml:id="biblio-podcast-065">
+            Clements, L. and Stern, D. The IDEMS Podcast, episode 65:
+            Hallucitations. Release date to be confirmed.
+            <url href="https://www.idems.international/podcast/065-hallucitations/"/>.
+        </biblio>
+    </references>
 </chapter>
