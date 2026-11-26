@@ -65,3 +65,43 @@ most of them, and the full transcripts of 267 and 269. 268 was read through a he
 
 Its chapters 2 and 3 are Proxy Variables and Feedback Loops, so this chapter's material overlaps.
 PreTeXt can share files between books, so it is worth keeping those sections self-contained.
+
+## Verification pass, 26 November 2026
+
+Podcasts 172, 269 and 17 were re-read from their pages by a second helper against a
+numbered list. The SHA statements were re-checked on the Africa Uncensored and Lighthouse pages.
+The electricity result was checked in the Lighthouse PDF myself.
+
+Fixed:
+- Podcast 17 (How Data Lies) does NOT mention small samples, teacher evaluation, missing
+  data or unknown unknowns. Those parts were wrongly sitting inside the podcast section.
+  They are now in their own section, "Too Little Data, and Data That Isn't There"
+  (small samples from Woodson, known and unknown unknowns from your Moodle text). The
+  podcast section only claims what David says: Simpson's paradox with the digital
+  literacy example, the naive reading being wrong, and "intelligent decisions, not
+  data-driven ones".
+- Podcast 172: "extreme and exaggerating" is David's remark, not "we". The ranking
+  detail is "administration staff", not admissions staff, and "students from certain
+  backgrounds" get CV help.
+- Podcast 269: David blames the scraping of the internet for not telling the April Fool's
+  post from a real one. He says "disassociation", not "gap". Kate says the series is "loosely
+  in conversation with" Karen Hao's book (not "responding to").
+- SHA: added that Lighthouse found IDinsight's alternative design wasn't more accurate
+  either, so the missing loop is about checking and learning, not just adopting that fix.
+
+Confirmed:
+- Electricity: the PDF table has the "Yes" row: exclusion error 56.02%, predicted poor 17.62%,
+  actually poor 26.52%. The text says poor households with electricity are excluded more
+  than poor households without. The chapter says only the first part.
+- Africa Uncensored: "SHA told us in November last year that it was still using the old
+  one" (the article is dated May 2026, so November 2025), and "it remains unclear" whether
+  SHA adopted the new system. IDinsight's recommendation to contest predictions: confirmed.
+- Florence's automated appeal "denied without a reason given": confirmed (Lighthouse page).
+- Woodson and the village numbers were read directly by me when drafting.
+
+Still not 100%:
+- The survey year: Africa Uncensored's article says "2020" in one place and 2021 in another.
+  Lighthouse's methodology and SHA's own FOI reply say 2021. The chapter says 2021.
+- The Tanzania numbers are David's account of what happened and haven't been checked.
+- Davies and Douglas is a draft; the chapter uses only its central idea.
+- The two TODOs: the village data set and video, and the "AI world map" link.

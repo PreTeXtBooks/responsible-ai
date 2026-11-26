@@ -302,6 +302,11 @@
                 IDinsight's changes
                 (<xref ref="biblio-au-2026" text="custom">Africa Uncensored, 2026</xref>).
                 That's closer to the birdsong app than to the Post Office.
+                Lighthouse also tested IDinsight's alternative design, and found it
+                wasn't more accurate, so the problem isn't just about adopting one
+                particular fix.
+                It's about whether anyone is checking and learning
+                (<xref ref="biblio-lighthouse-2026" text="custom">Lighthouse Reports, 2026</xref>).
             </p>
 
             <p>
@@ -433,7 +438,7 @@
             <p>
                 David points out that if schools are judged and funded on
                 grades, a school has a reason not to take weak students.
-                (He says it's an exaggeration, and we were being extreme.)
+                (He adds that he's being extreme and exaggerating.)
                 And a school that takes in students with learning difficulties
                 could be doing excellent work and still look bad on the
                 indicator.
@@ -467,8 +472,8 @@
                 universities then play the game.
                 Fees weren't one of the measures, for example, so a university
                 can charge what it likes.
-                Admissions staff know what the model wants, and applicants
-                with money can pay for help with their CVs to match.
+                Administration staff know who the model wants, and applicants
+                from certain backgrounds can get help with their CVs to match.
             </p>
 
             <p>
@@ -568,7 +573,8 @@
                 Fleming, another director at IDEMS, about what makes data
                 good
                 (<xref ref="biblio-podcast-269" text="custom">Stern and Fleming, episode 269, 2026</xref>).
-                It's part of a series that responds to Karen Hao's book,
+                It's part of a series that's loosely in conversation with Karen
+                Hao's book,
                 <em>Empire of AI</em>.
                 It's about half an hour long, and it's available at
                 <url href="https://www.idems.international/podcast/269-why-better-data-matters/">idems.international</url>.
@@ -606,8 +612,8 @@
                 That sounded much too high.
                 I tracked it down, and the source was a post from the centre
                 that was an April Fool's joke.
-                The AI had picked it up, and couldn't tell it from a real
-                announcement.
+                The scraping of the internet couldn't tell it from a real
+                announcement, and the AI picked it up.
             </p>
         </subsection>
 
@@ -629,8 +635,8 @@
                 feedback.
                 But some data never gets flagged as needing a check, and is just
                 accepted as fact.
-                David says that there's a gap between the people who give
-                feedback and the people who own the data.
+                David says that there's a disassociation between the people who
+                give feedback and the people who own the data.
                 He says the process is a deliberate choice, built on
                 extraction.
             </p>
@@ -716,6 +722,50 @@
             </p>
         </subsection>
 
+
+
+
+
+        <subsection xml:id="subsec-where-does-bias-come-from-data-lies-summary">
+            <title>Summary</title>
+
+            <ul>
+                <li>
+                    <p>
+                        The same data can tell two stories, depending on how you
+                        group it.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        David wants intelligent decisions that use data, and
+                        not decisions that are just driven by it.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        The data has no answers by itself, so you have to
+                        question it.
+                    </p>
+                </li>
+            </ul>
+        </subsection>
+    </section>
+
+    <!-- ============================================================= -->
+    <!-- 6b. Too little data, and data that isn't there                 -->
+    <!-- ============================================================= -->
+    <section xml:id="sec-where-does-bias-come-from-missing-data">
+        <title>Too Little Data, and Data That Isn't There</title>
+
+        <introduction xml:id="intro-where-does-bias-come-from-missing-data">
+            <p>
+                The episode is about reading data.
+                O'Neil's third question is also about how much data there is,
+                and whose it is.
+            </p>
+        </introduction>
+
         <subsection xml:id="subsec-where-does-bias-come-from-small-samples">
             <title>Too little data</title>
 
@@ -774,16 +824,10 @@
                  once we have the link. -->
         </subsection>
 
-        <subsection xml:id="subsec-where-does-bias-come-from-data-lies-summary">
+        <subsection xml:id="subsec-where-does-bias-come-from-missing-summary">
             <title>Summary</title>
 
             <ul>
-                <li>
-                    <p>
-                        The same data can tell two stories, depending on how you
-                        group it.
-                    </p>
-                </li>
                 <li>
                     <p>
                         Small samples can't support big conclusions.
