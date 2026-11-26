@@ -4,56 +4,938 @@
 <!--  Chapter 8: Who is Responsible?  -->
 <!-- ================================================================= -->
 <!--
-  NOTES (see also notes/case-study-plan.md):
-  Case study ideas: generative AI's environmental impact, or the
-  ChatGPT story again. Ideally a new Kenyan case.
+  NOTES (see also notes/ch8-research.md):
+  - Three kinds of cost, each with its own case or episode:
+    labour (Meta, Sama and Facebook's moderators in Kenya),
+    energy and water (the stalled Microsoft and G42 data centre at Olkaria),
+    misinformation (podcast 125, AI summaries).
+  - The moderators' cases are NOT decided on the merits. The chapter says so.
+  - The data centre facts rest on news reports. No original statement from
+    the President was found.
+  - Kenya's 2026 policy (2.11.7, 3.4, page 16) names both gaps itself.
+  - TODO: the TED talk transcript (not available to us), the environmental
+    article, and the environmental paper Lily mentioned (no links).
+  - Practise (STACK) section removed on purpose. Questions go in the exercises.
 -->
 <chapter xml:id="ch-who-is-responsible" xmlns:xi="http://www.w3.org/2001/XInclude">
     <title>Who is Responsible?</title>
 
     <introduction xml:id="intro-who-is-responsible">
         <p>
-            TODO: a hook and a short overview of the chapter.
+            I once fell while bouldering, and went to A&amp;E.
+            Afterwards I wanted to know how high the wall was.
+            Google's AI summary gave a height that was absurdly tall.
+            That didn't sound right.
+            I found the venue's own article, which was dated 1 April, and
+            ended with <q>Happy April Fool's Day</q>
+            (<xref ref="biblio-podcast-125" text="custom">Clements and Stern, episode 125, n.d.</xref>).
         </p>
+
+        <p>
+            Nobody was hurt by that mistake.
+            But it makes a good question.
+            Who was responsible?
+            The venue, for a joke that was easy to read the wrong way?
+            Google, for the summary?
+            Me, for believing it?
+        </p>
+
+        <p>
+            In the last chapter we looked at principles.
+            This chapter is about what happens when something goes wrong, and
+            who pays.
+            We look at three kinds of cost: misinformation, human labour, and
+            energy and water.
+            For each one we ask who bears the cost, and who decides.
+        </p>
+
+        <!-- Draft objectives: revise once the rest of the chapter is written. -->
+        <objectives>
+            <title>By the end of this chapter you should be able to</title>
+            <ol>
+                <li>
+                    <p>
+                        Describe different types of cost of AI systems: labour,
+                        energy and misinformation.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Evaluate real examples where AI led to harm or unfair
+                        outcomes.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Debate who should be held responsible: developers,
+                        users, funders, regulators or someone else.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Propose design or policy changes that support shared
+                        responsibility and transparency.
+                    </p>
+                </li>
+            </ol>
+        </objectives>
     </introduction>
 
-    <!-- 1. A real case study (ideally Kenya-based). -->
+    <!-- ============================================================= -->
+    <!-- 1. Case study: the moderators                                  -->
+    <!-- ============================================================= -->
     <section xml:id="sec-who-is-responsible-case-study">
-        <title>Case Study</title>
+        <title>Case Study: Who Employs the People Behind the Feed?</title>
 
-        <p>
-            TODO: case study.
-        </p>
+        <subsection xml:id="subsec-who-is-responsible-moderators-who">
+            <title>The people who clean up</title>
+
+            <p>
+                Social media feeds look clean because people clean them.
+                Content moderators look at the posts that are reported or
+                flagged, and decide what has to come down.
+                A lot of the work is disturbing.
+            </p>
+
+            <p>
+                In Kenya, much of that work for Facebook was done by workers at
+                Sama, the outsourcing company we met in Chapter 2.
+                Sama's staff worked for Meta, the company that owns Facebook,
+                but they were employed by Sama
+                (<xref ref="biblio-nothias-2026" text="custom">Nothias, 2026</xref>).
+                That's the whole question.
+                When something goes wrong, is it Sama's responsibility, or
+                Meta's?
+            </p>
+        </subsection>
+
+        <subsection xml:id="subsec-who-is-responsible-moderators-cases">
+            <title>The cases</title>
+
+            <p>
+                There are several cases, in Kenya's Employment and Labour
+                Relations Court.
+                Here is what the sources we've read tell us.
+            </p>
+
+            <ul>
+                <li>
+                    <p>
+                        <em>2022.</em>
+                        Daniel Motaung, described as a whistleblower, brought the first
+                        case against Meta and Sama (Petition E071 of 2022).
+                        In February 2023, a judge refused to remove Meta from the
+                        case, even though Meta argued that it didn't carry on
+                        business in Kenya
+                        (<xref ref="biblio-nothias-2026" text="custom">Nothias, 2026</xref>).
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <em>2023.</em>
+                        A second case was brought by more than 180 former
+                        moderators.
+                        They say that in January 2023, Meta decided to close the
+                        East African hub run by Sama, and that it told the
+                        new contractor, Majorel, not to hire them.
+                        In June 2023, the court issued interim orders,
+                        including that Facebook should provide medical,
+                        psychiatric and psychological care to the moderators
+                        (<xref ref="biblio-nothias-2026" text="custom">Nothias, 2026</xref>).
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <em>2024.</em>
+                        In September 2024, the Court of Appeal rejected Meta's
+                        appeal, and found that the Kenyan court had
+                        jurisdiction over it
+                        (<xref ref="biblio-nothias-2026" text="custom">Nothias, 2026</xref>).
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <em>April 2026.</em>
+                        The court ordered a Meta director to appear to be
+                        cross-examined on an affidavit that Meta had filed.
+                        A hearing date will follow once Meta and the other
+                        respondents appear
+                        (<xref ref="biblio-capital-moderators-2026" text="custom">Capital FM, 2026</xref>).
+                    </p>
+                </li>
+            </ul>
+
+            <p>
+                Meta's position is that it didn't hire or fire the workers, and
+                that Sama employed them.
+                The workers say that they've had no mental health care, and
+                that their situation is getting worse.
+                One legal analysis says that a judge held Meta to be the
+                <q>true employer</q>, partly because the moderators used
+                Facebook's own software.
+                It doesn't give a date for it, or say which ruling it means
+                (<xref ref="biblio-nothias-2026" text="custom">Nothias, 2026</xref>).
+            </p>
+
+            <insight>
+                <p>
+                    Be careful with the headlines.
+                    One of them said the court had <q>backed</q> the moderators.
+                    The body of the report describes an order for a Meta
+                    director to be cross-examined.
+                    As far as we can find, no court has yet ruled on who is
+                    responsible.
+                    So far the courts have settled only where the case can be
+                    heard.
+                </p>
+            </insight>
+        </subsection>
+
+        <subsection xml:id="subsec-who-is-responsible-moderators-power">
+            <title>Who had the power?</title>
+
+            <p>
+                Think about the positions in this story.
+            </p>
+
+            <ul>
+                <li>
+                    <p>
+                        <em>Meta</em> is based abroad.
+                        According to the workers, it decided to close the Sama hub,
+                        and the work was done on Facebook's own software.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <em>Sama</em> hires, pays and supervises the workers, but
+                        works for Meta.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <em>The moderators</em> do the work, and take the risk to
+                        their mental health.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <em>The courts and the government</em> decide what
+                        counts as responsibility, and whether it can be enforced
+                        against a company based abroad.
+                    </p>
+                </li>
+            </ul>
+
+            <p>
+                Outsourcing puts a company between the decision and the
+                person who lives with it.
+                That's why it's hard to say who's responsible.
+                It also makes it easy for each side to point at the other.
+            </p>
+        </subsection>
+
+        <subsection xml:id="subsec-who-is-responsible-moderators-policy">
+            <title>What Kenya's policy says</title>
+
+            <p>
+                Kenya's 2026 AI policy names this exact gap.
+                It lists, among the problems it needs to fix, inadequate
+                protection of AI value-chain workers.
+                Data annotation and content moderation workers, it says, face
+                unique risks, including exposure to harmful content, insecure
+                working conditions and limited labour protections.
+                Existing frameworks provide insufficient safeguards for mental
+                wellbeing, transparency and employer accountability
+                (<xref ref="biblio-kenya-policy-2026" text="custom">State Department for ICT and the Digital Economy, 2026</xref>).
+            </p>
+
+            <p>
+                It proposes to look at labour conditions across the whole AI
+                value chain, including data annotation and content moderation,
+                and to recognise the annotation sector as a national asset
+                (<xref ref="biblio-kenya-policy-2026" text="custom">State Department for ICT and the Digital Economy, 2026</xref>).
+                As we saw in Chapter 7, the policy isn't a law yet.
+            </p>
+        </subsection>
+
+        <subsection xml:id="subsec-who-is-responsible-moderators-lessons">
+            <title>What the case shows</title>
+
+            <ul>
+                <li>
+                    <p>
+                        Responsibility is easy to divide and hard to pin down.
+                        Each party in a chain can say that it was someone else's.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        The workers who carry the cost are often the ones with the
+                        least power to change things.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Courts are slow.
+                        These cases have been running since 2022.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        The same questions come back to Chapters 2 and 3: who
+                        does the hidden work, and who answers for it?
+                    </p>
+                </li>
+            </ul>
+        </subsection>
     </section>
 
-    <!-- 2. A STACK question prompting the reader to think deeply. -->
-    <section xml:id="sec-who-is-responsible-stack">
-        <title>Practise</title>
+    <!-- ============================================================= -->
+    <!-- 2. Podcast 125: AI summaries                                   -->
+    <!-- ============================================================= -->
+    <section xml:id="sec-who-is-responsible-summaries">
+        <title>Who Answers for the Summary?</title>
 
-        <p>
-            TODO: STACK question(s) to go here.
-        </p>
+        <introduction xml:id="intro-who-is-responsible-summaries">
+            <p>
+                The cost of misinformation is easier to see.
+                This section comes from a conversation between me and David
+                Stern about AI summaries
+                (<xref ref="biblio-podcast-125" text="custom">Clements and Stern, episode 125, n.d.</xref>).
+                It's about 26 minutes long, and it's available at
+                <url href="https://www.idems.international/podcast/125-ai-summaries/">idems.international</url>.
+            </p>
+
+            <figure xml:id="fig-who-is-responsible-podcast-125">
+                <caption>The IDEMS Podcast, episode 125: AI Summaries</caption>
+                <interactive xml:id="int-who-is-responsible-podcast-125"
+                             iframe="https://www.idems.international/podcast-player/6396/125-ai-summaries.mp3"
+                             width="100%"
+                             aspect="8:1"/>
+            </figure>
+        </introduction>
+
+        <subsection xml:id="subsec-who-is-responsible-apple">
+            <title>Two stories</title>
+
+            <p>
+                The first story is about Apple's AI summaries of news
+                articles from the BBC.
+                We talk about summaries that got things wrong, like one saying
+                that a leader had died when they hadn't, and one saying
+                that a shooter had shot himself, when he hadn't.
+                Because the summaries appeared under the BBC's name, it was the
+                BBC that complained.
+            </p>
+
+            <p>
+                The second story is mine, which you heard at the start of this
+                chapter.
+                Google's summary came with a small note saying that it might
+                not be accurate.
+                I found out that it was a joke.
+            </p>
+        </subsection>
+
+        <subsection xml:id="subsec-who-is-responsible-summaries-who">
+            <title>Who is responsible?</title>
+
+            <p>
+                David says that it's unclear who's responsible.
+                It could be the BBC, Apple or the people who made the AI.
+                He expects the courts to decide, and he doubts that Apple or
+                the BBC could avoid fault just by adding a disclaimer.
+                If the people who build summaries were held legally responsible
+                for their accuracy, he suggests that the summaries might
+                disappear.
+            </p>
+
+            <p>
+                I think the person reading should check.
+                But that isn't fair to someone reading the news, who can't
+                be expected to check every summary.
+                And I wouldn't blame the venue.
+                I half-jokingly said that I was to blame, for reading it.
+            </p>
+        </subsection>
+
+        <subsection xml:id="subsec-who-is-responsible-summaries-design">
+            <title>Design can help</title>
+
+            <p>
+                David has some ideas.
+                Websites could label April Fool's content, so that an AI
+                knows what it is.
+                Summaries could link to the source, so that a person can check
+                it.
+                Users could flag mistakes, as Google Maps asks people to confirm
+                places.
+            </p>
+
+            <p>
+                He also points out the problems.
+                News is time-bound, so there's often no time for a
+                feedback loop.
+                (My question about a wall has time for repeated flags.)
+                And flagging could be abused, for example by people who
+                coordinate to flag accurate climate science as
+                misinformation.
+                So it's a design question, and he isn't sure that users would
+                bother.
+            </p>
+        </subsection>
     </section>
 
-    <!-- 3. An illustrative worked example using software. -->
+    <!-- ============================================================= -->
+    <!-- 3. Energy and water                                            -->
+    <!-- ============================================================= -->
+    <section xml:id="sec-who-is-responsible-energy">
+        <title>The Cost You Can't See: Energy and Water</title>
+
+        <subsection xml:id="subsec-who-is-responsible-olkaria">
+            <title>A data centre in Kenya</title>
+
+            <p>
+                AI runs in data centres.
+                In Kenya, the biggest proposal was for a geothermal-powered
+                data centre at Olkaria, near Lake Naivasha.
+                Microsoft and G42 announced it in 2024 as part of a $1 billion
+                investment (about KES 130 billion at the 2026 rate).
+                It was to run on geothermal energy, with a first phase of 100
+                megawatts, and to grow to up to one gigawatt (1,000 megawatts)
+                (<xref ref="biblio-aljazeera-2026" text="custom">Sheikh, 2026</xref>;
+                <xref ref="biblio-techish-2026" text="custom">Tech-ish, 2026</xref>).
+            </p>
+
+            <p>
+                In May 2026 it stalled.
+                Al Jazeera says that the plans stalled over concerns about
+                the available power
+                (<xref ref="biblio-aljazeera-2026" text="custom">Sheikh, 2026</xref>).
+                Two other outlets attribute the halt to President Ruto.
+                One of them quotes him as saying that switching it on at full
+                scale would mean shutting off power for <q>half the country</q>
+                (<xref ref="biblio-techish-2026" text="custom">Tech-ish, 2026</xref>;
+                <xref ref="biblio-thinkgeo-2026" text="custom">Cariaga, 2026</xref>).
+                We couldn't find the President's original statement.
+                The project's backers haven't commented publicly.
+                KenGen, the power company, says the data centre is still at the
+                design stage
+                (<xref ref="biblio-aljazeera-2026" text="custom">Sheikh, 2026</xref>).
+            </p>
+
+            <p>
+                To see why, look at the numbers.
+                Kenya has about 3,000 megawatts of installed capacity, and nearly
+                90% of it is renewable.
+                Geothermal makes up 47%
+                (<xref ref="biblio-kenya-policy-2026" text="custom">State Department for ICT and the Digital Economy, 2026</xref>).
+                A campus of up to 1,000 megawatts would be about a third of
+                that.
+            </p>
+        </subsection>
+
+        <subsection xml:id="subsec-who-is-responsible-naivasha">
+            <title>The water question</title>
+
+            <p>
+                Power isn't the only worry.
+                Data centres need water for cooling.
+                Residents around Lake Naivasha are concerned.
+                Silas Wanjala of the Lake Naivasha Riparian Association says that
+                the lake nearly dried up in 2010 from over-abstraction, and that
+                it could happen again.
+                Grace Kimani, a local patrol leader, says that there's
+                little public information on how much water the data centre
+                would use, where it would come from, or how it would be cooled
+                (<xref ref="biblio-aljazeera-2026" text="custom">Sheikh, 2026</xref>).
+            </p>
+
+            <p>
+                No figure for the project's water use has been published.
+                Microsoft has said it would use water-conservation technology,
+                and Al Jazeera says its questions to the companies and the
+                government went unanswered
+                (<xref ref="biblio-aljazeera-2026" text="custom">Sheikh, 2026</xref>).
+            </p>
+
+            <p>
+                Kenya's own policy says that large data centres can use up to 5
+                million gallons of water a day for cooling, and that about 80%
+                of Kenya's land is arid or semi-arid.
+                It says that there are currently no requirements for disclosing or
+                managing the water use of AI infrastructure, and no mandatory
+                reporting on energy
+                (<xref ref="biblio-kenya-policy-2026" text="custom">State Department for ICT and the Digital Economy, 2026</xref>).
+            </p>
+        </subsection>
+
+        <subsection xml:id="subsec-who-is-responsible-energy-policy">
+            <title>Who pays, and who decides?</title>
+
+            <p>
+                Ask the three questions.
+            </p>
+
+            <ul>
+                <li>
+                    <p>
+                        <em>Who gets the benefit?</em>
+                        The companies that sell AI services, and possibly Kenya,
+                        through jobs, investment and local compute.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <em>Who carries the cost?</em>
+                        Everyone who uses the same grid and the same water, and
+                        in particular the people who live around a lake that has
+                        been close to running dry.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <em>Who decides?</em>
+                        With no disclosure rules, it seems to be mostly the companies and
+                        the government, and the public has little information.
+                    </p>
+                </li>
+            </ul>
+
+            <p>
+                The 2026 policy proposes to change that.
+                It would require disclosure of energy use, water use, cooling
+                methods and emissions for high-impact AI infrastructure, and
+                require projects to be assessed for energy, water, land and
+                community impact
+                (<xref ref="biblio-kenya-policy-2026" text="custom">State Department for ICT and the Digital Economy, 2026</xref>).
+                Again, it's a policy and not yet a law.
+            </p>
+        </subsection>
+
+        <subsection xml:id="subsec-who-is-responsible-ted">
+            <title>Sasha Luccioni on the other costs</title>
+
+            <p>
+                The researcher Sasha Luccioni gave a TED talk in 2023.
+                She argues that we should focus on the harms that are
+                happening now, like carbon emissions, copyright infringement
+                and biased information, instead of far-off risks.
+                She suggests practical ways to make AI more inclusive and
+                transparent
+                (<xref ref="biblio-ted-2023" text="custom">Luccioni, 2023</xref>).
+            </p>
+
+            <figure xml:id="fig-who-is-responsible-ted">
+                <caption>Sasha Luccioni, AI is dangerous, but not for the reasons you think (TED, 2023)</caption>
+                <interactive xml:id="int-who-is-responsible-ted"
+                             iframe="https://embed.ted.com/talks/sasha_luccioni_ai_is_dangerous_but_not_for_the_reasons_you_think"
+                             width="100%"
+                             aspect="16:9"/>
+            </figure>
+
+            <!-- TODO: add a summary of the talk's figures and tools once we have
+                 the transcript, and add the environmental article and the paper
+                 on AI's environmental impact (links not yet supplied). -->
+        </subsection>
+    </section>
+
+    <!-- ============================================================= -->
+    <!-- 4. Podcasts 267 and 268: who pays                              -->
+    <!-- ============================================================= -->
+    <section xml:id="sec-who-is-responsible-system">
+        <title>Looking Behind the Product</title>
+
+        <introduction xml:id="intro-who-is-responsible-system">
+            <p>
+                Two conversations between David and Kate Fleming, another
+                director at IDEMS, look at the system behind AI products.
+                They're part of a series that's loosely in conversation with
+                Karen Hao's book <em>Empire of AI</em>.
+            </p>
+
+            <figure xml:id="fig-who-is-responsible-podcast-268">
+                <caption>The IDEMS Podcast, episode 268: What Lies Behind AI as a Product?</caption>
+                <interactive xml:id="int-who-is-responsible-podcast-268"
+                             iframe="https://www.idems.international/podcast-player/12535/268-what-lies-behind-ai-as-a-product.mp3"
+                             width="100%"
+                             aspect="8:1"/>
+            </figure>
+
+            <figure xml:id="fig-who-is-responsible-podcast-267">
+                <caption>The IDEMS Podcast, episode 267: The Forces Shaping AI</caption>
+                <interactive xml:id="int-who-is-responsible-podcast-267"
+                             iframe="https://www.idems.international/podcast-player/12510/267-the-forces-shaping-ai.mp3"
+                             width="100%"
+                             aspect="8:1"/>
+            </figure>
+        </introduction>
+
+        <subsection xml:id="subsec-who-is-responsible-product">
+            <title>The product and the system</title>
+
+            <p>
+                In episode 268, Kate says that Silicon Valley presents AI as a
+                product, which is the output and what the user sees
+                (<xref ref="biblio-podcast-268" text="custom">Stern and Fleming, episode 268, 2026</xref>).
+                Behind it are people, resources, labour and infrastructure.
+                David says that there is no cloud, only Earth: the <q>cloud</q>
+                is physical, in data centres and devices.
+            </p>
+
+            <p>
+                Kate mentions data work done by low-paid workers, including
+                labelling and moderating harmful content, and names a company
+                called Scale AI as recruiting workers in places like Venezuela
+                and Kenya.
+                David says that the digital jobs are valued by the people who get
+                them.
+                Kate says the problem is unfair pay and a lack of worker
+                protection.
+            </p>
+        </subsection>
+
+        <subsection xml:id="subsec-who-is-responsible-externalities">
+            <title>Who bears the cost?</title>
+
+            <p>
+                Kate's point in both episodes is about costs that a company
+                doesn't have to pay.
+                In 267 she says that if a business causes harm, society
+                pays: we as taxpayers, communities and the environment
+                (<xref ref="biblio-podcast-267" text="custom">Stern and Fleming, episode 267, 2026</xref>).
+                She says AI is the poster child for why we need to start
+                holding businesses accountable.
+            </p>
+
+            <p>
+                David answers that the business may no longer be profitable
+                if it's made accountable.
+                So the real question, he says, is whether regulation can make
+                that happen, given how much has been deregulated.
+            </p>
+
+            <p>
+                These are their views, and they aren't the only ones.
+                But they fit the pattern in this chapter: the people who gain
+                from AI aren't always the people who pay.
+            </p>
+        </subsection>
+    </section>
+
+    <!-- ============================================================= -->
+    <!-- 5. Illustrative example                                        -->
+    <!-- ============================================================= -->
     <section xml:id="sec-who-is-responsible-worked-example">
-        <title>Try It</title>
+        <title>Try It: Follow the Cost</title>
 
         <p>
-            TODO: worked example.
+            Pick an AI tool that you use, like a chatbot, a translation tool or
+            an image generator.
         </p>
+
+        <ol>
+            <li>
+                <p>
+                    Write down everything that has to happen for it to give you
+                    one answer.
+                    Include the people, the places and the machines.
+                </p>
+            </li>
+            <li>
+                <p>
+                    Next to each one, write who pays for it.
+                    Is it you, the company, a worker, the public or the
+                    environment?
+                </p>
+            </li>
+            <li>
+                <p>
+                    Find out what the company says about it, in its terms or on
+                    its website.
+                    Does it tell you about the labour, the energy or the water?
+                </p>
+            </li>
+            <li>
+                <p>
+                    Would knowing change how you use it?
+                </p>
+            </li>
+        </ol>
     </section>
 
-    <!-- 4. Exercises. -->
+    <!-- ============================================================= -->
+    <!-- 6. Exercises                                                   -->
+    <!-- ============================================================= -->
     <exercises xml:id="exercises-who-is-responsible">
         <title>Exercises</title>
 
         <exercise xml:id="ex-who-is-responsible-1">
+            <title>Choose two scenarios</title>
             <statement>
                 <p>
-                    TODO: exercise.
+                    Pick two of the four scenarios below.
+                    For each one, explain your reasoning, and think about who
+                    was responsible, and who had power and who didn't.
+                    What's the best way forward?
+                    Refer back to earlier cases, like COMPAS, the Dutch childcare
+                    scandal, SHA or the Kenyan workers, or to the principles in
+                    Chapter 7.
+                </p>
+                <p>
+                    <em>Misinformation.</em>
+                    An AI chatbot gives students false information about a
+                    scholarship application deadline.
+                    Several students miss the deadline and lose the
+                    opportunity.
+                    Who is responsible, and what should happen next?
+                </p>
+                <p>
+                    <em>Fairness or progress?</em>
+                    An AI system helps smallholder farmers to choose the best
+                    planting times and fertilisers.
+                    It performs better for large commercial farms, which had
+                    more data in the training set.
+                    Should it still be rolled out?
+                    Is it better than nothing, or should it wait until it's more
+                    inclusive?
+                    Who should fix it: the developers, the ministry or the
+                    users?
+                </p>
+                <p>
+                    <em>Hidden bias?</em>
+                    A job platform for young people uses AI to match applicants
+                    with opportunities.
+                    Over time it's found to favour applicants from cities, and
+                    to under-represent rural and lower-income candidates.
+                    Is the algorithm biased, even if location isn't an input?
+                    Who should be accountable: the developers, the funders, the
+                    platform or someone else?
+                    What should happen next?
+                </p>
+                <p>
+                    <em>Ethics and transparency.</em>
+                    Your AI assistant generates text and images instantly.
+                    You find out that underpaid workers reviewed offensive
+                    content for months to make it safe.
+                    Do users have a right to know how AI systems are trained?
+                    Should companies have to disclose labour conditions?
+                    Would knowing change how you use these tools?
+                </p>
+            </statement>
+        </exercise>
+
+        <exercise xml:id="ex-who-is-responsible-2">
+            <title>Reflect on a real example</title>
+            <statement>
+                <p>
+                    Choose a real example, from the course or your own.
+                    In no more than 500 words, respond to these questions.
+                    <ol>
+                        <li>
+                            What went wrong, or what could go wrong?
+                        </li>
+                        <li>
+                            Who should be considered responsible, and why?
+                        </li>
+                        <li>
+                            What would a more responsible version of the system
+                            look like?
+                        </li>
+                        <li>
+                            Could transparency, human oversight or better data
+                            have helped?
+                        </li>
+                        <li>
+                            How do labour, energy, access or fairness come into
+                            your answer?
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+        </exercise>
+
+        <exercise xml:id="ex-who-is-responsible-3">
+            <title>Three kinds of cost</title>
+            <statement>
+                <p>
+                    Describe one example of each cost from this chapter, in a
+                    sentence or two: labour, energy and water, and
+                    misinformation.
+                    For each one, say who pays, and who decides.
+                </p>
+            </statement>
+        </exercise>
+
+        <exercise xml:id="ex-who-is-responsible-4">
+            <title>Pointing at each other</title>
+            <statement>
+                <p>
+                    In the moderators' cases, Meta says that Sama employed the
+                    workers.
+                    Think about these questions.
+                    <ol>
+                        <li>
+                            What would make you say that Meta was the employer, in
+                            practice?
+                        </li>
+                        <li>
+                            Why does it matter whether a company that's based
+                            abroad can be sued in Kenya?
+                        </li>
+                        <li>
+                            What would you put in a contract between a tech
+                            company and an outsourcer, to make responsibility
+                            clear?
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+        </exercise>
+
+        <exercise xml:id="ex-who-is-responsible-5">
+            <title>The lake and the data centre</title>
+            <statement>
+                <p>
+                    Imagine you're on the committee that decides whether a data
+                    centre can be built near a lake that nearly dried up in 2010.
+                    Think about these questions.
+                    <ol>
+                        <li>
+                            What would you want to know before you decided?
+                        </li>
+                        <li>
+                            Who would you want in the room?
+                        </li>
+                        <li>
+                            What would you ask the company to publish?
+                        </li>
+                        <li>
+                            How do you weigh jobs and investment against water
+                            for the people who live nearby?
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+        </exercise>
+
+        <exercise xml:id="ex-who-is-responsible-6">
+            <title>A disclosure rule</title>
+            <statement>
+                <p>
+                    Kenya's policy proposes disclosure of energy and water use for
+                    large AI infrastructure.
+                    Write a short disclosure rule for either that, or for the
+                    working conditions of the people who label or moderate data.
+                    What would the company have to say, to whom, how often, and
+                    what would happen if it didn't?
+                </p>
+            </statement>
+        </exercise>
+
+        <exercise xml:id="ex-who-is-responsible-7">
+            <title>Who answers for the summary?</title>
+            <statement>
+                <p>
+                    Choose one of the summary stories: the BBC and Apple, or the
+                    bouldering wall.
+                    Think about these questions.
+                    <ol>
+                        <li>
+                            Who do you think should be responsible: the
+                            publisher, the company that made the summary, or the
+                            reader?
+                        </li>
+                        <li>
+                            David suggests that if the makers were held legally
+                            responsible, summaries might disappear.
+                            Would that be a bad outcome?
+                        </li>
+                        <li>
+                            Which of David's design ideas would you choose, and
+                            what could go wrong with it?
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+        </exercise>
+
+        <exercise xml:id="ex-who-is-responsible-8">
+            <title>Who gets the benefit?</title>
+            <statement>
+                <p>
+                    Kate says that AI is the poster child for holding
+                    businesses accountable for costs that society bears.
+                    Pick a cost from this chapter and make the case for and
+                    against that view.
+                    What would holding the business accountable look like in
+                    practice?
                 </p>
             </statement>
         </exercise>
     </exercises>
+
+    <!-- ============================================================= -->
+    <!-- Sources                                                        -->
+    <!-- ============================================================= -->
+    <references xml:id="references-who-is-responsible">
+        <title>Sources</title>
+
+        <biblio type="raw" xml:id="biblio-nothias-2026">
+            Nothias, T. (2026). Jurisdiction over Meta Inc. in Kenyan courts:
+            three ongoing lawsuits. Conflict of Laws (blog), 2026. Based on a
+            talk of 26 March 2026. The post has some internal inconsistencies in
+            case numbers and claimant counts.
+            <url href="https://conflictoflaws.net/2026/jurisdiction-over-meta-inc-in-kenyan-courts-three-ongoing-lawsuits/"/>.
+        </biblio>
+
+        <biblio type="raw" xml:id="biblio-capital-moderators-2026">
+            Capital FM (2026). Court backs Facebook moderators in case against
+            Meta, Sama. 27 April 2026 (read as reprinted by AllAfrica).
+            <url href="https://allafrica.com/stories/202604270163.html"/>.
+        </biblio>
+
+        <biblio type="raw" xml:id="biblio-aljazeera-2026">
+            Sheikh, H. A. (2026). Can Kenya's AI ambitions coexist with
+            Naivasha's water needs? Al Jazeera, 24 August 2026.
+            <url href="https://www.aljazeera.com/economy/2026/8/24/can-kenyas-ai-ambitions-coexist-with-naivashas-water-needs"/>.
+        </biblio>
+
+        <biblio type="raw" xml:id="biblio-thinkgeo-2026">
+            Cariaga, C. (2026). Kenya suspends plans for Microsoft's
+            geothermal-powered data centre. ThinkGeoEnergy, 8 May 2026.
+            <url href="https://www.thinkgeoenergy.com/kenya-suspends-plans-for-microsofts-geothermal-powered-data-centre/"/>.
+        </biblio>
+
+        <biblio type="raw" xml:id="biblio-techish-2026">
+            Tech-ish (2026). Kenya stalls $1 billion Microsoft-G42 data centre
+            plan as the power maths catches up. 9 May 2026.
+            <url href="https://tech-ish.com/2026/05/09/kenya-microsoft-g42-data-centre-stalled/"/>.
+        </biblio>
+
+        <biblio type="raw" xml:id="biblio-ted-2023">
+            Luccioni, S. (2023). AI is dangerous, but not for the reasons you
+            think. TEDWomen 2023, October 2023.
+            <url href="https://www.ted.com/talks/sasha_luccioni_ai_is_dangerous_but_not_for_the_reasons_you_think"/>.
+        </biblio>
+
+        <biblio type="raw" xml:id="biblio-podcast-125">
+            Clements, L. and Stern, D. The IDEMS Podcast, episode 125: AI
+            Summaries. Release date to be confirmed.
+            <url href="https://www.idems.international/podcast/125-ai-summaries/"/>.
+        </biblio>
+
+        <biblio type="raw" xml:id="biblio-podcast-268">
+            Stern, D. and Fleming, K. (2026). The IDEMS Podcast, episode 268:
+            What Lies Behind AI as a Product? 5 June 2026.
+            <url href="https://www.idems.international/podcast/268-what-lies-behind-ai-as-a-product/"/>.
+        </biblio>
+
+        <biblio type="raw" xml:id="biblio-podcast-267">
+            Stern, D. and Fleming, K. (2026). The IDEMS Podcast, episode 267:
+            The Forces Shaping AI. 2 June 2026.
+            <url href="https://www.idems.international/podcast/267-the-forces-shaping-ai/"/>.
+        </biblio>
+    </references>
 </chapter>
