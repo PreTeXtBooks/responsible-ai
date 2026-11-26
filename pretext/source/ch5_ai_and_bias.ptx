@@ -4,57 +4,1111 @@
 <!--  Chapter 5: AI and Bias  -->
 <!-- ================================================================= -->
 <!--
-  NOTES (see also notes/case-study-plan.md):
-  No case study chosen yet. A lead to check: ChatGPT's safety filtering
-  was reported (WSJ, 2023) to be done mainly in English, so Swahili may
-  be less safe. That is one reporter's claim and is unverified.
+  NOTES (see also notes/ch5-research.md):
+  - Case study: AI-writing detectors and students (Stanford study, 2023;
+    Daily Nation, September 2025). The Stanford study did not test Kenyan
+    writers. The chapter says so.
+  - Videos: "3 types of bias in AI | Machine learning" (transcript read; the
+    channel is unknown), and the
+    three UCLA "AI & Bias" videos (titles only; their descriptions come
+    from the Moodle course text).
+  - Podcasts: episode 49 (the "delve" backlash) and episode 35 (AI images).
+    Not used here, kept for other chapters: 17 (Simpson's paradox, Dutch case),
+    104 (misusing data), 268 (AI as a product, with Kate).
+  - The Swahili safety question (WSJ, Karen Hao): evidence is mixed.
+  - Practise (STACK) section removed on purpose. Questions go in the exercises.
 -->
 <chapter xml:id="ch-ai-and-bias" xmlns:xi="http://www.w3.org/2001/XInclude">
     <title>AI and Bias</title>
 
     <introduction xml:id="intro-ai-and-bias">
         <p>
-            TODO: a hook and a short overview of the chapter.
+            Victor Onyambu studies political science at Moi University in
+            Nairobi.
+            He handed in a four-page essay.
+            His lecturer told him it looked like it was written by AI.
+            She pointed to the <q>AI font</q> of the introduction, the body
+            and the conclusion, and to his grammar, which had suddenly become
+            perfect.
+            She also said that an AI detector had flagged it.
+            Victor sent her his sticky notes, his drafts and photos of the
+            library books he'd used.
+            She wasn't convinced
+            (<xref ref="biblio-nation-2025" text="custom">Ngari, 2025</xref>).
         </p>
+
+        <p>
+            The article doesn't say how it ended.
+            But it raises a question that this chapter is about.
+            If a tool decides that careful, correct writing is <q>too
+            good</q>, who does that hurt most?
+        </p>
+
+        <p>
+            Bias is when an AI system treats some people, or some kinds of
+            people, differently from others, in ways that aren't fair.
+            It's one of the most talked-about problems in AI, and it's easy to
+            miss, because the system looks neutral.
+            It's just following the data.
+            In this chapter we look at what bias is, the different forms it
+            takes, and why the harm so often falls on people who were already
+            left out.
+            Chapter 6 then looks at where it comes from.
+        </p>
+
+        <!-- Draft objectives: revise once the rest of the chapter is written. -->
+        <objectives>
+            <title>By the end of this chapter you should be able to</title>
+            <ol>
+                <li>
+                    <p>
+                        Define bias, and recognise different types of bias in
+                        AI systems.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Explain how biased data or design choices affect what
+                        an AI system does.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Look at a case and trace where the bias came from, and
+                        what it caused.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Suggest ethical steps to reduce bias in future AI
+                        tools.
+                    </p>
+                </li>
+            </ol>
+        </objectives>
     </introduction>
 
-    <!-- 1. A real case study (ideally Kenya-based). -->
+    <!-- ============================================================= -->
+    <!-- 1. Case study                                                  -->
+    <!-- ============================================================= -->
     <section xml:id="sec-ai-and-bias-case-study">
-        <title>Case Study</title>
+        <title>Case Study: Written by a Human?</title>
+
+        <subsection xml:id="subsec-ai-and-bias-accused">
+            <title>Students accused</title>
+
+            <p>
+                Victor isn't the only one.
+                In September 2025 the Daily Nation reported on students at
+                several Kenyan universities who had been accused of using AI
+                (<xref ref="biblio-nation-2025" text="custom">Ngari, 2025</xref>).
+            </p>
+
+            <p>
+                Ian Thuku, who is 20 and studies graphic design at KCA
+                University, was accused of using AI on a 10-mark write-up.
+                His lecturer's suspicion was based on his abbreviations and his
+                style.
+                Ian ran his own paper through a detector called GPTZero, and it
+                said that it was 0% AI.
+                He says the lecturer then accepted his explanation, but that
+                about ten others in his class were accused too.
+                One, who scored 100% AI, was told to repeat the assignment.
+            </p>
+
+            <p>
+                At Kenyatta University, Daniel Chacha says a class of about 200
+                was accused over a 15-mark assignment.
+            </p>
+
+            <p>
+                A lecturer at Rongo University, Dr James Mwita, told the
+                paper what he looks for.
+                It's foreign examples, leftover template wording, and phrases
+                like <q>delve into</q>.
+                He says it's harder than checking for plagiarism, and he
+                doesn't want a ban.
+                When he's suspicious, he tests students in class.
+            </p>
+
+            <p>
+                So lecturers are using detectors, and sometimes just their
+                instinct, to decide who wrote what.
+                How reliable is that?
+            </p>
+        </subsection>
+
+        <subsection xml:id="subsec-ai-and-bias-how-detectors">
+            <title>How a detector decides</title>
+
+            <p>
+                Most of these tools work by measuring how predictable a piece of
+                writing is.
+                The measure is called <term>perplexity</term>.
+                It's a score for how surprised a language model is by your
+                words.
+                Text that's easy to predict gets a low score, and the detector
+                reads that as a sign that a machine wrote it
+                (<xref ref="biblio-liang-2023" text="custom">Liang et al., 2023</xref>).
+            </p>
+
+            <p>
+                That works if people always write in surprising ways and
+                machines never do.
+                But plenty of people write in plain, predictable ways, especially
+                when they're being careful.
+            </p>
+        </subsection>
+
+        <subsection xml:id="subsec-ai-and-bias-stanford">
+            <title>What the Stanford study found</title>
+
+            <p>
+                In 2023, a team at Stanford tested seven AI detectors on 91
+                essays that had been written for the TOEFL, an English test
+                taken by people who don't have English as their first
+                language.
+                The essays were taken from a Chinese educational forum.
+                They were all written by people, and before 2021
+                (<xref ref="biblio-liang-2023" text="custom">Liang et al., 2023</xref>).
+            </p>
+
+            <p>
+                On average, the detectors said that 61% of them were written
+                by AI.
+                All seven agreed on about a fifth, 18 of the 91.
+                At least one detector flagged 89 of the 91, which is nearly
+                98%.
+                When the team tried the same detectors on 88 essays by US
+                eighth-graders, the results were close to perfect.
+            </p>
+
+            <p>
+                The team's explanation is perplexity.
+                The essays that all seven detectors flagged had lower
+                perplexity, which means more predictable word choices.
+                They tried two tests to check.
+                First, they asked ChatGPT to improve the word choices in
+                the TOEFL essays.
+                The share flagged as AI dropped from 61% to 12%.
+                Second, they asked ChatGPT to simplify the US eighth-graders'
+                essays.
+                The share flagged rose from 5% to 57%.
+            </p>
+
+            <insight>
+                <p>
+                    Think about what that second test shows.
+                    The detectors weren't spotting who wrote the text.
+                    They were spotting how simple it was.
+                </p>
+            </insight>
+
+            <p>
+                The authors say the study was a pilot, with small samples.
+                Most of the detectors they tested were built on an older model
+                (GPT-2), and newer ones might behave differently.
+                They still strongly advise against using these detectors to
+                judge students
+                (<xref ref="biblio-liang-2023" text="custom">Liang et al., 2023</xref>).
+            </p>
+        </subsection>
+
+        <subsection xml:id="subsec-ai-and-bias-not-shown">
+            <title>What the study doesn't show</title>
+
+            <p>
+                We should be careful here.
+                The Stanford team didn't test Kenyan writers.
+                They don't report what first languages the essay writers had.
+                English is an official language in Kenya, and many Kenyan students
+                have used it at school for most of their lives.
+                So we can't say that the same thing happens to them, or by
+                how much.
+            </p>
+
+            <p>
+                The Nation's stories show detectors being used as proof, and
+                being questioned.
+                They don't show that Kenyan writers are flagged more often
+                than others.
+                That would need a test, and as far as we found, nobody has
+                published one.
+                Turnitin, one of the biggest tools, says it was trained on
+                writing from many languages, so it shouldn't show this bias.
+                Its own research hadn't been published when The Markup asked,
+                and Turnitin wasn't one of the seven detectors that Stanford
+                tested
+                (<xref ref="biblio-markup-2023" text="custom">Mathewson, 2023</xref>).
+            </p>
+        </subsection>
+
+        <subsection xml:id="subsec-ai-and-bias-responses">
+            <title>What some institutions did</title>
+
+            <p>
+                In 2023 the University of Pittsburgh switched off AI detection,
+                because of false positives.
+                OpenAI shut down its own AI-text detector at the end of July
+                that year
+                (<xref ref="biblio-markup-2023" text="custom">Mathewson, 2023</xref>).
+                In 2025, the University of Cape Town switched off Turnitin's AI
+                detection
+                (<xref ref="biblio-maverick-2025" text="custom">McKenna and Kramm, 2025</xref>).
+            </p>
+        </subsection>
+
+        <subsection xml:id="subsec-ai-and-bias-trace">
+            <title>Tracing the bias</title>
+
+            <p>
+                AI systems are shaped by the data they learn from, by how
+                they're designed, and by what people do with their answers.
+                Here's where each could play a part.
+            </p>
+
+            <table xml:id="tbl-ai-and-bias-trace">
+                <title>Where the bias could come in</title>
+                <tabular>
+                    <row header="yes">
+                        <cell>Where</cell>
+                        <cell>What could go wrong here</cell>
+                    </row>
+
+                    <row>
+                        <cell>The data</cell>
+                        <cell>The detector has to learn what human writing looks
+                        like.
+                        If that writing mostly comes from one kind of writer,
+                        other kinds can look strange.
+                        We can't see how most detectors were trained, so we
+                        can't say whether this happened.</cell>
+                    </row>
+
+                    <row>
+                        <cell>The design</cell>
+                        <cell>Perplexity is built on a guess that predictable
+                        writing means a machine.
+                        The Stanford tests suggest that this guess is wrong
+                        for some people.</cell>
+                    </row>
+
+                    <row>
+                        <cell>How it's used</cell>
+                        <cell>A score is treated as proof, and the student has
+                        to prove they're innocent.
+                        We saw the same mistake in Chapter 4.</cell>
+                    </row>
+                </tabular>
+            </table>
+
+            <p>
+                Who is harmed?
+                In the Stanford study, it's writers who use plainer, more
+                careful English.
+                In the Nation's stories, it's students who've already put in
+                the work, and who then have to spend time proving it.
+                That time is a cost, and so is the worry.
+            </p>
+
+            <p>
+                Is it the data, the design, or the way the results are used?
+                Probably all three.
+                That's often the answer.
+            </p>
+        </subsection>
+
+        <subsection xml:id="subsec-ai-and-bias-lessons">
+            <title>What the case shows</title>
+
+            <ul>
+                <li>
+                    <p>
+                        A tool can pick up on something that isn't what it
+                        claims to measure.
+                        These detectors were measuring how predictable the
+                        writing is, and calling it <q>AI</q>.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Bias can hide in a number.
+                        A tool can be right most of the time, and still be wrong
+                        far more often for one group.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        The people who get flagged aren't always the ones who
+                        did something wrong.
+                        And people who really do use AI can avoid being flagged.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Before we say a tool is biased against a group, we
+                        have to test it on that group.
+                        For Kenyan writers, that test is still missing.
+                    </p>
+                </li>
+            </ul>
+        </subsection>
+    </section>
+
+    <!-- ============================================================= -->
+    <!-- 2. Videos: types of bias                                       -->
+    <!-- ============================================================= -->
+    <section xml:id="sec-ai-and-bias-types">
+        <title>Different Types of Bias</title>
+
+        <introduction xml:id="intro-ai-and-bias-types">
+            <p>
+                Watch this short video first.
+                It's only a couple of minutes long, and it gives names to three
+                ways that bias gets into a system
+                (<xref ref="biblio-bias-video" text="custom">3 types of bias in AI, n.d.</xref>).
+            </p>
+
+            <figure xml:id="fig-ai-and-bias-video-types">
+                <caption>3 types of bias in AI</caption>
+                <video xml:id="vid-ai-and-bias-types" youtube="59bMh59JQDo" width="100%"/>
+            </figure>
+        </introduction>
+
+        <subsection xml:id="subsec-ai-and-bias-video-points">
+            <title>What the video says</title>
+
+            <p>
+                The video starts with a game.
+                You close your eyes and picture a shoe.
+                Each of us pictures a different shoe, and we may not know why.
+                If you then teach a computer to recognise a shoe, you might pass
+                your own bias on to it.
+            </p>
+
+            <p>
+                Machine learning means that computers find patterns in
+                data, instead of people writing out every step.
+                It's easy to think that means there's no human bias in it.
+                The video's answer is that being based on data doesn't make
+                something neutral.
+                We can't completely separate ourselves from our own bias, so it
+                ends up in the things we build.
+            </p>
+
+            <p>
+                It names three types.
+            </p>
+
+            <definition xml:id="def-ai-and-bias-interaction">
+                <title>Interaction bias</title>
+                <statement>
+                    <p>
+                        Bias that comes from the way people use a system.
+                        In the video's example, people were asked to draw shoes
+                        for a computer.
+                        Most drew the same kind, so as more people played, the
+                        computer stopped recognising other kinds.
+                    </p>
+                </statement>
+            </definition>
+
+            <definition xml:id="def-ai-and-bias-latent">
+                <title>Latent bias</title>
+                <statement>
+                    <p>
+                        Bias that's hidden in the data, because of how things
+                        have been in the past.
+                        If you train a computer to recognise a physicist using
+                        pictures of past physicists, it will lean towards men.
+                    </p>
+                </statement>
+            </definition>
+
+            <definition xml:id="def-ai-and-bias-selection">
+                <title>Selection bias</title>
+                <statement>
+                    <p>
+                        Bias that comes from which data you choose.
+                        If you train a model to recognise faces, you need to
+                        check that the photos you select represent everyone,
+                        whether they come from the internet or your own photo
+                        library.
+                    </p>
+                </statement>
+            </definition>
+
+            <p>
+                The video ends by saying that there's no magic bullet, but that
+                it starts with being aware of it.
+                Can you see any of these three in the detector case?
+                Exercise 1 asks you to think it through.
+            </p>
+        </subsection>
+
+        <subsection xml:id="subsec-ai-and-bias-ucla">
+            <title>The UCLA series</title>
+
+            <p>
+                The next three videos are a short series from the UCLA Institute
+                for Technology, Law and Policy.
+                Together they explain what algorithms are, how they can fail, and
+                what can be done about it
+                (<xref ref="biblio-ucla" text="custom">UCLA Institute for Technology, Law and Policy, n.d.</xref>).
+            </p>
+
+            <figure xml:id="fig-ai-and-bias-video-ucla-1">
+                <caption>AI and Bias: What are algorithms and how do they work?</caption>
+                <video xml:id="vid-ai-and-bias-ucla-1" youtube="8tfKdxo8Rj8" width="100%"/>
+            </figure>
+
+            <p>
+                The first episode explains that an algorithm is a set of
+                step-by-step instructions for a computer to solve a problem.
+            </p>
+
+            <figure xml:id="fig-ai-and-bias-video-ucla-2">
+                <caption>AI and Bias: When algorithms don't work</caption>
+                <video xml:id="vid-ai-and-bias-ucla-2" youtube="FD-4yC95iZY" width="100%"/>
+            </figure>
+
+            <p>
+                The second looks at the limits of algorithms, and at how they can
+                fail and give biased or inaccurate results.
+            </p>
+
+            <figure xml:id="fig-ai-and-bias-video-ucla-3">
+                <caption>AI and Bias: So what's the solution?</caption>
+                <video xml:id="vid-ai-and-bias-ucla-3" youtube="xvb_A_qzXo4" width="100%"/>
+            </figure>
+
+            <p>
+                The third looks at ways to reduce bias.
+            </p>
+        </subsection>
+    </section>
+
+    <!-- ============================================================= -->
+    <!-- 3. Podcast 49: words under suspicion                           -->
+    <!-- ============================================================= -->
+    <section xml:id="sec-ai-and-bias-words">
+        <title>Words Under Suspicion</title>
+
+        <introduction xml:id="intro-ai-and-bias-words">
+            <p>
+                The ideas in this section come from a conversation between me
+                and David Stern, from the IDEMS Podcast
+                (<xref ref="biblio-podcast-049" text="custom">Clements and Stern, episode 49, n.d.</xref>).
+                It's about half an hour long.
+                It starts with a single word, and it's available at
+                <url href="https://www.idems.international/podcast/049-artificial-words-the-unseen-bias-of-ai-in-everyday-language/">idems.international</url>.
+            </p>
+
+            <figure xml:id="fig-ai-and-bias-podcast-049">
+                <caption>The IDEMS Podcast, episode 49: Artificial Words, The Unseen Bias of AI in Everyday Language</caption>
+                <interactive xml:id="int-ai-and-bias-podcast-049"
+                             iframe="https://www.idems.international/podcast-player/3795/049-artificial-words-the-unseen-bias-of-ai-in-everyday-language.mp3"
+                             width="100%"
+                             aspect="8:1"/>
+            </figure>
+        </introduction>
+
+        <subsection xml:id="subsec-ai-and-bias-delve">
+            <title>The word <q>delve</q></title>
+
+            <p>
+                In early April 2024, someone said that they would ignore any
+                email that contained words like <q>delve</q>, because it was a
+                sign that ChatGPT had written it.
+                Plenty of people were upset.
+                David says that people in Nigeria answered by posting
+                WhatsApp screenshots of themselves using the word in ordinary
+                conversations.
+                In the episode I read out a comment from one of them, that
+                Nigerian English is a dialect in its own right.
+            </p>
+
+            <p>
+                David has two objections.
+                First, even if the sender did use ChatGPT to put their ideas
+                into words, he says that's fine.
+                Second, using a single word as evidence is ignorant.
+                A tool may use <q>delve</q> more often than the people in one
+                person's circle do.
+                That doesn't mean others outside that circle don't.
+            </p>
+
+            <p>
+                He also says that the signs of AI writing may only be signs of
+                someone who isn't the norm in your context.
+                And that trying to catch AI by its wording is a battle that
+                people will lose.
+            </p>
+        </subsection>
+
+        <subsection xml:id="subsec-ai-and-bias-bias-vs-discrimination">
+            <title>Bias and discrimination</title>
+
+            <p>
+                David makes a distinction that I find useful.
+            </p>
+
+            <insight>
+                <p>
+                    In David's words, bias is something inside the algorithm,
+                    for example a lean towards language that it knows well.
+                    Discrimination is the human choice about what to do with that
+                    bias.
+                </p>
+            </insight>
+
+            <p>
+                That's why it matters who uses the tool, and how.
+                A detector that's slightly off becomes discrimination when
+                someone treats its result as proof.
+                David says that if the tool starts to be used that way, he
+                expects it to end up in court, and he's read about cases
+                already.
+            </p>
+
+            <p>
+                He describes the worst of it like this.
+                People who use AI skilfully can avoid being flagged.
+                People who don't use it at all can get flagged anyway.
+                He calls that discrimination in its utmost form.
+                He mentions someone who wrote an essay on the spot, and was
+                still flagged as ChatGPT.
+            </p>
+        </subsection>
+
+        <subsection xml:id="subsec-ai-and-bias-own-bias">
+            <title>Our own bias</title>
+
+            <p>
+                I'll admit that the word <q>crucial</q> sets off my own alarm.
+                I listed other words that I now think of as ChatGPT words, like
+                <q>robust</q>, <q>foster</q>, <q>empower</q> and <q>harness</q>.
+                And then I realised that the same words are in a responsible AI
+                course proposal that David and I wrote before ChatGPT existed.
+            </p>
+
+            <p>
+                David also tells us that he's dyslexic, and that a tool like
+                ChatGPT would have helped him a lot when he was growing up.
+                He doesn't think it's a problem if someone uses it for a first
+                draft, as long as they understand it and own it.
+            </p>
+
+            <p>
+                At the end of the episode I said that it had shown me my own
+                unconscious bias, and that I'd try to stop it turning into
+                discrimination.
+                David says we can all be guilty of it without realising.
+                His hope is that being aware of it leads to more tolerance.
+            </p>
+        </subsection>
+
+        <subsection xml:id="subsec-ai-and-bias-words-summary">
+            <title>Summary</title>
+
+            <ul>
+                <li>
+                    <p>
+                        Using certain words as evidence of AI treats a style of
+                        writing as a sign of cheating.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Bias is in the tool, and discrimination is what people
+                        do with it.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        The harm can fall on people who don't use AI at all.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        We all have our own unconscious biases, and noticing
+                        them is the first step.
+                    </p>
+                </li>
+            </ul>
+        </subsection>
+    </section>
+
+    <!-- ============================================================= -->
+    <!-- 4. Podcast 35: pictures of farmers                             -->
+    <!-- ============================================================= -->
+    <section xml:id="sec-ai-and-bias-pictures">
+        <title>Pictures of Farmers</title>
+
+        <introduction xml:id="intro-ai-and-bias-pictures">
+            <p>
+                Bias isn't only in text.
+                This section comes from another conversation with David, about
+                something that happened to me
+                (<xref ref="biblio-podcast-035" text="custom">Clements and Stern, episode 35, n.d.</xref>).
+                It's about half an hour long, and it's available at
+                <url href="https://www.idems.international/podcast/035-generating-ai-images-do-ai-implementations-suppress-diversity/">idems.international</url>.
+            </p>
+
+            <figure xml:id="fig-ai-and-bias-podcast-035">
+                <caption>The IDEMS Podcast, episode 35: Generating AI Images, Do AI Implementations Suppress Diversity?</caption>
+                <interactive xml:id="int-ai-and-bias-podcast-035"
+                             iframe="https://www.idems.international/podcast-player/3512/035-generating-ai-images-do-ai-implementations-suppress-diversity.mp3"
+                             width="100%"
+                             aspect="8:1"/>
+            </figure>
+        </introduction>
+
+        <subsection xml:id="subsec-ai-and-bias-icons">
+            <title>An icon for fertiliser</title>
+
+            <p>
+                I was making icons for a course about farming in Africa.
+                I asked an AI image tool for a picture to show fertiliser,
+                and it gave me a white hand.
+                That was wrong for the course.
+                I spent about an hour trying to fix it.
+            </p>
+
+            <p>
+                Being more specific made it worse.
+                When I asked for an African farmer, the pictures had flags in
+                the background.
+                When I asked for a Black farmer, I got a silhouette.
+                In the end I recoloured the hand myself.
+            </p>
+
+            <p>
+                David says the first picture is the one you'd just take if you
+                didn't care about context, and that's why it matters.
+                He calls it racial bias built into the leading models.
+                He also says that regions like the Sahel, which includes
+                Niger, Burkina Faso and Mali, are often left out of the data
+                altogether.
+                That's his understanding, and it's about where the data
+                comes from.
+                His example is apps that identify pests and diseases.
+                They work where they were trained, but nobody has banks of
+                images for the crops and pests of the Sahel.
+            </p>
+        </subsection>
+
+        <subsection xml:id="subsec-ai-and-bias-average">
+            <title>The average that fits nobody</title>
+
+            <p>
+                David also makes a point about averages.
+                These models tend to give you something close to the average, and
+                the average doesn't represent anyone.
+                His example is a pilot's seat designed from averaged body
+                measurements, which then fits nobody.
+                (He told it from memory, and he doesn't know which air force
+                it was.)
+            </p>
+
+            <p>
+                So the pull of the data is towards the middle.
+                He says that this drags society back towards the average, just when
+                society has been moving towards embracing diversity.
+            </p>
+        </subsection>
+
+        <subsection xml:id="subsec-ai-and-bias-what-to-do">
+            <title>What can be done?</title>
+
+            <p>
+                David's view is that AI is neutral, and that how it's
+                implemented decides whether it supports diversity or
+                suppresses it.
+                He says it's technically possible to build diversity in, but
+                the companies aren't currently rewarded for it.
+                And he says <q>it's the algorithm</q> isn't a defence.
+            </p>
+
+            <p>
+                For ordinary users, his advice is practical.
+                Notice the bias.
+                Write a short guide on how to avoid it, and share it.
+                Asking for a particular gender or skin colour is a patch, and
+                it's not a fix for society.
+                And keep a person in the loop who takes responsibility.
+            </p>
+        </subsection>
+    </section>
+
+    <!-- ============================================================= -->
+    <!-- 5. Language                                                    -->
+    <!-- ============================================================= -->
+    <section xml:id="sec-ai-and-bias-language">
+        <title>Does It Work as Well in Swahili?</title>
 
         <p>
-            TODO: case study.
+            In Chapter 2 we met the Kenyan workers who helped to make
+            ChatGPT's safety filter.
+            In the Wall Street Journal's reporting, Karen Hao raised a worry
+            about that filtering, which is that it was done mainly in English,
+            so the tool might be less safe in Swahili
+            (<xref ref="biblio-wsj-2023" text="custom">Wall Street Journal, 2023</xref>).
+            If it's true, that's a kind of bias, because some people would be
+            protected less than others.
+        </p>
+
+        <p>
+            Is it true?
+            It's a claim we can test, and the research gives a mixed answer.
+        </p>
+
+        <p>
+            In 2023, researchers tested ChatGPT and GPT-4 with unsafe
+            requests in ten languages, including Swahili, which they
+            counted as low-resource.
+            On average, the low-resource languages produced about three times
+            as many unsafe replies as the high-resource ones.
+            For ChatGPT it was 15% against 4%, and for GPT-4 it was 10%
+            against 4%.
+            English was below 1% for both
+            (<xref ref="biblio-deng-2024" text="custom">Deng et al., 2024</xref>).
+        </p>
+
+        <p>
+            But more recent work complicates the picture.
+            A 2026 preprint tested 61 versions of models from five big
+            families.
+            It found that 22 of them were more vulnerable in English than in
+            low-resource languages, so the pattern depends on the model
+            (<xref ref="biblio-zhang-2026" text="custom">Zhang et al., 2026</xref>).
+            Another 2026 preprint tested Kiswahili and other African
+            languages.
+            It found that in long, multi-turn conversations, between about 42%
+            and 71% of attempts got harmful output from the models it tested.
+            The authors also say that machine translation made some of the
+            other languages look safer than they were
+            (<xref ref="biblio-marx-2026" text="custom">Marx and Dunaiski, 2026</xref>).
+        </p>
+
+        <p>
+            Both of those are preprints, which means that other experts
+            haven't yet reviewed them.
+            So it's fair to say that whether a tool is as safe in Swahili
+            as in English depends on the model, the year and the test.
+            It's hard to measure, and it's worth testing for yourself.
         </p>
     </section>
 
-    <!-- 2. A STACK question prompting the reader to think deeply. -->
-    <section xml:id="sec-ai-and-bias-stack">
-        <title>Practise</title>
-
-        <p>
-            TODO: STACK question(s) to go here.
-        </p>
-    </section>
-
-    <!-- 3. An illustrative worked example using software. -->
+    <!-- ============================================================= -->
+    <!-- 6. Illustrative example                                        -->
+    <!-- ============================================================= -->
     <section xml:id="sec-ai-and-bias-worked-example">
-        <title>Try It</title>
+        <title>Try It: Testing an AI Detector</title>
 
         <p>
-            TODO: worked example.
+            Let's see for ourselves.
+            You'll need a free AI-text detector (GPTZero is one) and an AI
+            assistant.
+            Use your own writing only.
+        </p>
+
+        <ol>
+            <li>
+                <p>
+                    Find three pieces of your own writing that you wrote before
+                    2022, such as an old essay, a report or a long email.
+                    That's before tools like ChatGPT were widely used, so you
+                    know that you wrote them.
+                </p>
+            </li>
+            <li>
+                <p>
+                    Paste each one into the detector, and write down the score.
+                </p>
+            </li>
+            <li>
+                <p>
+                    Ask an AI assistant to improve the word choices in one of
+                    them, and run the new version through the detector.
+                    Then ask it to simplify the same piece, and run that.
+                </p>
+            </li>
+            <li>
+                <p>
+                    Compare the scores.
+                    What does the detector seem to react to?
+                </p>
+            </li>
+        </ol>
+
+        <p>
+            Please don't paste anyone else's work, or anything private, into
+            these tools.
+            And remember that a detector's score is not proof of anything.
         </p>
     </section>
 
-    <!-- 4. Exercises. -->
+    <!-- ============================================================= -->
+    <!-- 7. Exercises                                                   -->
+    <!-- ============================================================= -->
     <exercises xml:id="exercises-ai-and-bias">
         <title>Exercises</title>
 
         <exercise xml:id="ex-ai-and-bias-1">
+            <title>Investigate a case</title>
             <statement>
                 <p>
-                    TODO: exercise.
+                    Choose one case from the course so far.
+                    You could pick COMPAS, the birdsong app, Amazon Go, the Dutch
+                    childcare scandal, the SHA means test, or the AI detectors.
+                    You can also bring one of your own.
+                    Think about these questions.
+                    <ol>
+                        <li>
+                            Which types of bias from the video (interaction,
+                            latent or selection) do you think are present?
+                        </li>
+                        <li>
+                            Give one way that bias could enter the system.
+                            Is it from the data, the design of the algorithm, or
+                            how people read the results?
+                        </li>
+                        <li>
+                            Who was harmed?
+                            Was the bias in the data, the design, or the way
+                            decisions were made?
+                        </li>
+                        <li>
+                            What could have been done differently to reduce the
+                            harm?
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+        </exercise>
+
+        <exercise xml:id="ex-ai-and-bias-2">
+            <title>A small bias with a big effect</title>
+            <statement>
+                <p>
+                    Can you think of a case where a small bias in one step had a
+                    big impact later?
+                    What was the step, and how did the effect grow?
+                </p>
+            </statement>
+        </exercise>
+
+        <exercise xml:id="ex-ai-and-bias-3">
+            <title>Name the type</title>
+            <statement>
+                <p>
+                    For each example, say whether it's closest to interaction
+                    bias, latent bias or selection bias, and why.
+                    <ol>
+                        <li>
+                            An app that identifies crop diseases was trained on
+                            photos from farms in Europe, and it's used in
+                            Kenya.
+                        </li>
+                        <li>
+                            A hiring tool is trained on the CVs of the people a
+                            company hired over the last twenty years, and the
+                            company mostly hired men.
+                        </li>
+                        <li>
+                            A chatbot learns from the messages that users send
+                            it, and a group of users deliberately sends it
+                            insults.
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+        </exercise>
+
+        <exercise xml:id="ex-ai-and-bias-4">
+            <title>Predictable writing</title>
+            <statement>
+                <p>
+                    The Stanford detectors flagged careful, plain English as
+                    AI-written, and ChatGPT's help in picking fancier words made
+                    the flags drop.
+                    Think about these questions.
+                    <ol>
+                        <li>
+                            What does that tell you about what the detectors
+                            are really measuring?
+                        </li>
+                        <li>
+                            Who would be tempted to use AI just to avoid being
+                            flagged?
+                            What does that do to the idea of cheating?
+                        </li>
+                        <li>
+                            What would you want to see before a university used
+                            a detector to judge a student?
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+        </exercise>
+
+        <exercise xml:id="ex-ai-and-bias-5">
+            <title>Whose English is normal?</title>
+            <statement>
+                <p>
+                    In the podcast, a commenter said that Nigerian English is a
+                    dialect in its own right.
+                    Think of the English you read and write, in Kenya or where
+                    you live.
+                    Which words or phrases might a tool trained mostly on
+                    American or British writing treat as odd?
+                    What could go wrong if it did?
+                </p>
+            </statement>
+        </exercise>
+
+        <exercise xml:id="ex-ai-and-bias-6">
+            <title>Bias or discrimination?</title>
+            <statement>
+                <p>
+                    David says that bias is in the algorithm, and discrimination
+                    is the human choice of how to treat that bias.
+                    Pick an example from this chapter or the last one.
+                    What is the bias, and what is the human choice?
+                    Who could have made a different choice?
+                </p>
+            </statement>
+        </exercise>
+
+        <exercise xml:id="ex-ai-and-bias-7">
+            <title>A policy for your university</title>
+            <statement>
+                <p>
+                    The University of Cape Town switched off AI detection, and
+                    Dr Mwita in Kenya prefers in-class assessments to a ban.
+                    Imagine you've been asked to write a short policy for your
+                    own university on AI detectors.
+                    What would it say?
+                    What would a student do if they were accused, and who would
+                    decide?
+                </p>
+            </statement>
+        </exercise>
+
+        <exercise xml:id="ex-ai-and-bias-8">
+            <title>Test an image tool</title>
+            <statement>
+                <p>
+                    Ask an AI image tool for a picture of a farmer, a doctor, a
+                    cleaner and a scientist.
+                    Then try again with <q>in Kenya</q> added.
+                    Think about these questions.
+                    <ol>
+                        <li>
+                            Who did the tool draw each time?
+                        </li>
+                        <li>
+                            What changed when you added more detail?
+                        </li>
+                        <li>
+                            Why do you think it behaved this way?
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+        </exercise>
+
+        <exercise xml:id="ex-ai-and-bias-9">
+            <title>Is it as safe in Swahili?</title>
+            <statement>
+                <p>
+                    The research on whether chatbots are less safe in Swahili
+                    is mixed.
+                    Why is it so hard to measure?
+                    Suppose you wanted to test it.
+                    What would you need, who would you ask to help, and what
+                    would you do about harmful answers you found?
                 </p>
             </statement>
         </exercise>
     </exercises>
+
+    <!-- ============================================================= -->
+    <!-- Sources                                                        -->
+    <!-- ============================================================= -->
+    <references xml:id="references-ai-and-bias">
+        <title>Sources</title>
+
+        <biblio type="raw" xml:id="biblio-nation-2025">
+            Ngari, J. (2025). A new headache for honest students: proving they
+            did not use AI. Daily Nation, 5 September 2025.
+            <url href="https://nation.africa/kenya/ai-in-our-lives/a-new-headache-for-honest-students-proving-they-did-not-use-ai-5182384"/>.
+        </biblio>
+
+        <biblio type="raw" xml:id="biblio-liang-2023">
+            Liang, W., Yuksekgonul, M., Mao, Y., Wu, E. and Zou, J. (2023). GPT
+            detectors are biased against non-native English writers. arXiv
+            preprint 2304.02819. Published in Patterns, July 2023.
+            <url href="https://arxiv.org/abs/2304.02819"/>.
+        </biblio>
+
+        <biblio type="raw" xml:id="biblio-markup-2023">
+            Mathewson, T. G. (2023). AI detection tools falsely accuse
+            international students of cheating. The Markup, 14 August 2023.
+            <url href="https://themarkup.org/machine-learning/2023/08/14/ai-detection-tools-falsely-accuse-international-students-of-cheating"/>.
+        </biblio>
+
+        <biblio type="raw" xml:id="biblio-maverick-2025">
+            McKenna, S. and Kramm, N. (2025). Turning off AI detection software
+            is the right call for SA universities. Daily Maverick, 25 July 2025.
+            <url href="https://www.dailymaverick.co.za/article/2025-07-25-turning-off-ai-detection-software-the-right-call-for-sa-universities/"/>.
+        </biblio>
+
+        <biblio type="raw" xml:id="biblio-bias-video">
+            3 types of bias in AI | Machine learning (n.d.). Video, YouTube.
+            The channel is not shown on the page we could read.
+            <url href="https://www.youtube.com/watch?v=59bMh59JQDo"/>.
+        </biblio>
+
+        <biblio type="raw" xml:id="biblio-ucla">
+            UCLA Institute for Technology, Law and Policy (n.d.). AI and Bias.
+            Video series, YouTube.
+            <url href="https://itlp.law.ucla.edu/itlp-projects/"/>.
+        </biblio>
+
+        <biblio type="raw" xml:id="biblio-deng-2024">
+            Deng, Y., Zhang, W., Pan, S. J. and Bing, L. (2024). Multilingual
+            jailbreak challenges in large language models. arXiv preprint
+            2310.06474. Lists ICLR 2024 as its venue.
+            <url href="https://arxiv.org/abs/2310.06474"/>.
+        </biblio>
+
+        <biblio type="raw" xml:id="biblio-zhang-2026">
+            Zhang, M., Patel, A., Truong, S. T. and Koyejo, S. (2026). Why do
+            safety guardrails degrade across languages? arXiv preprint
+            2605.17173.
+            <url href="https://arxiv.org/abs/2605.17173"/>.
+        </biblio>
+
+        <biblio type="raw" xml:id="biblio-marx-2026">
+            Marx, D. and Dunaiski, M. (2026). Multilingual jailbreaking of LLMs
+            using low-resource languages. arXiv preprint 2605.18239.
+            <url href="https://arxiv.org/abs/2605.18239"/>.
+        </biblio>
+
+        <biblio type="raw" xml:id="biblio-podcast-049">
+            Clements, L. and Stern, D. The IDEMS Podcast, episode 49: Artificial
+            Words, The Unseen Bias of AI in Everyday Language. Release date to
+            be confirmed.
+            <url href="https://www.idems.international/podcast/049-artificial-words-the-unseen-bias-of-ai-in-everyday-language/"/>.
+        </biblio>
+
+        <biblio type="raw" xml:id="biblio-podcast-035">
+            Clements, L. and Stern, D. The IDEMS Podcast, episode 35: Generating
+            AI Images, Do AI Implementations Suppress Diversity? Release date to
+            be confirmed.
+            <url href="https://www.idems.international/podcast/035-generating-ai-images-do-ai-implementations-suppress-diversity/"/>.
+        </biblio>
+    </references>
 </chapter>
