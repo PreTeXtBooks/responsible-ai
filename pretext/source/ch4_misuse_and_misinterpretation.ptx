@@ -114,6 +114,68 @@
                 So how does SHA know what to charge them?
             </p>
 
+            <assemblage xml:id="box-misuse-and-misinterpretation-sha">
+                <title>What is the money for?</title>
+                <p>
+                    Think of it as a shared pot.
+                    Nobody knows who'll fall ill this year, so everyone pays a
+                    little, and the pot pays the hospital bills of whoever
+                    does.
+                    The aim is that nobody is pushed into poverty, or turned
+                    away, because they can't afford treatment.
+                </p>
+                <p>
+                    SHA runs three funds from it
+                    (<xref ref="biblio-africacheck-2026" text="custom">Africa Check, 2026</xref>).
+                </p>
+                <ul>
+                    <li>
+                        <p>
+                            <em>SHIF</em> is the fund people pay into.
+                            It covers most hospital care, including staying
+                            in hospital.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <em>The Primary Healthcare Fund</em> pays for
+                            basic care at dispensaries and health centres.
+                            Everyone living in Kenya can use it, whether or
+                            not they've paid.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <em>The Emergency, Chronic and Critical Illness
+                            Fund</em> pays for emergency treatment.
+                            Stabilising you and getting you to hospital is
+                            covered whether or not you've paid, but only for
+                            up to 24 hours.
+                        </p>
+                    </li>
+                </ul>
+                <p>
+                    Does everyone pay?
+                    Everyone has to register.
+                    Not everyone pays.
+                    If you have a salary, 2.75% comes out of it automatically.
+                    If you don't, the means test works out what your household
+                    can afford.
+                    A household judged unable to pay can have its
+                    contribution paid by the government or by a sponsor.
+                    One person's contribution can also cover their family, such
+                    as a spouse and children under 21
+                    (<xref ref="biblio-africacheck-2026" text="custom">Africa Check, 2026</xref>).
+                </p>
+                <p>
+                    It's called a contribution, not a tax.
+                    But it's compulsory, so in practice it feels a lot like
+                    one.
+                    The difference is that your cover depends on keeping it
+                    up to date.
+                </p>
+            </assemblage>
+
             <p>
                 Its answer is a <term>proxy means test</term>.
             </p>
