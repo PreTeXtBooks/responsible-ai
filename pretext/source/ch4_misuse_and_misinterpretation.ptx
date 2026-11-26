@@ -22,22 +22,21 @@
 
     <introduction xml:id="intro-misuse-and-misinterpretation">
         <p>
-            Peris Nduta does other people's washing in Dandora, a
+            Peris Nduta used to do other people's washing in Dandora, a
             neighbourhood in Nairobi.
             One day she fell and broke her leg.
-            At the hospital, she says, the system told her to pay KES 7,800
-            before she could be treated.
+            At the public hospital she was told she needed to pay KES 7,800.
             Her friends raised less than half of it.
-            She was sent home, and she went back a week later for the operation
+            She was sent home, and was brought back a week later for the operation
             (<xref ref="biblio-au-2026" text="custom">Africa Uncensored, 2026</xref>).
         </p>
 
         <p>
             KES 7,800 is a year of health insurance, at KES 650 a month.
             It came from a formula.
-            The formula looked at her home and her household, and it
-            estimated what she could afford.
-            Nobody asked her what she earns.
+            The formula doesn't ask what she earns.
+            It looks at her home and her household, and estimates what
+            she can afford.
         </p>
 
         <p>
@@ -251,6 +250,24 @@
                 predicted as spending less than they do.
             </p>
 
+            <figure xml:id="fig-misuse-and-misinterpretation-deciles">
+                <caption>How the rebuilt model's predictions compare with actual spending, by tenth of households. Data: Lighthouse Reports (2026), published results. Chart redrawn.</caption>
+                <image source="images/ch4_accuracy_by_decile.svg" width="90%">
+                    <description>
+                        Stacked bar chart for ten groups of households from poorest to richest. In the poorest tenth, 81 percent are predicted to spend more than they do and 16 percent are accurate. The over-predicted share falls steadily to 8 percent in the richest tenth, where 60 percent are predicted to spend less than they do.
+                    </description>
+                </image>
+            </figure>
+
+            <figure xml:id="fig-misuse-and-misinterpretation-exclusion">
+                <caption>Poor households the rebuilt model placed above the poverty line. Data: Lighthouse Reports (2026), published results. Chart redrawn.</caption>
+                <image source="images/ch4_exclusion_errors.svg" width="90%">
+                    <description>
+                        Bar chart. Of households below the poverty line in the test set, 30 percent of urban households, 43 percent of rural households and 39 percent overall were predicted to be above it.
+                    </description>
+                </image>
+            </figure>
+
             <p>
                 Lighthouse says this pattern is built into the method.
                 Regression predicts towards the centre.
@@ -260,6 +277,15 @@
                 proxy means tests
                 (<xref ref="biblio-lighthouse-2026" text="custom">Lighthouse Reports, 2026</xref>).
             </p>
+
+            <figure xml:id="fig-misuse-and-misinterpretation-regression">
+                <caption>A made-up illustration of why a model like this pulls towards the centre. These are not SHA or Lighthouse figures.</caption>
+                <image source="images/ch4_regression_illustration.svg" width="90%">
+                    <description>
+                        Scatter plot of 240 made-up households. Actual spending is along the bottom and predicted spending up the side. The predictions are bunched more closely than the actual figures, and every household in the poorest tenth, shown in orange, sits above the dashed line, so is predicted to spend more than it does.
+                    </description>
+                </image>
+            </figure>
 
             <p>
                 Lighthouse is open about the limits of its work.
@@ -287,14 +313,17 @@
             <assemblage>
                 <title>Peris Nduta, Dandora, Nairobi</title>
                 <p>
-                    Peris does washing for a living.
-                    After she broke her leg, the system told her to pay KES
+                    Until last year, Peris made a living doing other people's
+                    washing.
+                    After she broke her leg, she was told she needed to pay KES
                     7,800.
                     Friends raised less than half.
-                    She was sent home, and went back a week later for the
+                    She was sent home, and brought back a week later for the
                     operation.
-                    She says she can't afford to keep paying, or to pay for the
-                    care she needs afterwards
+                    She could no longer work.
+                    The reporters say she hasn't been able to afford more SHA
+                    payments, or the care she needs afterwards.
+                    She says it's because of her other responsibilities
                     (<xref ref="biblio-au-2026" text="custom">Africa Uncensored, 2026</xref>).
                 </p>
             </assemblage>
@@ -304,9 +333,8 @@
                 <p>
                     Florence found the premium hard to pay while she was
                     pregnant.
-                    She asked for it to be reviewed.
-                    The request was turned down by an automated reply, with no
-                    reason given
+                    She tried to appeal through an automated line, and the appeal
+                    was turned down without a reason
                     (<xref ref="biblio-lighthouse-2026" text="custom">Lighthouse Reports, 2026</xref>).
                 </p>
             </assemblage>
@@ -314,16 +342,19 @@
             <assemblage>
                 <title>Grace, a community health promoter in Nairobi</title>
                 <p>
-                    Grace is a pseudonym.
-                    She says most of the people she works with have been
-                    assigned KES 650 a month.
+                    Grace works in Embakasi, in Nairobi, and her name has been
+                    changed.
+                    She says most of the people she helps have been assigned KES
+                    650 a month.
                     For people below the poverty line, she says, that can be a
-                    tenth of their income or more, and for the poorest it is
-                    nearer a fifth.
-                    She also says that people are dying at home because they
-                    can't pay for care.
-                    That's her account, and the reporting doesn't give a hospital
-                    record for it
+                    tenth of their income or more, and for people the statistics
+                    bureau counts as food poor it is nearer a fifth.
+                    She says that people are dying at home, and that many haven't
+                    been able to go to hospital.
+                    The reporters add that she has seen critically ill people who
+                    couldn't get treatment because they couldn't pay.
+                    Those are her accounts, and the reporting doesn't give a
+                    hospital record for them
                     (<xref ref="biblio-au-2026" text="custom">Africa Uncensored, 2026</xref>).
                 </p>
             </assemblage>
@@ -399,9 +430,10 @@
             <p>
                 The reporters also spoke to David Khaoya, a health economist
                 who helped develop the first version of the test.
-                He says that officials chose to focus on getting the better-off
-                households right, accepting that poor households would be
-                overcharged, and that anyone wrongly classed could appeal
+                According to the reporters, he said that the government decided
+                to prioritise assessing the wealthy correctly, even if that meant
+                overcharging the poor, and that poor households classed wrongly
+                would be able to appeal
                 (<xref ref="biblio-au-2026" text="custom">Africa Uncensored, 2026</xref>).
             </p>
 
@@ -417,8 +449,7 @@
             <title>SHA's response, and the court</title>
 
             <p>
-                SHA replied on 6 May 2026, two days after the investigation
-                came out.
+                SHA replied a few days after the documentary came out.
                 It said that the model is fair and protects low-income
                 households, that replacing the NHIF was needed, and that it
                 will keep improving the tool as more household data comes in.
@@ -430,9 +461,9 @@
             </p>
 
             <p>
-                Africa Uncensored and Lighthouse say the reply doesn't
-                answer their questions about how fair the model is to
-                low-income households, or about the design choices behind it
+                Africa Uncensored says nothing in the reply answers its
+                questions about how fair the model is to low-income
+                households, or about the design choices behind it
                 (<xref ref="biblio-ev-2026" text="custom">Eastleigh Voice, 2026</xref>).
             </p>
 
@@ -490,6 +521,8 @@
                 and cancer treatment.
                 It decided not to cancel the scheme, because millions of
                 people were already signed up.
+                The ruling was about the rollout as a whole, and it didn't
+                judge the means-test model itself.
                 But it ordered fair means-testing for informal workers, a clear
                 and accessible complaints mechanism, and regular progress
                 reports to the court
@@ -527,6 +560,15 @@
                 (<xref ref="biblio-africacheck-2026" text="custom">Africa Check, 2026</xref>).
             </p>
 
+            <figure xml:id="fig-misuse-and-misinterpretation-registered">
+                <caption>Registered is not the same as paying. Data: Africa Check (2026), citing the President's address and SHA's impact report. Chart redrawn.</caption>
+                <image source="images/ch4_registered_vs_paying.svg" width="90%">
+                    <description>
+                        Bar chart in millions of people. 33.7 million are registered, as the President said. SHA's report to 31 March 2026 shows 30.13 million registered beneficiaries and 4.78 million active contributors.
+                    </description>
+                </image>
+            </figure>
+
             <p>
                 A government survey, the 2025 to 2026 Kenya Mini Demographic and
                 Health Survey, gives another view.
@@ -540,6 +582,15 @@
                 (<xref ref="biblio-africacheck-2026" text="custom">Africa Check, 2026</xref>).
             </p>
 
+            <figure xml:id="fig-misuse-and-misinterpretation-wealth-gap">
+                <caption>Cover and payment by household wealth. Data: Africa Check (2026), citing the 2025 to 2026 Kenya Mini Demographic and Health Survey. Chart redrawn.</caption>
+                <image source="images/ch4_wealth_gap.svg" width="90%">
+                    <description>
+                        Grouped bar chart. In the poorest fifth of households, 24 percent report having SHA cover and 17.9 percent of contributing members are paid up. In the richest fifth, 49.2 percent report cover and 65.9 percent are paid up.
+                    </description>
+                </image>
+            </figure>
+
             <p>
                 The rules matter too.
                 Unpaid contributions attract a 2% monthly penalty, and arrears
@@ -548,9 +599,11 @@
                 Emergency stabilisation is available whether or not you've
                 paid, but for up to 24 hours
                 (<xref ref="biblio-africacheck-2026" text="custom">Africa Check, 2026</xref>).
-                So someone who is registered and behind on payments isn't
-                shut out of care completely, but they can be after the first
-                day.
+                So someone who is registered and behind on payments isn't left
+                with no care at all, because primary care is still open to
+                everyone.
+                But most hospital care is paid for through SHIF, and that
+                depends on being up to date.
             </p>
         </subsection>
 
@@ -665,10 +718,11 @@
             </p>
 
             <p>
-                David's first point is about the word <q>determine</q>.
-                I said the algorithm was used to determine whether someone was
-                committing fraud, and he pointed out that it should only ever
-                have said who was at risk of it.
+                The first point is about the word <q>determine</q>.
+                In the episode I say that the algorithm was used to determine
+                whether someone was committing fraud, and then correct myself,
+                because it should only ever have said who was at risk of it.
+                David agrees, and goes further.
                 An algorithm can raise a red flag.
                 It can't know what's actually going on in a household.
                 In his view, treating a risk as if it were reality is a
@@ -730,7 +784,10 @@
             <p>
                 We also talk about COMPAS, which comes up in the US courts.
                 COMPAS is a risk score, made by a company called Northpointe,
-                that estimates how likely a person is to be arrested again.
+                that estimates how likely a person is to commit a crime in
+                future.
+                ProPublica measured that as being arrested again within two
+                years.
                 It's based on a questionnaire of 137 items.
                 Race isn't one of the questions
                 (<xref ref="biblio-propublica-method-2016" text="custom">Angwin et al., 2016</xref>).
@@ -744,14 +801,14 @@
                 next two years.
                 They gave two examples.
                 Brisha Borden, who was 18 and Black, and Vernon Prater, who was
-                41 and white, were each arrested in 2014 for a small theft.
+                41 and white, were each arrested for a small theft.
                 Hers was a bike and a scooter worth about $80 (about KES 10,400
                 at the 2026 rate).
                 Borden was rated high risk, and Prater low risk.
                 Prater had already been convicted of armed robbery before.
                 Borden had only minor offences as a juvenile.
                 Two years later, Borden hadn't been charged with anything new,
-                and Prater was in prison for a later burglary
+                and Prater was in prison for breaking into a warehouse
                 (<xref ref="biblio-propublica-2016" text="custom">Angwin et al., 2016</xref>).
             </p>
 
@@ -764,10 +821,13 @@
                 White defendants who did go on to reoffend were more likely to
                 have been labelled low risk
                 (<xref ref="biblio-propublica-method-2016" text="custom">Angwin et al., 2016</xref>).
-                Overall the score was right about 61% of the time
+                Of the people the score flagged as likely to reoffend, 61% were
+                arrested again, and for violent crime it was only 20%
                 (<xref ref="biblio-propublica-2016" text="custom">Angwin et al., 2016</xref>).
-                Northpointe disagreed with ProPublica's analysis and said its
-                results didn't reflect how the model works.
+                Northpointe said it didn't agree that ProPublica's results were
+                correct.
+                It didn't share its calculations, which it said are
+                proprietary.
             </p>
 
             <p>
@@ -985,14 +1045,15 @@
                 that don't exist.
                 It also reported that the Judiciary is drafting an AI policy
                 and practice directions.
-                The draft, which was out for comment from the Law Society and
-                others, says that advocates who use AI to prepare court
-                documents must say so when they file.
+                The draft was sent to advocates for public participation, and
+                the Law Society of Kenya has invited feedback from its members.
+                It says that advocates who use AI to prepare court documents
+                must say so when they file.
                 They must check every authority they cite, and they mustn't
                 file anything written wholly by an AI tool without proper
                 human review.
-                Judges and other court officers must treat what an AI gives them
-                as information only
+                Judicial officers must treat what an AI gives them as
+                information only
                 (<xref ref="biblio-nlm-2026" text="custom">Muthoni, 2026</xref>).
             </p>
 

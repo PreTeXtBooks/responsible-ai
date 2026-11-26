@@ -119,3 +119,45 @@ Not used:
 
 CIO "5 famous analytics and AI disasters", the AI Incident Database and the
 DigitalDefynd list. We could use the Incident Database for an exercise.
+
+## Verification pass, 26 November 2026 (second read of the main sources)
+
+Fixed after re-checking:
+- Peris: she "used to" do washing and could no longer work (Lighthouse), and the
+  chapter no longer says she was told to pay "before treatment". The reporters say
+  she hasn't been able to afford more payments or aftercare; her own quote gives
+  "other responsibilities" as the reason.
+- Florence: the appeal was an automated line, not a "request for review".
+- Grace: the pages don't say "pseudonym" in words (an asterisk marks a changed
+  name). The 10% and 20% are her figures. Her words are "people are dying at home";
+  the "because they can't pay" link is the reporters' framing, so it is now attributed.
+- Khaoya is paraphrased by the reporters, not quoted.
+- SHA's reply: the date is only "Wednesday" in the articles. Africa Uncensored (not
+  Lighthouse) said the reply didn't answer its questions.
+- The March 2026 ruling is about the rollout. It says nothing specific about the
+  means-test model. The petitioners aren't named in the Capital FM article.
+- COMPAS: ProPublica's "61%" is the share of people flagged as likely to reoffend who
+  were arrested again, not "right 61% of the time overall". Prater's arrest year isn't
+  given; his later crime was breaking into a warehouse.
+- Dutch section: it was Lily who said "determine", and David agreed. Fixed.
+- Registered but unpaid: primary care stays open to everyone. Fixed.
+
+Still not verified by me directly:
+- The Guardian article; the IDinsight report; the documentary.
+- The Capital FM and AllAfrica reports are the only source for the ruling.
+- Grace's, Peris's and Florence's accounts rest on one reporting team.
+- The Kenyan courts example rests on one outlet (Nairobi Law Monthly).
+- A search for other Kenyan fake-citation rulings did not work (a consent page
+  blocked it), so that is still open.
+
+## Charts (pretext/assets/images, all SVG, drawn by us)
+
+- ch4_accuracy_by_decile.svg: Lighthouse's published results file
+  (kenya_sha_pmt, prediction_accuracy_by_decile.csv), plotted as given.
+- ch4_exclusion_errors.svg: Lighthouse's model_performance_summary.csv (29.71%
+  urban, 43.06% rural, 38.94% all).
+- ch4_regression_illustration.svg: MADE-UP data (random numbers, seed 11), labelled as such.
+- ch4_registered_vs_paying.svg and ch4_wealth_gap.svg: Africa Check's figures.
+- The Lighthouse repo is MIT-licensed, with no separate data terms. The survey data
+  itself isn't in it. We redrew the charts and credit Lighthouse in each caption.
+- The scripts that make the charts are not in the repository yet.

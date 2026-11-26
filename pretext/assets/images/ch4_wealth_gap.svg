@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 400" width="700" height="400" role="img" aria-labelledby="t d">
+<title id="t">SHA cover by household wealth</title><desc id="d">Grouped bars. Among the poorest fifth of households, 24 percent report having SHA cover and 17.9 percent of contributing members were paid up. Among the richest fifth the figures are 49.2 percent and 65.9 percent.</desc>
+<rect width="700" height="400" fill="#ffffff"/>
+<text x="70" y="28" font-size="17" text-anchor="start" fill="#222222" font-weight="bold" font-family="Arial, Helvetica, sans-serif">The poorest fifth are less likely to be covered, and less likely to be paid up</text>
+<text x="70" y="48" font-size="13" text-anchor="start" fill="#555555" font-weight="normal" font-family="Arial, Helvetica, sans-serif">Kenya Mini Demographic and Health Survey, 2025 to 2026</text>
+<rect x="70" y="62" width="14" height="14" fill="#D55E00"/>
+<text x="90" y="74" font-size="13" text-anchor="start" fill="#222222" font-weight="normal" font-family="Arial, Helvetica, sans-serif">Poorest fifth of households</text>
+<rect x="300" y="62" width="14" height="14" fill="#0072B2"/>
+<text x="320" y="74" font-size="13" text-anchor="start" fill="#222222" font-weight="normal" font-family="Arial, Helvetica, sans-serif">Richest fifth of households</text>
+<line x1="70" y1="320.0" x2="680" y2="320.0" stroke="#DDDDDD"/>
+<text x="62" y="325.0" font-size="12" text-anchor="end" fill="#555555" font-weight="normal" font-family="Arial, Helvetica, sans-serif">0%</text>
+<line x1="70" y1="263.75" x2="680" y2="263.75" stroke="#DDDDDD"/>
+<text x="62" y="268.75" font-size="12" text-anchor="end" fill="#555555" font-weight="normal" font-family="Arial, Helvetica, sans-serif">20%</text>
+<line x1="70" y1="207.5" x2="680" y2="207.5" stroke="#DDDDDD"/>
+<text x="62" y="212.5" font-size="12" text-anchor="end" fill="#555555" font-weight="normal" font-family="Arial, Helvetica, sans-serif">40%</text>
+<line x1="70" y1="151.25" x2="680" y2="151.25" stroke="#DDDDDD"/>
+<text x="62" y="156.25" font-size="12" text-anchor="end" fill="#555555" font-weight="normal" font-family="Arial, Helvetica, sans-serif">60%</text>
+<line x1="70" y1="95.0" x2="680" y2="95.0" stroke="#DDDDDD"/>
+<text x="62" y="100.0" font-size="12" text-anchor="end" fill="#555555" font-weight="normal" font-family="Arial, Helvetica, sans-serif">80%</text>
+<rect x="139.2" y="252.5" width="79.3" height="67.5" fill="#D55E00"/>
+<text x="178.85" y="244.5" font-size="14" text-anchor="middle" fill="#222222" font-weight="bold" font-family="Arial, Helvetica, sans-serif">24%</text>
+<rect x="226.5" y="181.6" width="79.3" height="138.4" fill="#0072B2"/>
+<text x="266.15" y="173.625" font-size="14" text-anchor="middle" fill="#222222" font-weight="bold" font-family="Arial, Helvetica, sans-serif">49.2%</text>
+<text x="222.5" y="342" font-size="13" text-anchor="middle" fill="#222222" font-weight="normal" font-family="Arial, Helvetica, sans-serif">Report having SHA cover</text>
+<rect x="444.2" y="269.7" width="79.3" height="50.3" fill="#D55E00"/>
+<text x="483.84999999999997" y="261.65625" font-size="14" text-anchor="middle" fill="#222222" font-weight="bold" font-family="Arial, Helvetica, sans-serif">17.9%</text>
+<rect x="531.5" y="134.7" width="79.3" height="185.3" fill="#0072B2"/>
+<text x="571.15" y="126.65624999999997" font-size="14" text-anchor="middle" fill="#222222" font-weight="bold" font-family="Arial, Helvetica, sans-serif">65.9%</text>
+<text x="527.5" y="342" font-size="13" text-anchor="middle" fill="#222222" font-weight="normal" font-family="Arial, Helvetica, sans-serif">Contributing members whose premium</text>
+<text x="527.5" y="359" font-size="13" text-anchor="middle" fill="#222222" font-weight="normal" font-family="Arial, Helvetica, sans-serif">was paid this month</text>
+<text x="70" y="390" font-size="11" text-anchor="start" fill="#555555" font-weight="normal" font-family="Arial, Helvetica, sans-serif">Data: Africa Check (2026), citing the 2025-26 Kenya Mini DHS (KNBS). Chart redrawn.</text>
+</svg>

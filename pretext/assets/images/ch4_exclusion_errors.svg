@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" width="640" height="360" role="img" aria-labelledby="t d">
+<title id="t">Poor households predicted to be not poor</title><desc id="d">Bar chart. Of households below the poverty line in the test set, 30 percent of urban households, 43 percent of rural households and 39 percent overall were predicted to be above it.</desc>
+<rect width="640" height="360" fill="#ffffff"/>
+<text x="70" y="28" font-size="17" text-anchor="start" fill="#222222" font-weight="bold" font-family="Arial, Helvetica, sans-serif">Poor households the rebuilt model placed above the poverty line</text>
+<text x="70" y="48" font-size="13" text-anchor="start" fill="#555555" font-weight="normal" font-family="Arial, Helvetica, sans-serif">Share of households below the poverty line, 2021 survey test set</text>
+<line x1="70" y1="300.0" x2="620" y2="300.0" stroke="#DDDDDD"/>
+<text x="62" y="305.0" font-size="12" text-anchor="end" fill="#555555" font-weight="normal" font-family="Arial, Helvetica, sans-serif">0%</text>
+<line x1="70" y1="226.66666666666669" x2="620" y2="226.66666666666669" stroke="#DDDDDD"/>
+<text x="62" y="231.66666666666669" font-size="12" text-anchor="end" fill="#555555" font-weight="normal" font-family="Arial, Helvetica, sans-serif">20%</text>
+<line x1="70" y1="153.33333333333334" x2="620" y2="153.33333333333334" stroke="#DDDDDD"/>
+<text x="62" y="158.33333333333334" font-size="12" text-anchor="end" fill="#555555" font-weight="normal" font-family="Arial, Helvetica, sans-serif">40%</text>
+<line x1="70" y1="80.0" x2="620" y2="80.0" stroke="#DDDDDD"/>
+<text x="62" y="85.0" font-size="12" text-anchor="end" fill="#555555" font-weight="normal" font-family="Arial, Helvetica, sans-serif">60%</text>
+<rect x="115.8" y="191.1" width="91.7" height="108.9" fill="#D55E00"/>
+<text x="161.66666666666669" y="183.06333333333333" font-size="14" text-anchor="middle" fill="#222222" font-weight="bold" font-family="Arial, Helvetica, sans-serif">30%</text>
+<text x="161.66666666666669" y="322" font-size="14" text-anchor="middle" fill="#222222" font-weight="normal" font-family="Arial, Helvetica, sans-serif">Urban</text>
+<rect x="299.2" y="142.1" width="91.7" height="157.9" fill="#D55E00"/>
+<text x="345.0" y="134.11333333333332" font-size="14" text-anchor="middle" fill="#222222" font-weight="bold" font-family="Arial, Helvetica, sans-serif">43%</text>
+<text x="345.0" y="322" font-size="14" text-anchor="middle" fill="#222222" font-weight="normal" font-family="Arial, Helvetica, sans-serif">Rural</text>
+<rect x="482.5" y="157.2" width="91.7" height="142.8" fill="#D55E00"/>
+<text x="528.3333333333334" y="149.22" font-size="14" text-anchor="middle" fill="#222222" font-weight="bold" font-family="Arial, Helvetica, sans-serif">39%</text>
+<text x="528.3333333333334" y="322" font-size="14" text-anchor="middle" fill="#222222" font-weight="normal" font-family="Arial, Helvetica, sans-serif">All</text>
+<text x="70" y="348" font-size="11" text-anchor="start" fill="#555555" font-weight="normal" font-family="Arial, Helvetica, sans-serif">Data: Lighthouse Reports (2026), published results. Chart redrawn.</text>
+</svg>
