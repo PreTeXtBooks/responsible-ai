@@ -120,3 +120,27 @@ Still open (the checkers could not open these pages):
   "Artificial Intelligence in Kenya", a policy brief reported as by Jackline Akello, January or February 2022,
   apparently for Paradigm Initiative: https://paradigmhq.org/wp-content/uploads/2022/02/Artificial-Inteligence-in-Kenya-1.pdf
   (unopened and unverified). If that's the document you used, tell me and I will fix the citation.
+
+## Sources Lily supplied afterwards (26 November 2026)
+
+- KUOW article (Denkmann and Cowan, 10 April 2024), read in full from your PDF. It confirms Chapter 3's
+  claims: the Seattle shop opened on 22 January 2018; the New York Times called it "A Store of the Future"
+  (so my removal of that line was WRONG, and it is back, cited to KUOW); about 1,000 workers in India per some
+  sources; Amazon's "misleading and inaccurate" reply and its account (verification after the point of sale, workers
+  training the AI); Theo Wayt of The Information; receipts hours later; 700 reviews per 1,000 transactions in 2022;
+  "far more reviews than Amazon would have liked"; layoffs of US-based staff; and Shestakofsky on valuation and
+  wages. Two fixes: the line that paying cheaper labour elsewhere is common is KUOW's own narration, not
+  Shestakofsky's, and his comments are about the industry, not Amazon. KUOW's own text says both that the
+  technology is being phased out and that it stays in 40 Amazon Fresh stores. Chapter 3 doesn't use either.
+- OpenAI's Digital Green story (pasted by you): supports Chapter 1's Farmer.Chat claims: India and Kenya;
+  deployed as an assistant to extension agents rather than straight to farmers, for another stage of human review;
+  over 4,500 extension agents across Kenya and India as of 1 January 2024. It's OpenAI's account of a customer.
+  Added with a new citation. Other claims in it (such as costs falling from $35 to $0.35 a farmer) are not used.
+- "MMI806 AI_Utilisation_in_Kenya (2022).pdf": two pages (6 and 7) of a policy brief titled "Artificial Intelligence
+  in Kenya", with "AI Utilization in Kenya" in the page footer. No author or publisher on the pages. Chapter 1's
+  lending paragraph is on page 7 (contacts, SMSs, SD card content, gallery, apps downloaded). The bibliography now
+  says this, and calls it MMI806 course reading. I could not open the Paradigm Initiative document that a search
+  suggested, so I haven't named an author.
+- "MMI806 AI in Kenya (Blog).pdf", dated 11 April 2025: it IS the blog Chapter 1 drew on (0.2 doctors per 1,000
+  people, Chat Care, Megi Mum, FarmerAI with a pilot through August 2025 aiming at 1,000 farmers, Safaricom fraud
+  detection, WildDrone, Angaza Elimu's Kalamu and its reported 32% improvement).

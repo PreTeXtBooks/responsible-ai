@@ -591,6 +591,15 @@
                 agents talk with farmers in their own language and give the
                 equivalent of good extension advice
                 (<xref ref="biblio-podcast-204" text="custom">Stern and Fleming, 2025</xref>).
+                According to an OpenAI case study, Digital Green's tool,
+                Farmer.Chat, supports extension programmes in countries including
+                India and Kenya.
+                Digital Green first deployed it as an assistant to extension
+                agents, rather than directly to farmers, so that there would be
+                another stage of human review.
+                As of 1 January 2024, over 4,500 extension agents were using it
+                across Kenya and India
+                (<xref ref="biblio-openai-digitalgreen" text="custom">OpenAI, n.d.</xref>).
                 Right now, building something like this means starting from a
                 large language model.
                 But the task is narrow, and once the system has been built and
@@ -1106,10 +1115,17 @@
         <title>Sources</title>
 
         <biblio type="raw" xml:id="biblio-policy-brief-2022">
-            <q>Artificial Intelligence in Kenya</q>, <q>AI Utilization in
-            Kenya</q> (2022). Policy brief. Author and publisher to be
-            confirmed. Its figures draw on CIPIT's 2021 mapping of AI
-            applications in Africa.
+        <q>Artificial Intelligence in Kenya</q> (2022). Policy brief, pages 6
+        and 7 (the page footer reads <q>AI Utilization in Kenya</q>). The
+        author and publisher aren't shown on the pages we have. Course
+        reading for MMI806. Its figures draw on CIPIT's 2021 mapping of AI
+        applications in Africa.
+        </biblio>
+        
+        <biblio type="raw" xml:id="biblio-openai-digitalgreen">
+        OpenAI (n.d.). Digital Green. A customer story on Farmer.Chat, written
+            after 1 January 2024.
+        <url href="https://openai.com/index/digital-green"/>.
         </biblio>
 
         <biblio type="raw" xml:id="biblio-redcross">
