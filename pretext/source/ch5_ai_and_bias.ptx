@@ -30,9 +30,10 @@
             She pointed to the <q>AI font</q> of the introduction, the body
             and the conclusion, and to his grammar, which had suddenly become
             perfect.
-            She also said that an AI detector had flagged it.
-            Victor sent her his sticky notes, his drafts and photos of the
-            library books he'd used.
+            She said it had come out as AI-generated, though she didn't
+            say which tool she'd used.
+            Victor sent her his sticky notes, his drafts and photos of
+            himself in the library with the books he'd used.
             She wasn't convinced
             (<xref ref="biblio-nation-2025" text="custom">Ngari, 2025</xref>).
         </p>
@@ -106,33 +107,37 @@
 
             <p>
                 Ian Thuku, who is 20 and studies graphic design at KCA
-                University, was accused of using AI on a 10-mark write-up.
-                His lecturer's suspicion was based on his abbreviations and his
-                style.
-                Ian ran his own paper through a detector called GPTZero, and it
-                said that it was 0% AI.
-                He says the lecturer then accepted his explanation, but that
-                about ten others in his class were accused too.
-                One, who scored 100% AI, was told to repeat the assignment.
+                University, was accused of using AI on the 10-mark write-up
+                of an assignment.
+                His lecturer thought the abbreviations he'd used looked like AI.
+                The lecturer then ran his paper through a detector called
+                GPTZero, and it came out as 0% AI, which is when the lecturer
+                accepted it.
+                Ian says that about ten others in his class went through the
+                same thing.
+                One, whose score came out at 100% AI, was told to repeat the
+                assignment.
             </p>
 
             <p>
-                At Kenyatta University, Daniel Chacha says a class of about 200
-                was accused over a 15-mark assignment.
+                At Kenyatta University, Daniel Chacha says that 200 students
+                were accused over a 15-mark takeaway assignment.
             </p>
 
             <p>
                 A lecturer at Rongo University, Dr James Mwita, told the
                 paper what he looks for.
-                It's foreign examples, leftover template wording, and phrases
-                like <q>delve into</q>.
-                He says it's harder than checking for plagiarism, and he
-                doesn't want a ban.
-                When he's suspicious, he tests students in class.
+                It's Western examples in a Kenyan setting, leftover template
+                wording like <q>insert the name of the business</q>, and
+                phrases like <q>delve into</q>.
+                He says that detecting AI is a different beast from checking for
+                plagiarism, and he doesn't want a ban.
+                Instead he sets a take-home task, and then includes a similar
+                question in an in-class test.
             </p>
 
             <p>
-                So lecturers are using detectors, and sometimes just their
+                So some lecturers are using detectors, and sometimes just their
                 instinct, to decide who wrote what.
                 How reliable is that?
             </p>
@@ -142,8 +147,8 @@
             <title>How a detector decides</title>
 
             <p>
-                Most of these tools work by measuring how predictable a piece of
-                writing is.
+                Many of these tools rely, at least in part, on how predictable
+                a piece of writing is.
                 The measure is called <term>perplexity</term>.
                 It's a score for how surprised a language model is by your
                 words.
@@ -184,7 +189,7 @@
             </p>
 
             <p>
-                The team's explanation is perplexity.
+                The team's suggested explanation is perplexity.
                 The essays that all seven detectors flagged had lower
                 perplexity, which means more predictable word choices.
                 They tried two tests to check.
@@ -235,7 +240,8 @@
                 That would need a test, and as far as we found, nobody has
                 published one.
                 Turnitin, one of the biggest tools, says it was trained on
-                writing from many languages, so it shouldn't show this bias.
+                writing by English speakers in the US and abroad, and by
+                multilingual students, so it shouldn't show this bias.
                 Its own research hadn't been published when The Markup asked,
                 and Turnitin wasn't one of the seven detectors that Stanford
                 tested
@@ -247,13 +253,15 @@
             <title>What some institutions did</title>
 
             <p>
-                In 2023 the University of Pittsburgh switched off AI detection,
-                because of false positives.
+                In 2023, the University of Pittsburgh's teaching centre told staff
+                it didn't support using any AI detectors, and the university
+                switched off Turnitin's AI indicator, because false positives risk
+                students losing trust and confidence.
                 OpenAI shut down its own AI-text detector at the end of July
-                that year
+                that year, because of low accuracy
                 (<xref ref="biblio-markup-2023" text="custom">Mathewson, 2023</xref>).
-                In 2025, the University of Cape Town switched off Turnitin's AI
-                detection
+                In 2025, the University of Cape Town announced that it would
+                switch off Turnitin's AI detection
                 (<xref ref="biblio-maverick-2025" text="custom">McKenna and Kramm, 2025</xref>).
             </p>
         </subsection>
@@ -306,8 +314,8 @@
                 Who is harmed?
                 In the Stanford study, it's writers who use plainer, more
                 careful English.
-                In the Nation's stories, it's students who've already put in
-                the work, and who then have to spend time proving it.
+                In the Nation's stories, it's students who say that they did their
+                own work, and who then have to spend time proving it.
                 That time is a cost, and so is the worry.
             </p>
 
@@ -517,22 +525,23 @@
             <title>The word <q>delve</q></title>
 
             <p>
-                In early April 2024, someone said that they would ignore any
-                email that contained words like <q>delve</q>, because it was a
-                sign that ChatGPT had written it.
+                In early April 2024, some people said that they would
+                automatically ignore any email that contained words like
+                <q>delve</q>, because it was a sign that ChatGPT had written it.
                 Plenty of people were upset.
                 David says that people in Nigeria answered by posting
                 WhatsApp screenshots of themselves using the word in ordinary
                 conversations.
-                In the episode I read out a comment from one of them, that
-                Nigerian English is a dialect in its own right.
+                In the episode I read out some of the feedback, which said that
+                Nigerian English is a standalone dialect.
             </p>
 
             <p>
                 David has two objections.
                 First, even if the sender did use ChatGPT to put their ideas
                 into words, he says that's fine.
-                Second, using a single word as evidence is ignorant.
+                Second, using a single word to say that ChatGPT wrote something
+                is, in his word, insane.
                 A tool may use <q>delve</q> more often than the people in one
                 person's circle do.
                 That doesn't mean others outside that circle don't.
@@ -555,10 +564,8 @@
 
             <insight>
                 <p>
-                    In David's words, bias is something inside the algorithm,
-                    for example a lean towards language that it knows well.
-                    Discrimination is the human choice about what to do with that
-                    bias.
+                    In David's words, bias is the bias within the algorithms.
+                    Discrimination is the way that people interpret them.
                 </p>
             </insight>
 
@@ -566,9 +573,8 @@
                 That's why it matters who uses the tool, and how.
                 A detector that's slightly off becomes discrimination when
                 someone treats its result as proof.
-                David says that if the tool starts to be used that way, he
-                expects it to end up in court, and he's read about cases
-                already.
+                David thinks that there are already lawsuits about this, and
+                says he was reading about it recently.
             </p>
 
             <p>
@@ -576,8 +582,8 @@
                 People who use AI skilfully can avoid being flagged.
                 People who don't use it at all can get flagged anyway.
                 He calls that discrimination in its utmost form.
-                He mentions someone who wrote an essay on the spot, and was
-                still flagged as ChatGPT.
+                He describes someone who was asked to write their work there
+                and then, and was still identified as ChatGPT-written.
             </p>
         </subsection>
 
@@ -588,7 +594,7 @@
                 I'll admit that the word <q>crucial</q> sets off my own alarm.
                 I listed other words that I now think of as ChatGPT words, like
                 <q>robust</q>, <q>foster</q>, <q>empower</q> and <q>harness</q>.
-                And then I realised that the same words are in a responsible AI
+                And I'd bet that all of those words are in a responsible AI
                 course proposal that David and I wrote before ChatGPT existed.
             </p>
 
@@ -596,7 +602,8 @@
                 David also tells us that he's dyslexic, and that a tool like
                 ChatGPT would have helped him a lot when he was growing up.
                 He doesn't think it's a problem if someone uses it for a first
-                draft, as long as they understand it and own it.
+                draft, as long as they're happy that it represents their
+                ideas.
             </p>
 
             <p>
@@ -672,7 +679,7 @@
                 I asked an AI image tool for a picture to show fertiliser,
                 and it gave me a white hand.
                 That was wrong for the course.
-                I spent about an hour trying to fix it.
+                I spent at least an hour trying to fix it.
             </p>
 
             <p>
@@ -686,15 +693,15 @@
             <p>
                 David says the first picture is the one you'd just take if you
                 didn't care about context, and that's why it matters.
-                He calls it racial bias built into the leading models.
+                He calls it racial discrimination baked into these AI models.
                 He also says that regions like the Sahel, which includes
                 Niger, Burkina Faso and Mali, are often left out of the data
                 altogether.
                 That's his understanding, and it's about where the data
                 comes from.
                 His example is apps that identify pests and diseases.
-                They work where they were trained, but nobody has banks of
-                images for the crops and pests of the Sahel.
+                They work where they were trained, but he says nobody has the
+                image bank to train them on the plants and pests of the Sahel.
             </p>
         </subsection>
 
@@ -722,21 +729,24 @@
             <title>What can be done?</title>
 
             <p>
-                David's view is that AI is neutral, and that how it's
+                David's view is that AI is totally neutral, and that how it's
                 implemented decides whether it supports diversity or
                 suppresses it.
-                He says it's technically possible to build diversity in, but
-                the companies aren't currently rewarded for it.
-                And he says <q>it's the algorithm</q> isn't a defence.
+                He says that the market incentives aren't there for companies to
+                build diversity in.
+                And he says that <q>it's the algorithm</q> as a defence is
+                totally false.
             </p>
 
             <p>
                 For ordinary users, his advice is practical.
-                Notice the bias.
-                Write a short guide on how to avoid it, and share it.
-                Asking for a particular gender or skin colour is a patch, and
-                it's not a fix for society.
-                And keep a person in the loop who takes responsibility.
+                Just noticing the bias is the first step.
+                Then write a simple document on how to avoid it, and share it
+                as an open resource.
+                Asking for a particular gender is an intermediary solution, not
+                a fix for society.
+                And he says that what he trusts in this work is that there's a
+                human in the loop who takes responsibility.
             </p>
         </subsection>
     </section>
@@ -750,9 +760,15 @@
         <p>
             In Chapter 2 we met the Kenyan workers who helped to make
             ChatGPT's safety filter.
-            In the Wall Street Journal's reporting, Karen Hao raised a worry
-            about that filtering, which is that it was done mainly in English,
-            so the tool might be less safe in Swahili
+            On the Wall Street Journal's podcast, the journalist Karen Hao was
+            asked whether one of those workers, Alex, could use ChatGPT in
+            Swahili.
+            She said that you can, but that ChatGPT was developed mainly to work
+            in English, so a lot of the content moderation and safety work was
+            done in English.
+            Prompt it in Swahili, she said, and you'll get more misinformation,
+            more confusing sentences, and potentially more of the content that
+            they'd worked hard to filter out
             (<xref ref="biblio-wsj-2023" text="custom">Wall Street Journal, 2023</xref>).
             If it's true, that's a kind of bias, because some people would be
             protected less than others.
@@ -767,33 +783,40 @@
             In 2023, researchers tested ChatGPT and GPT-4 with unsafe
             requests in ten languages, including Swahili, which they
             counted as low-resource.
-            On average, the low-resource languages produced about three times
-            as many unsafe replies as the high-resource ones.
-            For ChatGPT it was 15% against 4%, and for GPT-4 it was 10%
-            against 4%.
+            They found that the low-resource languages were about three
+            times as likely to produce harmful content as the high-resource
+            ones.
+            On average, for ChatGPT it was 15% against 4%, and for GPT-4 it
+            was 10% against 4%.
             English was below 1% for both
             (<xref ref="biblio-deng-2024" text="custom">Deng et al., 2024</xref>).
         </p>
 
         <p>
             But more recent work complicates the picture.
-            A 2026 preprint tested 61 versions of models from five big
+            A 2026 paper tested 61 configurations of models from five big
             families.
             It found that 22 of them were more vulnerable in English than in
             low-resource languages, so the pattern depends on the model
             (<xref ref="biblio-zhang-2026" text="custom">Zhang et al., 2026</xref>).
-            Another 2026 preprint tested Kiswahili and other African
+            Another 2026 paper tested Kiswahili and other African
             languages.
-            It found that in long, multi-turn conversations, between about 42%
-            and 71% of attempts got harmful output from the models it tested.
-            The authors also say that machine translation made some of the
-            other languages look safer than they were
+            It found that in long, multi-turn conversations, harmful responses
+            came back between about 42% and 71% of the time, depending on the
+            model.
+            The authors also say that the lower rates for isiXhosa and isiZulu
+            may reflect poor machine translation, not stronger safeguards
             (<xref ref="biblio-marx-2026" text="custom">Marx and Dunaiski, 2026</xref>).
         </p>
 
         <p>
-            Both of those are preprints, which means that other experts
-            haven't yet reviewed them.
+            Both of those are recent papers posted on arXiv.
+            One is labelled a preprint, and the other lists a 2026 conference
+            poster, but we haven't confirmed whether either has been through
+            peer review.
+            Those studies also tested harmful requests.
+            They don't test the other things Karen Hao mentioned, like more
+            misinformation or confusing answers.
             So it's fair to say that whether a tool is as safe in Swahili
             as in English depends on the model, the year and the test.
             It's hard to measure, and it's worth testing for yourself.
@@ -1049,7 +1072,7 @@
         <biblio type="raw" xml:id="biblio-liang-2023">
             Liang, W., Yuksekgonul, M., Mao, Y., Wu, E. and Zou, J. (2023). GPT
             detectors are biased against non-native English writers. arXiv
-            preprint 2304.02819. Published in Patterns, July 2023.
+            preprint 2304.02819. Published in Patterns (Cell Press), 2023.
             <url href="https://arxiv.org/abs/2304.02819"/>.
         </biblio>
 
