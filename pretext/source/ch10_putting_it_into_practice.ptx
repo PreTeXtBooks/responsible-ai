@@ -27,14 +27,6 @@
     </section>
 
     <!-- 2. A STACK question prompting the reader to think deeply. -->
-    <section xml:id="sec-putting-it-into-practice-stack">
-        <title>Practise</title>
-
-        <p>
-            TODO: STACK question(s) to go here.
-        </p>
-    </section>
-
     <!-- 3. An illustrative worked example using software. -->
     <section xml:id="sec-putting-it-into-practice-worked-example">
         <title>Try It</title>

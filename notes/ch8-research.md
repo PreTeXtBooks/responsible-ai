@@ -77,3 +77,29 @@ The embed address is https://embed.ted.com/talks/sasha_luccioni_ai_is_dangerous_
 - The environmental article and the paper on AI's environmental impact (no links supplied).
 - A second-read fact-check of this chapter.
 - Ask whether to keep "Looking Behind the Product" (267 and 268) or move them to Chapter 9.
+
+## Second-read check, 26 November 2026
+
+Fixed after a separate checker re-read Chapter 8 against its sources:
+- Podcast 125 (verified against the transcript): Lily says "I guess I'm the responsible one,
+  because I read the summary" (the tone, "half-jokingly", can't be heard in text, so it came out).
+  David calls responsibility a really difficult question, floats the AI's maker as responsible but
+  doubts judges would go that far, and is "fairly certain" almost all summaries would disappear
+  overnight if makers were held responsible. The "leader died" example is David's. The "suspect
+  shot himself" example is Lily's. Google's summary said 22 metres, and Lily has confirmed
+  episode 125 is the right version. The chapter says 22 metres. I did not state the true height.
+- The moderators: Meta's "did not carry on business in Kenya" argument came in a later challenge
+  to the February 2023 ruling (the judge's refusal to remove Meta). The report published on 27 April 2026
+  says the court "ruled in favour of 187" moderators, then describes only the cross-examination
+  order. The chapter now says that. The consolidation of the 2023 case with the 2022 petition is
+  disputed between sources, and the chapter says so. "Supervises" came out: only "hires and pays" is
+  supported. The April 2026 date is the date of the report.
+- Data centre: "the biggest proposal" was my inference and is now "one proposal". 100 MW first phase
+  is from Tech-ish only. Microsoft and G42's water-conservation line was at the 2024 announcement.
+  Grace Kimani's words were misattributed (she talks about pressure on supply and asks for
+  transparency; the "how much, where from, how cooled" questions are Al Jazeera's). The lake
+  "nearly dried up in 2010" is now attributed to residents.
+- 267 and 268: "no cloud, only Earth" is a slogan David repeats. David says the digital jobs "may not be
+  great, but are valued". Kate says the problem is unfair pay. In 267, David agrees with Kate that it is
+  no longer profitable once harms are counted. The Scale AI remark IS in the chapter (Kate says it goes to
+  places like Venezuela and Kenya). The "$24 billion" remark is not used.

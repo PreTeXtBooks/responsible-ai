@@ -24,7 +24,7 @@
         <p>
             I once fell while bouldering, and went to A&amp;E.
             Afterwards I wanted to know how high the wall was.
-            Google's AI summary gave a height that was absurdly tall.
+            Google's AI summary gave a height of 22 metres.
             That didn't sound right.
             I found the venue's own article, which was dated 1 April, and
             ended with <q>Happy April Fool's Day</q>
@@ -125,7 +125,8 @@
                         Daniel Motaung, described as a whistleblower, brought the first
                         case against Meta and Sama (Petition E071 of 2022).
                         In February 2023, a judge refused to remove Meta from the
-                        case, even though Meta argued that it didn't carry on
+                        case.
+                        Meta challenged that, arguing that it did not carry on
                         business in Kenya
                         (<xref ref="biblio-nothias-2026" text="custom">Nothias, 2026</xref>).
                     </p>
@@ -140,7 +141,9 @@
                         new contractor, Majorel, not to hire them.
                         In June 2023, the court issued interim orders,
                         including that Facebook should provide medical,
-                        psychiatric and psychological care to the moderators
+                        psychiatric and psychological care to the moderators.
+                        (One report says this case was joined with the 2022 petition,
+                        and another treats them as separate)
                         (<xref ref="biblio-nothias-2026" text="custom">Nothias, 2026</xref>).
                     </p>
                 </li>
@@ -156,10 +159,11 @@
                 <li>
                     <p>
                         <em>April 2026.</em>
-                        The court ordered a Meta director to appear to be
-                        cross-examined on an affidavit that Meta had filed.
-                        A hearing date will follow once Meta and the other
-                        respondents appear
+                        A report published on 27 April 2026 says the court ruled in
+                        favour of 187 former moderators.
+                        What it describes is an order for a Meta director to appear to
+                        be cross-examined on an affidavit that Meta had filed, with a
+                        hearing date to follow
                         (<xref ref="biblio-capital-moderators-2026" text="custom">Capital FM, 2026</xref>).
                     </p>
                 </li>
@@ -173,7 +177,8 @@
                 One legal analysis says that a judge held Meta to be the
                 <q>true employer</q>, partly because the moderators used
                 Facebook's own software.
-                It doesn't give a date for it, or say which ruling it means
+                It doesn't give a date for it, or say which ruling it means, and
+                we couldn't confirm it
                 (<xref ref="biblio-nothias-2026" text="custom">Nothias, 2026</xref>).
             </p>
 
@@ -181,11 +186,12 @@
                 <p>
                     Be careful with the headlines.
                     One of them said the court had <q>backed</q> the moderators.
-                    The body of the report describes an order for a Meta
-                    director to be cross-examined.
-                    As far as we can find, no court has yet ruled on who is
-                    responsible.
-                    So far the courts have settled only where the case can be
+                    The report says the court ruled in their favour, but it only
+                    describes an order for a Meta director to be cross-examined, and it
+                    doesn't say what was decided.
+                    As far as we can confirm, no court has yet made a final ruling on
+                    who is responsible.
+                    What the courts have clearly settled is where the case can be
                     heard.
                 </p>
             </insight>
@@ -208,8 +214,7 @@
                 </li>
                 <li>
                     <p>
-                        <em>Sama</em> hires, pays and supervises the workers, but
-                        works for Meta.
+                        <em>Sama</em> hires and pays the workers, but works for Meta.
                     </p>
                 </li>
                 <li>
@@ -322,9 +327,10 @@
             <p>
                 The first story is about Apple's AI summaries of news
                 articles from the BBC.
-                We talk about summaries that got things wrong, like one saying
-                that a leader had died when they hadn't, and one saying
-                that a shooter had shot himself, when he hadn't.
+                We talk about summaries that got things wrong.
+                David gives the example of one that said a leader had died when
+                they hadn't, and I mention one that said a suspect had shot himself,
+                when he hadn't.
                 Because the summaries appeared under the BBC's name, it was the
                 BBC that complained.
             </p>
@@ -342,21 +348,24 @@
             <title>Who is responsible?</title>
 
             <p>
-                David says that it's unclear who's responsible.
-                It could be the BBC, Apple or the people who made the AI.
+                David calls it a really difficult question.
+                The BBC can't control what the AI says under its name.
+                He floats the makers of the AI as the responsible party, but doubts
+                that judges would go that far.
                 He expects the courts to decide, and he doubts that Apple or
                 the BBC could avoid fault just by adding a disclaimer.
-                If the people who build summaries were held legally responsible
-                for their accuracy, he suggests that the summaries might
-                disappear.
+                And he's fairly certain that if the makers were held legally
+                responsible for accuracy, almost all summaries would disappear
+                overnight.
             </p>
 
             <p>
-                I think the person reading should check.
-                But that isn't fair to someone reading the news, who can't
-                be expected to check every summary.
+                I think the reader should check.
+                But someone reading the news shouldn't need to check every
+                summary.
                 And I wouldn't blame the venue.
-                I half-jokingly said that I was to blame, for reading it.
+                I said that I guess I was the responsible one, because I read
+                the summary.
             </p>
         </subsection>
 
@@ -398,12 +407,12 @@
 
             <p>
                 AI runs in data centres.
-                In Kenya, the biggest proposal was for a geothermal-powered
-                data centre at Olkaria, near Lake Naivasha.
+                One proposal in Kenya was for a geothermal-powered data
+                centre at Olkaria, near Lake Naivasha.
                 Microsoft and G42 announced it in 2024 as part of a $1 billion
-                investment (about KES 130 billion at the 2026 rate).
-                It was to run on geothermal energy, with a first phase of 100
-                megawatts, and to grow to up to one gigawatt (1,000 megawatts)
+                investment package (about KES 130 billion at the 2026 rate).
+                It was to run on geothermal energy, and to grow to up to one
+                gigawatt (1,000 megawatts)
                 (<xref ref="biblio-aljazeera-2026" text="custom">Sheikh, 2026</xref>;
                 <xref ref="biblio-techish-2026" text="custom">Tech-ish, 2026</xref>).
             </p>
@@ -419,7 +428,7 @@
                 (<xref ref="biblio-techish-2026" text="custom">Tech-ish, 2026</xref>;
                 <xref ref="biblio-thinkgeo-2026" text="custom">Cariaga, 2026</xref>).
                 We couldn't find the President's original statement.
-                The project's backers haven't commented publicly.
+                Microsoft and G42 haven't commented publicly on the stall.
                 KenGen, the power company, says the data centre is still at the
                 design stage
                 (<xref ref="biblio-aljazeera-2026" text="custom">Sheikh, 2026</xref>).
@@ -432,7 +441,8 @@
                 Geothermal makes up 47%
                 (<xref ref="biblio-kenya-policy-2026" text="custom">State Department for ICT and the Digital Economy, 2026</xref>).
                 A campus of up to 1,000 megawatts would be about a third of
-                that.
+                that, and Tech-ish says the first phase would have been 100
+                megawatts.
             </p>
         </subsection>
 
@@ -446,17 +456,20 @@
                 Silas Wanjala of the Lake Naivasha Riparian Association says that
                 the lake nearly dried up in 2010 from over-abstraction, and that
                 it could happen again.
-                Grace Kimani, a local patrol leader, says that there's
-                little public information on how much water the data centre
-                would use, where it would come from, or how it would be cooled
+                Grace Kimani, a local patrol leader, says that the data
+                centre's water demand could add pressure in dry periods, and she
+                calls for more transparency
                 (<xref ref="biblio-aljazeera-2026" text="custom">Sheikh, 2026</xref>).
             </p>
 
             <p>
-                No figure for the project's water use has been published.
-                Microsoft has said it would use water-conservation technology,
-                and Al Jazeera says its questions to the companies and the
-                government went unanswered
+                No figure for the project's water use has been published, and
+                Al Jazeera notes that nobody has said how much water it would
+                need, where it would come from, or how it would be cooled.
+                Microsoft and G42 said at the 2024 announcement that they would
+                use water-conservation technology.
+                Al Jazeera says its efforts to reach them and Kenyan officials for
+                comment were unsuccessful
                 (<xref ref="biblio-aljazeera-2026" text="custom">Sheikh, 2026</xref>).
             </p>
 
@@ -489,9 +502,9 @@
                 <li>
                     <p>
                         <em>Who carries the cost?</em>
-                        Everyone who uses the same grid and the same water, and
-                        in particular the people who live around a lake that has
-                        been close to running dry.
+                        Possibly everyone who relies on the same grid and water, and
+                        in particular the people who live around a lake that, residents
+                        say, nearly dried up in 2010.
                     </p>
                 </li>
                 <li>
@@ -580,17 +593,18 @@
                 product, which is the output and what the user sees
                 (<xref ref="biblio-podcast-268" text="custom">Stern and Fleming, episode 268, 2026</xref>).
                 Behind it are people, resources, labour and infrastructure.
-                David says that there is no cloud, only Earth: the <q>cloud</q>
-                is physical, in data centres and devices.
+                David repeats a slogan from the Earthkeepers event, that there is
+                no cloud, only Earth.
+                The <q>cloud</q> is physical, in data centres and devices.
             </p>
 
             <p>
                 Kate mentions data work done by low-paid workers, including
-                labelling and moderating harmful content, and names a company
-                called Scale AI as recruiting workers in places like Venezuela
-                and Kenya.
-                David says that the digital jobs are valued by the people who get
-                them.
+                labelling and moderating harmful content, and says that a
+                company called Scale AI goes to places like Venezuela and Kenya
+                for workers.
+                David says that the digital jobs may not be great, but that they
+                are valued by the people who get them.
                 Kate says the problem is unfair pay and a lack of worker
                 protection.
             </p>
@@ -610,8 +624,8 @@
             </p>
 
             <p>
-                David answers that the business may no longer be profitable
-                if it's made accountable.
+                David agrees: he says it's no longer profitable if you start to
+                make people accountable.
                 So the real question, he says, is whether regulation can make
                 that happen, given how much has been deregulated.
             </p>
@@ -799,7 +813,7 @@
             <statement>
                 <p>
                     Imagine you're on the committee that decides whether a data
-                    centre can be built near a lake that nearly dried up in 2010.
+                    centre can be built near a lake that residents say nearly dried up in 2010.
                     Think about these questions.
                     <ol>
                         <li>

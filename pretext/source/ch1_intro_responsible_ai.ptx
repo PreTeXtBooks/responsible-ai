@@ -101,7 +101,8 @@
                 It says it began lending to people in Kenya in 2014.
                 Its founder, Shivani Siroya, had spent time interviewing people
                 in emerging markets, and decided that the main thing stopping
-                them getting loans was a lack of data.
+                them getting loans was a lack of data
+                (<xref ref="biblio-tala-faq" text="custom">Tala, n.d.</xref>).
                 So Tala built an app that turns what's on your phone into a
                 credit score.
             </p>
@@ -145,7 +146,8 @@
                 sign you can afford data charges, so it reads that as a sign
                 you can afford to repay.
                 If you fill in the application thoroughly, it takes that as a
-                sign you're serious about the loan.
+                sign you're serious about the loan
+                (<xref ref="biblio-tala-faq" text="custom">Tala, n.d.</xref>).
             </p>
 
             <p>
@@ -164,8 +166,9 @@
                 It says an automated system then works out how much you can
                 borrow
                 (<xref ref="biblio-tala-privacy" text="custom">Tala Kenya, n.d.</xref>).
-                Tala also says it uses details of your messages, like the time
-                they were sent and keywords, but doesn't read what they say
+                Tala also says that it doesn't read what your messages say, but
+                it does collect details about them, such as the time, the phone
+                number and keywords
                 (<xref ref="biblio-tala-2022" text="custom">Tala Kenya, 2022</xref>).
             </p>
 
@@ -179,10 +182,11 @@
 
             <p>
                 In 2021, CIPIT looked at seven popular lending apps in Kenya,
-                Tala and Branch among them, using data collected in late 2020.
+                Tala and Branch among them, looking at their policies and
+                practices in late 2020.
                 They found that the apps asked for a lot of permissions.
-                Some had trackers following what borrowers did, and some
-                connected to outside analytics and marketing companies.
+                Some had trackers that profile what borrowers do, and some
+                shared data with third parties for marketing and advertising.
                 None had published a data protection impact assessment.
                 CIPIT's conclusion was that the apps' policies and practices
                 didn't comply with the Data Protection Act
@@ -193,7 +197,7 @@
         </subsection>
 
         <subsection xml:id="subsec-intro-responsible-ai-lending-harm">
-            <title>Where it went wrong</title>
+            <title>Where things can go wrong</title>
 
             <p>
                 Let's step back and look at what has happened here.
@@ -225,7 +229,7 @@
                         contacts of people who had missed repayments, to put
                         pressure on them
                         (<xref ref="biblio-pi-fintech" text="custom">Privacy International, 2021</xref>).
-                        Tala says it doesn't do this
+                        Tala says that it will never call your contacts
                         (<xref ref="biblio-tala-2022" text="custom">Tala Kenya, 2022</xref>).
                     </p>
                 </li>
@@ -264,7 +268,7 @@
                 Some of this has already been tested.
                 On 26 September 2023, the Office of the Data Protection
                 Commissioner (ODPC) issued a penalty notice of KES 2.975
-                million (about $20,000 at the time) to Mulla Pride Ltd, which
+                million to Mulla Pride Ltd, which
                 runs the KeCredit and Faircash lending apps.
                 The ODPC found that it had used people's names and contact
                 details, which it got from third parties, to send threatening
@@ -298,15 +302,16 @@
 
             <p>
                 Digital lending gave loans to people the banks weren't serving.
-                It also put people's privacy at risk, put pressure on their
-                contacts, and led to decisions they couldn't question.
+                It also put people's privacy at risk.
+                At some lenders, it was used to put pressure on borrowers'
+                contacts, and automated decisions can be hard to question.
                 Both of those are true, and one doesn't cancel out the other.
             </p>
 
             <insight>
                 <p>
-                    None of this is a bug.
-                    The system did what it was built to do.
+                    Much of this isn't a bug in the code.
+                    These systems did what they were built to do.
                     What we're asking is whether it was built and used
                     <em>responsibly</em>, and that's about people, data and
                     accountability as much as it's about the algorithm.
@@ -324,31 +329,6 @@
                 afterwards.
             </p>
         </subsection>
-    </section>
-
-    <!-- ============================================================= -->
-    <!-- 2. STACK question                                              -->
-    <!-- ============================================================= -->
-    <section xml:id="sec-intro-responsible-ai-stack">
-        <title>Practise: Spotting the Risks</title>
-
-        <p>
-            TODO: STACK question(s) to go here.
-        </p>
-
-        <!-- Ideas, based on the case study:
-             - Given a short description of a lending app (what data it uses,
-               what it decides), identify who is affected without having agreed.
-             - Match a set of AI examples to the benefit they offer and the
-               main risk they raise.
-        -->
-
-        <!--
-        <exercise xml:id="ex-intro-responsible-ai-stack-1">
-            <title>...</title>
-            <stack source="stack/your-question.xml" label="stk-intro-responsible-ai-1"/>
-        </exercise>
-        -->
     </section>
 
     <!-- ============================================================= -->
@@ -404,12 +384,11 @@
 
             <p>
                 Part of the difficulty is where the technology came from.
-                The large language models behind most AI tools today were built
-                by a small number of big private companies, with their own
-                goals.
-                Some of how they were built is disputed, for example how they
-                used other people's creative work and data without clear
-                permission.
+                Kate points out that the large language models behind most AI
+                tools today come from a small number of big private companies,
+                with very specific goals of their own.
+                She says that some of how they were built is arguably unethical,
+                or even criminal, with copyright law as one example.
                 So anyone using these tools inherits questions they didn't
                 create.
             </p>
@@ -456,8 +435,8 @@
                 David's account is that there have been three or four boom
                 periods before, and each time public attention dropped away
                 when the technology did less than people hoped.
-                The one most people still remember is when a computer beat the
-                world chess champion in 1997.
+                One he mentions is when a computer beat the world chess
+                champion.
             </p>
 
             <p>
@@ -474,9 +453,9 @@
                 Once a boom gets going, though, most of what follows is noise:
                 money, announcements and competition, built on one idea that
                 hasn't changed much in years.
-                Companies also have a reason to encourage big claims, even
-                scary ones, because a technology that sounds world-changing
-                gets money and attention.
+                Kate points out that AI companies have a reason to let
+                grandiose claims, even scary ones, go unchallenged, because they
+                make the technology sound more advanced.
                 We should take real risks seriously without believing every
                 claim.
             </p>
@@ -514,12 +493,11 @@
                         <alert>Computing power.</alert>
                         Building the next, slightly better model needs a huge
                         amount of computing.
-                        David's view is that a single data centre can now use as
-                        much power as a small town, and that demand from data
-                        centres has started to push against the shift to clean
-                        energy.
-                        Large AI data centres are also being planned in Africa,
-                        for example in Zambia.
+                        David says that a single data centre can use as much power as
+                        a small town, and he's worried that demand from data centres is
+                        pushing against the shift to clean energy.
+                        He also says that a large AI data centre is being built in
+                        Zambia.
                         It's fair to ask what's being taken, who benefits and who
                         pays.
                     </p>
@@ -542,8 +520,7 @@
                 Kate points out that governments often feel pressure to rush,
                 because they're told that regulation will hold back progress
                 and leave them behind.
-                Part of that pressure comes from a lack of other ideas, and
-                one of the aims of this book is to show there are
+                One of the aims of this book is to show that there are
                 alternatives.
                 If a huge amount of money and resource is going into one
                 narrow part of society, it's reasonable to ask for more of it
@@ -569,10 +546,10 @@
             </definition>
 
             <p>
-                Lots of principles get suggested for responsible AI, like
-                transparency, fairness and accountability.
-                Keeping humans in the loop stands out because the others
-                depend on it.
+                Lots of principles get suggested for responsible AI, such as
+                transparency.
+                David says that keeping humans in the loop stands out because the
+                others relate to it.
                 Even if you can't see inside a model, and have to treat it as a
                 black box, having people in the right places means you can
                 still see what goes in and what comes out, and you can be open
@@ -581,9 +558,9 @@
 
             <p>
                 It matters most where the stakes are high.
-                There have been reports of chatbots encouraging self-harm, and
-                there's a risk of systems being used to take advantage of
-                people who are vulnerable.
+                David mentions AI systems that have reportedly encouraged
+                suicide, and there's a risk of systems being used to take
+                advantage of people who are vulnerable.
                 Safeguards need to be designed in, and some people are arguing
                 that they should be written into regulation.
             </p>
@@ -610,10 +587,10 @@
                 Take the idea of putting the equivalent of a good agricultural
                 extension agent in a farmer's pocket: an AI assistant that
                 talks to farmers in their own language and gives sound advice.
-                Digital Green's FarmerChat does this in Kenya and elsewhere,
-                and it went to extension agents first, rather than straight to
-                farmers, so that a person could check its advice
-                (<xref ref="biblio-digitalgreen" text="custom">Digital Green, n.d.</xref>).
+                David's example is Digital Green, which is trying to have AI
+                agents talk with farmers in their own language and give the
+                equivalent of good extension advice
+                (<xref ref="biblio-podcast-204" text="custom">Stern and Fleming, 2025</xref>).
                 Right now, building something like this means starting from a
                 large language model.
                 But the task is narrow, and once the system has been built and
@@ -648,8 +625,9 @@
             <title>Who is AI for?</title>
 
             <p>
-                In wealthy places, a lot of AI is used for surveillance and
-                productivity, and as a reason to cut staff.
+                Kate says that in wealthy places, a lot of AI is used for
+                surveillance and productivity, and as an excuse to lay people
+                off.
                 In low-resource settings it can look different, because the
                 scarce thing is often skilled people.
             </p>
@@ -1134,7 +1112,6 @@
             applications in Africa.
         </biblio>
 
-
         <biblio type="raw" xml:id="biblio-redcross">
             Kenya Red Cross Society (n.d.). Chat Care: AI-Powered Mental Health
             Support.
@@ -1147,19 +1124,11 @@
             <url href="https://www.npr.org/2026/09/17/nx-s1-5962840/artificial-intelligence-ai-chatbot-pregnancy-maternal-health"/>.
         </biblio>
 
-
         <biblio type="raw" xml:id="biblio-safaricom-farmerai">
             Safaricom (2025). Opportunity International and Safaricom launch
             new AI chatbot for smallholder farmers.
             <url href="https://safaricom.co.ke/media-center-landing/press-releases/opportunity-international-safaricom-launch-new-ai-chatbot-for-smallholder-farmers"/>.
         </biblio>
-
-
-
-
-
-
-
 
         <biblio type="raw" xml:id="biblio-cipit-2021">
             Centre for Intellectual Property and Information Technology Law
@@ -1172,11 +1141,6 @@
             Privacy International (2021). Perspectives on the harms of
             unregulated fintech. 9 September 2021.
             <url href="https://privacyinternational.org/long-read/4619/perspectives-harms-unregulated-fintech"/>.
-        </biblio>
-
-        <biblio type="raw" xml:id="biblio-digitalgreen">
-            Digital Green. FarmerChat: AI Assistant.
-            <url href="https://digitalgreen.org/farmer.chat/"/>.
         </biblio>
 
         <biblio type="raw" xml:id="biblio-tala-faq">
@@ -1205,8 +1169,9 @@
             Office of the Data Protection Commissioner (2023). Press release:
             Office of the Data Protection Commissioner issues three (3) penalty
             notices totalling to Kenya shillings 9,375,000. Nairobi, 26
-            September 2023.
-        </biblio>
+            September 2023. Also reported by Kenya News Agency at
+            https://www.kenyanews.go.ke/odpc-issues-penalty-notices-totaling-sh-9375000/.
+            </biblio>
 
         <biblio type="raw" xml:id="biblio-techcabal-fines">
             Abuya, K. (2023). Kenya fines two digital lenders $20,000 for

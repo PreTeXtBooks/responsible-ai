@@ -25,7 +25,8 @@
             That didn't happen by accident, and it isn't magic.
             Somebody had to teach it what <q>vile</q> looks like.
             According to a TIME investigation, some of those people were in
-            Nairobi, and they were paid less than $2 an hour to do it.
+            Nairobi, and they were paid less than $2 an hour (about KES 260)
+            to do it.
         </p>
 
         <p>
@@ -184,7 +185,7 @@
                     <row>
                         <cell>Passages to read per nine-hour shift</cell>
                         <cell>150 to 250, according to three workers</cell>
-                        <cell>70, and <q>not up to 250</q></cell>
+                        <cell>70 (Sama says it was not up to 250)</cell>
                     </row>
 
                     <row>
@@ -221,7 +222,7 @@
                 a month, plus a bonus of about $70 (about KES 9,100) for
                 working with explicit content.
                 For comparison, TIME gives the minimum wage for a receptionist
-                in Nairobi at the time as $1.52 an hour
+                in Nairobi at the time as $1.52 an hour (about KES 200)
                 (<xref ref="biblio-time-2023" text="custom">Perrigo, 2023</xref>).
             </p>
 
@@ -230,12 +231,13 @@
                 and that Sama was responsible for pay and for mental health
                 support.
                 It also told the Wall Street Journal that it wasn't aware the
-                workers were getting only a small fraction of the $12.50.
+                workers were getting only a small fraction of the $12.50 an hour
+                (about KES 1,625).
                 Sama told the Journal that its leadership didn't know about the
                 psychological impact of the project, and that as well as
                 counselling it offered prayer and meditation rooms
                 (<xref ref="biblio-wsj-2023" text="custom">Wall Street Journal, 2023</xref>).
-                It also says that labelling harmful text and images is
+                OpenAI told TIME that labelling harmful text and images is
                 <q>a necessary step</q> in making its tools safer
                 (<xref ref="biblio-time-2023" text="custom">Perrigo, 2023</xref>).
             </p>
@@ -389,8 +391,8 @@
             <p>
                 Sama's last batch of labelled text went to OpenAI in March
                 2022, eight months before the contract was due to finish.
-                Sama's reason, as it told TIME, is that it didn't want to
-                expose its staff to that content again.
+                According to TIME, Sama's reason was linked to the images pilot,
+                and to concerns about exposing its staff to that content again.
                 It has given other explanations too.
                 It told the Guardian it was to focus on computer vision data
                 annotation, and it told the Wall Street Journal it followed a
@@ -429,7 +431,8 @@
 
             <p>
                 Sama said it was open to working with the Kenyan government and
-                welcomed third-party audits.
+                welcomed third-party audits
+                (<xref ref="biblio-techcrunch-2023" text="custom">Njanja, 2023b</xref>).
                 OpenAI said the work was challenging, and that it had shared
                 ethical and wellness standards with the people doing it.
                 ITWeb reported that OpenAI didn't respond to the specific
@@ -450,8 +453,9 @@
                 There have also been court cases in Kenya, but they're about a
                 different group.
                 In 2023, 183 former Facebook content moderators, who had been
-                employed by Sama, sued Meta, Sama and another contractor, and
-                a Kenyan court ruled that Meta can be sued in Kenya
+                employed by Sama, sued Meta, Sama and another contractor.
+                In April 2023 a Kenyan court ruled, on the question of jurisdiction,
+                that Meta can be sued in Kenya
                 (<xref ref="biblio-techcrunch-court-2023" text="custom">Njanja, 2023a</xref>).
                 We couldn't find a court case brought by the ChatGPT labellers
                 themselves.
@@ -703,9 +707,9 @@
 
             <p>
                 David gives an example from education.
-                He describes a case at the University of Reading where, out of
-                33 assignments written with AI, only two were identified as
-                AI.
+                He describes a case at the University of Reading where, as he tells
+                it, 31 of 33 assignments that were graded slipped through without
+                being identified as AI, and two were identified.
                 There are also stories of students whose own work was wrongly
                 flagged as AI.
                 Telling AI writing from human writing is hard, and David
@@ -758,8 +762,9 @@
                 so people in India, paid very little, watched video of shoppers
                 to work out what had gone in each basket.
                 In his words, that wasn't AI at all, it was human intelligence.
-                Amazon has disputed how much human review was involved, and
-                the next chapter looks at that story in more detail.
+                Amazon has disputed how much human review was involved
+                (<xref ref="biblio-kuow-2024" text="custom">Denkmann and Cowan, 2024</xref>),
+                and the next chapter looks at that story in more detail.
             </p>
 
             <p>

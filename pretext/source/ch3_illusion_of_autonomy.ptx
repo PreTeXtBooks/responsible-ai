@@ -21,8 +21,8 @@
             out again.
             There's no till, no queue and no card to tap.
             The receipt turns up on your phone.
-            When Amazon opened its first shop like this in Seattle in January
-            2018, the New York Times called it a store of the future.
+            Amazon opened its first shop like this to the public in Seattle in
+            January 2018.
         </p>
 
         <p>
@@ -103,8 +103,8 @@
 
             <p>
                 The technology was called Just Walk Out.
-                In 2020, Amazon began offering it to other retailers, and in
-                March 2021 it opened its first shop in London
+                In 2020, Amazon began offering it to other retailers, and in March 2021 it opened its first Just Walk Out shop in
+                London, an Amazon Fresh
                 (<xref ref="biblio-amazon-go-wikipedia" text="custom">Wikipedia, n.d.</xref>).
                 For shoppers, the attraction was obvious, because there were no
                 queues.
@@ -217,12 +217,13 @@
 
             <p>
                 Then, on 27 January 2026, Amazon announced that it was closing
-                its Amazon Go and Amazon Fresh shops.
+                its physical Amazon Go and Amazon Fresh shops.
                 It said it hadn't yet created a distinctive customer
                 experience with the right economics to grow at scale.
                 Just Walk Out carries on in other companies' premises, like
                 concession stands at sports stadiums
-                (<xref ref="biblio-axios-2026" text="custom">Axios, 2026</xref>).
+                (<xref ref="biblio-axios-2026" text="custom">Axios, 2026</xref>;
+                <xref ref="biblio-techcrunch-amazon-2026" text="custom">TechCrunch, 2026</xref>).
                 We haven't seen anything that says the closures were because of
                 the human review.
             </p>
@@ -232,8 +233,8 @@
             <title>What the case shows</title>
 
             <p>
-                Whether it was a thousand people or fewer, the story that no
-                people were needed wasn't quite true.
+                Whatever the number, both sides agree that people were involved, so
+                the story that no people were needed wasn't quite true.
                 People were part of the system.
                 They checked it, corrected it and trained it.
                 That's the human in the loop from Chapter 1.
@@ -362,9 +363,9 @@
             </insight>
 
             <p>
-                By that test, M-Pesa is a good example, and a shop where the
-                cashier's job has been moved to a video review team in another
-                country isn't.
+                By that test, M-Pesa is a good example, and, if the reports are
+                right, a shop where the cashier's job has been moved to a video
+                review team in another country isn't.
                 David gives a smaller example.
                 He had a two-minute chat with a cashier about a lot of
                 anchovies, and it left him feeling happy.
@@ -451,17 +452,6 @@
                 </li>
             </ul>
         </subsection>
-    </section>
-
-    <!-- ============================================================= -->
-    <!-- 3. STACK question                                              -->
-    <!-- ============================================================= -->
-    <section xml:id="sec-illusion-of-autonomy-stack">
-        <title>Practise</title>
-
-        <p>
-            TODO: STACK question(s) to go here.
-        </p>
     </section>
 
     <!-- ============================================================= -->
@@ -598,9 +588,16 @@
 
         <biblio type="raw" xml:id="biblio-amazon-go-wikipedia">
             Wikipedia. Amazon Go.
-            <url href="https://en.wikipedia.org/wiki/Amazon_Go"/>.
+            <url href="https://en.wikipedia.org/wiki/Amazon_Go"/>
+            (accessed 25 November 2026).
         </biblio>
 
+        <biblio type="raw" xml:id="biblio-techcrunch-amazon-2026">
+        TechCrunch (2026). Amazon is closing its physical Amazon Go and
+        Amazon Fresh stores. 27 January 2026.
+        <url href="https://techcrunch.com/2026/01/27/amazon-is-closing-its-physical-amazon-go-and-amazon-fresh-stores"/>.
+        </biblio>
+        
         <biblio type="raw" xml:id="biblio-axios-2026">
             Axios (2026). Amazon closing Fresh and Go stores as it expands
             Whole Foods. 27 January 2026.
