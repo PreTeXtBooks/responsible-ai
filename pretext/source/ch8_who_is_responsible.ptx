@@ -13,8 +13,6 @@
   - The data centre facts rest on news reports. No original statement from
     the President was found.
   - Kenya's 2026 policy (2.11.7, 3.4, page 16) names both gaps itself.
-  - TODO: the TED talk transcript (not available to us), the environmental
-    article, and the environmental paper Lily mentioned (no links).
   - Practise (STACK) section removed on purpose. Questions go in the exercises.
 -->
 <chapter xml:id="ch-who-is-responsible" xmlns:xi="http://www.w3.org/2001/XInclude">
@@ -171,12 +169,14 @@
                 that Sama employed them.
                 The workers say that they've had no mental health care, and
                 that their situation is getting worse.
-                One legal analysis says that a judge held Meta to be the
-                <q>true employer</q>, partly because the moderators used
-                Facebook's own software.
-                It doesn't give a date for it, or say which ruling it means, and
-                we couldn't confirm it
+                The Guardian reported in August 2023 that, in a ruling the month
+                before, employment court judge Byram Ongaya had held that Meta is the
+                <q>true employer</q> of its moderators in Kenya
+                (<xref ref="biblio-guardian-2023" text="custom">The Guardian, 2023</xref>).
+                One legal analysis gives the same finding, and adds that the
+                moderators used Facebook's own software, but doesn't give a date
                 (<xref ref="biblio-nothias-2026" text="custom">Nothias, 2026</xref>).
+                We haven't seen the ruling itself.
             </p>
 
             <insight>
@@ -186,8 +186,10 @@
                     The report says the court ruled in their favour, but it only
                     describes an order for a Meta director to be cross-examined, and it
                     doesn't say what was decided.
-                    As far as we can confirm, no court has yet made a final ruling on
-                    who is responsible.
+                    As far as we can confirm, the cases were still going in 2026, so we
+                    can't say that any court has made a final ruling on who is
+                    responsible.
+                    The 2023 ruling suggests which way one judge leaned.
                     What the courts have clearly settled is where the case can be
                     heard.
                 </p>
@@ -599,11 +601,11 @@
 
             <p>
                 The researcher Sasha Luccioni gave a TED talk in 2023.
-                She argues that we should focus on the harms that are
-                happening now, like carbon emissions, copyright infringement
-                and biased information, instead of far-off risks.
-                She suggests practical ways to make AI more inclusive and
-                transparent
+                She studies AI's impacts on society, and she says that she doesn't
+                know what will happen in ten or twenty years, but that there are
+                nasty things going on now.
+                She argues that we should focus on those, and that we need to
+                measure them and be open about them
                 (<xref ref="biblio-ted-2023" text="custom">Luccioni, 2023</xref>).
             </p>
 
@@ -615,7 +617,69 @@
                              aspect="16:9"/>
             </figure>
 
-            <!-- TODO: add a summary of the talk's figures and tools once we have the transcript. -->
+            <p>
+                Here is what she says about each cost, in her own examples.
+            </p>
+
+            <ul>
+                <li>
+                    <p>
+                        <em>Energy.</em>
+                        She led a study of BLOOM, an open large language
+                        model made by a thousand researchers.
+                        She says that training it used as much energy as 30
+                        homes use in a year, and emitted 25 tons of carbon
+                        dioxide.
+                        She says that similar models, like GPT-3, emit about
+                        20 times more, and that tech companies mostly aren't
+                        measuring this or sharing it.
+                        She also says that models have grown 2,000 times in
+                        size over five years, and that using a larger model
+                        in place of a smaller one for the same task emits 14
+                        times more carbon.
+                        Her tool, CodeCarbon, estimates the energy and carbon
+                        of AI training code, so that people can choose a more
+                        sustainable model.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <em>Copyright.</em>
+                        She says it's been hard for artists to prove that their
+                        work was used to train models without consent.
+                        A tool called <q>Have I Been Trained?</q>, made by an
+                        organisation that artists founded, lets people search
+                        the big training data sets.
+                        She says that artist Karla Ortiz used it as evidence in
+                        a class action against AI companies.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <em>Bias.</em>
+                        She says that facial recognition was found to be much
+                        worse for women of colour than for white men, and that
+                        when such systems are used by the police they can lead
+                        to false accusations.
+                        Her example is Porcha Woodruff, who she says was
+                        wrongly accused of carjacking while eight months
+                        pregnant, because an AI system identified her
+                        wrongly.
+                        Her own tool, the Stable Bias Explorer, looks at image
+                        generators through 150 professions.
+                        She says they showed lawyers and chief executives as
+                        men almost all of the time.
+                    </p>
+                </li>
+            </ul>
+
+            <p>
+                These are her claims in a talk, and we haven't checked each one.
+                Her main point is that disclosure and measurement come first:
+                companies and lawmakers can only choose better if they have the
+                numbers.
+                That's the same gap that Kenya's policy names.
+            </p>
         </subsection>
     </section>
 
