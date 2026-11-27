@@ -239,7 +239,7 @@
                 than others.
                 That would need a test, and as far as we found, nobody has
                 published one.
-                Turnitin, one of the biggest tools, says it was trained on
+                Turnitin says it was trained on
                 writing by English speakers in the US and abroad, and by
                 multilingual students, so it shouldn't show this bias.
                 Its own research hadn't been published when The Markup asked,
@@ -450,7 +450,7 @@
                 The video ends by saying that there's no magic bullet, but that
                 it starts with being aware of it.
                 Can you see any of these three in the detector case?
-                Exercise 1 asks you to think it through.
+                <xref ref="ex-ai-and-bias-1"/> asks you to think it through.
             </p>
         </subsection>
 
@@ -801,9 +801,9 @@
             (<xref ref="biblio-zhang-2026" text="custom">Zhang et al., 2026</xref>).
             Another 2026 paper tested Kiswahili and other African
             languages.
-            It found that in long, multi-turn conversations, harmful responses
-            came back between about 42% and 71% of the time, depending on the
-            model.
+            It found that for Kiswahili, in long, multi-turn conversations,
+            harmful responses came back between about 42% and 71% of the time,
+            depending on the model, compared with about 53% to 84% for English.
             The authors also say that the lower rates for isiXhosa and isiZulu
             may reflect poor machine translation, not stronger safeguards
             (<xref ref="biblio-marx-2026" text="custom">Marx and Dunaiski, 2026</xref>).
@@ -877,6 +877,32 @@
     <!-- ============================================================= -->
     <exercises xml:id="exercises-ai-and-bias">
         <title>Exercises</title>
+
+        <exercise xml:id="ex-ai-and-bias-assignment">
+            <title>Assignment: a system to find students who need support</title>
+            <statement>
+                <p>
+                    You're designing an AI system to help to identify students who may
+                    need academic support.
+                    In no more than 500 words, respond to these questions.
+                    <ol>
+                        <li>
+                            What kinds of data would you want to include?
+                        </li>
+                        <li>
+                            What kinds of data might introduce bias?
+                        </li>
+                        <li>
+                            What steps would you take to make sure that the system is fair and ethical?
+                        </li>
+                    </ol>
+                </p>
+                <p>
+                    Chapter 6 looks at how the data you choose can mislead, so you may want
+                    to come back to this answer after reading it.
+                </p>
+            </statement>
+        </exercise>
 
         <exercise xml:id="ex-ai-and-bias-1">
             <title>Investigate a case</title>
@@ -980,8 +1006,8 @@
             <title>Whose English is normal?</title>
             <statement>
                 <p>
-                    In the podcast, a commenter said that Nigerian English is a
-                    dialect in its own right.
+                    In the podcast, I read out feedback saying that Nigerian English is a
+                    standalone dialect.
                     Think of the English you read and write, in Kenya or where
                     you live.
                     Which words or phrases might a tool trained mostly on
@@ -1008,7 +1034,7 @@
             <title>A policy for your university</title>
             <statement>
                 <p>
-                    The University of Cape Town switched off AI detection, and
+                    The University of Cape Town announced that it would switch off AI detection, and
                     Dr Mwita in Kenya prefers in-class assessments to a ban.
                     Imagine you've been asked to write a short policy for your
                     own university on AI detectors.

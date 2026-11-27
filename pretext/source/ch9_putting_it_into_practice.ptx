@@ -1,0 +1,1260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- ================================================================= -->
+<!--  Chapter 9: Putting it into Practice  -->
+<!-- ================================================================= -->
+<!--
+  NOTES (see also notes/ch3-4-research.md, which covers this chapter's sources):
+  - This chapter is the old "AI in Education: Friend or Foe?" and "Changing
+    the Question" chapters, merged. It is the application chapter: the ideas
+    of the book put to work in education, and then in your own setting.
+  - Moodle assignment: a reflection (200 to 300 words) and a Responsible AI
+    Toolkit, in a format of the learner's choice. Both are exercises 1 and 2.
+  - Everything David, Lily or Helen say in podcasts 073, 074 and 075 is
+    attributed to them. Not verified.
+  - The toolkit questions are our own synthesis of the book, a starting
+    point and not a standard.
+  - Practise (STACK) section removed on purpose. Questions go in the exercises.
+-->
+<chapter xml:id="ch-putting-it-into-practice" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Putting it into Practice</title>
+
+    <introduction xml:id="intro-putting-it-into-practice">
+        <p>
+            Here's a simple test.
+            Take an assignment, paste it into a chatbot, and read what comes
+            back.
+            If the answer would get a good mark, then the assignment has a
+            problem.
+        </p>
+
+        <p>
+            We've spent eight chapters looking at what AI is, how it goes
+            wrong, and who is responsible.
+            This chapter is where we use it.
+            Education is our worked example, because it's where many readers
+            work, and because it's changing fast.
+            A technology like the calculator shook up education before, and
+            the course notes remind us that exams ended up splitting in two:
+            papers where you could use one, and papers where you couldn't
+            (<xref ref="biblio-course-notes-2023" text="custom">Course notes, 2023</xref>).
+            Generative AI is a bigger shake-up, because it writes.
+        </p>
+
+        <p>
+            First we ask whether AI in education is a friend or a foe, and
+            why David thinks it matters less than you'd think
+            (<xref ref="biblio-podcast-073" text="custom">Clements and Stern, episode 73, n.d.</xref>).
+            Then we look at the third way, which is to change the question.
+            In the course, the idea is that if a student can complete an
+            assignment with generative AI, then the wrong question is being
+            asked
+            (<xref ref="biblio-podcast-075" text="custom">Clements and Stern, episode 75, n.d.</xref>).
+            And we finish by building a toolkit that you can use in your own
+            setting, whether that's a classroom, a clinic, an office or a
+            community group.
+        </p>
+
+        <!-- Draft objectives: revise once the rest of the chapter is written. -->
+        <objectives>
+            <title>By the end of this chapter you should be able to</title>
+            <ol>
+                <li>
+                    <p>
+                        Explain why detecting AI use is a weak response, and what
+                        to do instead.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Use evidence, and not only opinion, to judge whether an
+                        AI tool helps people to learn.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Rewrite a task so that it asks people to critique,
+                        defend or iterate, and not only to produce.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Build a short toolkit, from what you've learned in this
+                        book, for using or recommending AI responsibly.
+                    </p>
+                </li>
+            </ol>
+        </objectives>
+    </introduction>
+
+    <section xml:id="sec-friend-or-foe-case-study">
+        <title>Case Study: Kenya's Universities Decide</title>
+
+        <subsection xml:id="subsec-friend-or-foe-gap">
+            <title>A decision that hasn't been made yet</title>
+
+            <p>
+                Kenya's 2026 AI policy, which we read in Chapter 7, says
+                something direct about education.
+                It says that AI isn't systematically integrated into formal
+                education curricula, and that teacher capacity in AI remains
+                limited.
+                It says there is no national AI competency framework that
+                covers educators
+                (<xref ref="biblio-kenya-policy-2026" text="custom">Republic of Kenya, 2026</xref>,
+                section 2.11.4).
+                What it proposes is that the Government will provide guidelines
+                for readiness and integration across all levels of the
+                education system, and support training for teachers
+                (section 3.3.2 and 3.3.3).
+            </p>
+
+            <p>
+                So, for now, a lecturer in Kenya who wants to know what to do
+                about AI in their course is mostly left to decide.
+            </p>
+        </subsection>
+
+        <subsection xml:id="subsec-friend-or-foe-workshops">
+            <title>A workshop, and then a dialogue</title>
+
+            <p>
+                In August 2025, the Commission for University Education (CUE)
+                and DAAD, the German academic exchange service, ran a
+                three-day workshop at Naivasha on competence-based education
+                and AI.
+                The Star's report lists the workshop's recommendations: finalise
+                AI integration in the national competence-based education
+                framework, set up university task forces, sensitise faculty,
+                find resources for infrastructure, training and research, and
+                form a community of practice
+                (<xref ref="biblio-star-cue-2025" text="custom">Okiddy, 2025</xref>).
+                It reports recommendations, and doesn't describe an adopted policy.
+            </p>
+
+            <p>
+                A year later, CUE convened a national dialogue on an AI
+                framework for university education, from 18 to 20 August 2026,
+                with about 54 universities.
+                We only have one university's account of it, from Africa
+                International University.
+                That account describes a provisional framework with four
+                areas, including teaching, learning and assessment, and calls
+                the close of the dialogue <q>the beginning of the drafting
+                phase</q>
+                (<xref ref="biblio-aiu-2026" text="custom">Africa International University, 2026</xref>).
+            </p>
+
+            <p>
+                The same account says that the principles raised included
+                human oversight and accountability for decisions that AI
+                supports.
+                It says that universities shouldn't rely primarily on prohibition
+                or AI detectors, and that assessment should show students' thinking,
+                through oral defence, projects and reflection.
+                And it says that where a university requires students to use a
+                particular AI tool, access shouldn't depend exclusively on a student's
+                ability to buy it
+                (<xref ref="biblio-aiu-2026" text="custom">Africa International University, 2026</xref>).
+                As far as we can find, no national framework for universities
+                had been adopted when this was written.
+            </p>
+
+            <insight>
+                <p>
+                    Notice what's happening.
+                    The sector is moving towards the conclusion that David
+                    reaches in the podcast below: don't build assessment on
+                    catching AI use.
+                    But the framework isn't finished, and it's a draft.
+                    Until it is, each lecturer is making this choice alone.
+                </p>
+            </insight>
+        </subsection>
+
+        <subsection xml:id="subsec-friend-or-foe-evidence">
+            <title>What happens when students get AI?</title>
+
+            <p>
+                The strongest evidence we found isn't from Kenya.
+                Researchers at the University of Pennsylvania and elsewhere ran a
+                field experiment with nearly 1,000 high school maths students in
+                Turkey
+                (<xref ref="biblio-wharton-2024" text="custom">Basiouny, 2024</xref>).
+                The students were in one of three groups.
+            </p>
+
+            <table xml:id="table-friend-or-foe-turkey">
+                <title>The Turkish maths experiment, as the Wharton write-up reports it</title>
+                <tabular halign="left">
+                    <row header="yes">
+                        <cell>Group</cell>
+                        <cell>What they had in practice</cell>
+                        <cell>During practice</cell>
+                        <cell>On the exam, without AI</cell>
+                    </row>
+                    <row>
+                        <cell>Control</cell>
+                        <cell>Textbook and notes only</cell>
+                        <cell>The comparison</cell>
+                        <cell>The comparison</cell>
+                    </row>
+                    <row>
+                        <cell>GPT Base</cell>
+                        <cell>A chat interface like ChatGPT-4</cell>
+                        <cell>48% better</cell>
+                        <cell>17% worse</cell>
+                    </row>
+                    <row>
+                        <cell>GPT Tutor</cell>
+                        <cell>The same, with teacher input, and hints instead of answers</cell>
+                        <cell>127% better</cell>
+                        <cell>About the same</cell>
+                    </row>
+                </tabular>
+            </table>
+
+            <p>
+                The write-up says that the students with the plain chatbot
+                depended on it to solve the problems, and didn't learn the ideas as
+                well.
+                It also says that students who used AI, even the high achievers,
+                were overly optimistic about how much they'd learned.
+                The tutor version, designed to give hints, avoided the drop on the
+                exam
+                (<xref ref="biblio-wharton-2024" text="custom">Basiouny, 2024</xref>).
+                The full paper appeared in a journal in June 2025
+                (<xref ref="biblio-bastani-2025" text="custom">Bastani and others, 2025</xref>).
+                We've only read the Wharton write-up, so we can't tell you the
+                exact sizes of the effects, or how they were measured.
+                The authors call it a <q>cautionary tale</q>, and note that the
+                tools can still hallucinate.
+            </p>
+
+            <p>
+                It's also a single study, about maths, in one school, in
+                Turkey, at a time when chatbots were new.
+                But it makes the point well.
+                <em>Friend or foe</em> isn't a property of the tool.
+                It depends on how the tool is used.
+            </p>
+        </subsection>
+
+    </section>
+
+    <section xml:id="sec-friend-or-foe-podcast">
+        <title>Friend, Foe, or Neither?</title>
+
+        <introduction xml:id="intro-friend-or-foe-podcast">
+            <p>
+                This is the third episode in the series that David and I made
+                for lecturers.
+                In it, David says that he's interested in whether it matters
+                at all that AI is a friend or a foe, because we have to deal
+                with it either way.
+            </p>
+
+            <figure xml:id="fig-friend-or-foe-podcast-073">
+                <caption>The IDEMS Podcast, episode 73: AI in Education: Friend or Foe?</caption>
+                <interactive xml:id="int-friend-or-foe-podcast-073"
+                             iframe="https://www.idems.international/podcast-player/4213/073-ai-in-education-friend-or-foe.mp3"
+                             width="100%"
+                             aspect="8:1"/>
+            </figure>
+        </introduction>
+
+        <subsection xml:id="subsec-friend-or-foe-friend">
+            <title>The friend</title>
+
+            <p>
+                In the episode I say that I was surprised how many case studies
+                there were of lecturers treating AI as a friend.
+                One was Emily Donahoe, from the University of Mississippi, who
+                has students critique AI-written arguments and then rewrite
+                them.
+                Another was a group of New York schools that I'd read were
+                using AI to help teachers with administrative work, so that
+                they'd have more time for creative teaching
+                (<xref ref="biblio-podcast-073" text="custom">Clements and Stern, episode 73, n.d.</xref>).
+                (These are our accounts from 2024, and we haven't rechecked
+                them.)
+            </p>
+
+            <p>
+                David's bigger dream is the private tutor.
+                He describes work by Bloom, who compared normal lectures with
+                teaching to mastery, where students repeat assessments with
+                feedback until they've mastered a concept.
+                David says that mastery gets about one standard deviation
+                higher, and a good private tutor about two.
+                He says that there have been critiques, but that he buys
+                the broad idea, which is that personalised teaching gets better
+                results.
+                If AI could provide that for everyone, he says, the baseline
+                education on offer could be much higher, and the educator's job
+                would be to build on top.
+            </p>
+
+            <p>
+                He's clear that it isn't here yet, and he thinks it's years away.
+                We look at what is known about AI tutors in Chapter 10.
+            </p>
+        </subsection>
+
+        <subsection xml:id="subsec-friend-or-foe-foe">
+            <title>The foe, and the arms race</title>
+
+            <p>
+                Most people, David says, think about the foe.
+                I mention that Ofqual, the exams regulator in England,
+                recommended doing coursework in school, so that it becomes more
+                like an exam.
+                David says he's not against this.
+                He says that if you can't know what people do when you're not
+                there, then doing things in person, with a human element, is a
+                reasonable response.
+            </p>
+
+            <p>
+                What he's against is the emphasis on <em>identification</em>.
+                I describe what I found when I looked it up.
+                Teachers are told to compare a piece of work with the student's
+                earlier work, and to look for American spellings and
+                overly wordy language.
+                On the next page, students are told how to avoid being caught,
+                which includes using UK spellings.
+                David calls this an arms race that isn't constructive for
+                anyone, and says he's confident that the students who learn to
+                hide their use will win.
+                The losers, I add, are the students who are accused of using
+                AI when they haven't.
+            </p>
+
+            <p>
+                He retells the Reading University study from Chapter 2, where, as
+                he tells it, only two of 33 AI-written exam scripts were
+                identified.
+                He says that in first and second year exams the AI scripts
+                outperformed the average student, so students have an incentive
+                to use AI
+                (<xref ref="biblio-podcast-073" text="custom">Clements and Stern, episode 73, n.d.</xref>).
+                (As in Chapter 2, this is David's account, and we haven't checked
+                the study ourselves.)
+            </p>
+
+            <insight>
+                <p>
+                    David's recommendation is a simple one.
+                    If you treat AI as a foe, don't try to catch people.
+                    Create situations where it can't be used.
+                    Oral exams are one example.
+                    He says that if you're going to take it out of the
+                    equation, then take it out, and don't try to catch the
+                    people who use it anyway.
+                </p>
+            </insight>
+
+            <p>
+                This links back to Chapter 5, where we saw why detectors fail
+                for the people who write in a second language, and in
+                particular to the word <q>delve</q>, which is an ordinary word in
+                Nigerian English.
+                We'll come back to it in Chapter 10, where David puts detection in
+                the box he calls <q>never</q>.
+            </p>
+        </subsection>
+
+        <subsection xml:id="subsec-friend-or-foe-third">
+            <title>Living with it</title>
+
+            <p>
+                David's main point is that it's like a housemate, or your
+                family.
+                You don't choose them, and whether they're a friend or a foe
+                matters less than learning to live with them.
+                So the sensible thing is to find positive ways to treat AI as
+                a friend, and to recognise that creating AI-free spaces also
+                has value.
+                He expects both to matter, for almost any lecturer.
+            </p>
+
+            <p>
+                He imagines that if everyone had an AI tutor, wealthy schools and
+                universities would complement it with intense human interaction.
+                He gives the very small-group teaching at Oxford and Cambridge as the
+                kind of thing that no tutor system would replace.
+                So he'd like lecturers to think about how to give an enhanced
+                education, by using AI where it helps and building AI-free
+                spaces where human interaction is the point.
+            </p>
+
+            <p>
+                He also gives a nightmare scenario.
+                Commercial AI tutors are built and used at scale, and the money
+                that would have gone to academics goes to AI companies instead.
+                Those companies, he says, won't be furthering learning.
+                His argument for why lecturers' jobs shouldn't be in danger is
+                that AI is built from data from the past, whereas good
+                academics create the knowledge of the future.
+                It depends, he says, on society recognising what lecturers
+                add.
+            </p>
+
+            <p>
+                One university has turned something like this into a policy.
+                The University of Sydney calls it a two-lane approach.
+                Lane 1 is secure assessment, in person, which checks that
+                students have met the learning outcomes, and which may or may
+                not allow AI.
+                Lane 2 is open assessment, for learning, where the use of AI is
+                scaffolded and supported.
+                The authors say that <q>any unenforceable restriction damages
+                assessment validity</q>, and that for work that isn't secured, it's
+                not possible to detect AI use reliably or equitably
+                (<xref ref="biblio-sydney-2024" text="custom">Bridgeman and Liu, 2024</xref>).
+                That's close to David's advice.
+            </p>
+        </subsection>
+    </section>
+
+    <section xml:id="sec-changing-the-question-case-study">
+        <title>Case Study: The Problem Set That Came Back Perfect</title>
+
+        <subsection xml:id="subsec-changing-the-question-cornell">
+            <title>What one lecturer changed</title>
+
+            <p>
+                An Associated Press report from April 2026 describes educators
+                in the United States who found that written homework was
+                coming back perfect, but that students couldn't explain it
+                (<xref ref="biblio-ap-orals-2026" text="custom">Gekcer, 2026</xref>).
+                One of them is Chris Schaffer, a biomedical engineering
+                lecturer at Cornell.
+            </p>
+
+            <p>
+                He didn't ban AI, and he didn't try to detect it.
+                He changed what gets graded.
+                Students still submit written problem sets, but teaching
+                assistants no longer grade them.
+                Instead, each student signs up for a 20-minute discussion in
+                which he asks questions about their answers, and that's what is
+                graded.
+                The article says that his aim is to give students a reason to do
+                the work themselves
+                (<xref ref="biblio-ap-orals-2026" text="custom">Gekcer, 2026</xref>).
+            </p>
+
+            <p>
+                The question has changed from <q>produce a correct answer</q>
+                to <q>show that you understand it</q>.
+                A chatbot can produce the first.
+                It can't sit in the room for the second.
+            </p>
+
+            <p>
+                The article describes other versions.
+                At the University of Pennsylvania, Emily Hammer pairs oral exams
+                with written papers.
+                She forbids AI on the writing, but tells her class that she
+                knows she can't enforce it.
+                At NYU's Stern School, Panos Ipeirotis built an AI-powered oral
+                exam, in which a voice asks students about their group project.
+                Student feedback was mixed.
+                One student said that the conversation felt choppy, with odd pauses,
+                and that it was jarring to hear a voice and not see a person
+                (<xref ref="biblio-ap-orals-2026" text="custom">Gekcer, 2026</xref>).
+            </p>
+        </subsection>
+
+        <subsection xml:id="subsec-changing-the-question-limits">
+            <title>What it costs</title>
+
+            <p>
+                The article is open about some of the problems.
+                Some students find oral exams unsettling, especially if they're
+                shy or have serious anxiety, and the person who leads Cornell's
+                oral exam training suggests explaining the format beforehand and
+                starting with easy questions
+                (<xref ref="biblio-ap-orals-2026" text="custom">Gekcer, 2026</xref>).
+                It reports no measured results, such as less cheating or better
+                learning.
+                Time is our own point, and not the article's: a 20-minute
+                conversation with each student is a lot of lecturer time, and
+                Schaffer's class has 70 students.
+                So this is a promising idea, and not a proven one.
+            </p>
+
+            <insight>
+                <p>
+                    For a Kenyan lecturer with several hundred students in a
+                    lecture hall, 20 minutes each isn't possible.
+                    That doesn't make the idea wrong.
+                    It means that the question has to be changed in a way that
+                    fits your class: a short presentation, a viva on a sample,
+                    a quick written explanation done in class, or a peer
+                    discussion.
+                    The principle is to ask students to stand by their work.
+                </p>
+            </insight>
+        </subsection>
+
+    </section>
+
+    <section xml:id="sec-changing-the-question-skills">
+        <title>Higher-Order Skills</title>
+
+        <p>
+            The course uses Bloom's taxonomy, a way of sorting thinking skills
+            into levels.
+            The lower levels are to <em>remember</em> facts, to
+            <em>understand</em> ideas, and to <em>apply</em> information to new
+            situations.
+            The higher levels are to <em>analyse</em>, which means connecting
+            ideas, to <em>evaluate</em>, which means critiquing or justifying
+            decisions, and to <em>create</em> original work
+            (<xref ref="biblio-course-notes-2023b" text="custom">Course notes, 2023</xref>).
+            The taxonomy has critics, who say it's too simple, but the idea
+            that there are different kinds of thinking is widely accepted.
+        </p>
+
+        <p>
+            Generative AI is good at the lower levels, such as grammar,
+            summaries and routine documents.
+            The course notes' argument is that this frees us to ask more
+            of students, and to spend teaching time on the higher levels, which
+            many courses don't spend much time on.
+        </p>
+
+        <p>
+            David adds a twist in the episode.
+            He says that higher education has put a lot of weight on
+            writing: essays, exams, reports.
+            He'd like more weight on <em>critical reading</em>.
+            In his view, creating something from a blank page isn't the only
+            creative act.
+            There's a lot of creativity in improving something, spotting what's
+            missing, and adding value to it.
+            When he takes on graduates, he says, the first tasks he gives
+            them are to adapt and critique, because that's what adds value
+            at work
+            (<xref ref="biblio-podcast-075" text="custom">Clements and Stern, episode 75, n.d.</xref>).
+        </p>
+    </section>
+
+    <section xml:id="sec-changing-the-question-podcasts">
+        <title>Changing the Question in Practice</title>
+
+        <introduction xml:id="intro-changing-the-question-podcasts">
+            <p>
+                Two episodes look at how.
+                In the first, David and I go through the idea and some
+                case studies.
+                In the second, a bonus episode, David talks to Helen Crompton, a
+                researcher and lecturer in educational technology.
+            </p>
+
+            <figure xml:id="fig-changing-the-question-podcast-075">
+                <caption>The IDEMS Podcast, episode 75: Changing The Question 2</caption>
+                <interactive xml:id="int-changing-the-question-podcast-075"
+                             iframe="https://www.idems.international/podcast-player/4235/075-changing-the-question-2.mp3"
+                             width="100%"
+                             aspect="8:1"/>
+            </figure>
+
+            <figure xml:id="fig-changing-the-question-podcast-074">
+                <caption>The IDEMS Podcast, episode 74: Changing the Question (with Helen Crompton)</caption>
+                <interactive xml:id="int-changing-the-question-podcast-074"
+                             iframe="https://www.idems.international/podcast-player/4218/074-changing-the-question.mp3"
+                             width="100%"
+                             aspect="8:1"/>
+            </figure>
+        </introduction>
+
+        <subsection xml:id="subsec-changing-the-question-critique">
+            <title>Critique</title>
+
+            <p>
+                One example that David likes is to give the essay topic to a
+                chatbot, and give the students its answer to critique.
+                They have to find what needs fact-checking, what is wrong
+                with the language, and what's worth digging into.
+                He says that you can assess this, for example with track
+                changes and comments, and that it tests whether a student
+                understands the text
+                (<xref ref="biblio-podcast-075" text="custom">Clements and Stern, episode 75, n.d.</xref>).
+            </p>
+
+            <p>
+                Helen describes how she does it with students.
+                They choose a topic, have an AI tool write a paper on it, and put
+                it in a Word document.
+                Then they critique it in track changes and comments, and also
+                ask whether there's an alternative way of thinking about the
+                topic.
+                She says that this reaches the highest level of Bloom's
+                taxonomy, because to critique well you have to understand
+                (<xref ref="biblio-podcast-074" text="custom">Stern and Crompton, episode 74, n.d.</xref>).
+            </p>
+        </subsection>
+
+        <subsection xml:id="subsec-changing-the-question-debate-interview">
+            <title>Debate and interview</title>
+
+            <p>
+                Helen's other two ideas are the debate and the interview.
+                She says that all three come from an OpenAI guide for educators,
+                and that she uses them in her own classes.
+                In a debate, students choose a topic, check it with her, and debate
+                it, and can go back to the readings if they need to.
+                She starts with something silly, like the best flavour of ice
+                cream, and then moves on to topics like whether fluoride should
+                be in drinking water, for her dentistry students.
+                In an interview, an AI plays the interviewer for a job, and asks
+                one question at a time, responding to each answer
+                (<xref ref="biblio-podcast-074" text="custom">Stern and Crompton, episode 74, n.d.</xref>).
+            </p>
+
+            <p>
+                David's comments are that the interview gives feedback that
+                wouldn't be possible at scale without AI, and that a debate is a
+                setting where AI can't really do the work for you.
+            </p>
+        </subsection>
+
+        <subsection xml:id="subsec-changing-the-question-ownership">
+            <title>Ownership</title>
+
+            <p>
+                David's strongest point is about ownership.
+                He says that he doesn't mind whether a thought was generated
+                by AI or written by the student, as long as the student will
+                stand by it.
+                So he'd rather have a one-page paragraph followed by an oral
+                defence than a long essay.
+                He thinks that students could end up with more ownership of what
+                they hand in with AI than before, and calls it a
+                <q>beautiful irony</q> that artificial intelligence might make
+                human intelligence more important
+                (<xref ref="biblio-podcast-075" text="custom">Clements and Stern, episode 75, n.d.</xref>).
+            </p>
+
+            <p>
+                I add some other examples from the course.
+                A bioscience professor assesses students on their prompts, as
+                well as their work, because a small change in a prompt can
+                produce a very different answer.
+                I also talk about generating images, where asking for someone
+                <q>black</q> gave me a silhouette.
+                David says that the details of how to ask will change, but that
+                noticing how changing the question changes the answer is a
+                lasting skill.
+            </p>
+        </subsection>
+
+        <subsection xml:id="subsec-changing-the-question-diversity">
+            <title>The risk: everyone's work looks the same</title>
+
+            <p>
+                There's a catch, and the episodes are open about it.
+                I describe a study that I read, in which two groups wrote
+                stories, and one group got ideas from AI.
+                The AI-assisted stories were enjoyed more by readers, because they had
+                features like plot twists, but they were less varied
+                (<xref ref="biblio-podcast-075" text="custom">Clements and Stern, episode 75, n.d.</xref>).
+                (We haven't identified or checked the study here.)
+            </p>
+
+            <p>
+                David links this to Chapter 2.
+                AI finds what is common and normal, so if we're not careful it
+                reduces diversity.
+                He says that lecturers now have a chance to reward students who
+                know the popular choice and make a different one on purpose.
+                His example is someone who deliberately leaves out the plot
+                twist that the AI suggests.
+                Helen, in the other episode, says that she's seen the systems
+                get more diverse, and gives the example of a pupil whose language,
+                Tagalog, wasn't recognised by a tool at first, but which she says
+                is now supported
+                (<xref ref="biblio-podcast-074" text="custom">Stern and Crompton, episode 74, n.d.</xref>).
+                So she's more optimistic than David about this.
+            </p>
+
+            <p>
+                Helen also raises a different worry.
+                If AI ever became perfect, and never made a mistake, would we stop
+                checking?
+                She says that students are taught that something on the
+                internet isn't automatically real, and that AI output should be
+                critically reviewed too.
+            </p>
+        </subsection>
+    </section>
+
+    <section xml:id="sec-changing-the-question-ideas">
+        <title>More Ways to Change the Question</title>
+
+        <p>
+            The course first collected examples from teachers in 2023 and
+            2024, and they've moved on a lot since.
+            Here are some that we've read about more recently.
+        </p>
+
+
+        <table xml:id="table-changing-the-question-newer">
+            <title>Examples</title>
+            <tabular halign="left">
+                <row header="yes">
+                    <cell>Idea</cell>
+                    <cell>What changed</cell>
+                    <cell>Source</cell>
+                </row>
+                <row>
+                    <cell>Oral defence of written work</cell>
+                    <cell>Cornell: students defend problem sets in 20 minutes, and that is what's graded.</cell>
+                    <cell>AP, April 2026</cell>
+                </row>
+                <row>
+                    <cell>An AI that examines you</cell>
+                    <cell>NYU Stern: a voice asks students about their group project. Feedback was mixed.</cell>
+                    <cell>AP, April 2026</cell>
+                </row>
+                <row>
+                    <cell>A tutor that gives hints, not answers</cell>
+                    <cell>In the Turkish maths trial, the version built to give hints avoided the exam drop that the plain chatbot caused.</cell>
+                    <cell>Wharton, 2024</cell>
+                </row>
+                <row>
+                    <cell>Two kinds of assessment</cell>
+                    <cell>Sydney: secure, in-person tasks for attainment, and open tasks where AI is scaffolded, for learning.</cell>
+                    <cell>University of Sydney</cell>
+                </row>
+                <row>
+                    <cell>Assessing thinking</cell>
+                    <cell>Kenya's draft university framework: oral defence, projects and reflection, and not mainly prohibition or detection.</cell>
+                    <cell>AIU, 2026</cell>
+                </row>
+            </tabular>
+        </table>
+
+        <p>
+            The Turkish study is a useful warning for this list.
+            A change that looks like using AI to learn can have the opposite
+            effect, if students use it to skip the thinking.
+            So each idea needs a test: does the student still have to do the
+            thinking?
+        </p>
+    </section>
+
+    <section xml:id="sec-changing-the-question-worked-example">
+        <title>Try It: Change One Question</title>
+
+        <introduction xml:id="intro-changing-the-question-worked-example">
+            <p>
+                Here's an example that we made up, using what we learned in
+                Chapter 4.
+                The original question is: <q>Explain why Kenya's SHA means test
+                has been criticised.</q>
+            </p>
+        </introduction>
+
+        <subsection xml:id="subsec-changing-the-question-example">
+            <title>Four versions</title>
+
+            <ol>
+                <li>
+                    <p>
+                        <em>The original.</em>
+                        A chatbot can write a plausible answer in seconds.
+                        It's a test of whether you can recall and summarise.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <em>Critique.</em>
+                        Here is a chatbot's answer.
+                        Using Chapter 4, find two claims that you can check, and
+                        say whether each is supported.
+                        What did it leave out?
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <em>Defend.</em>
+                        Write one paragraph on whether the means test should
+                        be kept, changed or dropped.
+                        Be ready to defend it in a two-minute conversation.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <em>Iterate.</em>
+                        Ask a chatbot for a better means test.
+                        Then say what it got wrong, what you'd change, and who
+                        would be affected by the change.
+                    </p>
+                </li>
+            </ol>
+
+            <p>
+                The first is lower-order.
+                The other three are about analysing and evaluating.
+                None of them is AI-proof.
+                But each makes the student do something that a chatbot
+                can't do for them, which is to be responsible for the answer.
+            </p>
+        </subsection>
+
+        <subsection xml:id="subsec-changing-the-question-yours">
+            <title>Now you</title>
+
+            <ol>
+                <li>
+                    <p>
+                        Pick one question that you've set, or been set.
+                        Paste it into a chatbot and read the answer.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Which level of Bloom's taxonomy is it asking for?
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Could you make it secure, so that a student can't use
+                        AI?
+                        If not, a rule against AI can't be enforced, and
+                        it belongs in the open lane.
+                        If you can, what would it cost you?
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Rewrite it to critique, to defend and to
+                        iterate.
+                        Which one fits your subject, and your class size,
+                        best?
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Test your new question.
+                        Would a student who just pasted it into a chatbot get
+                        a good mark?
+                        If so, change it again.
+                    </p>
+                </li>
+            </ol>
+        </subsection>
+    </section>
+
+    <!-- ============================================================= -->
+    <!-- Toolkit                                                        -->
+    <!-- ============================================================= -->
+    <section xml:id="sec-putting-it-into-practice-toolkit">
+        <title>Build Your Toolkit</title>
+
+        <introduction xml:id="intro-putting-it-into-practice-toolkit">
+            <p>
+                The last part of the course asks you to make something that you
+                could keep or share, in your community, workplace or
+                institution.
+                It could be a checklist, a set of questions, a one-page guide
+                or a personal code of conduct.
+                We think the most useful way to start is to take one question
+                from each chapter.
+            </p>
+        </introduction>
+
+        <subsection xml:id="subsec-putting-it-into-practice-questions">
+            <title>One question from each chapter</title>
+
+            <p>
+                Here's a first set.
+                It's our own summary of the book, so change it to fit your
+                setting.
+                Think of it as the questions to ask before you use, buy or
+                recommend an AI tool.
+            </p>
+
+            <table xml:id="table-putting-it-into-practice-questions">
+                <title>A starting set of questions</title>
+                <tabular halign="left">
+                    <row header="yes">
+                        <cell>Chapter</cell>
+                        <cell>Question to ask</cell>
+                    </row>
+                    <row>
+                        <cell>1. Introduction</cell>
+                        <cell>Is there a person in the loop, who can change the outcome?</cell>
+                    </row>
+                    <row>
+                        <cell>2. Demystifying AI</cell>
+                        <cell>What data was it trained on, and who labelled it?</cell>
+                    </row>
+                    <row>
+                        <cell>3. Illusion of Autonomy</cell>
+                        <cell>Is it AI doing the work, or people we can't see? Does the company say so?</cell>
+                    </row>
+                    <row>
+                        <cell>4. Misuse and Misinterpretation</cell>
+                        <cell>What does the score really measure? What happens when it's wrong, and can someone appeal?</cell>
+                    </row>
+                    <row>
+                        <cell>5. AI and Bias</cell>
+                        <cell>Who was left out of the data, and has it been tested in our languages and with our people?</cell>
+                    </row>
+                    <row>
+                        <cell>6. Where does Bias come from?</cell>
+                        <cell>What is standing in for what we care about? What happens to people the data doesn't show?</cell>
+                    </row>
+                    <row>
+                        <cell>7. Core Principles</cell>
+                        <cell>Which of Kenya's principles does it meet, and who checks?</cell>
+                    </row>
+                    <row>
+                        <cell>8. Who is Responsible?</cell>
+                        <cell>Who pays: in labour, energy, water or misinformation? Who answers when it goes wrong?</cell>
+                    </row>
+                    <row>
+                        <cell>9. Putting it into Practice</cell>
+                        <cell>Does the user still have to do the thinking? Where would we use it, and where would we keep it out?</cell>
+                    </row>
+                    <row>
+                        <cell>10. Looking to the Future</cell>
+                        <cell>Is the claim a Never, a When, an If or an Unknown, and what would change that?</cell>
+                    </row>
+                </tabular>
+            </table>
+        </subsection>
+
+        <subsection xml:id="subsec-putting-it-into-practice-format">
+            <title>Pick a format</title>
+
+            <ul>
+                <li>
+                    <p>
+                        A checklist for evaluating AI tools.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        A set of questions that you'd ask before using or
+                        recommending an AI product.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        A one-page guide or infographic for your workplace,
+                        school or community.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        A personal code of conduct for how you'll engage with AI
+                        tools.
+                    </p>
+                </li>
+            </ul>
+
+            <p>
+                Whichever you choose, test it on a real tool before you finish.
+                If it can't tell a good tool from a bad one, it needs better
+                questions.
+            </p>
+        </subsection>
+    </section>
+
+    <!-- ============================================================= -->
+    <!-- Exercises                                                      -->
+    <!-- ============================================================= -->
+    <exercises xml:id="exercises-putting-it-into-practice">
+        <title>Exercises</title>
+
+        <exercise xml:id="ex-putting-it-into-practice-1">
+            <title>Assignment, part A: reflection</title>
+            <statement>
+                <p>
+                    In 200 to 300 words, respond to these questions.
+                    <ol>
+                        <li>
+                            What does responsible AI mean to you, in your
+                            context?
+                            If you had to explain it to a friend, a colleague
+                            or a policymaker in three sentences, what would you
+                            say?
+                        </li>
+                        <li>
+                            What has changed in how you think about AI since the
+                            start of the course?
+                            (You may want to look back at your first reflection in the course.)
+                        </li>
+                        <li>
+                            What is one thing that you'll do differently
+                            because of this course?
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+        </exercise>
+
+        <exercise xml:id="ex-putting-it-into-practice-2">
+            <title>Assignment, part B: your toolkit</title>
+            <statement>
+                <p>
+                    Create a short resource that you could keep or share in your
+                    community, workplace or institution.
+                    Use the starting questions in this chapter, and choose one
+                    format: a checklist, a set of questions, a one-page guide or
+                    infographic, or a personal code of conduct.
+                    You can make it written or visual, or as slides.
+                </p>
+                <p>
+                    <em>Optional bonus.</em>
+                    Add a short statement about how you might share or adapt it
+                    in future, for example in a lesson, a meeting, a training or
+                    a policy document.
+                </p>
+            </statement>
+        </exercise>
+
+        <exercise xml:id="ex-putting-it-into-practice-3">
+            <title>Why does the design matter?</title>
+            <statement>
+                <p>
+                    In the Turkish study, the two groups that used AI did better
+                    in practice.
+                    Only one did as well on the exam.
+                    <ol>
+                        <li>
+                            Why do you think the first group did worse?
+                        </li>
+                        <li>
+                            Why might a student prefer the tool that doesn't
+                            help them to learn?
+                        </li>
+                        <li>
+                            What would you want to know before using this
+                            result to make a decision in a Kenyan school?
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+        </exercise>
+
+        <exercise xml:id="ex-putting-it-into-practice-4">
+            <title>A rule for your university</title>
+            <statement>
+                <p>
+                    Imagine you're on a task force at a Kenyan university, and
+                    have to write a one-page rule on AI and assessment.
+                    <ol>
+                        <li>
+                            Would you try to ban AI, detect it or design around
+                            it?
+                            Why?
+                        </li>
+                        <li>
+                            What would you say to a student who is accused of
+                            using AI, and says that they didn't?
+                        </li>
+                        <li>
+                            How would you make sure that students who can't
+                            afford premium AI tools aren't left behind?
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+        </exercise>
+
+        <exercise xml:id="ex-putting-it-into-practice-5">
+            <title>Where would the money go?</title>
+            <statement>
+                <p>
+                    David's nightmare is that AI tutors are commercial, and
+                    the money that went to lecturers goes to AI companies.
+                    Is this a risk in Kenya?
+                    Who would gain, who would lose, and what could a university,
+                    or the government, do about it?
+                </p>
+            </statement>
+        </exercise>
+
+        <exercise xml:id="ex-putting-it-into-practice-6">
+            <title>Embrace it, or keep it out</title>
+            <statement>
+                <p>
+                    In some situations you may want to embrace AI, and in
+                    others you may want to create spaces free of AI.
+                    We don't yet fully understand the long-term impact of AI in
+                    education.
+                    Will it lead to an absence of fundamental skills, or will it
+                    cultivate more relevant skills like critical thinking?
+                    Share experiences and strategies for changing the question
+                    in your context.
+                    Where would you embrace it, and where would you keep it
+                    out, and why?
+                </p>
+            </statement>
+        </exercise>
+
+        <exercise xml:id="ex-putting-it-into-practice-7">
+            <title>Ideation, iteration and polishing</title>
+            <statement>
+                <p>
+                    In the course, we saw three tasks that you can use a chatbot
+                    for: ideation, iteration and polishing.
+                    How could you change a question in your subject for each
+                    of these, for text, code or media?
+                </p>
+            </statement>
+        </exercise>
+
+        <exercise xml:id="ex-putting-it-into-practice-8">
+            <title>When the class is huge</title>
+            <statement>
+                <p>
+                    Cornell's oral defence works for 70 students.
+                    Think about a class of several hundred.
+                    <ol>
+                        <li>
+                            Which parts of the idea could you keep, and which
+                            would you have to give up?
+                        </li>
+                        <li>
+                            What could students do for each other, such as
+                            peer review or debate?
+                        </li>
+                        <li>
+                            What would you do about students who find oral
+                            assessment very stressful?
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+        </exercise>
+
+        <exercise xml:id="ex-putting-it-into-practice-9">
+            <title>Sameness</title>
+            <statement>
+                <p>
+                    I described a study in which AI-assisted stories were
+                    enjoyed more but were less varied.
+                    If every student in a class uses a chatbot, what happens
+                    to the variety of their work?
+                    How might you reward a student for making a different
+                    choice from the one that the AI suggests?
+                </p>
+            </statement>
+        </exercise>
+
+        <exercise xml:id="ex-putting-it-into-practice-10">
+            <title>Is a changed question fair?</title>
+            <statement>
+                <p>
+                    Changing the question can create new unfairness.
+                    Think about students who can't afford a paid AI tool, who
+                    have poor internet, or who are less confident speaking.
+                    <ol>
+                        <li>
+                            Who might be disadvantaged by a critique task, an
+                            oral defence or a debate?
+                        </li>
+                        <li>
+                            What would you do to make each one fairer?
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+        </exercise>
+    </exercises>
+
+    <!-- ============================================================= -->
+    <!-- Sources                                                        -->
+    <!-- ============================================================= -->
+    <references xml:id="references-putting-it-into-practice">
+        <title>Sources</title>
+
+
+        <biblio type="raw" xml:id="biblio-course-notes-2023">
+            Course notes (2023). Responsible AI for Lecturers, topic 3, AI in
+            Education: Friend or Foe? IDEMS. The calculator story is told there
+            (with a source credited to Watters, 2015). We haven't rechecked the
+            claims in it.
+        </biblio>
+
+        <biblio type="raw" xml:id="biblio-podcast-073">
+            Clements, L. and Stern, D. The IDEMS Podcast, episode 73: AI in
+            Education: Friend or Foe? (RAILect, part 3). Release date to be
+            confirmed.
+            <url href="https://www.idems.international/podcast/073-ai-in-education-friend-or-foe/"/>.
+        </biblio>
+
+        <biblio type="raw" xml:id="biblio-star-cue-2025">
+            Okiddy, D. (2025). DAAD, CUE push for AI integration in higher
+            education. The Star (Kenya), 17 August 2025.
+            <url href="https://www.the-star.co.ke/news/2025-08-17-daad-cue-push-for-ai-integration-in-higher-education"/>.
+        </biblio>
+
+        <biblio type="raw" xml:id="biblio-aiu-2026">
+            Africa International University (2026). AIU participates in
+            national dialogue shaping Kenya's AI framework for university
+            education. 20 August 2026. One university's account of a
+            three-day CUE dialogue, which we haven't been able to check against a
+            CUE or Ministry document.
+            <url href="https://www.aiu.ac.ke/?p=15048"/>.
+        </biblio>
+
+        <biblio type="raw" xml:id="biblio-wharton-2024">
+            Basiouny, A. (2024). Without guardrails, generative AI can harm
+            education. Knowledge at Wharton, 27 August 2024. It reports the
+            working paper, and gives the percentages quoted in the table.
+            <url href="https://knowledge.wharton.upenn.edu/article/without-guardrails-generative-ai-can-harm-education"/>.
+        </biblio>
+
+        <biblio type="raw" xml:id="biblio-bastani-2025">
+            Bastani, H., Bastani, O., Sungu, A., Ge, H., Kabakcı, Ö. and
+            Mariman, R. (2025). Generative AI without guardrails can harm
+            learning: evidence from high school mathematics. Proceedings of the
+            National Academy of Sciences, 25 June 2025. We have not read the
+            paper itself.
+            <url href="https://www.pnas.org/doi/10.1073/pnas.2422633122"/>.
+        </biblio>
+
+        <biblio type="raw" xml:id="biblio-ap-orals-2026">
+            Gekcer, J. (2026). Perfect homework, blank stares: why colleges are
+            turning to oral exams to combat AI. Associated Press, 22 April 2026
+            (read as published by WHYY).
+            <url href="https://whyy.org/articles/pennsylvania-university-colleges-oral-exams-artificial-intelligence/"/>.
+        </biblio>
+
+        <biblio type="raw" xml:id="biblio-sydney-2024">
+            Bridgeman, A. and Liu, D. (2024). Frequently asked questions about
+            the two-lane approach to assessment in the age of AI. University of
+            Sydney, Teaching@Sydney (the page shows the dates 2 July 2024 and 21 April 2026).
+            <url href="https://educational-innovation.sydney.edu.au/teaching@sydney/?p=21264"/>.
+        </biblio>
+
+        <title>Sources</title>
+
+        <biblio type="raw" xml:id="biblio-course-notes-2023b">
+            Course notes (2023). Responsible AI for Lecturers, topic 4,
+            Changing the Question. IDEMS. We haven't rechecked the claims in it.
+        </biblio>
+
+        <biblio type="raw" xml:id="biblio-podcast-075">
+            Clements, L. and Stern, D. The IDEMS Podcast, episode 75: Changing
+            The Question 2 (RAILect, part 4). Release date to be confirmed.
+            <url href="https://www.idems.international/podcast/075-changing-the-question-2/"/>.
+        </biblio>
+
+        <biblio type="raw" xml:id="biblio-podcast-074">
+            Stern, D. and Crompton, H. The IDEMS Podcast, episode 74: Changing
+            the Question (bonus episode, with Helen Crompton). Release date to
+            be confirmed. Helen's claims are her own and we haven't checked them.
+            <url href="https://www.idems.international/podcast/074-changing-the-question/"/>.
+        </biblio>
+    </references>
+</chapter>

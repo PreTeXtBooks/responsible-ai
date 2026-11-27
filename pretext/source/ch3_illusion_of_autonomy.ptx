@@ -306,8 +306,7 @@
 
             <p>
                 David's wider point is that almost all AI relies on a huge,
-                hidden human workforce, who write the code, label the data and
-                help the system to learn.
+                hidden human workforce, who do the coding and help the AI to learn.
                 That's what we saw with the Kenyan workers in the last
                 chapter.
             </p>
@@ -405,15 +404,16 @@
                 His answer is that good business isn't about maximising
                 short-term profit, and that if a company offers good service
                 and is still profitable, it can win out over time.
-                He admits that this isn't how it's playing out at the moment,
-                because short-term profit gets a lot of attention.
+                He adds that he doesn't think it will play out well in the short
+                term, because short-term profit is seen as more important than
+                long-term market share.
             </p>
 
             <p>
-                He's also confident that the problem Amazon was trying to solve
-                will be solved, in time.
-                What matters more, he says, is the human question of what kind
-                of society we want to build with the tools that we have.
+                He's also confident that over a few hundred years we'll be able to
+                build technology that can do what Amazon was trying to do.
+                But he says that the tools we have now are very powerful, and that
+                we don't want a society where humans don't interact.
             </p>
         </subsection>
 
@@ -473,6 +473,39 @@
     <!-- ============================================================= -->
     <exercises xml:id="exercises-illusion-of-autonomy">
         <title>Exercises</title>
+
+        <exercise xml:id="ex-illusion-of-autonomy-assignment">
+            <title>Assignment: the human labour behind AI</title>
+            <statement>
+                <p>
+                    Choose one of two cases: Amazon's Just Walk Out, from this chapter, or
+                    the Kenyan data workers who helped to make ChatGPT safer, from Chapter 2.
+                    In no more than 500 words, respond to these questions.
+                    <ol>
+                        <li>
+                            Briefly summarise what you learned about the human labour behind
+                            that AI system.
+                        </li>
+                        <li>
+                            What surprised or disturbed you most?
+                        </li>
+                        <li>
+                            What does this case reveal about the limits of AI autonomy?
+                        </li>
+                        <li>
+                            Do you think the company was acting responsibly? Why or why not?
+                        </li>
+                        <li>
+                            What would a more ethical and transparent system look like?
+                        </li>
+                    </ol>
+                </p>
+                <p>
+                    The Facebook moderators come up again in Chapter 8, where we ask who is
+                    responsible for them.
+                </p>
+            </statement>
+        </exercise>
 
         <exercise xml:id="ex-illusion-of-autonomy-1">
             <title>The illusion of autonomy</title>

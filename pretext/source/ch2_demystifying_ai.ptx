@@ -11,8 +11,8 @@
   - Then explain how AI learns, using the postcode-sorting example from the
     podcast (humans in the loop, feedback), the birdsong/toad example (limits),
     and a short mention that the boundary of what AI can do keeps moving.
-  - Chapter 3 (Illusion of Autonomy) gets the Amazon "Just Walk Out" story and
-    the Meta moderators' court cases as its hidden-labour examples.
+  - Chapter 3 (Illusion of Autonomy) gets the Amazon "Just Walk Out" story.
+  Chapter 8 (Who is Responsible?) gets the Meta moderators' court cases.
   - The Dutch childcare scandal belongs in the Misuse and Misinterpretation
     chapter.
 -->
@@ -212,7 +212,7 @@
 
             <p>
                 Some things aren't in dispute.
-                The contracts said that OpenAI would pay Sama $12.50 an hour
+                According to a Sama document, quoted by TIME, OpenAI would pay Sama $12.50 an hour
                 (about KES 1,625) for the work.
                 Sama says that covers all its costs, including salaries,
                 benefits and infrastructure.
@@ -444,8 +444,8 @@
                 The story hasn't stopped.
                 In 2026, 404 Media reported on a Data Labelers Association in
                 Kenya, which is signing up workers and asking for better pay,
-                better mental health services, and an end to what it calls
-                draconian non-disclosure agreements
+                better mental health services, and limits on non-disclosure
+                agreements, which the reporter calls draconian
                 (<xref ref="biblio-404media-2026" text="custom">Koebler, 2026</xref>).
             </p>
 
@@ -459,7 +459,7 @@
                 (<xref ref="biblio-techcrunch-court-2023" text="custom">Njanja, 2023a</xref>).
                 We couldn't find a court case brought by the ChatGPT labellers
                 themselves.
-                The moderators' case comes up again in the next chapter.
+                The moderators' case comes up again in Chapter 8.
             </p>
         </subsection>
 
@@ -546,7 +546,7 @@
                 David starts with an old example, from before the recent
                 advances in generative AI.
                 For a long time, people sorted the post by hand.
-                They read the address, and the postcode, on each envelope.
+                They read the postcode on each envelope.
                 Then, around the 1990s, machine learning made it possible to
                 do some of that automatically.
             </p>
@@ -561,7 +561,7 @@
 
             <p>
                 At the start, it wasn't very good.
-                It got things right about nine times in ten.
+                David remembers it getting things right about nine times in ten.
                 And to begin with, good human sorters did better than the
                 machines.
                 But when the machine got a letter wrong, the mistake was
@@ -689,15 +689,15 @@
                 really about style.
                 Generative AI can now write in a way that's very hard to tell
                 from a person.
-                It has, in effect, passed what's called the Turing test.
+                He says that many of the models are now passing what's called the Turing test, in some circumstances.
             </p>
 
             <definition xml:id="def-demystifying-ai-turing">
                 <title>The Turing test</title>
                 <statement>
                     <p>
-                        In the <term>Turing test</term>, a person observes
-                        conversations between humans, and conversations between
+                        In the <term>Turing test</term>, as David describes it, a person
+                        observes conversations between humans, and conversations between
                         a human and an AI.
                         If the observer can't tell which are with the AI, the
                         AI has passed.
@@ -756,8 +756,8 @@
             <p>
                 David's example is Amazon's shops where you could pick up your
                 shopping and walk out without going through a checkout.
-                Amazon eventually pulled back from it and moved to smart
-                shopping carts.
+                Amazon eventually pulled back from it, and Lily adds that it moved
+                to smart shopping carts.
                 David's account is that the AI models weren't yet good enough,
                 so people in India, paid very little, watched video of shoppers
                 to work out what had gone in each basket.
@@ -1024,9 +1024,9 @@
         </biblio>
 
         <biblio type="raw" xml:id="biblio-guardian-2023">
-            The Guardian (2023). Article on the human toll of training AI
-            chatbots, based on interviews with four former Sama moderators in
-            Nairobi. 2 August 2023.
+            Rowe, N. (2023). <q>It's destroyed me completely</q>: Kenyan moderators
+            decry toll of training of AI models. The Guardian, 2 August 2023. Reports
+            the accounts of former Sama moderators in Nairobi.
             <url href="https://www.theguardian.com/technology/2023/aug/02/ai-chatbot-training-human-toll-content-moderator-meta-openai"/>.
         </biblio>
 

@@ -103,7 +103,8 @@
             weapons of math destruction, tend to go wrong in three ways
             (<xref ref="biblio-woodson-2018" text="custom">Woodson, 2018</xref>).
             This is her framework, not ours.
-            We use the description in Thomas Woodson's review of the book.
+            We use the description in Thomas Woodson's review of the book, so the
+            book itself may group things a little differently.
         </p>
 
         <definition xml:id="def-where-does-bias-come-from-proxy">
@@ -229,7 +230,9 @@
                 wealth, because households with electricity are less often
                 poor.
                 But among households that are poor <em>and</em> have
-                electricity, 56% were predicted not to be poor.
+                electricity, 56% were predicted not to be poor, according to the results
+                table in Lighthouse's methodology document
+                (<xref ref="biblio-lighthouse-2026" text="custom">Lighthouse Reports, 2026</xref>).
                 Lighthouse found the same pattern for households that are mostly
                 women, and for poor households where the head had finished
                 secondary school.
@@ -901,6 +904,41 @@
     <exercises xml:id="exercises-where-does-bias-come-from">
         <title>Exercises</title>
 
+        <exercise xml:id="ex-where-does-bias-come-from-assignment">
+            <title>Assignment: whose errors count?</title>
+            <statement>
+                <p>
+                    SHA's means test turns a household's answers into an estimate of what it
+                    spends, and the premium follows from that.
+                    In Chapter 4 we saw that the rebuilt version of the model got the
+                    poorest tenth of households right only 16% of the time, and for about 80%
+                    of them it predicted that they spent more than they really do.
+                    We also saw that SHA hasn't published how the test works.
+                    Reflect on the questions below, and write up your answers.
+                    <ol>
+                        <li>
+                            What does this tell us about who benefits and who is harmed when a score
+                            like this is applied to real decisions?
+                        </li>
+                        <li>
+                            Should a model be considered fair if it performs better for some groups
+                            than for others?
+                        </li>
+                        <li>
+                            What counts as a good model?
+                            SHA shared the formula and the questions, but not the weights.
+                            Should models that affect people's lives, such as in health or justice, be
+                            required to be transparent?
+                        </li>
+                        <li>
+                            How might a lack of transparency allow bias to go unchallenged?
+                            Use O'Neil's three questions in your answer.
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+        </exercise>
+
         <exercise xml:id="ex-where-does-bias-come-from-1">
             <title>Which of the three?</title>
             <statement>
@@ -1128,9 +1166,9 @@
         <biblio type="raw" xml:id="biblio-davies-douglas-2020">
             Davies, B. and Douglas, T. (2020). Learning to discriminate: the
             perfect proxy problem in artificially intelligent criminal
-            sentencing. Draft of 17 November 2020, commissioned for
-            <em>Principled Sentencing and Artificial Intelligence</em>, edited
-            by J. Roberts and J. Ryberg.
+            sentencing. Draft of 17 November 2020, commissioned for an edited volume on
+            sentencing and artificial intelligence (J. Roberts and J. Ryberg,
+            eds).
         </biblio>
 
         <biblio type="raw" xml:id="biblio-podcast-172">

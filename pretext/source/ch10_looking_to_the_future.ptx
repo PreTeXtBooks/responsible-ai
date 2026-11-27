@@ -1,0 +1,599 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- ================================================================= -->
+<!--  Chapter 10: Looking to the Future  -->
+<!-- ================================================================= -->
+<!--
+  NOTES (see also notes/ch9-research.md):
+  - The four categories come from podcast 077 (RAILect 5). Everything David
+    says there is attributed to him. His timings and claims are not verified.
+  - Cases already in the book, mapped to the categories (David's own
+    examples in 077):
+      Never   - AI detectors (Chapter 5)
+      When    - Amazon Just Walk Out (Chapter 3)
+      If      - AI tutors (this chapter's case study)
+      Unknown - Gemini's images (Chapter 7)
+  - The case study is the "If" one: AI tutoring. The Nigeria trial rests on
+    a World Bank blog (9 Jan 2025). The Kenya part (EIDU) is a J-PAL pilot
+    listing with NO results for the AI tool.
+  - TODO (Lily): the blog post on the four categories (her PDF).
+  - TODO (Lily): categorise the Kenyan cases from earlier chapters
+    (Tala, Sama, SHA, the 2026 policy, the moderators, Olkaria). Exercise 6
+    and the Try It ask the reader to do it. Lily wants to think about it.
+  - TODO: the AI and consciousness podcast (episode id not known).
+  - Practise (STACK) section removed on purpose. Questions go in the exercises.
+-->
+<chapter xml:id="ch-looking-to-the-future" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Looking to the Future</title>
+
+    <introduction xml:id="intro-looking-to-the-future">
+        <p>
+            Every few months there's a new claim about what AI will be able to
+            do next.
+            Some of them come true quickly.
+            Some of them are sold to us for years and never arrive.
+            And some of them are still open questions, even for the people
+            who build the systems.
+        </p>
+
+        <p>
+            It would help to have a way of sorting them.
+            In this chapter we use one from David Stern, with four boxes:
+            what will never be possible, what is a matter of when, what
+            depends on an <q>if</q>, and what is still unknown
+            (<xref ref="biblio-podcast-077" text="custom">Clements and Stern, episode 77, 2024</xref>).
+            We've already met three of the four in this book.
+            Then we take one case, AI tutors, and look at what is known about
+            it in Nigeria and Kenya.
+        </p>
+
+        <!-- Draft objectives: revise once the rest of the chapter is written. -->
+        <objectives>
+            <title>By the end of this chapter you should be able to</title>
+            <ol>
+                <li>
+                    <p>
+                        Describe the four categories of future AI developments:
+                        the Nevers, the Whens, the Ifs and the Unknowns.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Classify an AI application into one of the four, and
+                        justify the choice.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Say what evidence would be needed to move a claim from
+                        one category to another.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Think about how assumptions about future AI should shape
+                        what we design today, in education and elsewhere.
+                    </p>
+                </li>
+            </ol>
+        </objectives>
+    </introduction>
+
+    <!-- ============================================================= -->
+    <!-- 1. The four categories                                         -->
+    <!-- ============================================================= -->
+    <section xml:id="sec-looking-to-the-future-four">
+        <title>Four Kinds of Future</title>
+
+        <introduction xml:id="intro-looking-to-the-future-four">
+            <p>
+                This is the last of five episodes in a series that David and I
+                made for lecturers.
+                In it, David sets out the four categories, and gives an example
+                for each one.
+            </p>
+
+            <figure xml:id="fig-looking-to-the-future-podcast-077">
+                <caption>The IDEMS Podcast, episode 77: Looking to the Future of AI for Higher Education</caption>
+                <interactive xml:id="int-looking-to-the-future-podcast-077"
+                             iframe="https://www.idems.international/podcast-player/4253/077-looking-to-the-future-of-ai-for-higher-education.mp3"
+                             width="100%"
+                             aspect="8:1"/>
+            </figure>
+        </introduction>
+
+        <subsection xml:id="subsec-looking-to-the-future-categories">
+            <title>The boxes</title>
+
+            <p>
+                David says that however many advances there are, there are
+                four different kinds of statement we can make about the future
+                (<xref ref="biblio-podcast-077" text="custom">Clements and Stern, episode 77, 2024</xref>).
+            </p>
+
+            <table xml:id="table-looking-to-the-future-four">
+                <title>The four categories, in David's words, shortened</title>
+                <tabular halign="left">
+                    <row header="yes">
+                        <cell>Category</cell>
+                        <cell>What it means</cell>
+                        <cell>His example</cell>
+                    </row>
+                    <row>
+                        <cell>The Nevers</cell>
+                        <cell>Whatever advances there are, it will make no difference. What we say today stays true.</cell>
+                        <cell>Relying on AI to detect AI-written work</cell>
+                    </row>
+                    <row>
+                        <cell>The Whens</cell>
+                        <cell>The tools we have are enough in principle. It's a matter of when, not if.</cell>
+                        <cell>Amazon's Just Walk Out shops</cell>
+                    </row>
+                    <row>
+                        <cell>The Ifs</cell>
+                        <cell>It needs a breakthrough, one that he thinks is on the way.</cell>
+                        <cell>AI personal tutors</cell>
+                    </row>
+                    <row>
+                        <cell>The Unknowns</cell>
+                        <cell>Nobody yet knows which of the others it belongs in.</cell>
+                        <cell>Telling fact from fiction in generated images</cell>
+                    </row>
+                </tabular>
+            </table>
+
+            <p>
+                Here's how David explains each one.
+            </p>
+
+            <p>
+                <em>The Nevers.</em>
+                He says that any tool that classifies things will make false
+                positives and false negatives, and that you'll never get
+                certainty.
+                So lecturers should never rely on detection alone.
+                He points to the Reading University study that we met in
+                Chapter 2, where, as he tells it, only two of the 33 AI-written
+                scripts were identified.
+                We looked at the problem with detectors in Chapter 5.
+                I add in the episode that a writer dismissed an email because it
+                used the word <q>delve</q>, which they assumed meant AI, and that
+                many people in Nigeria replied that it's an ordinary word for them.
+            </p>
+
+            <p>
+                <em>The Whens.</em>
+                David says that Amazon's shops, which we met in Chapter 3, were
+                a hard problem that the current tools could probably solve
+                eventually.
+                The problem was the scale, with so many products.
+                He says that in a much smaller shop, with few products, it would
+                probably be solvable now.
+                He doesn't say the answer is to keep trying until it works.
+                He says he's glad that it isn't being pursued that way.
+            </p>
+
+            <p>
+                <em>The Ifs.</em>
+                David's example is the AI personal tutor.
+                He says that AI is good at the style of a tutor, meaning how
+                an answer is presented, and weaker on the substance, meaning
+                whether the answer is right.
+                He says recent advances on mathematics, with systems that did
+                well on the maths Olympiad, suggest that
+                reliable substance might be coming, but that it needs a real
+                advance in technology and not just more of the same.
+                We look at this one in the case study below.
+            </p>
+
+            <p>
+                <em>The Unknowns.</em>
+                David's example is Gemini's images, which we met in Chapter 7.
+                He says it's not clear to him that it's even a solvable
+                problem, to make a system that is diverse where that's right,
+                and accurate where history matters.
+                It could be a When, or an If, or a Never.
+                As he puts it, he doesn't think anyone knows.
+            </p>
+
+            <insight>
+                <p>
+                    David doesn't claim that he always gets the box right.
+                    He says that the discussion about which box something is in
+                    is the useful part.
+                    It's also something a non-expert can ask an expert: for
+                    my idea, which box is it in, and why?
+                </p>
+            </insight>
+        </subsection>
+
+        <subsection xml:id="subsec-looking-to-the-future-design">
+            <title>Why bother sorting?</title>
+
+            <p>
+                David's answer is that the box tells you how to plan.
+                If something is a Never, you can design for that now, and the
+                design should still hold in the future.
+                If something is an If, you can ask what you would want to be
+                ready for if it arrives
+                (<xref ref="biblio-podcast-077" text="custom">Clements and Stern, episode 77, 2024</xref>).
+                For lecturers, he says, that might mean more group work and
+                human interaction, because those are the parts that an AI
+                tutor can't give.
+            </p>
+
+            <!-- TODO (Lily): add the blog post on the four categories here. -->
+        </subsection>
+    </section>
+
+    <!-- ============================================================= -->
+    <!-- 2. Case study: AI tutors                                       -->
+    <!-- ============================================================= -->
+    <section xml:id="sec-looking-to-the-future-case-study">
+        <title>Case Study: Can an AI Tutor Teach?</title>
+
+        <subsection xml:id="subsec-looking-to-the-future-promise">
+            <title>The promise</title>
+
+            <p>
+                Private tutors help students a great deal, and most families
+                can't afford one.
+                So when chatbots arrived, many people asked the obvious
+                question: could every student have one?
+                David says that is exactly what Khan Academy hoped for, with
+                its tutor Khanmigo
+                (<xref ref="biblio-podcast-077" text="custom">Clements and Stern, episode 77, 2024</xref>).
+            </p>
+
+            <p>
+                A tutor that is patient and available at any hour sounds like a
+                good thing, wherever teachers are stretched.
+                The question for this chapter isn't whether that's attractive.
+                It's which box it belongs in.
+            </p>
+        </subsection>
+
+        <subsection xml:id="subsec-looking-to-the-future-nigeria">
+            <title>What happened in Nigeria</title>
+
+            <p>
+                The best evidence we found is from Nigeria.
+                A World Bank pilot, in Edo in Nigeria, ran for six weeks in June
+                and July 2024, with a randomised evaluation.
+                The authors say that generative AI, with teacher support, can work
+                as a <q>virtual tutor</q>
+                (<xref ref="biblio-worldbank-chalkboards-2025" text="custom">De Simone and others, 2025</xref>).
+            </p>
+
+            <p>
+                The authors report learning improvements of about 0.3 standard
+                deviations.
+                The pen-and-paper test covered English, AI knowledge and digital
+                skills, and the blog doesn't say which part the 0.3 refers to.
+                They compare this to <q>nearly two years of typical
+                learning</q>, and say that it did better than 80% of the
+                studies in a database of trials of education programmes in
+                developing countries
+                (<xref ref="biblio-worldbank-chalkboards-2025" text="custom">De Simone and others, 2025</xref>).
+                They also say that the benefits didn't fade as the programme
+                went on, that the programme helped all students and not just the
+                strongest, and that girls, who started behind the boys,
+                seemed to gain even more.
+            </p>
+
+            <p>
+                Those are the World Bank authors' claims, in a blog post that
+                says the full evaluation was still to be published.
+                They are also honest about what they don't know.
+                They list open questions about long-term effects, what the role
+                of teachers should be, and whether there are any
+                <q>negative, undesired effects</q>.
+                Attendance was affected by flooding, teacher strikes and
+                after-school work.
+            </p>
+
+            <insight>
+                <p>
+                    Notice what was tested.
+                    It was an after-school programme, with teachers, in English.
+                    It wasn't a chatbot left alone with a child.
+                    The result tells us that AI plus teachers can work.
+                    It doesn't tell us that AI instead of teachers can.
+                </p>
+            </insight>
+        </subsection>
+
+        <subsection xml:id="subsec-looking-to-the-future-kenya">
+            <title>What is happening in Kenya</title>
+
+            <p>
+                In Kenya, the closest thing we found is a pilot by EIDU, a
+                Kenya-based ed-tech organisation that works with education
+                systems on structured teaching for primary and pre-primary
+                students.
+                J-PAL, a research network, lists a pilot of a generative AI
+                tool that EIDU built with Google.org's GenAI Accelerator
+                (<xref ref="biblio-jpal-eidu" text="custom">J-PAL, n.d.</xref>).
+                It identifies learning gaps, builds student profiles and
+                produces tutoring plans of about 15 minutes, for small groups.
+            </p>
+
+            <p>
+                It's a different idea from a chatbot for each student.
+                The page describes the aim as amplifying teacher capacity, and not
+                replacing it, but it doesn't say who delivers the small-group
+                sessions.
+            </p>
+
+            <p>
+                What's the evidence?
+                J-PAL's page says that preliminary evidence shows EIDU's
+                approach improves literacy and numeracy by 0.5 standard
+                deviations.
+                That sentence is about EIDU's approach to structured teaching,
+                and the page doesn't say that it's about the AI tool.
+                For the AI tool, the page describes a pilot, and a randomised
+                evaluation that is planned for the future
+                (<xref ref="biblio-jpal-eidu" text="custom">J-PAL, n.d.</xref>).
+                We found no results for it.
+            </p>
+        </subsection>
+
+        <subsection xml:id="subsec-looking-to-the-future-which-box">
+            <title>Which box?</title>
+
+            <p>
+                David puts AI personal tutors in the third box, an If.
+                His reason is about substance.
+                Without reliable content, he says, a tutor might work really
+                well and still not be trustworthy
+                (<xref ref="biblio-podcast-077" text="custom">Clements and Stern, episode 77, 2024</xref>).
+                That is a concern the Nigerian trial doesn't test directly, as far
+                as we can tell from the blog, because the programme was run
+                with teachers and the post doesn't describe how often the tool
+                got things wrong.
+            </p>
+
+            <p>
+                So here is one way to read the evidence.
+                A tutor that works alongside a teacher already seems to be
+                worth trying, which looks like a When.
+                A tutor that works on its own, in the way the promise suggests,
+                depends on advances in reliability, which is David's If.
+                Whether it ever will be reliable might even be an Unknown.
+                You can disagree with that, and your reasons are what matter.
+            </p>
+
+            <p>
+                Whichever box you choose, the design question is the one David
+                asks.
+                If good AI tutors do arrive, what should human teachers be doing
+                that adds value on top?
+            </p>
+        </subsection>
+    </section>
+
+    <!-- ============================================================= -->
+    <!-- 3. Illustrative example                                        -->
+    <!-- ============================================================= -->
+    <section xml:id="sec-looking-to-the-future-worked-example">
+        <title>Try It: Sort the Claims</title>
+
+        <p>
+            Find three claims about the future of AI, from the news, from a
+            company, or from someone you know.
+            For example, <q>AI will replace teachers</q>, <q>AI will diagnose
+            every disease</q>, or <q>AI will be able to tell when a student
+            has cheated</q>.
+        </p>
+
+        <ol>
+            <li>
+                <p>
+                    Put each one in a box: Never, When, If or Unknown.
+                </p>
+            </li>
+            <li>
+                <p>
+                    Write one sentence on why.
+                    What would have to be true for it to be in the box?
+                </p>
+            </li>
+            <li>
+                <p>
+                    What evidence would make you move it to a different box?
+                </p>
+            </li>
+            <li>
+                <p>
+                    Show a friend or a colleague your boxes.
+                    Where do you disagree?
+                </p>
+            </li>
+        </ol>
+    </section>
+
+    <!-- ============================================================= -->
+    <!-- 4. Exercises                                                   -->
+    <!-- ============================================================= -->
+    <exercises xml:id="exercises-looking-to-the-future">
+        <title>Exercises</title>
+
+        <exercise xml:id="ex-looking-to-the-future-assignment">
+            <title>Assignment: a short portfolio</title>
+            <statement>
+                <p>
+                    Choose one of the four categories of future AI developments: the
+                    Nevers, the Whens, the Ifs or the Unknowns.
+                    Then write a short portfolio that has two parts.
+                    <ol>
+                        <li>
+                            <em>A. Contextual forecast (250 to 300 words).</em>
+                            Pick a future AI development or application that fits your category.
+                            Describe it, and say why you place it in this category.
+                            Reflect on how it could affect your context, such as your country,
+                            sector, school or community.
+                            What are the ethical, social or educational implications?
+                        </li>
+                        <li>
+                            <em>B. Preparedness reflection (150 to 200 words).</em>
+                            How can we prepare responsibly for this future, even if it's uncertain?
+                            Which principles from this course would help to guide responsible
+                            decisions?
+                            How can educators or institutions design for flexibility or robustness?
+                        </li>
+                    </ol>
+                </p>
+                <p>
+                    <em>Optional bonus.</em>
+                    Add a diagram, a sketch or a short readiness checklist for your context.
+                </p>
+            </statement>
+        </exercise>
+
+        <exercise xml:id="ex-looking-to-the-future-1">
+            <title>The four futures</title>
+            <statement>
+                <p>
+                    Choose one of the four categories: the Nevers, the Whens, the
+                    Ifs or the Unknowns.
+                    Summarise a case study that you think falls into this
+                    category, and say why it fits.
+                    What are the implications for education, in your context?
+                </p>
+            </statement>
+        </exercise>
+
+        <exercise xml:id="ex-looking-to-the-future-2">
+            <title>Where would you put it?</title>
+            <statement>
+                <p>
+                    In this chapter we put AI tutors in the Ifs, though we said
+                    that it might be argued differently.
+                    Make the case for putting AI tutors in a different box.
+                    What would you need to see, in Kenya, to be convinced?
+                </p>
+            </statement>
+        </exercise>
+
+        <exercise xml:id="ex-looking-to-the-future-3">
+            <title>Reading the evidence</title>
+            <statement>
+                <p>
+                    Look again at the Nigerian trial and the Kenyan pilot.
+                    <ol>
+                        <li>
+                            What was tested, and what wasn't?
+                        </li>
+                        <li>
+                            Who is telling us the result, and what do they
+                            gain from it?
+                        </li>
+                        <li>
+                            Which questions would you want answered before you
+                            gave an AI tutor to every school in a county?
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+        </exercise>
+
+        <exercise xml:id="ex-looking-to-the-future-4">
+            <title>Design for the future</title>
+            <statement>
+                <p>
+                    David says that if good AI tutors become available, the
+                    value of human teaching might be in group work and human
+                    interaction.
+                    Pick a subject and a level that you know.
+                    How would you design the course so that it's still worth
+                    doing if every student had a good AI tutor?
+                    How would you design it if detection is a Never?
+                </p>
+            </statement>
+        </exercise>
+
+        <exercise xml:id="ex-looking-to-the-future-5">
+            <title>Sort the Kenyan cases</title>
+            <statement>
+                <p>
+                    <!-- TODO (Lily): worked through yourself, then give a model answer. -->
+                    Think back through the Kenyan cases in this book: Tala's
+                    lending, Sama's data workers, SHA's means test, Kenya's
+                    2026 policy, the moderators' cases and the Olkaria data
+                    centre.
+                    For each one, ask what the next step would be if things
+                    went well, and what would need to be true.
+                    Which box would you put the <em>next step</em> in?
+                </p>
+            </statement>
+        </exercise>
+
+        <exercise xml:id="ex-looking-to-the-future-6">
+            <title>Could AI ever be conscious?</title>
+            <statement>
+                <!-- TODO: add the podcast on AI and consciousness once we have its id. -->
+                <p>
+                    Listen to the podcast on AI and consciousness, in which
+                    David and I look at what we mean by consciousness, and
+                    whether AI systems could ever be truly conscious.
+                    Then think about these questions.
+                    <ol>
+                        <li>
+                            Do you think AI could ever be conscious?
+                            Why or why not?
+                            Which box would you put it in?
+                        </li>
+                        <li>
+                            What are the risks if we assume consciousness where
+                            there is none?
+                            What about the reverse?
+                        </li>
+                        <li>
+                            How does thinking of AI as <q>intelligent but not
+                            conscious</q> change how we should design or
+                            regulate it?
+                        </li>
+                        <li>
+                            Should ethical rights or responsibilities ever be
+                            extended to AI systems?
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+        </exercise>
+    </exercises>
+
+    <!-- ============================================================= -->
+    <!-- Sources                                                        -->
+    <!-- ============================================================= -->
+    <references xml:id="references-looking-to-the-future">
+        <title>Sources</title>
+
+        <biblio type="raw" xml:id="biblio-podcast-077">
+            Clements, L. and Stern, D. (2024). The IDEMS Podcast, episode 77:
+            Looking to the Future of AI for Higher Education (RAILect, part
+            5). Listed as 6 August 2024 on the page, which we haven't
+            double-checked.
+            <url href="https://www.idems.international/podcast/077-looking-to-the-future-of-ai-for-higher-education"/>.
+        </biblio>
+
+        <biblio type="raw" xml:id="biblio-worldbank-chalkboards-2025">
+            De Simone, M. E., Tiberti, F., Mosuro, W., Manolio, F., Barron, M.
+            and Dikoru, E. (2025). From chalkboards to chatbots: Transforming
+            learning in Nigeria, one prompt at a time. World Bank blog, 9
+            January 2025. A blog post, written before the full evaluation was
+            published. The authors work for the World Bank, which ran the
+            programme.
+            <url href="https://blogs.worldbank.org/en/education/From-chalkboards-to-chatbots-Transforming-learning-in-Nigeria"/>.
+        </biblio>
+
+        <biblio type="raw" xml:id="biblio-jpal-eidu">
+            J-PAL (n.d.). An AI-powered structured pedagogy program's impact on
+            student learning and teacher productivity. Project listing under
+            Project AI Evidence (pilot, spring 2025 funding round). Researchers
+            listed: Francisco Gallego, Daron Acemoglu and Alejandro Saenz.
+            <url href="https://www.povertyactionlab.org/initiative-project/ai-powered-structured-pedagogy-programs-impact-student-learning-and-teacher"/>.
+        </biblio>
+    </references>
+</chapter>

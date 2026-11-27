@@ -32,8 +32,9 @@
         </p>
 
         <p>
-            KES 7,800 is a year of health insurance, at KES 650 a month.
-            It came from a formula.
+            KES 7,800 is a year of health insurance premiums, at KES 650 a
+            month.
+            The monthly figure came from a formula.
             The formula doesn't ask what she earns.
             It looks at her home and her household, and estimates what
             she can afford.
@@ -93,9 +94,10 @@
             <p>
                 In October 2024, Kenya started a new public health insurance
                 scheme.
-                It replaced the old National Hospital Insurance Fund (NHIF)
-                with the Social Health Authority, or SHA
+                The scheme is run by the Social Health Authority, or SHA
                 (<xref ref="biblio-capital-2026" text="custom">Wakaya, 2026</xref>).
+                It replaced the old National Hospital Insurance Fund (NHIF)
+                (<xref ref="biblio-lighthouse-2026" text="custom">Lighthouse Reports, 2026</xref>).
                 People with a salary pay 2.75% of it, taken by their employer
                 (<xref ref="biblio-kenyans-2026" text="custom">Amunga, 2026</xref>).
             </p>
@@ -196,9 +198,9 @@
 
             <p>
                 The idea isn't silly.
-                It was worked out at the World Bank in the mid-1990s, and
-                versions of it are used in countries including Egypt,
-                Indonesia and Rwanda.
+                One account we read says that it was formalised at the World Bank in
+                the mid-1990s, and that versions of it have been used in countries
+                including Egypt, Indonesia and Rwanda.
                 People who support it say it's an imperfect but practical way
                 of getting help to the people who need it most.
                 Critics say it's only moderately good at telling who's poor.
@@ -213,19 +215,16 @@
             <title>How the score works</title>
 
             <p>
-                In October 2024, a graphic designer in western Kenya was
-                registering online.
-                The form asked him whether the walls of his house were
-                plywood or mud, where his drinking water came from, whether
-                his toilet flushed and whether he owned a bicycle.
-                He couldn't see why.
+                One graphic designer in western Kenya, who was registering
+                online, couldn't see why the form asked about the walls of his
+                house and where his drinking water came from.
                 His answers went into a formula that worked out what he would
                 pay
                 (<xref ref="biblio-lighthouse-2026" text="custom">Lighthouse Reports, 2026</xref>).
             </p>
 
             <p>
-                SHA hasn't published how its test works.
+                SHA hasn't published the full details of how its test works.
                 In August 2025 the news team at Africa Uncensored sent SHA a
                 request for the details.
                 SHA ignored it, so the team complained to the Ombudsman, who
@@ -301,7 +300,7 @@
                 Lighthouse counted a prediction as correct if it was within
                 about a fifth of the true figure.
                 Among the poorest tenth of households, only 16% were predicted
-                correctly, and 80% were predicted to be spending more than
+                correctly, and about 80% were predicted to be spending more than
                 they really do.
                 That means a bigger premium.
                 Of the households in the poorest 40%, 39% were predicted to
@@ -491,7 +490,7 @@
 
             <p>
                 The reporters also spoke to David Khaoya, a health economist
-                who helped develop the first version of the test.
+                who helped to build the tool when it was being designed.
                 According to the reporters, he said that the government decided
                 to prioritise assessing the wealthy correctly, even if that meant
                 overcharging the poor, and that poor households classed wrongly
@@ -512,7 +511,7 @@
 
             <p>
                 SHA replied a few days after the documentary came out.
-                It said that the model is fair and protects low-income
+                It said that the model is equitable and protects low-income
                 households, that replacing the NHIF was needed, and that it
                 will keep improving the tool as more household data comes in.
                 It also gave figures.
@@ -541,9 +540,9 @@
                     <row>
                         <cell>How well the formula sorts households</cell>
                         <cell>In the rebuilt model, 16% of the poorest tenth of
-                        households were predicted correctly, and 80% were
+                        households were predicted correctly, and about 80% were
                         overcharged</cell>
-                        <cell>The model is fair and protects low-income
+                        <cell>The model is equitable and protects low-income
                         households</cell>
                     </row>
 
@@ -583,8 +582,8 @@
                 and cancer treatment.
                 It decided not to cancel the scheme, because millions of
                 people were already signed up.
-                The ruling was about the rollout as a whole, and it didn't
-                judge the means-test model itself.
+                As far as we can tell, the ruling was about the rollout as a whole,
+                and it didn't judge the means-test model itself.
                 But it ordered fair means-testing for informal workers, a clear
                 and accessible complaints mechanism, and regular progress
                 reports to the court
@@ -614,7 +613,7 @@
                 SHA's own report for the period to 31 March 2026 shows 30.13
                 million registered beneficiaries, and about 4.78 million active
                 contributors.
-                That doesn't mean only one in seven people has cover, because
+                That doesn't mean only about one in six people has cover, because
                 one contributor can cover a whole family.
                 But SHA hasn't published how many registered people have active
                 cover, and Africa Check says it asked and hadn't had an
@@ -1213,6 +1212,44 @@
     <!-- ============================================================= -->
     <exercises xml:id="exercises-misuse-and-misinterpretation">
         <title>Exercises</title>
+
+        <exercise xml:id="ex-misuse-and-misinterpretation-assignment">
+            <title>Assignment: a real example of misuse</title>
+            <statement>
+                <p>
+                    Choose one real example of AI being used in your sector or country, or
+                    a case study from the course.
+                    It could be the SHA means test from this chapter, COMPAS, the Dutch
+                    childcare scandal, or a Kenyan tool such as Amenya, Chat Care, Angaza
+                    Elimu or FarmerAI.
+                    In no more than 750 words, respond to these questions.
+                    <ol>
+                        <li>
+                            What was the AI system meant to do, and how did it work?
+                        </li>
+                        <li>
+                            What went wrong, or what could go wrong?
+                        </li>
+                        <li>
+                            Was it a failure of the model, of the data, or of how people
+                            interpreted the outputs?
+                        </li>
+                        <li>
+                            What was the human cost of this failure, or what could it be?
+                        </li>
+                        <li>
+                            What role should human oversight play in a system like this?
+                        </li>
+                        <li>
+                            What would you recommend, for safer or more responsible use?
+                        </li>
+                        <li>
+                            Does AI get it wrong? Or do we?
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+        </exercise>
 
         <exercise xml:id="ex-misuse-and-misinterpretation-1">
             <title>Pick a sector</title>

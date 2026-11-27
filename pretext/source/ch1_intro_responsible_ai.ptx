@@ -142,11 +142,10 @@
 
             <p>
                 The examples Tala gives are interesting.
-                If you use lots of apps and lots of data, it takes that as a
-                sign you can afford data charges, so it reads that as a sign
-                you can afford to repay.
-                If you fill in the application thoroughly, it takes that as a
-                sign you're serious about the loan
+                Tala says that heavy app and data use may suggest that you can
+                afford data charges, and so may suggest financial capacity.
+                It also says that filling in the application thoroughly suggests that
+                you're serious about the loan
                 (<xref ref="biblio-tala-faq" text="custom">Tala, n.d.</xref>).
             </p>
 
@@ -395,9 +394,8 @@
 
             <p>
                 The other part is that the technology is young.
-                One way to put it is that expecting today's AI to be fully
-                responsible is like expecting a toddler to take full
-                responsibility.
+                David puts it this way: expecting today's AI to be fully
+                responsible is like trying to get a toddler to be responsible.
                 It can't yet, so the responsibility has to sit with the adults
                 around it.
                 That doesn't mean we should avoid it.
@@ -435,8 +433,7 @@
                 David's account is that there have been three or four boom
                 periods before, and each time public attention dropped away
                 when the technology did less than people hoped.
-                One he mentions is when a computer beat the world chess
-                champion.
+                One he mentions is when AI won at chess.
             </p>
 
             <p>
@@ -450,9 +447,9 @@
             </p>
 
             <p>
-                Once a boom gets going, though, most of what follows is noise:
-                money, announcements and competition, built on one idea that
-                hasn't changed much in years.
+                Once a boom gets going, though, David says that much of what
+                follows is noise around one major breakthrough: money,
+                announcements and competition.
                 Kate points out that AI companies have a reason to let
                 grandiose claims, even scary ones, go unchallenged, because they
                 make the technology sound more advanced.
@@ -509,7 +506,7 @@
                         Models learn from data that people created, and building
                         them depends on human work that mostly happens out of
                         sight.
-                        A later chapter returns to this, using the story of
+                        Chapter 2 returns to this, using the story of
                         Kenyan workers who labelled harmful content to make
                         chatbots safer.
                     </p>
@@ -548,9 +545,10 @@
             <p>
                 Lots of principles get suggested for responsible AI, such as
                 transparency.
-                David says that keeping humans in the loop stands out because the
-                others relate to it.
-                Even if you can't see inside a model, and have to treat it as a
+                David says that <q>humans in the loop</q> is the term he keeps
+                coming back to, from his work on regulation in Europe.
+                Our reading is that, even if you can't see inside a model, and have to
+                treat it as a
                 black box, having people in the right places means you can
                 still see what goes in and what comes out, and you can be open
                 about what the system is doing.
@@ -642,10 +640,10 @@
             </p>
 
             <p>
-                For a long time, building technology was gate-kept by people
-                with deep technical skills, who could do things others thought
-                of as magic, and who tended to build systems that worked for
-                people like themselves.
+                David says that for a long time, building technology has been
+                gate-kept by people like him, with deep technical skills, who could do
+                things others thought of as magic, and who tended to build systems
+                that worked for people like themselves.
                 AI could lower that barrier, so that someone who isn't a
                 programmer can build or adapt something that works in their
                 own local context.
@@ -693,7 +691,8 @@
                 communities involved, learning from each one and linking them
                 together as understanding grows.
                 Progress comes in small steps, not in one leap to a utopia,
-                which is always somebody else's dystopia.
+                because, as David says, one person's utopia is another person's
+                dystopia.
             </p>
 
             <p>
@@ -1003,7 +1002,6 @@
                     The pilot ran until August 2025, and aimed to reach up to
                     1,000 potato farmers by SMS and WhatsApp with advice on
                     weather, fertiliser and pest management.
-                    The plan was to scale it up later
                     (<xref ref="biblio-safaricom-farmerai" text="custom">Safaricom, 2025</xref>).
                     We couldn't find any published results from the pilot.
                     Think about these questions.
@@ -1050,9 +1048,9 @@
         <exercise xml:id="ex-intro-responsible-ai-7">
             <statement>
                 <p>
-                    Tala says it treats the number of apps you use, and how
-                    thoroughly you fill in the application, as signs of whether
-                    you'll repay.
+                    Tala says that heavy app and data use may suggest financial
+                    capacity, and that filling in the application thoroughly suggests that
+                    you're serious about the loan.
                     Think of two groups of people who might be treated unfairly
                     because of this, even though they'd repay just fine.
                     What would you change?
@@ -1100,7 +1098,7 @@
         <exercise xml:id="ex-intro-responsible-ai-6">
             <statement>
                 <p>
-                    We compared today's AI to a toddler.
+                    David compared today's AI to a toddler.
                     What does that help you understand, and where does the
                     comparison stop working?
                 </p>

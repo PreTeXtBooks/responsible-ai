@@ -9,8 +9,8 @@
 
     <xi:include href="./meta_frontmatter.ptx" />
 
-    <!-- Chapters follow the Moodle course. Chapters 3 to 10 are        -->
-    <!-- placeholders with the right titles.                         -->
+    <!-- Chapters follow the Moodle course, with Friend or Foe and   -->
+    <!-- Changing the Question merged into Putting it into Practice. -->
     <!-- To add a chapter, copy ch_template.ptx, give it a unique    -->
     <!-- chapter xml:id, and add an xi:include line here.            -->
     <xi:include href="./ch1_intro_responsible_ai.ptx" />
@@ -21,8 +21,8 @@
     <xi:include href="./ch6_where_does_bias_come_from.ptx" />
     <xi:include href="./ch7_core_principles.ptx" />
     <xi:include href="./ch8_who_is_responsible.ptx" />
-    <xi:include href="./ch9_looking_to_the_future.ptx" />
-    <xi:include href="./ch10_putting_it_into_practice.ptx" />
+    <xi:include href="./ch9_putting_it_into_practice.ptx" />
+    <xi:include href="./ch10_looking_to_the_future.ptx" />
 
     <xi:include href="./meta_backmatter.ptx" />
   </book>

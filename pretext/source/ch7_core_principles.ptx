@@ -297,8 +297,8 @@
             <title>What's particular to Kenya?</title>
 
             <p>
-                The policy says that it's informed by the OECD AI Principles
-                of 2019, UNESCO's Recommendation on the Ethics of AI of 2021,
+                The policy says that it's informed by the OECD AI Principles,
+                UNESCO's Recommendation on the Ethics of AI of 2021,
                 the African Union's Continental AI Strategy and the UN's Global
                 Digital Compact
                 (<xref ref="biblio-kenya-policy-2026" text="custom">State Department for ICT and the Digital Economy, 2026</xref>).
@@ -332,8 +332,8 @@
                 <li>
                     <p>
                         <em>Language.</em>
-                        The policy asks for local languages in systems that
-                        affect public services, and says datasets should respect
+                        The policy promotes the inclusion of local languages in systems
+                        that affect public access, and says datasets should respect
                         Kenya's linguistic diversity.
                         It also says that people must be told they're dealing
                         with an AI in a language they understand.
@@ -344,7 +344,7 @@
                         <em>The people behind the data.</em>
                         It names labour exploitation as a safety risk, and
                         proposes to recognise Kenya's data annotation and
-                        labelling sector as a national asset.
+                        labelling sector as a national data capability asset.
                         Think back to the workers in Chapters 2 and 3.
                     </p>
                 </li>
@@ -383,7 +383,7 @@
                         It would set up a hybrid system, with central
                         coordination and standards, and sector regulators doing
                         the day-to-day enforcement.
-                        The policy gives an indicative timeline of drafting the
+                        The policy's implementation table gives a timeline of drafting the
                         Act within six months, and enacting it within twelve.
                     </p>
                 </li>
@@ -407,6 +407,9 @@
                 (<xref ref="biblio-kenya-policy-2026" text="custom">State Department for ICT and the Digital Economy, 2026</xref>).
                 Until the new Act exists, it sets a direction, but it isn't a
                 law.
+                The Star reports that in October 2026 the Ministry described the
+                policy as being in its final stages
+                (<xref ref="biblio-star-2026" text="custom">The Star, 2026</xref>).
             </p>
         </subsection>
 
@@ -561,9 +564,8 @@
             </p>
 
             <p>
-                David's view is that Amazon had too much reputation to lose,
-                and dropped it because the risk of being seen as sexist
-                outweighed the benefit.
+                David's view is that Amazon couldn't take that risk, given its
+                reputation and the lawsuits it could face.
                 I wondered whether a smaller company would have cut its losses
                 in the same way.
             </p>
@@ -936,6 +938,29 @@
     <!-- ============================================================= -->
     <exercises xml:id="exercises-core-principles">
         <title>Exercises</title>
+
+        <exercise xml:id="ex-core-principles-assignment">
+            <title>Assignment: apply a principle</title>
+            <statement>
+                <p>
+                    Pick one responsible AI principle, from Kenya's sixteen or from
+                    fairness, accountability and transparency.
+                    Apply it to a real example from the course, such as the SHA means test,
+                    Tala's lending, the Dutch childcare scandal or the content moderators.
+                    <ol>
+                        <li>
+                            Was the principle followed, or violated?
+                        </li>
+                        <li>
+                            What evidence supports your view?
+                        </li>
+                        <li>
+                            What should be done differently?
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+        </exercise>
 
         <exercise xml:id="ex-core-principles-1">
             <title>In your own words</title>
