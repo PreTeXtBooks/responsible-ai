@@ -37,9 +37,8 @@
             This chapter is about the gap between how AI looks and how it
             works.
             A lot of systems look as though they run by themselves.
-            Behind many of them there are people, labelling data, checking
-            answers and fixing mistakes, often a long way away, and often
-            where nobody can see them.
+            Behind many of them there are people labelling data and correcting
+            answers, often a long way away, where nobody can see them.
             We saw one version of that in the last chapter.
             Here we look at another, and ask what it means for a system to be
             called <q>autonomous</q> at all.
@@ -238,8 +237,8 @@
             <p>
                 Whatever the number, both sides agree that people were involved, so
                 the story that no people were needed wasn't quite true.
-                People were part of the system.
-                They checked it, corrected it and trained it.
+                People were part of the system. They trained it, and they checked and
+                corrected its work.
                 That's the human in the loop from Chapter 1.
                 What changes from system to system is whether you can see them.
             </p>
@@ -256,7 +255,7 @@
                 It also connects back to the last chapter.
                 The Kenyan workers who made ChatGPT safer, and the people who
                 reviewed shoppers' footage, were doing very different jobs.
-                But both were work that the finished product didn't mention.
+                But in both cases the finished product didn't mention the work.
             </p>
         </subsection>
     </section>
@@ -401,9 +400,9 @@
                 I asked David what the incentive is for a company to keep
                 people, when people are expensive and software, once it's
                 built, isn't.
-                His answer is that good business isn't about maximising
-                short-term profit, and that if a company offers good service
-                and is still profitable, it can win out over time.
+                His answer is that good business isn't about maximising short-term
+                profit. If a company offers good service and is still profitable, it
+                can win out over time.
                 He adds that he doesn't think it will play out well in the short
                 term, because short-term profit is seen as more important than
                 long-term market share.

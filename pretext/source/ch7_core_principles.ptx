@@ -36,14 +36,11 @@
         </p>
 
         <p>
-            Almost everyone agrees with the idea of fair, transparent and
-            accountable AI.
-            Companies say it, governments say it and so do international
-            summits.
-            The hard questions come next.
-            Who decides what <q>fair</q> means?
-            Who makes sure it happens?
-            And who benefits when it does?
+            Almost everyone agrees that AI should be fair, transparent and
+            accountable. Companies say it, and so do governments and international
+            summits. The hard part is what comes next.
+            Who decides what <q>fair</q> means? Who makes sure it happens? Who
+            gains when it does?
         </p>
 
         <p>
@@ -287,9 +284,8 @@
             </table>
 
             <p>
-                The words fairness, accountability and transparency are in
-                there, mostly under principles 1 and 6.
-                But the list is much wider than those three.
+                Fairness, accountability and transparency are in there, mostly under
+                principles 1 and 6. The list is wider than those three, though.
             </p>
         </subsection>
 
@@ -482,9 +478,8 @@
                 Look at what the principles do here.
                 They name the problems we found in Chapters 4 and 6, and they
                 ask for the right things.
-                What they can't do is make anything happen.
-                That depends on an Act, a regulator and people who know their
-                rights.
+                They can't make anything happen, though. For that we need an Act, a
+                regulator and people who know their rights.
             </p>
         </subsection>
 
@@ -494,9 +489,8 @@
             <ul>
                 <li>
                     <p>
-                        Principles are easy to agree on and hard to enforce.
-                        Kenya has written down a lot, but most of the machinery
-                        is still to come.
+                        It's easy to agree on principles, and hard to enforce them. Kenya has
+                        written down a lot, but most of the machinery isn't there yet.
                     </p>
                 </li>
                 <li>
@@ -508,17 +502,16 @@
                 </li>
                 <li>
                     <p>
-                        Who writes the principles matters.
-                        This policy went through consultation, but the people
-                        most affected by a means test may not have been in the
-                        room.
+                        It matters who writes the principles. This policy went through
+                        consultation, but the people most affected by a means test may not
+                        have been in the room.
                     </p>
                 </li>
                 <li>
                     <p>
-                        A principle you can't use is a promise.
-                        <q>The right to know</q> only helps if you can find out
-                        that a system is being used on you.
+                        A principle you can't use doesn't do much for you. <q>The right to
+                        know</q> only helps if you can find out that a system is being used on
+                        you.
                     </p>
                 </li>
             </ul>
@@ -575,8 +568,8 @@
             <title>Why would big companies want rules?</title>
 
             <p>
-                David's argument is that regulation is neither good nor bad for
-                business on its own.
+                David's argument is that regulation isn't good or bad for business on
+                its own.
                 Good regulation helps good businesses.
                 Big companies have a reputation to protect, so they'd mostly
                 build unbiased, transparent systems anyway.
@@ -592,8 +585,8 @@
                 Chinese and US approaches look fairly similar to him, which he
                 reads as a growing consensus.
                 Then he points out the irony.
-                Rules designed to restrain big tech could end up favouring it,
-                because it can afford to comply.
+                Rules meant to restrain big tech could end up helping it, because it
+                can afford to comply.
             </p>
 
             <p>
@@ -628,14 +621,14 @@
                 <li>
                     <p>
                         Regulation changes incentives.
-                        What it requires, and who owns the process, decides
-                        whether it helps.
+                        Whether it helps depends on what it requires, and who owns the
+                        process.
                     </p>
                 </li>
                 <li>
                     <p>
-                        Reputation protects people from big companies, more than
-                        from small ones.
+                        Reputation does more to protect people from big companies than from
+                        small ones.
                     </p>
                 </li>
                 <li>
@@ -708,8 +701,8 @@
                 or the algorithm, David said it's not just those three things,
                 and that the risks are everywhere.
                 Interpretation, management and human factors matter too.
-                Anyone who says they can do this safely, he says, isn't
-                thinking hard enough.
+                He says anyone who claims they can do this safely isn't thinking hard
+                enough.
             </p>
         </subsection>
 
@@ -958,6 +951,52 @@
                             What should be done differently?
                         </li>
                     </ol>
+                </p>
+            </statement>
+        </exercise>
+
+        <exercise xml:id="ex-core-principles-care">
+            <title>The principle you care about most</title>
+            <statement>
+                <p>
+                    Companies and organisations have their own lists of responsible AI
+                    principles too, such as Microsoft's.
+                    Think about these questions.
+                    <ol>
+                        <li>
+                            Which principle of responsible AI do you personally care about most, and why?
+                        </li>
+                        <li>
+                            Who should be responsible for upholding it: the developers, the government or the community of users?
+                        </li>
+                        <li>
+                            Is there a principle that hasn't been included, that you think is important?
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+        </exercise>
+
+        <exercise xml:id="ex-core-principles-local">
+            <title>Global or local?</title>
+            <statement>
+                <p>
+                    Different countries, and companies, are defining their own
+                    principles of responsible AI, as Kenya has done.
+                    Think about these questions.
+                    <ol>
+                        <li>
+                            Do you think global regulations, such as the EU AI Act, reflect your local priorities and concerns?
+                        </li>
+                        <li>
+                            Should principles and regulations be defined globally, or for each context?
+                        </li>
+                    </ol>
+                </p>
+                <p>
+                    If you're doing this with others, reply to at least one other
+                    person's answer, reflecting on how perspectives might differ across
+                    regions or sectors.
                 </p>
             </statement>
         </exercise>

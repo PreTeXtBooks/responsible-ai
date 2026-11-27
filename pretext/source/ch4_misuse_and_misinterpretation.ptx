@@ -469,9 +469,9 @@
                 was highly likely to get contributions wrong, especially for
                 low-income households
                 (<xref ref="biblio-lighthouse-2026" text="custom">Lighthouse Reports, 2026</xref>).
-                According to the reporters, it also said the survey had too
-                many middle-income households and not enough very poor ones,
-                and recommended that SHA manage the risk carefully at first,
+                According to the reporters, it also said the survey had too many
+                middle-income households and not enough very poor ones. It recommended
+                that SHA manage the risk carefully at first,
                 and that people be able to contest the prediction made about
                 them
                 (<xref ref="biblio-au-2026" text="custom">Africa Uncensored, 2026</xref>).
@@ -499,9 +499,7 @@
             </p>
 
             <p>
-                This is a decision about who bears the errors.
-                Every model makes mistakes.
-                Someone chooses which mistakes are easier to live with, and
+                Someone decided who bears the errors. Every model makes mistakes, and
                 in this telling the people who live with them are the poorest.
             </p>
         </subsection>
@@ -720,8 +718,8 @@
                 <li>
                     <p>
                         <em>A way to challenge it has to work.</em>
-                        An appeal that gets an automatic refusal isn't an
-                        appeal in any real sense.
+                        An appeal that gets an automatic refusal, with no reason, isn't much
+                        of an appeal.
                     </p>
                 </li>
             </ul>
@@ -730,9 +728,8 @@
                 <p>
                     A tool can be accurate on average and still harm the
                     people it knows least about.
-                    It's not enough to ask whether the model works.
-                    We also need to ask who it works for, and who pays when it
-                    doesn't.
+                    So we should ask whether the model works, and also who it works for
+                    and who pays when it doesn't.
                 </p>
             </insight>
         </subsection>
@@ -780,9 +777,9 @@
 
             <p>
                 The first point is about the word <q>determine</q>.
-                In the episode I say that the algorithm was used to determine
-                whether someone was committing fraud, and then correct myself,
-                because it should only ever have said who was at risk of it.
+                In the episode I say that the algorithm was used to determine whether
+                someone was committing fraud. Then I correct myself, because it should
+                only ever have said who was at risk of it.
                 David agrees, and goes further.
                 An algorithm can raise a red flag.
                 It can't know what's actually going on in a household.
@@ -1119,9 +1116,8 @@
             </p>
 
             <p>
-                Read that again and you can hear David's advice from the
-                episode.
-                The tool can help, and the person is still responsible.
+                That's close to David's advice in the episode. The tool can help, but
+                the person using it is still responsible.
             </p>
         </subsection>
 

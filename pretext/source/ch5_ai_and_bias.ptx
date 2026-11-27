@@ -51,9 +51,8 @@
             It's one of the most talked-about problems in AI, and it's easy to
             miss, because the system looks neutral.
             It's just following the data.
-            In this chapter we look at what bias is, the different forms it
-            takes, and why the harm so often falls on people who were already
-            left out.
+            This chapter looks at what bias is and the forms it takes, and why the
+            harm so often falls on people who were already left out.
             Chapter 6 then looks at where it comes from.
         </p>
 
@@ -204,8 +203,8 @@
             <insight>
                 <p>
                     Think about what that second test shows.
-                    The detectors weren't spotting who wrote the text.
-                    They were spotting how simple it was.
+                    The detectors couldn't tell who wrote the text. They reacted to how
+                    simple it was.
                 </p>
             </insight>
 
@@ -316,13 +315,12 @@
                 careful English.
                 In the Nation's stories, it's students who say that they did their
                 own work, and who then have to spend time proving it.
-                That time is a cost, and so is the worry.
+                That time costs them, and so does the worry.
             </p>
 
             <p>
                 Is it the data, the design, or the way the results are used?
-                Probably all three.
-                That's often the answer.
+                Probably all three, as it often is.
             </p>
         </subsection>
 
@@ -638,8 +636,8 @@
                 </li>
                 <li>
                     <p>
-                        We all have our own unconscious biases, and noticing
-                        them is the first step.
+                        We all have unconscious biases, and the first thing to do is notice
+                        them.
                     </p>
                 </li>
             </ul>
@@ -719,7 +717,7 @@
             </p>
 
             <p>
-                So the pull of the data is towards the middle.
+                So the data pulls towards the middle.
                 He says that this drags society back towards the average, just when
                 society has been moving towards embracing diversity.
             </p>
@@ -793,7 +791,7 @@
         </p>
 
         <p>
-            But more recent work complicates the picture.
+            But more recent work doesn't quite agree.
             A 2026 paper tested 61 configurations of models from five big
             families.
             It found that 22 of them were more vulnerable in English than in
@@ -819,7 +817,7 @@
             misinformation or confusing answers.
             So it's fair to say that whether a tool is as safe in Swahili
             as in English depends on the model, the year and the test.
-            It's hard to measure, and it's worth testing for yourself.
+            It's hard to measure, so try testing it yourself.
         </p>
     </section>
 

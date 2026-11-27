@@ -124,8 +124,8 @@
             <p>
                 If you have no payslip and no history with a bank, that's a
                 real option.
-                You can pay school fees, or cover an emergency.
-                That's the good part, and it matters.
+                You can pay school fees or cover an emergency, and that's a real
+                benefit.
             </p>
         </subsection>
 
@@ -304,7 +304,7 @@
                 It also put people's privacy at risk.
                 At some lenders, it was used to put pressure on borrowers'
                 contacts, and automated decisions can be hard to question.
-                Both of those are true, and one doesn't cancel out the other.
+                Both of those are true at the same time.
             </p>
 
             <insight>
@@ -323,9 +323,8 @@
                 Who does a patient go to when a health tool gets it wrong?
                 The exercises at the end of the chapter give you three more
                 cases to think about.
-                AI isn't a silver bullet, and the conversation about using it
-                responsibly needs to happen while it's being adopted, not
-                afterwards.
+                AI isn't a silver bullet. We need to talk about using it responsibly
+                while people are adopting it, not afterwards.
             </p>
         </subsection>
     </section>
@@ -467,8 +466,8 @@
 
             <p>
                 In earlier booms, what survived was substantial and mostly
-                good, but you mostly didn't notice it, because it had become
-                part of ordinary systems.
+                good, but you didn't notice it, because it had become part of ordinary
+                systems.
                 The hope is that the same happens here, and that the lasting
                 value is in specific, well-understood uses and not in one
                 general machine that does everything.
@@ -495,8 +494,7 @@
                         pushing against the shift to clean energy.
                         He also says that a large AI data centre is being built in
                         Zambia.
-                        It's fair to ask what's being taken, who benefits and who
-                        pays.
+                        It's fair to ask what's being taken. Who benefits, and who pays?
                     </p>
                 </li>
 
@@ -567,7 +565,7 @@
                 Think back to the lending apps.
                 Who can a borrower ask when a loan is refused?
                 Who checks what a farming chatbot tells a farmer?
-                Those are questions about where the humans are.
+                Those come down to where the humans are.
             </p>
         </subsection>
 
@@ -664,10 +662,9 @@
             <p>
                 We'll use the word <term>sociotechnical</term> for this way of
                 thinking.
-                A system isn't just the software.
-                It's the software together with the people, communities, rules
-                and incentives around it, and designing AI well means
-                designing all of that together.
+                A system includes the software and also the people, communities, rules
+                and incentives around it, so designing AI well means designing all of
+                that together.
             </p>
         </subsection>
 
@@ -678,8 +675,8 @@
                 Nobody knows exactly how all this will turn out, including the
                 people who know the most about it.
                 That can sound like a reason to avoid the subject.
-                A better response is to get comfortable acting under
-                uncertainty without gambling.
+                A better response is to get used to making decisions when we're
+                unsure, without gambling.
             </p>
 
             <p>
@@ -696,7 +693,7 @@
             </p>
 
             <p>
-                That kind of optimistic realism runs through the book, and it's
+                We try to be hopeful but realistic all through the book, and that's
                 why we started with Kenya's own examples.
             </p>
         </subsection>
@@ -889,6 +886,66 @@
     <!-- ============================================================= -->
     <exercises xml:id="exercises-intro-responsible-ai">
         <title>Exercises</title>
+
+        <exercise xml:id="ex-intro-responsible-ai-assignment">
+            <title>Assignment: what does responsible AI mean to me?</title>
+            <statement>
+                <p>
+                    Write a short personal reflection of 200 to 300 words, responding to
+                    these questions.
+                    <ol>
+                        <li>
+                            Based on this chapter and the examples in it, how would you define responsible AI?
+                        </li>
+                        <li>
+                            Why do you think responsibility matters when it comes to AI systems?
+                        </li>
+                        <li>
+                            What is one area in your life or community where responsible AI could have a positive impact?
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+        </exercise>
+
+        <exercise xml:id="ex-intro-responsible-ai-discussion">
+            <title>Where is AI in your life?</title>
+            <statement>
+                <p>
+                    AI is already part of daily life in many places.
+                    The Kenyan examples in this chapter, and the course readings from 2022
+                    and 2025, show some of the ways it's used in Kenya.
+                    Choose at least two of these questions and answer them from your own
+                    experience, and your community's.
+                    <ol>
+                        <li>
+                            Where do you think AI might already be at work in your life or community?
+                        </li>
+                        <li>
+                            What apps, services or technologies do you use that might involve AI?
+                        </li>
+                        <li>
+                            Have you ever had a recommendation that was surprisingly helpful, or completely wrong?
+                        </li>
+                        <li>
+                            How has AI made something easier or better for you, or for someone you know?
+                        </li>
+                        <li>
+                            Can you think of any risks or challenges with AI tools, such as misinformation, unfairness or exclusion?
+                        </li>
+                        <li>
+                            What do you think we mean by <q>responsible AI</q>, and why might it matter?
+                        </li>
+                    </ol>
+                </p>
+                <p>
+                    If you're doing this with others, reply to at least one other
+                    person's answer.
+                    Do you share their view?
+                    Did they raise something that you hadn't considered?
+                </p>
+            </statement>
+        </exercise>
 
         <exercise xml:id="ex-intro-responsible-ai-1">
             <statement>

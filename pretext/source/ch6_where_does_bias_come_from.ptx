@@ -52,8 +52,8 @@
 
         <p>
             Bias can't always be removed from an AI system.
-            But it can be recognised, reduced and managed, and that starts
-            with knowing where it comes from.
+            But we can recognise it and manage it, and that starts with knowing
+            where it comes from.
             We look at three places.
         </p>
 
@@ -183,7 +183,7 @@
             second.
             Woodson asks in his review why some feedback loops improve a model
             while others trap people.
-            That's a good question to keep in mind.
+            Keep that question in mind as we go.
         </p>
     </section>
 
@@ -244,9 +244,9 @@
             <p>
                 That's what a bad proxy looks like.
                 It works on average.
-                It fails for the people who don't fit the pattern, and those
-                are poor households that happen to have a feature that's
-                usually a sign of being better off.
+                It fails for the people who don't fit the pattern. Here that means
+                poor households with a feature that usually goes with being better
+                off.
             </p>
         </subsection>
 
@@ -306,9 +306,8 @@
                 (<xref ref="biblio-au-2026" text="custom">Africa Uncensored, 2026</xref>).
                 That's closer to the birdsong app than to the Post Office.
                 Lighthouse also tested IDinsight's alternative design, and found it
-                wasn't more accurate, so the problem isn't just about adopting one
-                particular fix.
-                It's about whether anyone is checking and learning
+                wasn't more accurate, so adopting one particular fix wouldn't have solved it. What matters
+                is whether anyone is checking and learning
                 (<xref ref="biblio-lighthouse-2026" text="custom">Lighthouse Reports, 2026</xref>).
             </p>
 
@@ -354,8 +353,7 @@
             </table>
 
             <p>
-                The three don't sit side by side.
-                They feed each other.
+                The three feed each other.
                 A survey with few poor households makes the proxies fit them
                 badly.
                 And because nothing is fed back, the problem stays.
@@ -363,9 +361,8 @@
 
             <insight>
                 <p>
-                    When you look for where bias comes from, don't expect to
-                    find just one place.
-                    The weak points in a system tend to line up.
+                    When you look for where bias comes from, don't expect to find just one place, because the weak points in a
+                    system tend to line up.
                 </p>
             </insight>
         </subsection>
@@ -480,12 +477,11 @@
             </p>
 
             <p>
-                David's point is the one to take away.
+                David's main point is this.
                 If an indicator is a proxy for quality, and then everybody
                 works towards the indicator, it can stop being a good proxy.
-                People are no longer working hard at quality.
-                They're working hard at the indicator, and the link between the
-                two weakens.
+                People stop working at quality and work at the indicator instead, so
+                the link between the two weakens.
                 (People sometimes call this Goodhart's law.)
             </p>
         </subsection>
@@ -1145,6 +1141,29 @@
                     Then suggest one change to its design and one change to the
                     way people use it.
                     Which of the three problems would each change help with?
+                </p>
+            </statement>
+        </exercise>
+
+        <exercise xml:id="ex-where-does-bias-come-from-further">
+            <title>Going further</title>
+            <statement>
+                <p>
+                    Here are some more questions, if you want to take the three weak
+                    points further.
+                    <ol>
+                        <li>
+                            Could the problems that you found show up in your own context, such as Kenya, or your field of work?
+                        </li>
+                        <li>
+                            Have you ever seen a recommendation system or an automated decision that felt unfair? Why?
+                        </li>
+                        <li>
+                            Do you agree with O'Neil?
+                            Can you think of another place where bias gets in, such as in how
+                            people interpret the results?
+                        </li>
+                    </ol>
                 </p>
             </statement>
         </exercise>

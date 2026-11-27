@@ -472,8 +472,8 @@
                 This story says otherwise.
                 The safety filter works because people read huge amounts of
                 harmful text first, and told the system what it was looking at.
-                That isn't a flaw in the way AI is built.
-                It's how this kind of AI learns.
+                This is simply how this kind of AI learns, and it isn't a flaw in how
+                it was built.
             </p>
 
             <insight>
@@ -486,9 +486,8 @@
             <p>
                 It also gives the idea of a <q>human in the loop</q> from the
                 last chapter a face.
-                The human in the loop isn't an abstract safeguard.
-                Here, it was a few dozen people in Nairobi reading things most
-                of us would never want to read, for pay that two companies
+                Here, the human in the loop was a few dozen people in Nairobi, reading
+                things most of us would never want to read, for pay that two companies
                 disagree about.
                 If AI is going to be used responsibly, how those people are
                 paid and looked after has to be part of the question, along with
@@ -534,8 +533,8 @@
             <p>
                 The case study showed that people are involved in making AI
                 safe.
-                Now we want to look at why, by looking at how AI systems learn,
-                and where that learning goes wrong.
+                Now we want to look at why, by seeing how AI systems learn and where
+                that learning goes wrong.
             </p>
         </introduction>
 
@@ -582,10 +581,9 @@
 
             <insight>
                 <p>
-                    This is a good picture to keep in mind of what AI is doing.
-                    It isn't working things out for itself.
-                    It's learning from people who correct it, and the
-                    corrections don't get lost.
+                    This is a good picture of what AI is doing. It doesn't work things out
+                    for itself. It learns from people who correct it, and the corrections
+                    don't get lost.
                 </p>
             </insight>
 
@@ -596,8 +594,8 @@
                 ones telling the system what it was looking at.
                 David's point is that this is central to any AI system that's
                 out there at the moment.
-                The system thrives when there are humans in the loop, mistakes
-                are fed back, and the corrections line up with what's true.
+                The system does well when humans are in the loop, mistakes are fed
+                back and the corrections match what's true.
             </p>
 
             <p>
@@ -648,9 +646,7 @@
             <insight>
                 <p>
                     An AI doesn't know the truth by default.
-                    It only knows the truth that it's been given, and it can
-                    bring out things that are simply wrong without anyone
-                    noticing.
+                    It only knows the truth that it's been given, and it can produce things that are simply wrong without anyone noticing.
                 </p>
             </insight>
 
@@ -756,8 +752,8 @@
             <p>
                 David's example is Amazon's shops where you could pick up your
                 shopping and walk out without going through a checkout.
-                Amazon eventually pulled back from it, and Lily adds that it moved
-                to smart shopping carts.
+                Amazon eventually pulled back from it, and I'd add that it moved to
+                smart shopping carts.
                 David's account is that the AI models weren't yet good enough,
                 so people in India, paid very little, watched video of shoppers
                 to work out what had gone in each basket.
@@ -837,6 +833,70 @@
     <!-- ============================================================= -->
     <exercises xml:id="exercises-demystifying-ai">
         <title>Exercises</title>
+
+        <exercise xml:id="ex-demystifying-ai-assignment">
+            <title>Assignment: a tool you use</title>
+            <statement>
+                <p>
+                    Think of a tool, app or system that uses AI in your life or community.
+                    It could be a WhatsApp spam filter, a translation tool, a voice
+                    assistant or an education platform, or one of the examples from
+                    Chapter 1.
+                    Respond to these questions.
+                    <ol>
+                        <li>
+                            How do you think it works?
+                        </li>
+                        <li>
+                            What kind of data do you think it uses to make decisions?
+                        </li>
+                        <li>
+                            Have you seen it make mistakes?
+                        </li>
+                        <li>
+                            What role do humans play, or should they play, in making it more accurate?
+                        </li>
+                    </ol>
+                </p>
+                <p>
+                    If you're doing this with others, respond to at least two other
+                    people's answers.
+                </p>
+            </statement>
+        </exercise>
+
+        <exercise xml:id="ex-demystifying-ai-discussion">
+            <title>Three systems compared</title>
+            <statement>
+                <p>
+                    Choose at least two of these questions to answer.
+                    <ol>
+                        <li>
+                            In the Post Office example, the system worked very well.
+                            What do you think made that task more suitable for automation?
+                        </li>
+                        <li>
+                            How is it different from the birdsong app?
+                            How is it different from the Dutch childcare scandal?
+                        </li>
+                        <li>
+                            What did the system get right in each of these three examples, and what did it miss?
+                        </li>
+                        <li>
+                            Why is human feedback or intervention important in AI systems?
+                            Give one real or imagined example where it might change the outcome.
+                        </li>
+                    </ol>
+                </p>
+                <p>
+                    The Dutch childcare scandal is told in full in Chapter 4.
+                    If you haven't read it yet, the short account in this chapter is
+                    enough.
+                    If you're doing this with others, reply to at least one other
+                    person's answer.
+                </p>
+            </statement>
+        </exercise>
 
         <exercise xml:id="ex-demystifying-ai-1">
             <title>Who is responsible?</title>
