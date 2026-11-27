@@ -140,8 +140,10 @@
                 The five principles in the Statement of Principles were Safe
                 AI, Sustainable AI, Secure AI, Trustworthy AI and Inclusive AI
                 (<xref ref="biblio-kictanet-2025" text="custom">Mujesia, 2025</xref>).
-                The strategy was due to be launched on 27 March 2025
-                (<xref ref="biblio-ict-2025" text="custom">Ministry of ICT, 2025</xref>).
+                The strategy was launched on 27 March 2025 at the Kenyatta
+                International Convention Centre in Nairobi
+                (<xref ref="biblio-ict-launch-2025" text="custom">Ministry of ICT, 2025b</xref>;
+                <xref ref="biblio-ict-2025" text="custom">Ministry of ICT, 2025a</xref>).
             </p>
 
             <p>
@@ -403,8 +405,7 @@
                 (<xref ref="biblio-kenya-policy-2026" text="custom">State Department for ICT and the Digital Economy, 2026</xref>).
                 Until the new Act exists, it sets a direction, but it isn't a
                 law.
-                The Star reports that in October 2026 the Ministry described the
-                policy as being in its final stages
+                We're writing this in November 2026. The latest report we found is from The Star in October 2026, when the Ministry described the policy as being in its final stages
                 (<xref ref="biblio-star-2026" text="custom">The Star, 2026</xref>).
             </p>
         </subsection>
@@ -546,19 +547,51 @@
             <title>The recruiting tool</title>
 
             <p>
-                I start with an example, which David names as Amazon's.
-                As I tell it, a company built a tool to sift through CVs, and it
-                marked women down, because it had learned from past hiring.
-                Removing gender from the data didn't fix it.
-                Other words, like a mention of a women's chess team,
-                still carried the signal.
-                Amazon dropped the project after a large investment.
+                I start with an example that David names, which is Amazon's
+                recruiting tool.
+                Reuters reported it in 2018, from five people who knew about
+                the project
+                (<xref ref="biblio-dastin-2018" text="custom">Dastin, 2018</xref>).
+                Amazon's team had been building programs since 2014 to score
+                job applicants' CVs from one to five stars.
+                The models learned from the CVs that people had sent Amazon
+                over ten years, and most of those came from men.
+                The system penalised CVs that included the word
+                <q>women's</q>, as in <q>women's chess club captain</q>, and
+                it downgraded graduates of two all-women's colleges.
+            </p>
+
+            <p>
+                Amazon edited the programs so that they were neutral to those
+                terms.
+                Reuters's sources said that wasn't a guarantee that the
+                machines wouldn't find other ways to discriminate.
+                By the start of 2017 the team had been disbanded, because
+                executives lost hope for the project.
+                Reuters also says that the data had other problems, and that
+                the tool often recommended unqualified candidates, with
+                results coming back <q>almost at random</q>
+                (<xref ref="biblio-dastin-2018" text="custom">Dastin, 2018</xref>).
                 (That's the proxy problem from Chapter 6.)
             </p>
 
             <p>
-                David's view is that Amazon couldn't take that risk, given its
+                Amazon declined to comment on the technology's challenges.
+                It said that the tool <q>was never used by Amazon recruiters
+                to evaluate candidates</q>.
+                Reuters says that recruiters looked at its recommendations but
+                never relied only on them, and that Amazon didn't dispute that.
+                So the company's account and the reporters' account differ a
+                little, and all of it comes from anonymous sources and Amazon's
+                short reply.
+            </p>
+
+            <p>
+                David's view is that Amazon couldn't take the risk, given its
                 reputation and the lawsuits it could face.
+                That's his reading.
+                Reuters's sources give a simpler reason: executives lost hope
+                for the project.
                 I wondered whether a smaller company would have cut its losses
                 in the same way.
             </p>
@@ -1123,8 +1156,7 @@
             <title>Reputation as a safeguard</title>
             <statement>
                 <p>
-                    David's argument is that Amazon dropped its recruiting tool
-                    because it had too much reputation to lose.
+                    David's view is that Amazon couldn't take the risk of a biased recruiting tool, given its reputation.
                     I wondered whether a smaller company would have done the same.
                     Think about these questions.
                     <ol>
@@ -1217,11 +1249,24 @@
             <url href="https://www.kictanet.or.ke/shaping-the-future-of-ai-in-kenya"/>.
         </biblio>
 
+        <biblio type="raw" xml:id="biblio-ict-launch-2025">
+            Ministry of ICT (2025b). Kenya's Artificial Intelligence (AI)
+            Strategy 2025 to 2030 launched at KICC, Nairobi. News notice,
+            March 2025. Also reported by Citizen Digital.
+            <url href="https://ict.go.ke/kenyas-artificial-intelligence-ai-strategy-2025-2030-launched-kicc-nairobi"/>.
+        </biblio>
+
         <biblio type="raw" xml:id="biblio-ict-2025">
-            Ministry of ICT (2025). ICT Ministry set to launch the National
+            Ministry of ICT (2025a). ICT Ministry set to launch the National
             Artificial Intelligence Strategy 2025 to 2030. News notice, 25 March
             2025.
             <url href="https://ict.go.ke/ict-ministry-set-launch-national-artificial-intelligence-strategy-2025-2030"/>.
+        </biblio>
+
+        <biblio type="raw" xml:id="biblio-dastin-2018">
+            Dastin, J. (2018). Insight: Amazon scraps secret AI recruiting tool
+            that showed bias against women. Reuters, 11 October 2018. Based on
+            five anonymous sources, and a short reply from Amazon. We read the full article. The web address isn't recorded here.
         </biblio>
 
         <biblio type="raw" xml:id="biblio-star-2026">

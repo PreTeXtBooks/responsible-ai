@@ -260,28 +260,32 @@
                 and July 2024, with a randomised evaluation.
                 The authors say that generative AI, with teacher support, can work
                 as a <q>virtual tutor</q>
-                (<xref ref="biblio-worldbank-chalkboards-2025" text="custom">De Simone and others, 2025</xref>).
+                (<xref ref="biblio-worldbank-chalkboards-2025" text="custom">De Simone and others, 2025b</xref>).
             </p>
 
             <p>
-                The authors report learning improvements of about 0.3 standard
-                deviations.
-                The pen-and-paper test covered English, AI knowledge and digital
-                skills, and the blog doesn't say which part the 0.3 refers to.
-                They compare this to <q>nearly two years of typical
-                learning</q>, and say that it did better than 80% of the
-                studies in a database of trials of education programmes in
-                developing countries
-                (<xref ref="biblio-worldbank-chalkboards-2025" text="custom">De Simone and others, 2025</xref>).
-                They also say that the benefits didn't fade as the programme
-                went on, that the programme helped all students and not just the
-                strongest, and that girls, who started behind the boys,
-                seemed to gain even more.
+                The working paper says that the programme used Microsoft Copilot,
+                which runs on GPT-4, to help first-year senior secondary students
+                with English over six weeks.
+                It reports an improvement of 0.31 standard deviations on an
+                assessment that covered English, knowledge of AI and digital
+                skills.
+                The main outcome, English, improved by 0.23 standard deviations.
+                The authors say this is like 1.5 to 2 years of ordinary schooling,
+                and that the programme is among the most cost-effective ways to
+                improve learning
+                (<xref ref="biblio-worldbank-paper-2025" text="custom">De Simone and others, 2025a</xref>).
+                It helped students across the range of starting levels, but the
+                largest effects were for female students, and for students who
+                started with higher scores.
+                The blog adds that it did better than 80% of the studies in a
+                database of trials of education programmes in developing countries
+                (<xref ref="biblio-worldbank-chalkboards-2025" text="custom">De Simone and others, 2025b</xref>).
             </p>
 
             <p>
-                Those are the World Bank authors' claims, in a blog post that
-                says the full evaluation was still to be published.
+                Those are the World Bank authors' own claims, from a working paper
+                and a blog post, and not an outside review.
                 They are also honest about what they don't know.
                 They list open questions about long-term effects, what the role
                 of teachers should be, and whether there are any
@@ -575,11 +579,20 @@
             <url href="https://www.idems.international/podcast/077-looking-to-the-future-of-ai-for-higher-education"/>.
         </biblio>
 
+        <biblio type="raw" xml:id="biblio-worldbank-paper-2025">
+            De Simone, M., Tiberti, F., Barron Rodriguez, M., Manolio, F.,
+            Mosuro, W. and Dikoru, E. J. (2025a). From chalkboards to
+            chatbots: evaluating the impact of generative AI on learning
+            outcomes in Nigeria. Policy Research Working Paper 11125, World
+            Bank, 20 May 2025. We read the abstract.
+            <url href="https://openknowledge.worldbank.org/entities/publication/15e1ff08-15ae-4f7a-b2a8-d146e6c113ee/full"/>.
+        </biblio>
+
         <biblio type="raw" xml:id="biblio-worldbank-chalkboards-2025">
             De Simone, M. E., Tiberti, F., Mosuro, W., Manolio, F., Barron, M.
-            and Dikoru, E. (2025). From chalkboards to chatbots: Transforming
+            and Dikoru, E. (2025b). From chalkboards to chatbots: Transforming
             learning in Nigeria, one prompt at a time. World Bank blog, 9
-            January 2025. A blog post, written before the full evaluation was
+            January 2025. A blog post, written before the working paper was
             published. The authors work for the World Bank, which ran the
             programme.
             <url href="https://blogs.worldbank.org/en/education/From-chalkboards-to-chatbots-Transforming-learning-in-Nigeria"/>.

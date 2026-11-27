@@ -527,6 +527,73 @@
             </p>
         </subsection>
 
+        <subsection xml:id="subsec-who-is-responsible-mit">
+            <title>What the research says about the footprint</title>
+
+            <p>
+                The Olkaria story is about one project.
+                A 2025 MIT News explainer, by Adam Zewe, pulls together what
+                researchers know about generative AI more widely
+                (<xref ref="biblio-mit-2025" text="custom">Zewe, 2025</xref>).
+                Its message is that the footprint is hard to pin down, and that
+                it isn't only the electricity you use when you plug a computer in.
+            </p>
+
+            <ul>
+                <li>
+                    <p>
+                        <em>Training.</em>
+                        A 2021 paper by researchers at Google and Berkeley
+                        estimated that training OpenAI's GPT-3 used 1,287
+                        megawatt hours of electricity, enough to power about
+                        120 average US homes for a year, and produced about 552
+                        tons of carbon dioxide.
+                        Noman Bashir, an MIT researcher, says that a generative
+                        AI training cluster might use seven or eight times more
+                        energy than a typical computing workload.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <em>Using it.</em>
+                        The energy doesn't stop once a model is trained.
+                        Researchers have estimated that a ChatGPT query uses
+                        about five times more electricity than a simple web
+                        search, and Bashir expects the energy used when people
+                        use the models to end up bigger than the energy used to
+                        train them.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <em>Water.</em>
+                        Chilled water is used to cool data centres.
+                        It has been estimated that a data centre needs about
+                        two litres of water for each kilowatt hour of energy it
+                        uses.
+                        The article says this can strain local water supplies
+                        and disturb local ecosystems.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <em>Short lives.</em>
+                        Bashir says that new models come out every few weeks, so
+                        the energy used to train the earlier ones goes to waste.
+                    </p>
+                </li>
+            </ul>
+
+            <p>
+                These are estimates from researchers, as MIT News reports them,
+                and they're mostly about data centres in the US.
+                We don't know how they'd apply to Kenya.
+                That's one reason why the disclosure that Kenya's policy
+                proposes matters: without it, nobody outside the company can
+                check.
+            </p>
+        </subsection>
+
         <subsection xml:id="subsec-who-is-responsible-ted">
             <title>Sasha Luccioni on the other costs</title>
 
@@ -548,9 +615,7 @@
                              aspect="16:9"/>
             </figure>
 
-            <!-- TODO: add a summary of the talk's figures and tools once we have
-                 the transcript, and add the environmental article and the paper
-                 on AI's environmental impact (links not yet supplied). -->
+            <!-- TODO: add a summary of the talk's figures and tools once we have the transcript. -->
         </subsection>
     </section>
 
@@ -925,6 +990,13 @@
             Tech-ish (2026). Kenya stalls $1 billion Microsoft-G42 data centre
             plan as the power maths catches up. 9 May 2026.
             <url href="https://tech-ish.com/2026/05/09/kenya-microsoft-g42-data-centre-stalled/"/>.
+        </biblio>
+
+        <biblio type="raw" xml:id="biblio-mit-2025">
+            Zewe, A. (2025). Explained: Generative AI's environmental impact.
+            MIT News, 17 January 2025. The first of a two-part series. The
+            figures are researchers' estimates, as MIT News reports them.
+            <url href="https://news.mit.edu/2025/explained-generative-ai-environmental-impact-0117"/>.
         </biblio>
 
         <biblio type="raw" xml:id="biblio-ted-2023">

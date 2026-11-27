@@ -460,10 +460,56 @@
     <!-- 4. Illustrative example                                        -->
     <!-- ============================================================= -->
     <section xml:id="sec-illusion-of-autonomy-worked-example">
-        <title>Try It</title>
+        <title>Try It: Who Is Behind the Screen?</title>
 
         <p>
-            TODO: a hands-on activity.
+            You don't need any programming for this one.
+            You need a phone or a computer, and about thirty minutes.
+            Pick a service that says it's automatic, like a customer-service
+            chatbot, a transcription or translation service, a delivery app or
+            a <q>smart</q> shop.
+            We're going to look for the people.
+        </p>
+
+        <ol>
+            <li>
+                <p>
+                    Read what the company says about itself.
+                    Does it say that people are involved?
+                    Write down the exact words.
+                </p>
+            </li>
+            <li>
+                <p>
+                    Read its terms or privacy policy, and search for words like
+                    <q>human</q>, <q>review</q> and <q>reviewers</q>.
+                    Does it say that people may look at your data?
+                </p>
+            </li>
+            <li>
+                <p>
+                    Search a job site for the company's name.
+                    Does it advertise jobs like data annotator, reviewer or
+                    moderator?
+                    Where are they based?
+                </p>
+            </li>
+            <li>
+                <p>
+                    Put what you found next to how the product describes
+                    itself.
+                    Is there a gap?
+                    How big is it, and does it matter to you as a user?
+                </p>
+            </li>
+        </ol>
+
+        <p>
+            If you can't find anything, that's a result too.
+            It might mean that the people aren't there, or that the company
+            doesn't say.
+            You can't tell which from the outside, and that's the point of
+            this chapter.
         </p>
     </section>
 

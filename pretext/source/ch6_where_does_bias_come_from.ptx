@@ -15,8 +15,6 @@
     matters), 17 (how data lies; transcript only read through a summary).
   - Davies and Douglas is a draft chapter (17 Nov 2020). Only the central idea
     is used. We read about 40% of it closely.
-  - TODO: Try It needs the village survey data set and the video link.
-  - TODO: "AI world map: whose data is used?" (link needed).
   - Practise (STACK) section removed on purpose. Questions go in the exercises.
 -->
 <chapter xml:id="ch-where-does-bias-come-from" xmlns:xi="http://www.w3.org/2001/XInclude">
@@ -819,9 +817,6 @@
                 SHA's survey, with few of the poorest households in it, is
                 another example.
             </p>
-
-            <!-- TODO: add the "AI world map: whose data is used?" visualisation
-                 once we have the link. -->
         </subsection>
 
         <subsection xml:id="subsec-where-does-bias-come-from-missing-summary">
@@ -847,50 +842,62 @@
     <!-- 7. Illustrative example                                        -->
     <!-- ============================================================= -->
     <section xml:id="sec-where-does-bias-come-from-worked-example">
-        <title>Try It: Is It the Village?</title>
+        <title>Try It: What Is the Form Guessing?</title>
 
         <p>
-            Here's a small example of finding a proxy.
-            A survey was done in four villages, to find out what affects the
-            yield of rice.
-            For each field, it recorded the village, the size of the field,
-            the amount of fertiliser, and the variety of rice (Old, New or
-            Traditional).
+            In Chapter 4 we saw the questions that SHA's form asks about a
+            household.
+            They cover its size, the mix of men, women, children and older
+            people, the county it lives in, the head of the household, and the
+            home itself, including the roof, walls and floor, the toilet and
+            water supply, what you cook and light your home with, the number
+            of rooms, electricity, and whether you own the place.
+            None of them asks what you earn.
+            Each one is a proxy for something.
         </p>
 
-        <p>
-            When you compare the villages, two of them have lower yields than
-            the other two.
-            In an analysis of variance, the village accounts for a lot of the
-            variation in yield.
-            The variation between villages is large compared with what's
-            left over, which is a mean square of about 464 against 111.
-        </p>
+        <ol>
+            <li>
+                <p>
+                    Pick five of the questions.
+                    For each one, ask <q>so what?</q>
+                    What is it about this answer that's supposed to tell you how
+                    much the household spends?
+                    What is it standing in for?
+                </p>
+            </li>
+            <li>
+                <p>
+                    Answer the five questions for your own household, or one
+                    that you know well.
+                    What would a formula guess about you from those answers?
+                    We don't know the weights, so this is only a guess.
+                </p>
+            </li>
+            <li>
+                <p>
+                    Find one answer where the guess could be wrong, because
+                    something else explains it.
+                    Lighthouse found that among poor households that had
+                    electricity, 56% were predicted not to be poor
+                    (<xref ref="biblio-lighthouse-2026" text="custom">Lighthouse Reports, 2026</xref>).
+                    What could explain that?
+                </p>
+            </li>
+            <li>
+                <p>
+                    What could the form ask, or what could a person check, to
+                    catch cases like that?
+                    Who could you ask, to find out?
+                </p>
+            </li>
+        </ol>
 
         <p>
-            But the first question to ask is <q>so what?</q>.
-            What is it about a village that changes how much rice grows?
-            Rainfall and soil type could be the answer, but they weren't
-            measured.
-            So maybe village is standing in for them.
-        </p>
-
-        <p>
-            Fertiliser and variety were measured.
-            When you put them into the model, the left-over variation drops to
-            about 23, and adding the village makes no difference at all.
-            The villages looked important because the farmers in some of them
-            used higher-yielding varieties and more fertiliser.
-            Village was a proxy.
-        </p>
-
-        <!-- TODO: add the data set and the steps to repeat the analysis in R,
-             once the data and the video link have been supplied. -->
-
-        <p>
-            Think about what you'd have done if you'd stopped at the village.
-            You might have sent help to the wrong place, or decided that the
-            villages with low yields were just worse at farming.
+            If you stopped at the first guess, you'd send the premium to the
+            wrong place.
+            The point of asking <q>so what?</q> is to find out what the proxy
+            is really measuring.
         </p>
     </section>
 
@@ -995,8 +1002,6 @@
             <title>Ask <q>so what?</q></title>
             <statement>
                 <p>
-                    In the rice survey, the villages seemed to explain yield,
-                    until fertiliser and variety were added.
                     Think of a pattern you've seen in data, or in the news,
                     where one thing seems to explain another.
                     What might it be standing in for?

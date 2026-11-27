@@ -821,10 +821,59 @@
     <!-- 4. Illustrative example                                        -->
     <!-- ============================================================= -->
     <section xml:id="sec-demystifying-ai-worked-example">
-        <title>Try It</title>
+        <title>Try It: Be the Labeller</title>
 
         <p>
-            TODO: a hands-on activity.
+            You don't need any programming for this one, or any software.
+            You need your phone, and about twenty minutes.
+            The aim is to feel what the Kenyan workers did in this chapter,
+            on a much smaller and gentler scale: deciding what a piece of data
+            is, so that a machine can learn from it.
+        </p>
+
+        <ol>
+            <li>
+                <p>
+                    Pick ten messages from your own phone that you're happy to
+                    look at, such as texts or WhatsApp messages.
+                    Don't use anything private, and don't show anyone else's
+                    personal details to another person.
+                </p>
+            </li>
+            <li>
+                <p>
+                    Label each one as <q>spam</q> or <q>not spam</q>.
+                    Work quickly, as a labeller would.
+                </p>
+            </li>
+            <li>
+                <p>
+                    Mark the ones that you hesitated over.
+                    What made them hard?
+                </p>
+            </li>
+            <li>
+                <p>
+                    If you can, ask a friend to label the same ten, without
+                    seeing your answers.
+                    Where do you disagree?
+                </p>
+            </li>
+            <li>
+                <p>
+                    Imagine you had to write instructions for someone
+                    labelling ten thousand messages.
+                    What rules would you give them?
+                    What would a machine learn from your labels, and who might
+                    it get wrong?
+                </p>
+            </li>
+        </ol>
+
+        <p>
+            The hard cases are where the human in the loop matters.
+            And if your labels are inconsistent, the machine learns that
+            too.
         </p>
     </section>
 

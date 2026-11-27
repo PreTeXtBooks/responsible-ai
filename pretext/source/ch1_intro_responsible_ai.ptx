@@ -276,7 +276,7 @@
                 TechCabal also reported that the company wasn't on the
                 Central Bank of Kenya's list of approved lenders, and that the
                 most the law allowed at the time was a fine of KES 5 million
-                (<xref ref="biblio-techcabal-fines" text="custom">Abuya, 2023</xref>).
+                (<xref ref="biblio-techcabal-fines" text="custom">TechCabal, 2023</xref>).
             </p>
         </subsection>
 
@@ -292,7 +292,7 @@
                 TechCabal's view is that online lenders went largely
                 unregulated for years while some loan apps harassed borrowers,
                 so the rules came after the harm
-                (<xref ref="biblio-techcabal-fines" text="custom">Abuya, 2023</xref>).
+                (<xref ref="biblio-techcabal-fines" text="custom">TechCabal, 2023</xref>).
             </p>
         </subsection>
 
@@ -1056,9 +1056,10 @@
                 <p>
                     Safaricom and Opportunity International launched FarmerAI
                     in February 2025.
-                    The pilot ran until August 2025, and aimed to reach up to
-                    1,000 potato farmers by SMS and WhatsApp with advice on
-                    weather, fertiliser and pest management.
+                    The pilot was planned to run until August 2025, and aimed to
+                    support up to 1,000 potato farmers by SMS and WhatsApp, with
+                    advice on weather, fertiliser, pest management and market
+                    prices.
                     (<xref ref="biblio-safaricom-farmerai" text="custom">Safaricom, 2025</xref>).
                     We couldn't find any published results from the pilot.
                     Think about these questions.
@@ -1197,7 +1198,8 @@
 
         <biblio type="raw" xml:id="biblio-safaricom-farmerai">
             Safaricom (2025). Opportunity International and Safaricom launch
-            new AI chatbot for smallholder farmers.
+            new AI chatbot for smallholder farmers. Press release, 11 February
+            2025. It's the company's own account.
             <url href="https://safaricom.co.ke/media-center-landing/press-releases/opportunity-international-safaricom-launch-new-ai-chatbot-for-smallholder-farmers"/>.
         </biblio>
 
@@ -1245,8 +1247,9 @@
             </biblio>
 
         <biblio type="raw" xml:id="biblio-techcabal-fines">
-            Abuya, K. (2023). Kenya fines two digital lenders $20,000 for
-            abusing user data. TechCabal, 26 September 2023.
+            TechCabal (2023). Article on the ODPC's penalties for three digital
+            lenders, including Mulla Pride Ltd (the page shows no headline or
+            author in our copy), 26 September 2023.
             <url href="https://techcabal.com/2023/09/26/digital-lenders-fined-in-kenya/"/>.
         </biblio>
 

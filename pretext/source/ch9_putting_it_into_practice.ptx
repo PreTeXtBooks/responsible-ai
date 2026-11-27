@@ -38,6 +38,10 @@
             the course notes remind us that exams ended up splitting in two:
             papers where you could use one, and papers where you couldn't
             (<xref ref="biblio-course-notes-2023" text="custom">Course notes, 2023</xref>).
+            By 1980, the US National Council of Teachers of Mathematics was
+            recommending that mathematics programmes take full advantage of
+            calculators and computers at all grade levels
+            (<xref ref="biblio-nctm-1980" text="custom">NCTM, 1980</xref>).
             Generative AI is a bigger shake-up, because it writes.
         </p>
 
@@ -158,6 +162,18 @@
                 (<xref ref="biblio-aiu-2026" text="custom">Africa International University, 2026</xref>).
                 As far as we can find, no national framework for universities
                 had been adopted when this was written.
+                Capital FM adds some numbers from 2025 and 2026.
+                A 2025 study of 137 educators at thirteen Kenyan universities found that
+                they saw real potential in generative AI, and worried about academic
+                dishonesty, data privacy, accuracy and over-reliance.
+                The Ministry of Education said in July 2026 that 10,382 laptops and the
+                same number of smart boards were being given to Junior Schools.
+                A UNICEF-backed programme to connect 1,000 public primary schools to the
+                internet had connected 363 of them by December 2025
+                (<xref ref="biblio-capitalfm-classrooms-2026" text="custom">Mwangi, 2026</xref>).
+                Capital FM's own view is that institutions may need more assessments where
+                students explain their reasoning, defend their conclusions and apply
+                what they know to unfamiliar situations.
             </p>
 
             <insight>
@@ -1185,6 +1201,14 @@
             claims in it.
         </biblio>
 
+        <biblio type="raw" xml:id="biblio-nctm-1980">
+            National Council of Teachers of Mathematics (1980). An Agenda for
+            Action: Recommendations for School Mathematics of the 1980s. We
+            haven't opened the original document. The recommendation is quoted
+            the same way in several secondary sources, and on NCTM's own page.
+            <url href="https://nctm.org/Standards-and-Positions/More-NCTM-Standards/An-Agenda-for-Action-(1980s)"/>.
+        </biblio>
+
         <biblio type="raw" xml:id="biblio-podcast-073">
             Clements, L. and Stern, D. The IDEMS Podcast, episode 73: AI in
             Education: Friend or Foe? (RAILect, part 3). Release date to be
@@ -1221,6 +1245,14 @@
             National Academy of Sciences, 25 June 2025. We have not read the
             paper itself.
             <url href="https://www.pnas.org/doi/10.1073/pnas.2422633122"/>.
+        </biblio>
+
+        <biblio type="raw" xml:id="biblio-capitalfm-classrooms-2026">
+            Mwangi, I. (2026). AI is already in Kenya's classrooms. Is the
+            education system ready? Capital FM, 27 August 2026. The study and
+            the figures are as the article reports them. We haven't seen the
+            study itself.
+            <url href="https://capitalfm.africa/ai-is-already-in-kenyas-classrooms-is-the-education-system-ready/"/>.
         </biblio>
 
         <biblio type="raw" xml:id="biblio-ap-orals-2026">
